@@ -27,6 +27,7 @@ from manuals every time.
 | Elektron Digitakt MK1 | [`digitakt.md`](digitakt.md) | Drum sampler · MIDI pass-through (probationary) |
 | Roland TR-8S | [`tr8s.md`](tr8s.md) | Drum engine · kick on Assign 1 · Soft Thru |
 | Roland TB-03 | [`tb03.md`](tb03.md) | Acid bass · end of MIDI chain (ch 2) |
+| Soundcraft Signature 12 MTK | [`soundcraft-signature-12-mtk.md`](soundcraft-signature-12-mtk.md) | Analogue summing · OT Aux 1/2 send pair |
 
 ## Non-sequenced gear (covered in the knowledge base, not here)
 
@@ -34,7 +35,6 @@ These are wiring/monitoring, not per-box operation — see [`../knowledge-base.m
 
 | Gear | Where |
 |---|---|
-| Soundcraft Signature 12 MTK (channel map, dbx, Aux/Group buses) | KB §4, §0.2 |
 | PreSonus Studio 192 (input map, preamp vs line, UC Surface scenes) | KB §0.4, §3.6, §11 |
 | Pioneer DJM-850 (guest DJ capture path) | KB §3.6, §12 |
 | Dynaudio BM9S sub + Yamaha HS8 (monitor chain) | KB §3.5 |
