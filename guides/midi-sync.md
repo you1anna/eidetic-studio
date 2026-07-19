@@ -1,6 +1,6 @@
 # Eidetic Studio — MIDI Clock & Transport Configuration Guide
 
-**Document version:** v1.2
+**Document version:** v1.3
 **Date:** 2026-07-19
 **Companion to:** Knowledge Base (canonical, `../knowledge-base.md`) · diagram sheet 3/4 "MIDI & USB Routing" v8 (`../diagrams/midi-usb-routing-v8.png`)
 **Scope:** Complete, verified per-device configuration for the DIN clock chain (Octatrack MKII → Digitakt MK1 → TR-8S → TB-03) and Ableton's relationship to it. All menu paths and parameter names sourced from the primary manuals (OT MKII manual, Digitakt manual, TR-8S Reference Manual, TB-03 Owner's Manual).
@@ -82,9 +82,10 @@ All settings under the **[SETTINGS] key (cogwheel) → MIDI CONFIG**. Two sub-me
 | OUT PORT FUNCTIONALITY | **MIDI** | Keeps the OUT port standard (unused in this chain, but correct). |
 | INPUT FROM | **MIDI+USB** | MIDI is required so the DT hears the OT on its DIN IN. USB is kept so Elektron Transfer can still reach the box for sample loading. |
 | OUTPUT TO | **MIDI+USB** | Harmless with CLOCK/TRANSPORT SEND off, and Transfer needs the USB return path. |
+| **RECEIVE NOTES** | **OFF** | The OT is not meant to play Digitakt sounds. Prevents OT MIDI-track trig presses from chromatically pitching Digitakt samples; clock/transport receive and the hardware THRU path remain unaffected. |
 | TURBO SPEED | **Do not engage** | Turbo negotiation requires a bidirectional OT↔DT connection; the chain is one-way. Leave at 1×. |
 
-**Note channels:** the DT's audio tracks default to receiving on channels 1–8. If the OT's TB-03 MIDI track transmits on channel 2, the DT's track 2 will trigger from those notes as it passes them through. Either set the DT's track channels away from the TB-03 channel (SETTINGS → MIDI CONFIG → CHANNELS — set TRACK 2's channel to OFF or reassign), or accept it and keep track 2 empty. This guide's committed layout: **DT track channels moved off channel 2**.
+**Note isolation:** Digitakt must not act as an OT-played sound module in this rig. **RECEIVE NOTES = OFF** is the primary guard. The DT's audio-track channels also stay off channel 2, so the OT's dedicated TB-03 MIDI track cannot overlap them if note reception is ever re-enabled deliberately.
 
 ---
 
@@ -206,6 +207,7 @@ Run in order after any configuration change. Each stage isolates one link.
 8. Documented (not cabled) fallback if tempo-follow is ever needed: TB-03 MIDI OUT → PreSonus Studio 192 DIN MIDI IN (§6.3).
 9. New power-up ritual extends KB §10.5: verify TR-8S **Soft Thru ON** *and* **Tempo Sync = MIDI** on power-up (one UTILITY screen visit covers both).
 10. **Never start a session from a blank/new Octatrack project.** Always load or duplicate the saved template project. A new project defaults to CLOCK SEND / TRANSPORT SEND OFF, which — combined with decision #2 removing the TR-8S's USB fallback — silently starves the entire downstream chain of clock. Confirmed as the root cause of a TR-8S "no sound on PLAY" fault on 2026-07-19.
+11. **Digitakt RECEIVE NOTES = OFF.** The Digitakt is not an OT-played sound module in this rig; it receives clock/transport and passes the OT stream through its hardware THRU. This prevents an OT MIDI-track trig press from chromatically playing a Digitakt sample.
 
 ---
 
@@ -216,3 +218,4 @@ Run in order after any configuration change. Each stage isolates one link.
 | v1.0 | 2026-07-16 | Initial guide, post TR-8S factory reset. All hardware menu paths verified against primary manuals. TB-03 channel committed as 2. |
 | v1.1 | 2026-07-16 | §6 fully rewritten against the actual Live 12.4 settings state (screenshots: only the PreSonus Studio 192 DIN MIDI port exists; no Elektron/Roland USB MIDI ports; Link off). **Manual session tempo committed** — automatic tempo-follow rejected (stable master clock; follower adds jitter and failure modes for no benefit). Digitakt CLOCK SEND revised ON→OFF (no consumers); Overbridge references removed (not in use). Tempo Follower + Resync transport toggles set to hidden. Zero-USB tempo-follow fallback (TB-03 OUT → PreSonus DIN IN) documented but deliberately not cabled. |
 | **v1.2** | **2026-07-19** | **New-project clock gotcha added** (§1 Fault 3, strengthened §2 warning, §7 symptom-shortcut row, §8 decision #10), root-caused from a real TR-8S "no sound on PLAY" incident: a freshly created OT project defaults to CLOCK SEND/TRANSPORT SEND OFF, and with Tempo Sync committed to MIDI (no AUTO/USB fallback) this leaves the TR-8S with no clock source at all. **Manual-tempo model retained** — the tempo-follow / Digitakt CLOCK SEND=ON variant floated in a parallel 2026-07-19 draft was rejected in favour of the screenshot-verified v1.1 decision. Merged into the studio SOT repo (`eidetic-studio`) as the single canonical MIDI guide. |
+| **v1.3** | **2026-07-19** | **OT trig → Digitakt chromatic-note fault captured:** Digitakt **RECEIVE NOTES = OFF** added to §3 / decision #11. It prevents OT MIDI-note data from pitching/slowing Digitakt samples while preserving OT clock/transport and the DT hardware-THRU path. |
