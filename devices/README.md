@@ -12,10 +12,12 @@ from manuals every time.
    [`../knowledge-base.md`](../knowledge-base.md) for wiring/architecture.
 2. If the answer is here, **answer from it — do not web-search.** Cite the row.
 3. **If it's NOT captured yet:** look it up **once** from a primary source (the device's official
-   manual / Roland/Elektron support), answer, then **append a new row** to that device's
+   manual / Roland/Elektron support — not a blog), answer, then **append a new row** to that device's
    "How do I…" table: `task | exact steps | source (name + date)`. Next time it's a free local lookup.
 4. **Never invent a hardware button sequence.** If you can't verify it, write the row with a ⚠ and
    `source: to verify` rather than a confident guess — a wrong procedure is worse than none.
+5. **After writing anything, run `../scripts/sync.sh "<what you captured>"`** to commit + push. Every
+   capture ends with a sync. (Full playbook: [`../AGENTS.md`](../AGENTS.md).)
 
 ## Device files
 
