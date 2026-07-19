@@ -1,6 +1,6 @@
 # Elektron Octatrack MKII — quick reference
 
-**Role in the rig:** centrepiece sampler/sequencer and **MIDI clock master**. Sequences the TB-03 on MIDI track 1 / channel 2. **USB is CompactFlash transfer only** — no MIDI, no audio, no Overbridge.
+**Role in the rig:** centrepiece sampler/sequencer and **MIDI clock master**. Sequences the TB-03 on MIDI track 1 / channel 2. **USB is CompactFlash transfer only** — no MIDI, no audio, no Overbridge. **Installed OS: 1.40C** (on-rig confirmed 2026-07-19).
 **Menu access:** PROJECT menu = `[FUNC]`+`[MIDI]`; navigate `[ARROW]`s, toggle checkboxes with `[YES]`. **Sync settings are stored per-project** — a new/other project can arrive with different sync. Save via PROJECT → PROJECT → SAVE.
 
 > Cross-refs: clock/sync → [`../guides/midi-sync.md`](../guides/midi-sync.md) §2 · track allocation → [`../guides/track-setup.md`](../guides/track-setup.md) · wiring → [`../knowledge-base.md`](../knowledge-base.md) §6.
@@ -36,4 +36,4 @@ Machine types used: **Static** (long files off CF), **Flex** (into memory — sl
 
 ## Sources
 
-- [Octatrack MKII User Manual OS 1.40A](../sources/official/elektron-octatrack-mkii-user-manual-os1.40a.pdf) · in-repo verified: `../guides/midi-sync.md`, `../guides/track-setup.md`, `../knowledge-base.md`.
+- [Octatrack MKII User Manual OS 1.40A](../sources/official/elektron-octatrack-mkii-user-manual-os1.40a.pdf) — Elektron's published procedure manual retained locally; the actual machine runs **OS 1.40C** (on-rig confirmed 2026-07-19) · in-repo verified: `../guides/midi-sync.md`, `../guides/track-setup.md`, `../knowledge-base.md`.
