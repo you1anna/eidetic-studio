@@ -15,7 +15,69 @@
 | **Turn Track 8 into a master track** (whole-OT filter/comp sweep) | PROJECT menu → **CONTROL** → find the **TRACK 8** option → switch Master ON. Track 8 then processes everything and stops playing its own sample. (Currently OFF — Track 8 is a Static loop slot.) | track-setup §"Track 8" |
 | **Not lose scenes / machine assignments on reload** | **Save the Part** *before* saving the project, or scene + machine assignments vanish on reload. | track-setup §"Three things that bite" |
 | **Set up the send-FX (thru) path** | Track 7 = **Thru** machine; the desk Aux 1/2 feed OT In A/B (patchbay 15–16). Raise a channel's Aux send to push it through OT effects. | KB §5.1/§12 |
-| **Record and play a live stereo Aux loop** | Use **T5** (Flex live-capture slot; T6 is the spare). Select T5 → `[FUNC]`+`[SRC]` → in the Flex sample list press `[UP]` to reach the recorder buffers above slot 1 → select **Recorder Buffer 5** → `[YES]`. Then `[FUNC]`+`[REC1]`: set **INAB = A B**, **INCD = -**, **SRC3 = -**, a deliberate **RLEN** (16 = one 4/4 bar), and **TRIG = ONE2**. With Record Quick Mode on, press `[REC1]` to begin recording. To end early in `ONE2`, press **`[TRACK 5]` + `[REC1]`**; otherwise let RLEN end it. Verify/open it via `[FUNC]`+`[REC3]` → **EDIT THIS RECORDING**. Put a normal sample trig on T5 (or manually trig T5) to hear the buffer. **Save This Recording** from the same `[FUNC]`+`[REC3]` menu if it must survive power-off. | Octatrack MKII User Manual OS 1.40A §§9.1–9.2, 11.3, 17.1.3; on-rig OS 1.40C |
+| **Record and play a live stereo Aux loop** | Follow **“Live Aux loop — literal setup”** below. It uses T5 / Recorder Buffer 5 and makes each state and success check explicit. | Octatrack MKII User Manual OS 1.40A §§9.1–9.2, 11.3, 17.1.3; on-rig OS 1.40C |
+
+### Live Aux loop — literal setup
+
+**Purpose:** Record the Soundcraft Aux 1/2 stereo send arriving at OT inputs A/B, then play that
+captured loop from **T5**. T5 is the dedicated live-capture track; **do not use T1** for this. T1 is the
+Static Loop A slot, and its empty playback slot is unrelated to the T1 recorder buffer.
+
+#### 1. Confirm T5 is ready
+
+1. Press `[TRACK 5]` once. **Expected:** T5 is the active track.
+2. Press `[FUNC]` + `[SRC]`. **Expected:** the **Flex sample slot list** opens. This confirms T5 has a
+   Flex machine.
+3. If a machine list appears instead, T5 is not a Flex machine: highlight **FLEX** and press `[YES]`.
+   Then press `[RIGHT]` to open its Flex sample slot list.
+4. In the Flex sample slot list, press `[UP]` from Flex slot 1. **Expected:** the recorder buffers appear
+   above the numbered Flex slots.
+5. Select **Recorder Buffer 5** and press `[YES]`. **Expected:** T5 is now assigned to the buffer that
+   T5's recorder writes to. Leave this assignment in place for the session.
+
+#### 2. Configure what T5 records
+
+1. With T5 still selected, press `[FUNC]` + `[REC1]` to open **RECORDING SETUP 1** for recorder 5.
+2. Set **INAB = `A B`**. This records OT Input A hard left and OT Input B hard right as stereo.
+3. Set **INCD = `-`**. This prevents unwired inputs C/D being included.
+4. Set **SRC3 = `-`**. This prevents the OT's internal mix being included.
+5. Set **RLEN = `16`** for the first test. With the normal 16-step, 4/4 pattern this is one bar.
+6. Set **TRIG = `ONE2`**. This allows the recording to end at RLEN or be stopped early deliberately.
+7. Set **LOOP = ON** if the captured bar should repeat when T5 plays.
+8. Press `[NO]` to leave the recording setup page. **Expected:** the normal T5 track view returns.
+
+#### 3. Make the recording
+
+1. Confirm a source is audible at the Soundcraft and its **Aux 1/2 send knobs are raised**. The REC1
+   input LEDs on the OT must show A/B activity before recording.
+2. Press `[PLAY]` to run the OT and the clocked hardware. Wait until the material you want to capture is
+   playing.
+3. Because **Record Quick Mode is ON**, press `[REC1]` once. **Expected:** T5's recorder starts; in
+   `[FUNC]` + `[REC1]`, the recorder bar/tape-wheel animation shows recording progress.
+4. For the first test, let the full **RLEN 16** steps elapse. To stop earlier, press and hold `[TRACK 5]`
+   while pressing `[REC1]` once.
+
+#### 4. Verify the captured audio before trying to play it
+
+1. Press `[FUNC]` + `[REC3]`.
+2. Select **EDIT THIS RECORDING**. **Expected:** the Audio Editor opens the T5 recorder buffer and
+   shows a waveform. This is the definitive evidence that a recording exists.
+3. If the editor does not open a recording/waveform, do not continue to playback. Return to section 3
+   and confirm the A/B REC1 LEDs are active before pressing `[REC1]`.
+4. If you want the take after power-off, choose **SAVE THIS RECORDING** from the same `[FUNC]` +
+   `[REC3]` menu and complete the save name/location prompt.
+
+#### 5. Hear the loop from T5
+
+1. Press `[REC]` to enter Grid Recording mode. **Expected:** the `[REC]` key is lit.
+2. Press `[TRIG 1]` to place a normal sample trig for T5 on the first step. **Expected:** Trig 1 is a
+   normal sample trig, not a recorder trig.
+3. Press `[REC]` again to leave Grid Recording mode.
+4. Stop the Soundcraft source or turn down its channel Aux send, then press `[PLAY]`. **Expected:** the
+   recorded loop repeats from T5 even though the original live source is no longer feeding OT A/B.
+
+The incoming A/B signal can be heard directly when the OT mixer **DIR** level is up; that direct monitoring
+does not prove a recorder buffer exists. The waveform in step 4 does.
 
 ## Track layout (this rig)
 

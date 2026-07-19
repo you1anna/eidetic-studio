@@ -19,6 +19,13 @@ from manuals every time.
 5. **After writing anything, run `../scripts/sync.sh "<what you captured>"`** to commit + push. Every
    capture ends with a sync. (Full playbook: [`../AGENTS.md`](../AGENTS.md).)
 
+### Procedure writing standard
+
+Hardware procedures must be literal, not compressed. Give the starting state, every button/menu/value,
+the expected screen or machine state, a success check, and any save/restore action. Do not write “assign
+the buffer”, “add a trig”, or similar shortcuts without the exact steps that perform and verify that
+action. If anything is unverified, mark it ⚠ rather than infer it.
+
 ## Device files
 
 | Device | File | Role |

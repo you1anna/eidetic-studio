@@ -84,6 +84,26 @@ one command, run it.
 - British English, plain and specific. Menu paths and parameter names must match the device manuals
   (or Robin's on-rig correction).
 
+### Hardware procedure standard — no implied steps
+
+For every actionable hardware answer or newly captured device procedure, give a **literal,
+state-by-state sequence**. Never compress a procedure into a shorthand such as “assign the buffer,
+then add a trig”, and never assume Robin can infer the next screen, machine type, control position,
+or the effect of a button.
+
+Each procedure must state:
+
+1. **Starting state** — exact device, project/track/channel, machine type, and any prerequisite
+   routing or menu state.
+2. **Every action** — the exact buttons, menu path, parameter, and target value; one action per
+   numbered step where practical.
+3. **Expected display/state** after a consequential action, including what indicates a mismatch.
+4. **Success check** — how Robin confirms the intended result before continuing.
+5. **Persistence** — whether/how to save it, and any setting that must be restored afterwards.
+
+If a fact is not verified, label it ⚠ rather than bridging the gap with an inferred shortcut. Explicit
+setup and verification are more valuable than brevity.
+
 ## Do not change without asking Robin
 
 - `knowledge-base.md` architecture/channel-map facts — they mirror the real rig; edit only after a
