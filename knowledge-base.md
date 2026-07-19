@@ -1,8 +1,8 @@
 # Eidetic Studio — Knowledge Base
 
-**Document version:** v2.4
-**Last updated:** 2026-07-09
-**Corresponds to diagram set:** **v8 — all four sheets** (footers read "v8 · July 2026"). v8 = v7 content plus the no-speculative-runs rule: patchbay rows 7–8 and 17–18 are left **unwired** (previously "synth-ready"/"flex" dest-side runs). The v8 set supersedes v6 and v7 entirely — delete all older copies.
+**Document version:** v2.5
+**Last updated:** 2026-07-19
+**Corresponds to diagram set:** **v8 — all four sheets** (footers read "v8 · July 2026"). v8 = v7 content plus the no-speculative-runs rule: patchbay rows 7–8 and 17–18 are left **unwired** (previously "synth-ready"/"flex" dest-side runs). Sheet 3's Digitakt USB label was corrected in v2.5: **Overbridge is not used**. The v8 set supersedes v6 and v7 entirely — delete all older copies.
 **Owner:** Robin · DJ Eidetic · *Late Night Relics* on AAJA Radio
 
 **Document suite — this KB is one of three companions:**
@@ -92,7 +92,7 @@ The Studio 192's physical input architecture (verified, §11): **Inputs 1–2 ar
 | Yamaha HS8 (×2) | Studio monitors | Fed from the BM9S SAT outputs (high-passed) — §3.5 |
 | **Dynaudio BM9S** subwoofer | Sub for low-end / rumble monitoring | XLR I/O throughout; SAT HP Flat/60/80 Hz; SUB LP 50–150 Hz; phase 0/180°; ~29 Hz extension. (Label check pending — §0.1 item 2) |
 | Samson S-Patch Plus 48-point | Patchbay (half-normal) | Installed in the Zaor rack; central routing hub |
-| Elektron Digitakt MK1 | Drum sampler / resample target | **Probationary** — reassess ~September 2026 (§13). No timestretch |
+| Elektron Digitakt MK1 | Drum sampler / resample target | **Probationary** — reassess ~September 2026 (§13). No timestretch. **USB CONFIG = USB MIDI; Overbridge is not used.** |
 | Roland TR-8S | Drum machine + synth | Soft Thru **must** be ON (no hardware Thru port) |
 | Roland TB-03 | Acid bass synth | Roland Boutique — **3.5 mm mini output**, not ¼″ TS |
 | Arturia MiniLab 3 | USB MIDI controller | DAW control only; not in the clock chain |
@@ -317,8 +317,8 @@ Octatrack MKII (MIDI Clock Master)
                                                                 └─ [end of chain]
 
 Arturia MiniLab 3 → USB → Powered hub → Mac mini → Ableton Live
-Digitakt MK1      → USB → Powered hub → Mac mini → Ableton Live (MIDI + Overbridge)
-TR-8S             → USB → Powered hub → Mac mini → Ableton Live (MIDI)
+Digitakt MK1      → USB → Powered hub → Mac mini → Elektron Transfer (USB MIDI mode; no Overbridge)
+TR-8S             → USB → Powered hub → Mac mini → no Ableton MIDI/clock role
 Octatrack MKII    → USB → [CompactFlash transfer only — no MIDI, no audio]
 ```
 
@@ -343,8 +343,8 @@ Mac mini M4 Pro (direct Thunderbolt/USB)
     ├─ PreSonus Studio 192  [DIRECT — never via hub]
     └─ Powered USB hub
             ├─ Arturia MiniLab 3
-            ├─ Elektron Digitakt MK1  (MIDI + Overbridge)
-            ├─ Roland TR-8S           (MIDI)
+            ├─ Elektron Digitakt MK1  (USB MIDI mode for Elektron Transfer; no Overbridge)
+            ├─ Roland TR-8S           (no Ableton MIDI/clock role)
             └─ [Octatrack MKII — CF transfer only, not for MIDI or audio]
 
 Soundcraft Signature 12 MTK — USB cable physically disconnected
@@ -430,7 +430,7 @@ Three modes are established. The Hybrid-mode rule is non-negotiable.
 | Soundcraft Signature 12 MTK (USB) | ⚠ Class-compliant, not Harman-certified for Tahoe | USB disconnected — low practical risk |
 | Elektron Octatrack MKII (USB) | ℹ️ CF transfer only | No Overbridge, no USB audio/MIDI by design |
 | Ableton Live 12 Suite | ✅ Current (12.4) | Keep on latest 12.x |
-| Elektron Overbridge | ❌ N/A for OT | Digitakt MK1 supports Overbridge; Octatrack MKII does not |
+| Elektron Overbridge | ❌ Not used in this rig | Digitakt MK1 supports it, but is set to **USB MIDI** for Elektron Transfer; Octatrack MKII does not support it |
 | Pioneer DJM-850 (USB) | ❌ Not used with the Mac | Analogue REC OUT path only (§3.6, §10.4a) |
 
 **Sourced facts (from primary manuals/spec sheets — do not re-litigate from forums):**
@@ -520,3 +520,4 @@ If the answer to all three is no, sell.
 | KB v2.2 | 2026-07-02 | Both open items closed: sub confirmed **Dynaudio BM9S** with crossover starting points; monitor/record split committed (§3.5); monitor-chain cables specced; warning §10.10 added; Digitakt no-timestretch datapoint |
 | KB v2.3 | 2026-07-09 | **PreSonus input architecture verified against the Studio 192 spec:** In 1–2 are front mic/inst preamp combos; true line inputs are rear 3–8 only (bypass preamps). **Soundcraft Main Mix landing revised In 1–2 → In 7–8** (§0.4, §3.5, §9) — resolves the deferred XLR leg with the correct physical target; trade-off (no reserved future-synth stem inputs) recorded. **DJM-850 integrated as guest gear** (§3.6): REC OUT → 2× RCA→XLR(M) → front In 1–2, UC Surface recallable gain scenes, Mode 1 monitoring, new "DJ set capture" recipe (§12) and warnings §10.4a/§10.11/§10.12. **Full diagram set bumped to v7:** sheet 1 regenerated (BM9S monitor chain, capture taps, DJM path, revised input map); sheets 2 & 4 corrected (In 7–8 landing, BM9S chain, TR-8S/Digitakt row order aligned to §5.1, front-panel guest slot, permanent taps noted); sheet 3 gains USB rule 6 (DJM USB prohibition). New §13 confirms the sample audition/timestretch workflow (Ableton Complex Pro + OT ±10 % + A2 prep pipeline) is fully covered. Sub model naming flag opened (Robin said "BM92"; confirmed model is BM9S — verify badge, §0.1). |
 | **KB v2.4** | **2026-07-09** | **No-speculative-runs rule adopted (mid-Session 4):** patchbay rows **7–8** (dest → SC ST 7/8, "synth-ready") and **17–18** (dest → OT In C/D, "flex") **cut from the wiring plan — leave unwired** (§5.1). These were the only two "might be used" runs in the plan; all remaining runs are load-bearing. Session 4 budget restated: 14 runs + 2 taps = 16 cables, 8 spares (§5, §9). OT thru-FX-on-any-source recipe marked deferred (§5.2). **Diagram set bumped to v8** (sheets 1/2/4 amended; sheet 3 footer only). Rows 11–12 (DT resample bus) retained as active workflow — noted as freeing 2 cables if the September review retires the Digitakt. |
+| **KB v2.5** | **2026-07-19** | **Digitakt Overbridge explicitly retired from this configuration:** Digitakt USB CONFIG set/documented as **USB MIDI**, for Elektron Transfer only; no USB audio, Overbridge, or Ableton MIDI/clock workflow. Corrected the stale "MIDI + Overbridge" claims in §§2, 6, 7 and 11 and the v8 MIDI/USB-routing diagram. |
