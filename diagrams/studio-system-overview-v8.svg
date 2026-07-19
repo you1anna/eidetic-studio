@@ -52,7 +52,7 @@
 <text x="56" y="341" font-size="10.8" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Main L/R → PB 9–10 → SC stereo ch 9/10</text>
 <text x="56" y="358" font-size="10.8" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Cue L/R → PB 13–14 → PreSonus In 3–4</text>
 <text x="56" y="375" font-size="10.8" fill="#56c8f0" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">MIDI Out → Digitakt MIDI In (chain head)</text>
-<text x="56" y="392" font-size="10.8" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">In A/B ← Aux send bus (PB 15–16) · C/D ← PB 17–18</text>
+<text x="56" y="392" font-size="10.8" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">In A/B ← Aux send bus (PB 15–16) · C/D currently unwired</text>
 <text x="56" y="412" font-size="10.2" fill="#7fd4c1" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Sample layer: loops/vocals hot-switched · 44.1 k prepped</text>
 <rect x="40" y="440" width="320" height="116" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
 <rect x="40" y="440" width="320" height="4" rx="2" fill="#2c3848"/>

@@ -1,8 +1,8 @@
 # Eidetic Studio — Full Session Guide (Method A + Performance Sample System)
 
-**Document version:** v1.1 — supersedes v1.0 (delete it)
-**Date:** 2026-07-17
-**Companion to:** Knowledge Base v2.4 · Sound & Production Workflow v1.3 · MIDI Sync Guide v1.0
+**Document version:** v1.2 — supersedes v1.1
+**Date:** 2026-07-19
+**Companion to:** Knowledge Base v2.6 · Sound & Production Workflow v1.3 · MIDI Sync Guide v1.2
 **Scope:** One complete production cycle, plus the sample organisation and resampling system that makes it sticky and reusable. Assumes samples are loaded. Rumble is generated in Ableton (Method A) from the dry kick tap on PreSonus In 5.
 
 > **The one-sentence philosophy:** you rehearse until the loop is undeniable, then you perform the arrangement once, capture it, and finish in the box. Recording is earned, not started.
@@ -57,7 +57,7 @@ SETNAME/AUDIO/
 | T5 | Flex | **RESAMPLE playback** ← Recorder buffer 5 | See §5 — the live capture slot |
 | T6 | Flex | Spare — second vocal / texture | |
 | T7 | Thru | In A/B (desk Aux 1/2) | The console send-FX return |
-| T8 | Master | Master track | Scene-able master FX (filter, comp) over everything |
+| T8 | Static | LOOP C — hot-switch pool | Third loop slot; Master track is OFF |
 
 **Plain-English glossary for the two OT concepts that confuse everyone:**
 - **Static vs Flex:** Static machines stream long files straight off the CF card (unlimited length, but no slicing tricks). Flex machines load samples into RAM (limited size, but full slicing, retriggers, and recorder-buffer playback). Loops you *switch between* → Static. Material you *mangle* → Flex.
@@ -151,7 +151,7 @@ KICK STEM: **Send A up** until the rumble is felt under the sum, swelling betwee
 
 ## Phase 4 — Performance prep on the Octatrack (~20–30 min)
 
-1. Scenes: minimum three — stripped (kick+rumble+one element), full, tension (filtered/FX). Include the T8 master track in scene moves for whole-mix sweeps.
+1. Scenes: minimum three — stripped (kick+rumble+one element), full, tension (filtered/FX). Build the moves on the playable tracks; **T8 remains a Static loop slot, not a master track.**
 2. Crossfader across your two most useful scenes.
 3. Send-FX throws: Aux 1 up on Ch 3/4 or 5/6 → OT Thru (T7) delay/reverb. **Never Ch 9/10.**
 4. Hot-switch pool check: confirm T1/T2 Static slots point at this track's loop candidates so mid-take swaps are two button presses.
@@ -212,3 +212,4 @@ This system gives the Digitakt two roles the current OT template doesn't cover *
 |---|---|---|
 | v1.0 | 2026-07-17 | Initial seven-phase guide; Method A rumble chain; Sends Only rule. |
 | **v1.1** | **2026-07-17** | **Performance sample system added (Part I):** device role split; vocal cut-up decision (tempo-locked → OT Flex slices, repitched stabs → DT sample locks); OT CF folder layout + reusable project template (T1–T8, Static/Flex/Thru/Master); DT Sound Pool + track template with dual resample slots; three-loop resampling flywheel (OT recorder buffers · GRP→DT bus · Ableton→CF via A2); Part-save gotcha documented; flywheel moments woven into Phases 3–7; DT probation datapoint added. |
+| **v1.2** | **2026-07-19** | **OT Track 8 reconciled to the current template:** Master OFF; T8 is a Static **LOOP C** hot-switch slot. Removed the conflicting master-track assignment and whole-mix-scene instruction. |

@@ -36,4 +36,5 @@ Load 30–50 sounds into the Sound Pool before a session.
 
 ## Sources
 
-- In-repo verified: `../guides/midi-sync.md`, `../guides/track-setup.md`, `../knowledge-base.md` (facts from the Digitakt manual).
+- Digitakt User Manual OS 1.51: USB CONFIG p.73; native sample format / Elektron Transfer conversion p.65.
+- In-repo verified: `../guides/midi-sync.md`, `../guides/track-setup.md`, `../knowledge-base.md`.
