@@ -8,6 +8,19 @@ Entry point for Codex/ChatGPT, Claude Code, and any other agent working in this 
 2. `knowledge-base.md` — canonical wiring/architecture. The authority for anything physical.
 3. The relevant `guides/*.md` for the task (MIDI sync, session workflow, track setup).
 
+## Answering a hardware "how do I…" question (do this, don't web-search first)
+
+This repo is the local answer store — the goal is to answer from disk, not burn tokens re-deriving.
+
+1. Identify the device, then **`grep devices/` for the device + a keyword** and open only that file's
+   **"How do I…"** table; also check `guides/` and `knowledge-base.md`. If the answer is there,
+   answer from it and cite the row — **do not web-search.**
+2. If it is **not captured yet**: look it up **once** from a primary source (official manual /
+   Roland/Elektron support), answer, then **append a new row** to that device's "How do I…" table
+   (`task | exact steps | source + date`). It's free to answer next time.
+3. **Never invent a button sequence.** Unverifiable → write the row with ⚠ and `source: to verify`.
+   A wrong hardware procedure is worse than none. Full protocol: `devices/README.md`.
+
 ## What this repo is
 
 The **private source of truth for the physical studio setup** — wiring, clocking, session workflow, and a dated issues log. Documentation only; no code. Do not confuse it with `~/Projects/eidetic-sample-tools` (the public CLI product).
