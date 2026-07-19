@@ -36,4 +36,4 @@ Machine types used: **Static** (long files off CF), **Flex** (into memory — sl
 
 ## Sources
 
-- In-repo verified: `../guides/midi-sync.md`, `../guides/track-setup.md`, `../knowledge-base.md` (facts sourced from the OT MKII manual).
+- [Octatrack MKII User Manual OS 1.40A](../sources/official/elektron-octatrack-mkii-user-manual-os1.40a.pdf) · in-repo verified: `../guides/midi-sync.md`, `../guides/track-setup.md`, `../knowledge-base.md`.

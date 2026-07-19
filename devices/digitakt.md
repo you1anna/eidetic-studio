@@ -37,5 +37,5 @@ Load 30–50 sounds into the Sound Pool before a session.
 
 ## Sources
 
-- Digitakt User Manual OS 1.51: USB CONFIG p.73; native sample format / Elektron Transfer conversion p.65.
+- [Digitakt User Manual OS 1.51](../sources/official/elektron-digitakt-user-manual-os1.51.pdf): USB CONFIG p.73; native sample format / Elektron Transfer conversion p.65.
 - In-repo verified: `../guides/midi-sync.md`, `../guides/track-setup.md`, `../knowledge-base.md`.

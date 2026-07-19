@@ -21,5 +21,5 @@
 
 ## Sources
 
-- Soundcraft, [*Signature 10/12/12MTK User Guide*](https://www.soundcraft.com/en/product_documents/soundcraft_signature_10-12_user_guide-pdf-10d8ee3f-0af6-42e4-8828-fb14879d879f), §§4.3–4.4, 5.1.1–5.2 (accessed 2026-07-19).
+- Soundcraft, [*Signature 10/12/12MTK User Guide*](../sources/official/soundcraft-signature-10-12-12mtk-user-guide.pdf), §§4.3–4.4, 5.1.1–5.2 (archived 2026-07-19; upstream link in [`sources/official/README.md`](../sources/official/README.md)).
 - [`../knowledge-base.md`](../knowledge-base.md) §4/§5.1.

@@ -12,6 +12,7 @@ The **single source of truth** for the physical Eidetic Studio: how it's wired, 
 | `guides/session-method-a.md` | Full session workflow: device roles, Method-A rumble, resampling, phase-by-phase cycle. |
 | `guides/track-setup.md` | Per-machine track/slot allocation and sample-folder → track mapping. |
 | `devices/` | **Per-device "how do I…" quick reference** — the local answer store for hardware operation questions (e.g. "assign the kick to Assign Out 1"). Grep here first; see `devices/README.md` for the lookup + capture protocol. |
+| `sources/official/` | Vendor manuals and searchable local extracts that substantiate the documented procedures. |
 | `issues/` | Dated log of setup faults and their fixes. |
 | `decisions/` | Dated decision records (`YYYY-MM-DD-title.md`, Decision / Rationale / Consequences). |
 

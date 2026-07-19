@@ -1,0 +1,2175 @@
+www.presonus.com
+®
+English
+Studio 192 and  
+Studio 192 Mobile
+USB 3.0 Audio Interface  
+and Studio Command Center
+Owner’s Manual
+
+
+Table of Contents
+1 Overview  — 1
+1.1  Introduction  — 1
+1.2 Studio 192 and Studio 192 Mobile  
+Hardware Features — 1
+1.3  UC Surface Features  — 2
+1.4 Studio One Artist Features  — 2
+1.5 What is in the Box  — 3
+2 Hookup  — 4
+2.1 Front Panel Connections and Controls  — 4
+2.2  Back Panel Connections  — 6
+2.3 Connection Diagrams  — 9
+2.3.1 Studio 192 — 9
+3.2.1 Studio 192 Mobile  — 10
+3 Connecting to a Computer  — 11
+3.1 Installation for Windows  — 11
+3.2 Installation for Mac OS X  — 11
+3.3 Using the Studio 192-series interfaces  
+with Popular Audio Applications  — 11
+3.4 Controlling Studio 192-Series Mic Preamps  
+from your DAW — 13
+4 UC Surface Monitor 
+ Control Software — 14
+4.1 UC Surface Launch Window  — 15
+4.2 UC Surface Mix Controls  — 16
+4.2.1 Channel Controls  — 17
+4.2.2 Channel Detail  — 17
+4.3 Dynamics Processing and EQ  — 18
+4.3.1 Dynamics Tab — 18
+4.3.2 EQ Tab — 20
+4.3.3 Fat Channel Presets  — 21
+4.4 Adding Effects — 22
+4.4.1 Editing Effects and Effects Presets  — 23
+4.4.2 Reverb and its Parameters  — 23
+4.4.3 Delay and its Parameters  — 24
+4.4.4 Reverb Effects Presets Library  — 25
+4.4.5 Delay Effects Preset Library  — 25
+4.4.6 Digital Effects Types  — 26
+4.5 Main Options  — 26
+4.6 Quick Controls: Talkback, Scenes,  
+and More — 27
+4.6.1 Talkback  — 27
+4.6.2 Quick Scenes, Mute Groups,  
+and Scene Library  — 28
+4.7 The Settings Page  — 30
+4.7.1 Device Settings Tab:  
+System Settings  — 30
+5 Studio One Artist Quick Start  — 31
+5.1 Installation and Authorization  — 31
+5.2 Setting Up Studio One  — 32
+5.2.1 Configuring Audio Devices  — 33
+5.2.2 Configuring MIDI Devices  — 34
+5.3 Creating a New Song  — 37
+5.3.1 Configuring Your I/O — 37
+5.3.2 Creating Audio and MIDI Tracks  — 39
+5.3.3 Recording an Audio Track  — 40
+5.3.4  Adding Virtual Instruments  
+and Effects — 41
+5.4 Monitor Mixing with Z-Mix  — 42
+5.4.1 Z-Mix Functions  — 43
+5.4.2  Punching In  — 46
+6 Technical Information  — 48
+6.1 Specifications  — 48
+7 Warranty Information  — 50
+7.1 How Consumer Law Relates  
+To This Warranty — 50
+
+
+
+
+
+1
+1 Overview  
+1.1  Introduction
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+1 Overview
+1.1  Introduction
+Thank you for purchasing the PreSonus Studio 192-series USB 3.0 Audio 
+Interface and Studio Command Center. PreSonus Audio Electronics designed the 
+Studio 192-series interfaces utilizing high-grade components to ensure optimum 
+performance that will last a lifetime. Loaded with high-headroom, Class A, 
+digitally controlled XMAX™ microphone preamplifiers; a 26x32 or 22x26 USB 3.0 
+recording and playback engine; talkback; monitor functions; advanced onboard 
+DSP features; and more, the Studio 192-series interfaces breaks new boundaries 
+for musical performances and productions. All you need is a computer with a 
+USB 2.0 or 3.0 connection, a few microphones and cables, powered speakers, 
+and your creativity, and you’re ready to record, mix, and release your music.
+We encourage you to contact us at 1-225-216-7887 (9 a.m. to 5 p.m. U.S. 
+Central Standard Time) with questions or comments regarding your PreSonus 
+Studio 192-series interface. PreSonus Audio Electronics is committed to 
+constant product improvement, and we highly value your suggestions. We 
+believe the best way to achieve our goal of constant product improvement 
+is by listening to the real experts: our valued customers. We appreciate 
+the support you have shown us through the purchase of this product and 
+are confident that you will enjoy your Studio 192-series interface!
+About this manual: We suggest that you use this manual to familiarize yourself 
+with the features, applications, and correct connection procedures for your Studio 
+192-series interface before trying to connect it to your computer. This will help you 
+avoid problems during installation and setup. This manual covers the operation of both 
+the Studio 192 and Studio 192 Mobile. Whenever a functional difference is described, 
+the Studio 192’s features will be called out first, followed by the Studio 192 Mobile.
+Throughout this manual you will find Power User Tips that can quickly 
+make you a Studio 192 and Studio 192 Mobile expert. In addition to the 
+Power User Tips, you will find an assortment of tutorials throughout this 
+manual. These tutorials are designed to help you get the most out of your 
+Studio 192-series interface and its suite of companion software.
+1.2 Studio 192 and Studio 192 Mobile Hardware Features
+ • Pristine 24-bit audio up to 192 kHz
+ • 8/2 digitally controlled XMAX microphone preamps
+ • Zero-latency monitoring with StudioLive™ Fat Channel processing on every analog 
+input plus speaker switching and talkback control from Studio One or UC Surface
+ • Individual stereo main balanced outputs with mono, dim, mute, level control
+ • Onboard talkback mic (Studio 192)
+ • Simultaneous I/O up to 26/22 inputs, 32/26 outputs (8 x 14 / 4 x 8 at 192 kHz)
+ • Flawless analog signal path with top-quality 118 dB digital conversion 
+ • 8/4 balanced outputs for flexible monitoring
+ • Two/one high-volume headphone amps with dedicated DACs
+ • Tight integration with Studio One version 3 for multitrack music production
+ • Compatible with most music software for Mac® and Windows®
+ • Universal USB 3.0 interface (USB 2.0 compatible)
+
+2
+1 Overview  
+1.3  UC Surface Features
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+1.3  UC Surface Features
+UC Surface is a powerful monitor-mixing application that allows you to add 
+professional dynamics processing, EQ, and effects to your analog inputs; create 
+zero-latency monitor mixes; and control talkback and monitoring functions.
+ • Contextual-based navigation for quick, intuitive access to all mixing functions
+ • Remote control preamp level and 48V phantom power
+ • Contextual preset system
+ • Quickly access all monitor mixes and the main mix
+ • Add reverb and delay to monitor mixes
+ • StudioLive Fat Channel processing available on every analog input
+ • Remote control speaker switching, talkback, dim, and mute
+1.4 Studio One Artist Features
+All PreSonus audio interfaces include PreSonus Studio One Artist recording 
+software, which comes with more than 4 GB of plug-ins, loops, and samples, 
+giving you everything you need for music recording and production. All monitor 
+mixing and preamp control functions for your Studio 192-series interface 
+are integrated into Studio One’s unique Z-Mix feature. The Quick Start Guide 
+in Section 5 of this manual will help you configure your Studio 192-series 
+interface and provide you with a brief overview of Studio One’s features.
+ • Z-Mix provides complete integrated control over all 
+Studio 192-series interface functions 
+ • Unlimited track count, inserts, and sends
+ • 20 high-quality, Native Effects™ plug-ins; amp modeling (Ampire XT), 
+delay (Analog Delay, Beat Delay), distortion (RedLightDist™), dynamics 
+processing (Channel Strip, Compressor, Gate, Expander, Fat Channel, Limiter, 
+Tricomp™), equalizer (Channel Strip, Fat Channel, Pro EQ), modulation 
+(Autofilter, Chorus, Flage, Phaser, X-Trem), reverb (Mixverb™, Room Reverb), 
+and utility (Binaural Pan, Mixtool, Phase Meter, Spectrum Meter, Tuner)
+ • More than 4 GB of loops, samples, and instruments, featuring: Presence™ 
+XT virtual sample player, Impact virtual drum machine, SampleOne™ 
+virtual sampler, Mai Tai virtual polyphonic analog modeling synth, 
+Mojito virtual analog-modeled subtractive synthesizer
+ • Innovative and intuitive MIDI mapping
+ • Powerful drag-and-drop functionality for faster workflow
+ • Available for Mac OS X and Windows
+
+3
+1 Overview  
+1.5 What is in the Box
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+1.5 What is in the Box
+You Studio 192-series package contains the following:
+ • One PreSonus Studio 192-series USB 3.0 Audio 
+Interface and Studio Command Center
+ • PreSonus Studio 192-series Quick Start Guide 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ • Studio One Key Commands Guide 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ • 6’ (1.8m) USB 3.0 cable 
+ 
+ 
+ • External power supply 
+ 
+ 
+ 
+ 
+ 
+ 
+Power User Tip: All companion software and drivers for your PreSonus 
+Studio 192 and Studio 192 Mobile are available for download from your My 
+PreSonus user account. Simply visit http://my.presonus.com and register 
+your Studio 192-series interface to receive downloads and licenses.
+
+
+4
+2 Hookup  
+2.1 Front Panel Connections and Controls
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+2 Hookup
+2.1 Front Panel Connections and Controls
+Microphone inputs. Your Studio 192-series interface is equipped 
+with eight/two digitally controlled PreSonus XMAX microphone 
+preamplifiers for use with all types of microphones. The XMAX design 
+provides a Class A input buffer, followed by a dual-servo gain stage. 
+This arrangement results in ultra-low noise and wide gain control, 
+allowing you to boost signals without increasing background noise.
+The six analog inputs on the rear panel of the Studio 192 feature 
+combo jacks. This convenient connector accepts either a ¼” phone plug 
+or an XLR plug. Mic Inputs 2-6 are located on the rear of the unit.
+Instrument inputs. The ¼-inch TS connectors on Channels 1 and 2 
+are for use with instruments (guitar, bass, etc.). When an instrument 
+is plugged into the instrument input, the mic preamp is bypassed, 
+and the signal is routed to the instrument preamplifier stage.
+Power User Tip: Active instruments are those that have an internal preamp or a 
+line-level output. Active instruments should be plugged into a line input rather than 
+into an instrument input. Plugging a line-level source into one of the instrument 
+inputs on the front of the Studio 192 and Studio 192 Mobile not only risks damage 
+to these inputs but also results in a very loud and often distorted audio signal.
+Please note: As with any audio input device, plugging in a microphone or an instrument, 
+or turning phantom power on or off, will create a momentary spike in the audio 
+output of your Studio 192-series interface. Because of this, we highly recommend that 
+you turn down the channel trim before changing connections or turning phantom 
+power on or off. This simple step will add years to life of your audio equipment.
+Preamp controls. These controls allow you to adjust the gain and enable 
+phantom power for every onboard microphone and instrument preamp.
+ • Preamp Gain: Use this control to adjust the level of microphone 
+preamps 1-8/2 and instrument preamps 1 and 2. The display 
+to the far right will show the current trim level.
+ • Next / Prev: Use these buttons to select the microphone preamp 
+you wish to control. The display to the right of the trim control 
+will show which preamp is currently being controlled.
+
+
+5
+2 Hookup  
+2.1 Front Panel Connections and Controls
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+ • 48V: The Studio 192-series interfaces provide 48V phantom power 
+for each microphone preamp. This feature can be individually 
+enabled for each channel, using this button. When 48V is active, the 
+blue LED at the top of that channel’s meters will illuminate.
+WARNING: Phantom power is only required for condenser microphones and 
+can severely damage dynamic mics, especially ribbon mics. Therefore, switch 
+phantom power off for all channels where it is not required.
+12
+3 Ground
+XLR
+[+48V]
+[+48V]
+XLR connector wiring for phantom power: 
+Pin 1 = GND  Pin 2 = +48V  Pin 3 = +48V
+Talkback mic and controls (Studio 192). The Studio 192 features an onboard 
+talkback microphone. Press the Talk button to patch the signal to the selected mixes. 
+To control the level of the onboard Talkback mic, select the “c” (Comm) channel in the 
+preamp control section and use the encoder to adjust the level.
+Power User Tip: Routing for the talkback microphone can be controlled from UC Surface. 
+Please refer to Section 4 for more information. Studio 192 Mobile users can opt to use 
+one of their analog inputs for talkback functions within UC Surface..
+Input meters. These eight-LED meters show the input level of the analog 
+inputs on your Studio 192-series interface. The green LEDs will illuminate when 
+the input signal ranges from -50 dBFS to -6 dBFS. The yellow LEDs will 
+illuminate when the input signal ranges from -4 dBFS to -2 dBFS. The red Clip 
+LED will illuminate when your input signal reaches -0.5 dBFS. At this level, the 
+signal will begin to overload the analog-to-digital converters and exhibit signs 
+of clipping. Use the gain controls to keep the signal below this level. 
+ 
+Main. The main knob controls the output level for the main outputs on the back 
+of the Studio 192-series interface and has a range of -80 dB to 0 dB. This control 
+provides attenuation only. 
+ 
+ 
+ 
+ 
+ 
+ • Meters. These meters display the signal level received from Driver returns 1 and 2 
+(Main Left/Right). These meters have the same range as the input meters (-50 
+dBFS to -0.5 dBFS) and are before the main output level control. 
+ 
+ 
+ 
+ 
+ • Dim / Mute (Studio 192). This button controls both the Dim and Mute functions 
+for the Main Outputs. Press the button and release it to lower the outputs signal 
+by 20 dB. Press and hold the button to Mute the Main Output signal. The button 
+will illuminate yellow when Dim is active and red when Mute is active. These 
+functions are available from with UC Surface for both Studio 192 and Studio 192 
+Mobile users.
+ • Mono (Studio 192). Press this button to sum the Main stereo output signal to 
+mono. The mono function is available from with UC Surface for both Studio 192 
+and Studio 192 Mobile users.
+Power User Tip: Use the Mono feature to verify mono compatibility 
+and to check for phase cancellation in your stereo mixes.
+
+
+6
+2 Hookup  
+2.2  Back Panel Connections
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+Headphones Outputs. Your Studio 192-series interface provides two/one 
+headphone outputs, each with its own level control. Each headphone output is 
+provided with its own unique output stream to route audio directly from your DAW 
+(Studio 192: playback streams 11-12 and 13-14, Studio 192 Mobile: playback streams 
+7-8). From UC Surface, any mix can be routed to either headphone output. 
+ 
+ 
+Cue (Studio 192 Mobile). The Cue button allows you to switch between two mixes. 
+When UC Surface is not accessed, this will toggle between the Headphone streams 
+(7/8) and the Main Mix streams (1/2). When UC Surface is active, you can choose to 
+source between any two mixes.
+Power button and Sync light. The lighted ring around the power button of your 
+Studio192-series interface is a clock source / sync indicator. It lets you know if you 
+unit is receiving word clock correctly.
+ • Blue. When this light is blue, your Studio 192-series interface is 
+correctly synced via USB, word clock, ADAT, or S/PDIF
+ • Flashing red and blue. When this light flashes between blue 
+and red, your Studio 192-series interface is either not synced to 
+your computer or its external clock source is not present.
+Power User Tip: Word clock is the timing signal with which digital devices 
+sync frame rates. Proper word clock sync prevents digital devices from having 
+pops, clicks, and distortion in the audio signal due to mismatched digital audio 
+transmission. In general, you will use your Studio 192-series interface as the 
+master clock in your studio; it provides high-quality word clock for this purpose. 
+However, if you would like to use another device as the master clock, you can 
+set the input source for clocking in UC Surface (see Section 4.6 for details). 
+2.2  Back Panel Connections
+Line Inputs 3-8/4. The ¼-inch TRS connectors on Channels 3-8/4 are for use with 
+line-level devices. These inputs are scaled to accept line-level signals up to +18 dBFS.
+Power User Tip: When these inputs are engaged, the microphone preamp circuit is 
+bypassed completely, and no trim control is available. Typical examples of line-level 
+connections are synthesizer outputs, signal processors, and stand-alone mic preamps 
+and channel strips. Use the output level control on your line-level device to adjust its level. 
+
+
+7
+2 Hookup  
+2.2  Back Panel Connections
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+Line Output 1-8/4. The Studio 192-series interfaces have eight/four line 
+balanced line outputs to route to external devices, such as headphone 
+amps, signal processors, and additional monitors. Each output has 
+an independent playback stream (playback streams 3-10/6).
+Main Outs. These are the main outputs for the Studio 192-series interface. The 
+output level of the Main Outputs is controlled by the Main level control on the front 
+of the unit. Like the line outputs, the main outputs have independent playback 
+streams (playback streams 1-2). 
+ 
+ 
+ 
+ 
+Clock In and Out. These BNC connections allow the Studio 192-series interface to 
+receive and transmit word clock to and from other digital audio devices.
+Power User Tip: In UC Surface, when using the BNC Clock input, you will need to set  
+“BNC” as the Clock Source and set the sample rate to correspond to that of the external 
+device. See Section 4.1 for details. A 75Ω BNC word clock cable is required to achieve 
+proper sync. 
+ 
+ 
+S/PDIF In and Out. The S/PDIF connections allow two channels of audio to be 
+transmitted and received at rates up to 24-bit, 96 kHz. The S/PDIF I/O also allows  
+the Studio 192-series interfaces to send and receive word clock to external  
+digital devices.
+Power User Tip: In UC Surface, you will need to set “S/PDIF” as the Clock Source and the 
+sample rate to correspond to the external device when using an external S/PDIF device as 
+your master clock. See Section 4.1 for details. 
+ 
+
+
+8
+2 Hookup  
+2.2  Back Panel Connections
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+ADAT – S/MUX In and Out. These are the ADAT – Dual S/MUX connections 
+for your external digital devices. When recording or playing back at 44.1 
+or 48 kHz, each ADAT I/O will provide 8 of the 16 available channels 
+consecutively, from left to right. When recording or playing back at 88.2 or 
+96 kHz, each connection will provide four of the available eight channels. 
+These inputs and outputs do not function at 176.4 or 192 kHz:
+ADAT 1 Input ADAT 2 Input ADAT 1 Output ADAT 2 Output
+44.1 / 48 kHz Channels 11-18/7-14 Channels 19-26/15-22 Channels 17-24/11-18 Channels 24-32/19-26
+88.2 / 96 kHz Channels 11-14/7-10 Channels 15-18/11-14 Channels 17-20/11-14 Channels 21-24/15-18
+When connecting a DigiMax DP88 to your Studio 192-series interface, the ADAT 
+connections will also send and receive preamp control information for the DigiMax 
+DP88 so that it can be controlled directly from UC Surface or Studio One. 
+Power User Tip: In UC Surface, you will need to set “ADAT 1” as the Clock 
+Source and the sample rate to correspond to the external device when 
+using an external ADAT device as your master clock. See Section 4.1 for 
+details. The ADAT 2 input cannot be used to receive word clock.
+USB 3.0 port. Use this port to connect your Studio 192-series interface to your 
+computer. While the Studio 192-series interface is a true USB 3.0 device, it is fully 
+backwards compatible with USB 2.0 connections. Do not connect your Studio 
+192-series interface to a USB 1.1 or lower connection on your computer. 
+ 
+ 
+ 
+ 
+Power Connection. This is where you connect the Studio 192-series interface’s 
+external power supply. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+9
+2 Hookup  
+2.3 Connection Diagrams
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+2.3 Connection Diagrams
+2.3.1 Studio 192
+Studio 192
+DigiMax DP88
+Preampli/f_iers and
+Channel Strips
+Main Reference (A)
+Alt. Reference (B)
+Sub (C)
+
+10
+2 Hookup  
+2.3 Connection Diagrams
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+3.2.1 Studio 192 Mobile
+Studio 192 Mobile
+DigiMax DP88
+Keyboard
+Mics
+Guitar
+Mic
+Computer running
+Studio One 
+
+11
+3 Connecting to a Computer 
+3.1 Installation for Windows
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+3 Connecting to a Computer
+Your Studio 192-series interface is a powerful USB 3.0 audio interface that 
+is loaded with professional audio tools and flexible monitoring controls. 
+Before connecting to a computer, please visit www.presonus.com/products/
+Studio-192/techspecs to verify the latest system requirements. 
+Note: The speed of your processor, amount of RAM, and capacity, size, 
+and speed of your hard drives will greatly affect the overall performance 
+of your recording system. A faster processor and more RAM can reduce 
+signal latency (delay) and improve overall performance.
+The Windows ASIO driver and UC Surface installer for OS X and Windows are 
+available for download from your My PreSonus user account. To begin, you 
+must first visit http://my.presonus.com, create or log into your user account, and 
+register your Studio Studio 192 or Studio 192 Mobile. Once registered, all software 
+downloads will be available from within your My PreSonus user account. 
+3.1 Installation for Windows
+Connect your Studio 192-series interface to an available USB 2.0 or 3.0 
+port and launch the installer. The installer will take you through each step 
+of the installation process. This application will install the ASIO and WDM 
+drivers as well as UC Surface. Please read each message carefully.
+It is recommended that you quit all applications before you start the installation. 
+The Studio 192-series installer will take you through each step of the 
+installation process. Please read each message carefully so that you 
+do not connect your Studio 192-series interface too soon.
+Power User Tip: It is recommended that you temporarily disable or turn off 
+any anti-virus programs you have running to prevent installation issues.
+3.2 Installation for Mac OS X
+Your Studio 192-series interface is a class-compliant Core Audio device in OS X. 
+No driver installation is necessary. However, to take full advantage of your Studio 
+192-series interface’s mixing and monitoring capabilities, you must install UC Surface. 
+Power User Tip: When installation is complete, you will find the UC 
+Surface application in your Applications folder. It is recommended 
+that you place this in your Dock for easy access.
+3.3 Using the Studio 192-series interfaces with Popular Audio Applications
+Complete setup instructions for Studio One Artist and a brief tutorial on 
+its features can be found in Section 5 of this manual. However, you can use 
+your Studio 192-series interface with any audio-recording application that 
+supports Core Audio or ASIO. Please consult the documentation that came 
+with your audio application for specific instructions on how to select the Studio 
+192-series interface driver as the audio-device driver for your software.
+Below are basic driver-setup instructions for a few popular audio applications.
+Ableton Live
+1. Launch Ableton Live.
+2. Go to Options | Preferences | Audio.
+3. Choose Driver Type: Asio | Audio Device: ASIO PreSonus Studio 192.
+4. Go to Input Config: Enable and select the desired Input channels.
+5. Go to Output Config: Enable and select the desired Output channels.
+
+12
+3 Connecting to a Computer 
+3.3 Using the Studio 192-series interfaces with Popular Audio Applications
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+Apple Logic
+1. Launch Logic.
+2. Go to Logic | Preferences | Audio.
+3. Click on the Devices Tab.
+4. On the Core Audio tab, check Enabled.
+5. Select PreSonus Studio 192 from the device menu.
+6. You will be asked if you’d like to relaunch Logic. Click try (re)launch.
+7. Your Studio 192 features custom I/O labels for faster workflow. To enable 
+these labels for use in Logic, go to Options | Audio | I/O Labels.
+8. The second column in the pop-up window will be named 
+Provided by Driver. Activate each of these labels for your 
+Studio 192. When you are done, close this window.
+Avid Pro Tools 10+
+1. Launch Pro Tools.
+2. Go to Setup | Hardware and select Studio 192 from the Peripherals list. Click OK.
+3. Go to Setup | Playback Engine and select Studio 192 from 
+the menu at the top of the window. Click OK. 
+Cakewalk Sonar 
+1. Launch Sonar.
+2. Go to Options | Audio... and click on the Advanced tab.
+3. Change the Driver Mode to “ASIO.” (Note: Using WDM, rather than 
+ASIO, for pro audio applications is not recommended.)
+4. Click the “OK” button.
+5. Restart Sonar.
+6. Go to Options | Audio... and click on the Drivers tab.
+7. Highlight all input and output drivers beginning with “PreSonus Studio 192.”
+8. Go to Options | Audio... and click on the General tab.
+9. Set the Playback Timing Master to “PreSonus Studio 192... DAW Out 1.”
+10. Set the Recording Timing Master to “PreSonus Studio 192... Mic/Inst 1.”
+Steinberg Cubase
+1. Launch Cubase.
+2. Go to Devices | Device Setup.
+3. Select “VST Audio System” from the Devices column in the Device Setup.
+4. Select PreSonus Studio 192 from the ASIO Driver dropdown list.
+5. Click “Switch” to begin using the Studio 192 driver.
+6. Once you have successfully changed the driver, go to Devices | 
+VST Connections to enable your input and output buses.
+
+13
+3 Connecting to a Computer 
+3.4 Controlling Studio 192-Series Mic Preamps from your DAW
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+3.4 Controlling Studio 192-Series Mic Preamps from your DAW
+Studio 192-series microphone preamps can be controlled from the front panel, UC 
+Surface, or Studio One. If you configure your Studio 192-series interface as a MIDI 
+device inside your DAW application, you can also control trim and phantom power 
+from within your DAW environment and store those settings with your session.
+Below is a chart explaining the MIDI controls for your Studio 192-series preamps:
+Preamp MIDI Channel Trim Level Phantom Power ON /OFF
+Preamp 1 Channel 1 CC #7 CC #14 (0 to 63 = On, 64 to 127 = Off)
+Preamp 2 Channel 2 CC #7 CC #14 (0 to 63 = On, 64 to 127 = Off)
+Preamp 3  
+(Studio 192) Channel 3 CC #7 CC #14 (0 to 63 = On, 64 to 127 = Off)
+Preamp 4  
+(Studio 192) Channel 4 CC #7 CC #14 (0 to 63 = On, 64 to 127 = Off)
+Preamp 5  
+(Studio 192) Channel 5 CC #7 CC #14 (0 to 63 = On, 64 to 127 = Off)
+Preamp 6  
+(Studio 192) Channel 6 CC #7 CC #14 (0 to 63 = On, 64 to 127 = Off)
+Preamp 7  
+(Studio 192) Channel 7 CC #7 CC #14 (0 to 63 = On, 64 to 127 = Off)
+Preamp 8  
+(Studio 192) Channel 8 CC #7 CC #14 (0 to 63 = On, 64 to 127 = Off)
+For more information on controlling your preamps 
+from Studio One, please review Section 5.4.
+
+14
+4 UC Surface Monitor Control Software 
+3.4 Controlling Studio 192-Series Mic Preamps from your DAW
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+4 UC Surface Monitor Control Software
+UC Surface is a powerful monitor control software that provides everything 
+you need to create high-quality monitor mixes and more with your 
+Studio 192-series interface, using all of the processing features of a StudioLive 
+AI-series digital mixer. These monitoring functions are completely integrated 
+inside Studio One. UC Surface allows users of other popular DAW applications 
+to access these functions. UC Surface provides control of channel, effects return, 
+and Mix output levels; Fat Channel parameters, and effects send levels. 
+It is vital to remember that lowering the channel fader in UC Surface 
+will not lower the signal in your host application, so it is possible to clip 
+the recording without clipping the monitor mix. You must set the level 
+for the recording using the trim controls in UC Surface or the preamp 
+control section on the face of the Studio 192-series interface.
+A quick note on playback streams: The channels labeled “DAW” in 
+UC Surface carry a playback stream from your host application (DAW). 
+Traditionally, if you wanted to route a track in your DAW to a physical 
+output on your interface, you assigned this output in your host application. 
+Because UC Surface provides much more flexible routing, you can now route 
+this track to one output or every output, by itself or as part of a mix.
+UC Surface is designed to verify that your Studio 
+192-series interface has the correct firmware version installed. You will 
+be prompted if your Studio 192-series interface needs its firmware 
+updated. Click on the Update Firmware button to begin the update.
+WARNING: Do not power off or disconnect your Studio 192-series interface 
+during the firmware update. Once the firmware update is successfully 
+completed, you will be alerted and instructed to reboot your device. Please make 
+sure to close all applications before running the firmware updater.
+
+
+15
+4 UC Surface Monitor Control Software 
+4.1 UC Surface Launch Window
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+4.1 UC Surface Launch Window
+Sample Rate. Changes the sample rate.
+You can set the sample rate to 44.1, 48, 88.2, or 96 kHz. A higher sample 
+rate will increase the fidelity of the recording but will increase the file size 
+and the amount of system resources necessary to process the audio.
+At 44.1 and 48 kHz, all DSP functions are available. At 88.2, 96, 
+176.4, and 96 kHz, Fat Channel processing will be available on 
+analog inputs only and the delay bus will be disabled.
+Safe Mode (Windows only). Adjusts the Input Buffer Size.
+These modes allow you to adjust the input buffer size 
+to optimize performance for your computer. 
+When adjusting the safe mode, the block size will be adjusted 
+automatically to provide the best performance.
+Clock Source. Sets the digital clock source.
+From this menu, you can set the clock source for your Studio 
+192-series interface: Internal, External S/PDIF, or External ADAT. 
+Please note: Only ADAT 1 can be used as a clock source 
+input for your Studio 192-series interface.
+Block Size. Sets the buffer size.
+From this menu, you can set the buffer size from 32 to 4,096 samples (Mac), or 64 
+to 8192 samples (Windows). Lowering the buffer size will lower latency; however, 
+this will also increase performance demands on your computer. In general, you will 
+want to set the buffer size as low as your system can safely support. If you begin 
+to hear pops, clicks, or distortion in your audio path, try raising the buffer size.
+A Note for Windows users: When adjusting the block size, the Safe 
+Mode will automatically change to provide the best performance.
+
+16
+4 UC Surface Monitor Control Software 
+4.2 UC Surface Mix Controls
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+4.2 UC Surface Mix Controls
+1
+5
+3
+6
+2
+4
+1. Mix Select. The Mix Select buttons allow you to choose the mix you’d 
+like to control (Auxes, Mains, FX). UC Surface provides a mix for each 
+of the two effects buses. The returns for these effects are available 
+in each mix to customize the amount of reverb and delay.
+2. Copy Mix. Copying the current mix allows you to quickly 
+set up multiple mixes. Press the Copy Mix button and then 
+click on the desired Mix Select button to paste it. 
+3. Mix Masters. The Mix Masters button allows you to view only the Master fader for 
+every monitor. Soloing or muting a group master will solo or mute all the channels 
+in the mix. To close this view, click or tap on the Mix Masters button again.
+4. Flex Fader. The fader immediately to the left of the Mix Select 
+buttons controls the output level of the currently selected mix. 
+5. Show/Hide Main Fader. Click this button to show or hide the Main 
+fader. Hiding the Main fader can free up screen real estate on smaller 
+displays. When the Main fader is hidden, you can still adjust the main 
+mix level by selecting the main mix and using the Flex fader.
+6. Main Fader. The fader for the main mix is accessible to the right 
+of the Mix Select area. As previously mentioned, this fader can be 
+hidden and the Flex fader for the main mix can be used instead.
+
+17
+4 UC Surface Monitor Control Software 
+4.2 UC Surface Mix Controls
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+4.2.1 Channel Controls
+1. Fat Channel Select. Opens the Fat Channel controls for the channel/mix. For 
+Inputs 1-8/4 and 11/7-18/14, this microview displays an overview of the EQ curve 
+you set in the Fat Channel. See Sections 4.2 for more information about the Fat 
+Channel section and its functions.
+2. Solo button. Turns soloing on and off.
+3. Mute button. Turns muting on and off.
+4. Pan controls. The Pan control sets the channel’s relative position in the 
+left/right stereo mix. When a pair of channels is stereo linked, the Pan 
+control sets the spread of the channels in the left/right stereo mix.
+5. Input Clip indicator. This indicates that your input 
+has exceeded 0 dB FS. Click to clear. 
+6. Level meter. Displays the pre-fader level of each channel.
+7. Channel fader. Controls the overall level of the channel. 
+ 
+ 
+ 
+4.2.2 Channel Detail
+When an input channel is selected, the following controls 
+will be available at the far left of the Fat Channel:
+3
+4
+1
+2
+1. Channel name. To give each a custom name, simply 
+click on the default name to open a text field.
+2. Preamp controls. For all analog input channels, phantom power 
+and polarity control are available from the Fat Channel. 
+Power User Tip: The Polarity control inverts the polarity of the selected 
+channel’s preamp signal by 180°. The Polarity button can be used to correct 
+audio signals that are out of phase and are canceling/reinforcing each 
+other. When recording with more than one open microphone, use the 
+polarity invert to combat phase cancellation between microphones.
+3. Link. Stereo links channels in odd/even pairs
+4. Channel Settings. Click on the Channel Settings button to assign 
+an icon to your channel. From the Channel Settings page you can 
+also choose to record the post-Fat Channel processing signal. 
+By default, all input signals are recorded pre-processing.
+1
+2
+3
+4
+5
+6
+7
+
+18
+4 UC Surface Monitor Control Software 
+4.3 Dynamics Processing and EQ
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+4.3 Dynamics Processing and EQ
+Every analog input on your Studio 192-series interface is equipped with Fat 
+Channel dynamics processing and filtering. Fat Channel processing is also available 
+on the ADAT 1 input channels at 44.1 and 48 kHz. The Fat Channel’s processing 
+section consists of five parts: High Pass filter, Noise Gate, Compressor, Limiter, 
+and parametric EQ. Each can be turned on or off and controlled separately. This 
+processing is global across all mixes and only available to the eight analog inputs. 
+The signal flows as follows: 
+ 
+ 
+4.3.1 Dynamics Tab
+The dynamics processing module controls (Noise Gate, Compressor, 
+and Limiter) are available on the Dynamics Tab.
+81
+2
+3
+4 5 6 7
+1. Gate On/Off Button. Engages/disengages the gate 
+for the selected analog input channel. 
+2. Gate Threshold. Sets the level at which the gate opens. Essentially, all 
+signals above the threshold setting are passed through unaffected, whereas 
+signals below the threshold setting are reduced in level by the amount 
+set by the range control. You can set the threshold from 0 to -56 dB.
+3. Gate Range. Sets the amount of gain reduction that the gate 
+will produce. The range can be set from 0 to -86 dB. Note: Range 
+control is not available when using the expander.
+4. Gate Key Filter. Sets the frequency at which the gate will open. Setting a 
+specific frequency, in addition to a specific decibel level, provides more sonic 
+shaping. The key filter can be triggered by the selected channel’s or bus’s 
+signal or by sidechaining a channel and using its signal as the source. 
+Power User Tip: A properly set key filter on a gate can greatly improve the overall 
+sound quality of a mix. For example, if you are inserting a gate on a snare-drum 
+mic, you may get enough bleed from the kick drum to open the gate. This is 
+where a key filter can come in handy. By setting the key filter to remove some of 
+those low frequencies, the gate won’t be as apt to open for the kick drum. 
+5. Gate Attack. Sets the rate at which the gate opens on the selected 
+channel or output. A fast attack rate is crucial for percussive instruments. 
+Slow-rising signals such as vocals and bass guitar require a slower 
+attack; with these signals, a faster attack can cause an audible click. All 
+gates have the ability to click when opening but a properly set gate 
+will never click. You can set the attack time from 0.2 to 150 ms. 
+Hi-Pass
+ Limiter
+EQ
+Ø
+ Noise Gate
+ Compressor
+
+19
+4 UC Surface Monitor Control Software 
+4.3 Dynamics Processing and EQ
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+6. Gate Release. The release sets the rate at which the gate for the selected 
+channel closes. Gate-release times should typically be set so that the natural 
+decay of the instrument or vocal being gated is not affected. Shorter release 
+times help to clean up the noise in a signal but may cause “chattering“ 
+with percussive instruments. Longer release times usually eliminate 
+chattering and should be set by listening carefully for the most natural 
+release of the signal. The release time can be set from 0.05 to 2 seconds.
+7. Gate Expander button. UC Surface allows you to choose 
+between an expander and a noise gate for each channel or 
+output. By default, the Expander button will be enabled.
+Power User Tip: In practice, expanders and noise gates are used almost 
+identically. The main difference is that an expander is smoother and more 
+gradual, so that it is easier to set the attack and release times correctly.
+8. Gate Graph. This graph shows the point at which the gate 
+threshold affects the signal. You can either use this graph to adjust 
+the threshold or the dedicated threshold control (#2).
+91
+2
+3
+4 5 6 1110
+87
+1. Compressor On/Off. Turns the compressor on and 
+off for the selected analog input channel.
+2. Compressor Threshold. Sets the compressor threshold for the selected channel 
+or output bus. When the signal’s amplitude (level) exceeds the threshold 
+setting, the compressor engages. The threshold can be set from -56 to 0 dB.
+3. Ratio. Sets the compression ratio (or slope) for the selected channel or output 
+bus. The ratio sets the compression slope, which is a function of the output 
+level versus the input level. For example, if you have the ratio set to 2:1, any 
+signal levels above the threshold setting will be compressed at a ratio of 
+2:1. This means that for every 2 dB of level increase above the threshold, the 
+compressor’s output will only increase 1 dB. The ratio can be set from 1:1 to 14:1.
+4. Compressor Makeup Gain. Sets the amount of makeup gain for the selected 
+channel or output bus. When compressing a signal, gain reduction usually results 
+in an overall attenuation of level. The gain control allows you to restore this 
+loss in level and readjust the volume to the pre-compression level (if desired). 
+You can adjust Makeup Gain from 0 dB (no gain adjustment) to +28 dB.
+5. Compressor Attack. Sets the compressor attack for the selected channel. Attack 
+sets the speed at which the compressor acts on the input signal. A slow attack 
+time (fully clockwise) allows the beginning component of a signal (commonly 
+referred to as the initial transient) to pass through, uncompressed, whereas a fast 
+attack time (fully counterclockwise) triggers compression immediately when a 
+signal exceeds the threshold. You can set the attack from 0.2 to 150 milliseconds.
+
+20
+4 UC Surface Monitor Control Software 
+4.3 Dynamics Processing and EQ
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+6. Compressor Release. Sets the compressor release for the selected channel 
+or output bus. This sets the length of time the compressor takes to return 
+the gain reduction back to zero (no gain reduction) after crossing below the 
+compression threshold. Release can be set from 40 to 1,000 milliseconds.
+Power User Tip: Very short release times can produce a choppy or “jittery” sound, 
+especially when compressing instruments that have a lot of low-frequency 
+components, such as bass guitar. Very long release times can result in an 
+overcompressed, or “squashed, ” sound. All ranges of release can be useful, however, 
+and you should experiment to become familiar with different sonic possibilities.
+7. Auto Mode button. When Auto mode is active, the Attack and Release 
+controls become inoperative, and a preprogrammed attack and release 
+curve is used. In this mode, the attack is set to 10 ms, and the release is set to 
+150 ms. All other compressor parameters can still be adjusted manually.
+8. Soft Knee toggle button. Engages soft-knee compression. In normal operating 
+mode, the compressor is set for hard-knee compression, meaning that the 
+gain reduction applied to the signal occurs as soon as the signal exceeds the 
+level set by the threshold. When the Soft Knee button is engaged, the onset of 
+gain reduction occurs gradually after the signal has exceeded the threshold.
+9. Compressor graph. This graph shows the point at which the 
+compressor threshold affects the signal. You can either use this graph 
+to adjust the threshold or the dedicated threshold control (#2).
+10. Limiter On/Off. Turns on the limiter for the selected input channel. The ratio is ∞:1.
+11. Limiter Threshold. Sets the threshold of the limiter for the selected 
+channel. When the signal’s amplitude (level) exceeds the threshold setting, 
+the limiter is engaged. The threshold can be set from -56 to 0 dB.
+4.3.2 EQ Tab
+The EQ tab displays the filtering controls for the highpass 
+filter and four-band fully parametric EQ.
+1. Equalizer On/Off. Turns EQ on or off for the selected analog input channel. 
+2. EQ Band Select. Opens the controls for the selected EQ band.
+ • EQ Band On/Off. Enables/disables the currently selected EQ band.
+ • EQ Band controls. When each EQ band is selected, 
+the following controls will be available:
+ - Shelf EQ On/Off (Low and High band only). Enabling the Shelf 
+button turns the Low or High band into a low-shelving EQ. A 
+low shelving EQ is like a bass-control knob on a stereo, while 
+a high shelving EQ is like the treble control. In this mode, the 
+Center Frequency control selects the shelving frequency.
+1
+2
+3 4
+
+21
+4 UC Surface Monitor Control Software 
+4.3 Dynamics Processing and EQ
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+ - EQ Frequency. Adjusts the center frequency of each band.
+ - EQ Gain. Sets level of the center frequency from -15 to +15 dB.
+ - Q. Sets the Q for the each band. The Q is the ratio of the center 
+frequency to the bandwidth. When the center frequency 
+is constant, the bandwidth is inversely proportional to the 
+Q, so as you raise the Q, you narrow the bandwidth.
+3. High Pass Filter. Sets the highpass filter’s frequency threshold for the selected 
+channel or output bus. The filter’s threshold can be set from 24 Hz to 1 kHz. 
+When the meter is set to its lowest point, the filter is off. The highpass filter is 
+available on all input channels and on auxiliary and effects output buses only.
+Power User Tip: A highpass filter attenuates all frequencies below the set 
+threshold. Use the Fat Channel highpass filter to remove unwanted low 
+frequencies from your source signal, rather than trying to EQ them out.
+4. EQ Graph. This graph shows the overall EQ curve.
+4.3.3 Fat Channel Presets
+UC Surface provides 50 Fat Channel presets, giving you a quick way to set up 
+channels for monitoring. To access them, click on the Presets button from the Fat 
+Channel to open the Preset Manager.
+1. Channel selection. Displays the currently selected channel. The preset 
+manager will automatically load and store presets to and from this 
+channel. Click on this menu to select a new channel to manage.
+2. Preset category. Filters the preset list based on the selected category.
+3. Add Preset (+). Creates a Fat Channel preset from 
+the currently selected channel’s settings.
+4. Preset filters. Filters Fat Channel presets by module (gate, compressor/limiter, EQ). 
+To load any of these preset components, just click on the component’s button. 
+5. Load. Loads the current preset to the selected channel.
+6. Audition. By engaging the Audition button, each preset will 
+nondestructively load into your channel with the currently enabled 
+filters. This lets you try out a preset before loading it and overwriting 
+the current settings. You can make changes to this preset in real time. 
+To load the settings you’ve auditioned, click the Load button.
+7. Reset. Restores the Fat Channel to its default settings. The Preset Load 
+filters can be used to configure which settings will be reset.
+8. Previous/Next channel. Selects the previous or next channel.
+8 9 10 11
+2
+1
+3
+4
+5
+6
+7
+
+22
+4 UC Surface Monitor Control Software 
+4.4 Adding Effects
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+9. Copy/Paste. To copy the Fat Channel settings to another channel, 
+simply click on Copy, select the channel you’d like to load the 
+settings to from the Channel Select menu, and click Paste.
+10. Fat Channel A/B. UC Surface lets you create two complete Fat Channel 
+settings and compare the two. In this way, you can experiment with a 
+new sound without having to struggle to re-create your old standby, and 
+after several minutes of careful adjustment, you can verify that a new Fat 
+Channel setting is better than it was before you started tweaking. 
+11. Close. Closes the Preset Manager and returns to the mixer view.
+4.4 Adding Effects
+Your Studio 192-series interface is equipped with two internal effects 
+processors, each with a dedicated mix bus. The processor for FXA is dedicated 
+to reverb. The processor for FXB is dedicated to delay effects. The effects 
+returns for both of these buses can be routed to any of the mixes. 
+Creating an effects mix is just like creating a monitor mix: Simply click on the effects 
+mix and select and set the level for each channel to which you would like to apply 
+reverb or delay. 
+Effects returns for each processor are available at the end of the input channels in 
+each mix. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+23
+4 UC Surface Monitor Control Software 
+4.4 Adding Effects
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+4.4.1 Editing Effects and Effects Presets
+To access the effects library for each processor and make adjustments to effects 
+parameters, click on the Edit button above the Flex fader for your effects mix.
+You will see the effects editor in the Fat Channel area above the mix. From 
+here you can change the effects type, adjust parameters, and load presets.
+Effects Presets. UC Surface contains a library of 50 custom reverb and delay 
+presets designed by PreSonus. In addition to these presets, you can create your 
+own custom effects library. Every factory preset can be altered, renamed, and 
+overwritten. You can create a custom preset using a factory preset as a starting 
+point or design a preset from scratch using an effects type of your choosing.
+Click on the Presets button from the Effects Editor to open the Presets Manager. 
+ 
+Add Preset (+). Click on this button to create a new preset from the current effects 
+settings in the Effects Editor. 
+Load. Click on this button to load a preset that you’ve chosen from the Preset List. 
+ 
+Audition. By engaging the Audition button, each preset will nondestructively load. 
+This lets you try out a preset before loading it and overwriting the current settings. 
+You can make changes to this preset in real time. To load the settings you’ve 
+auditioned, click the Load button.
+Close. Click on this button to close the Preset Manager and return to the Mixer view. 
+ 
+ 
+4.4.2 Reverb and its Parameters
+Reverberation—or reverb, as it is more commonly known—is perhaps the most 
+widely used effect. Natural reverb is created by sound waves reflecting off of a surface 
+or many surfaces. For example, when you walk across the wooden stage in a large 
+hall, thousands of reflections are generated almost instantaneously as the sound 
+waves bounce off the floor, walls, and ceilings. These are known as early reflections, 
+and their pattern provides psycho-acoustic indications as to the nature of the space 
+that you are in, even if you can’t see it. As each reflection is then reflected off of more 
+surfaces, the complexity of the sound increases, while the reverb slowly decays.
+The reason for the widespread use of reverb in audio recording is fairly self-evident: 
+Human beings don’t live in a vacuum. Because our brains receive cues about the 
+nature of the space around us based partially on audio reflections, a sense of space 
+makes an audio recording sound more natural and, therefore, more pleasing. 
+Note: Reverb types and presets can only be loaded on FXA.
+The following parameters are available for the nine reverb 
+types the Studio 192 and Studio 192 Mobile offers:
+
+
+24
+4 UC Surface Monitor Control Software 
+4.4 Adding Effects
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+Decay. Decay is the time (in seconds) required for the reflections (reverberation) 
+to die away. In most modern music production, reverb decay times of between 
+one and three seconds are prevalent. A reverb setting with strong early reflections 
+and a quick decay are a great way to create a stereo effect from a mono source.
+Predelay. Predelay is the time (in milliseconds) between the end of the initial 
+sound and the moment when the first reflections become audible. Imagine you’re 
+back on that stage in a large music hall. This time you stand on the very edge of 
+the stage and shout “Hello world!” toward the center of the hall. There will be a 
+brief pause before you hear the first noticeable reflections of your voice, because 
+the sound waves can travel much further before encountering a surface and 
+bouncing back. (There are closer surfaces, of course—notably the floor and the 
+ceiling just in front of the stage—but only a small part of the direct sound will go 
+there, so those reflections will be much less noticeable.) Adjusting the predelay 
+parameter on a reverb allows you to change the apparent size of the room without 
+having to change the overall decay time. This will give your mix a little more 
+transparency by leaving some space between the original sound and its reverb.
+Note: Predelay control is not available on every reverb type.
+Early Reflections. Early reflections are those that reach the listener a few 
+milliseconds after the direct signal arrives. Your brain uses them to identify the size of 
+the room you’re in. If you are trying to simulate a specific type of room, this control 
+will be extremely important. This control allows you to set the level (in decibels) of 
+the early reflections. The louder the early reflections, the smaller the room will seem.
+Note: Early Reflections control is not available on every reverb type.
+4.4.3 Delay and its Parameters
+A delay essentially creates an echo, although you can often use 
+delays to create more complex time-based effects. The source signal 
+is delayed so that it is heard later than it actually occurred.
+Note: Delay types and presets can only be loaded on FXB.
+The following parameters are available for the four delay 
+types the Studio 192 and Studio 192 Mobile offers:
+Time. This is the time (in milliseconds) between the source signal and its 
+echo. The simplest delay effect is a single repeat. A short delay between 
+30 and 100 ms can be used to create slap-back echo, while longer delay 
+times produce a more distant echo. Delay times that are too short to 
+hear as distinct echoes can be used to create thickening effects. Whether 
+these echoes are timed with the tempo is a matter of stylistic choice. 
+This is the parameter that is controlled by the Tap Tempo button. Using 
+the Tap button, you can speed up or slow down these repeats or, more 
+commonly, time the repeats to occur with the tempo of the music.
+Time X. Time X is the value of the beat you are using as a reference for 
+the tempo. The basic unit of measure is a quarter note, so for example, 
+if the beats you are tapping represent quarter notes in the music, you 
+would set Time X to 1.00. If they are eighth notes, you would set Time X 
+to 0.50; half notes would be 2.00, and so on. In this way, you can precisely 
+synchronize or syncopate the delay echoes to the music in real time.
+Note: The Stereo Delay offers two Time X controls. With the Ping 
+Pong delay, the Pong X parameter serves the same purpose.
+Variable Feedback. Variable feedback, or regeneration, produces multiple 
+decaying repeats. Increasing the feedback value increases the number of echoes, 
+as well as the resonance that is created as one echo disappears into another.
+F_Frequency. Sets the center frequency in Hz for the Filter Delay.
+F_Gain. Sets the boost at the center frequency for the Filter Delay.
+F_Q. Sets the Q for the Filter Delay. The Q is the ratio of the center frequency to 
+the bandwidth. When the center frequency is constant, the bandwidth is inversely 
+proportional to the Q, so as you raise the Q, you narrow the bandwidth.
+
+25
+4 UC Surface Monitor Control Software 
+4.4 Adding Effects
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+4.4.4 Reverb Effects Presets Library
+REVERB EFFECTS
+POS. TYPE NAME POS. TYPE NAME
+R1 AMBIENCE Natural R17 WARM HALL Log Cabin
+R2 Lively R18 Wood Floors
+R3 SMALL ROOM Closet R19 Brick Club
+R4 Studio A R20 High Ceilings
+R5 Studio B R21 GATED HALL GateVerb Short
+R6 Bedroom R22 GateVerb Med
+R7 BRIGHT ROOM Kitchen R23 GateVerb Long
+R8 Tile Floors R24 GateVerb Extreme
+R9 Tile Bathroom R25 LARGE HALL Church
+R10 Concrete Floors R26 Cathedral
+R11 SMALL HALL Radio Booth R27 Gymnasium
+R12 Small Club R28 Arena
+R13 Big Club R29 PLATE PlateVerb Shimmer
+R14 BRIGHT HALL Brick House R30 PlateVerb Thick
+R15 Linoleum Room R31 PlateVerb Drums
+R16 Tile Room R32 PlateVerb Vox
+R33-
+99
+USER-CREATED 
+PRESETS
+4.4.5 Delay Effects Preset Library
+DELAY EFFECTS
+POS. TYPE NAME POS. TYPE NAME
+D1 MONO DELAY M: Short Tail D10 Long Slap
+D2 M: Short Slap D11 Spacey
+D3 M: Long Slap D12 Long Tail
+D4 M: Triplet D13 ST: Triplet
+D5 M: Triplet D14 PING-PONG DELAY Ping-pong Slap
+D6 FILTER DELAY Analog Slap D15 Ping-pong Delay
+D7 Analog Trip D16 Ping-pong Spacey
+D8 Analog 8th D17 Ping-pong Trip
+D9 STEREO DELAY Slap Quick D18 Ping-Pong Purple Rain
+D19-
+99
+USER-CREATED 
+PRESETS
+
+26
+4 UC Surface Monitor Control Software 
+4.5 Main Options
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+4.4.6 Digital Effects Types
+UC Surface contains 13 different effects types with which you can 
+create custom presets or redesign the included library of presets.
+NAME POS PARAM (L1) PARAM (L2) PARAM (L2) PARAM (L2) PARAM (L2) PARAM (L2) PARAM (L2)
+Ambience T1 Reverb Decay (s) Default:  
+0.69  
+Range:  0.29 – 1.09
+Small Room T2 Reverb Decay (s) Default:  
+0.79  
+Range:  0.39 ~ 0.59
+Predelay (ms) 
+Default:  12.0  
+Range:  1.00 ~ 40.0
+Early Reflec (dB) 
+Default:  -15.0  
+Range:  -25.0 ~ -8.00
+Bright Room T3 Reverb Decay (s) Default:  
+1.00  
+Range:  0.50 ~ 1.79
+Predelay (ms) 
+Default:  12.0  
+Range:  1.00 ~ 40.0
+Early Reflec (dB) 
+Default:  -16.0  
+Range:  -22.0 ~ -10.0
+Small Hall T4 Reverb Decay (s) Default:  
+1.39  
+Range:  0.59 ~ 2.19
+Predelay (ms) 
+Default:  20.0  
+Range:  1.00 ~ 50.0
+Early Reflec (dB) 
+Default:  -22  
+Range:  -35.0 ~ -15.0
+Bright Hall T5 Reverb Decay (s) Default:  
+1.59  
+Range:  0.79 ~ 2.39
+Predelay (ms) 
+Default:  24.0  
+Range:  1.00 ~ 60.0
+Early Reflec (dB) 
+Default:  -22.0  
+Range:  -35.0 ~ -15.0
+Warm Hall T6 Reverb Decay (s) Default:  
+1.59  
+Range:  0.79 ~ 2.50
+Predelay (ms) 
+Default:  50.0  
+Range:  10.0 ~ 100.0
+Early Reflec (dB) 
+Default:  -30.0  
+Range:  -40.0 ~ -20.0
+Gated Hall T7 Reverb Decay (s) Default:  
+1.00  
+Range:  0.59 ~ 1.79
+Predelay (ms) 
+Default:  40  
+Range:  5.00 ~ 80.0
+Large Hall T8 Reverb Decay (s) Default:  
+2.39  
+Range:  1.39 ~ 5.00
+Predelay (ms) 
+Default:  35.0  
+Range:  40.0 ~ 90.0
+Early Reflec (dB) 
+Default:  -30.0  
+Range:  -40.0 ~ -20.0
+Plate T9 Reverb Decay (s) Default:  
+1.39  
+Range:  0.50 ~ 4.00
+Predelay (ms) 
+Default:  10.0  
+Range:  1.00 ~ 40.0
+Mono Delay T10 Delay Time (ms) Default:  
+645  
+Range:  5.00 ~ 1.28k
+Time X Default:  1.00  
+Range:  0.25 ~ 2.00
+Feedback Default:  
+0.25  
+Range:  0.000 ~ 0.94
+Filter Delay T11 Delay Time (ms) Default:  
+645  
+Range:  5.00 ~ 1.28k
+Time X Default:  1.00  
+Range:  0.25 ~ 2.00
+Feedback Default:  
+0.25  
+Range:  0.000 ~ 0.94
+F_Freq (Hz) Default:  
+800  
+Range:  100 ~ 3.00k
+F_Gain Default:  12.0  
+Range:  0.000 ~ 24.0
+F_Q Default:  0.69  
+Range:  0.19 ~ 2.00
+Stereo Delay T12 Delay Time (ms) Default:  
+645  
+Range: 5.00 ~ 1.28k
+Time1 X Default:  1.00  
+Range: 0.25 ~ 2.00
+Time2 X Default:  1.00  
+Range: 0.25 ~ 2.00
+Feedback1 Default:  
+0.25  
+Range:  0.000 ~ 0.94
+Feedback2 Default:  
+0.25  
+Range:  0.000 ~ 0.94
+L-R Spread Default:  
+0.50  
+Range:  0.000 ~ 1.00
+Ping Pong T13 Delay Time (ms) Default:  
+645  
+Range:  5.00 ~ 1.28k
+Pong X Default:  1.00  
+Range:  0.25 ~ 2.00
+Pong X Default:  1.00  
+Range:  0.25 ~ 2.00
+Feedback Default:  
+0.25  
+Range:  0.000 ~ 0.94
+L-R Spread Default:  
+0.50  
+Range:  0.000 ~ 1.00
+4.5 Main Options
+When you click on the Main fader, you will see the Main Options view. 
+This allows you to control Mono and Dim functions, select the source for 
+your headphone and S/PDIF outputs, and manage speaker switching.
+Note: While UC Surface is active, both the headphone and S/PDIF outputs can mirror 
+any mix. When UC Surface is bypassed, these outputs are freely routable from the driver.
+
+
+27
+4 UC Surface Monitor Control Software 
+4.6 Quick Controls: Talkback, Scenes, and More
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+4.6 Quick Controls: Talkback, Scenes, and More
+The Quick Controls panel provides access to the following controls:
+ • Talkback routing, on/off
+ • Scene management
+ • Quick Scenes
+ • Mute Groups
+ • FXA and FXB Mute
+ • FXB Tap tempo
+ • Headphone Mix Select
+ • S/PDIF Source Select
+You will find the Show/Hide button for the Quick Controls panel at the far right of the 
+mixer. Clicking or tapping on it will open or close the panel. 
+4.6.1 Talkback
+The Talkback feature lets you communicate with the performers. 
+The talkback level is individually controllable from each mix. You will 
+find the level control after the input and playback channels.
+ 
+Click on the Talkback button to enable the Talk function on your Studio 
+192-series interface. You can then turn on the Talkback mic in any of the mixes 
+by clicking or tapping on the mix select. By default, the talkback source is the 
+onboard mic on your Studio 192. For the Studio 192 Mobile, talkback source is 
+disabled by default. Any microphone preamp on either interface can used as a 
+talkback source. This can be changed from the Settings page. See Section 4.5.
+The Mix Select buttons for the mixes that have Talkback routed 
+to them will turn red to indicate that Talkback is active.
+You can also click on the Talk Assign button to assign Talkback 
+routing without the Talkback mic enabled.
+The level for the onboard talkback microphone on the Studio 192 is 
+controlled from the front panel. Select the “c” (Comm) channel in the 
+preamp control section and use the encoder to adjust the level
+Note: Talkback must be enabled for the mix and have its Talkback fader level 
+above zero in that mix for it to heard through that output. If either has not been 
+done, talkback cannot be heard in that mix. Talkback can be routed independently 
+to the headphone outputs and their corresponding mirrored mix outputs.
+
+
+28
+4 UC Surface Monitor Control Software 
+4.6 Quick Controls: Talkback, Scenes, and More
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+4.6.2 Quick Scenes, Mute Groups, and Scene Library
+Clicking or tapping on the Scenes/Mutes button will open the mute groups and 
+Scene management for UC Surface. From here your can create and enable mute 
+groups and Quick Scenes and access the scene library.
+Mute groups. A mute group allows you to mute and unmute multiple channels and 
+buses with the press of a single button. With the eight mute groups in UC Surface, 
+you could, for example, assign the drum mics to Mute Group 1, the instrumentalists 
+to Mute Group 2, the background vocalists to Mute Group 3, all the aux buses to 
+Mute Group 4, all four FX buses to Mute Group 5, and every channel on the mixer to 
+Mute Group 6, and so on. In this way, you can quickly mute multiple channels at once. 
+UC surface provides the following mute group controls:
+ • All On. Mutes all channels and buses. The All On group is a preconfigured 
+mute group that includes every channel and bus with a Mute button. 
+ • All Off. Clears all mutes. When the All Off button is pressed, any 
+channel or bus that has been muted will be unmuted.
+ • Mute Group 1-8. Engages/disengages assigned mute groups. 
+When any of the Mute Group buttons is pressed, the assigned 
+group of channels or buses will be muted/unmuted. 
+ • Store. To create a mute group, click or tap the Store button. 
+All the Mute Group buttons will flash. Click on the mute group 
+to which you’d like to store the current mute settings.
+Power User Tip: Both the mute groups and All On only add mutes to your mix and 
+remove the same mutes they added. Mute groups will not clear mutes that were active 
+prior to the mute group being engaged. (i.e., if a mute is engaged when its mute group 
+or All On are enabled, it will still be engaged when you disable the mute group or the All 
+On.) The exception to this rule is the All Off button. This button will clear any mute that 
+is currently enabled and will deactivate any mute group that is active, including All On.
+Quick Scenes
+The Quick Scene buttons in the Fat Channel allow you to create a scene 
+without storing it to permanent memory and giving it a name. This is especially 
+useful when mixing multiple bands that you might not ever mix again. 
+UC Surface provide the following Quick Scene controls: 
+ • Store. To create a Quick Scene, click or tap the Store button. 
+All the Quick Scene buttons will flash. Click on the Quick Scene 
+to which you’d like to store the current mixer settings.
+
+
+29
+4 UC Surface Monitor Control Software 
+4.6 Quick Controls: Talkback, Scenes, and More
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+ • Undo. Reverts the mixer to the last recalled scene state.
+ • Quick Scenes 1-8. Loads the stored Quick Scene. This will override 
+all the current settings on the mixer based on the Scene filters 
+(see next portion for more information on Scene filters). 
+Scene Library
+UC Surface allows you to create and store a library of scenes. A scene is like a 
+snapshot of your mix. It stores each Fat Channel parameter for every analog input, as 
+well as each fader’s position, the aux and effects mixes, channel mutes and solos, etc.
+Click or tap on the Scene library button to open the Scene library.  
+ 
+Scene Filters
+UC Surface mix scenes store every setting for your Studio 192-series interface. 
+You can choose to load the entire scene or filter out various portions of it.
+ • Name. All channel names and channel types
+ • FX. All parameters for the internal effects assigned to FXA and FXB
+ • Assigns. All output and bus routing, including:
+ - Channel and bus routing to mains and subgroups
+ - Stereo linking for all channels and buses
+ - Channel and bus solo states
+ - Talkback assignments and talkback on/off
+ • EQ and Dyn. All Fat Channel dynamics processing, filter 
+parameters, and pan positions for every channel and bus
+ • Aux Mix. All aux mixes parameters, including:
+ - Channel sends to aux mixes
+ - Channel sends to FXA and FXB
+ - Pre1/Pre2/Post position for each aux and FX bus
+ • Faders. All fader positions
+ • Preamps. All preamp settings
+Load. Click on this button to load the currently select scene. 
+ 
+ 
+Add Scene (+). Click on this button to create a new scene from the current mixer 
+settings in the effect. 
+Studio 192 / Studio 192 Mobile Default
+This scene returns each parameter to its default setting.
+
+
+30
+4 UC Surface Monitor Control Software 
+4.7 The Settings Page
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+4.7 The Settings Page
+The Settings page allows you to configure your Studio 192-series interface. To open 
+the Settings page, click on the Settings button in the upper right-hand corner
+4.7.1 Device Settings Tab: System Settings
+The System Settings area allows you to customize the 
+following parameters on UC Surface:
+Mixer Bypass. Bypasses UC Surface mixer and routing.
+Click this button to disable all UC Surface Mixer functions. While Mixer Bypass is 
+active, your Studio 192-series interface will function as a simple I/O device for  
+your DAW.
+When the mixer is bypassed, you must route audio to the desired output using its 
+dedicated playback stream both for system playback (if desired) and DAW playback.
+Peak Hold. Disables peak hold metering.
+By default, peak hold metering is active. To change to peak metering, click the 
+Off button.
+Standalone mode (Studio 192 only). Sets the functionality 
+when not connected to a computer.
+When not connected to a computer, your Studio 192 will function as stand-alone A/D 
+converter. You can set analog outputs 1-8 to either function as direct preamp outputs 
+or DAC outputs, depending on your needs. By default, these outputs are in D/A 
+Conversion mode and will receive their source signals from their corresponding 
+ADAT/dual SMUX channels. You can set the analog outputs to receive their source 
+signal from their corresponding analog inputs by selecting Preamp mode from 
+Analog Output Mode menu. 
+Power User Tip: Once you have configured your Studio 192’s standalone 
+functionality, it will stay in that configuration while disconnected from your 
+computer, even after a power cycle. It is important to note that Stand-Alone mode 
+settings do not affect normal operation while connected to a computer.
+Note: Headphones 1 and 2, Main, and S/PDIF outputs are disabled in Stand-Alone mode.
+Talkback Source. Sets the source for the talkback mic.
+The default source for the Studio 192 is the onboard mic; for the Studio 192 Mobile, 
+this is set to ‘None’ . For either device, you can select any preamp as the  
+talkback source. 
+Speaker management. Sets speaker-management functionality.
+By default, speaker management is disabled, and each pair of outputs on your 
+Studio 192-series interface has its own mix in UC Surface. When speaker 
+management is enabled, the Main L/R outputs (A), analog outputs 1/2 (B), and analog 
+outputs 3/4 (C) can be used for speaker switching and the Main level control can be 
+used to control outputs A, B, and C.
+ • A – B – C. Each pair of outputs is mutually exclusive. Use this setting 
+when switching between three pairs of full-range studio monitors.
+ • A – B + C. Outputs A and B are mutually exclusive and Output C 
+can be added to either. Use this setting when switching between 
+two pairs of full-range studio monitors with a subwoofer.
+ • A + B + C. Outputs A, B, and C can all be active at the same 
+time. This setting is useful while mixing in 5.1.
+Note: When exiting speaker management mode, Mixes 
+1/2 and 3/4 will mute automatically.
+
+
+31
+5 Studio One Artist Quick Start 
+5.1 Installation and Authorization
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+5 Studio One Artist Quick Start
+All PreSonus professional recording products come with Studio One Artist recording 
+and production software. Whether you are about to record your first album or your 
+fiftieth, Studio One Artist provides you with all of the tools necessary to capture 
+and mix a great performance. PreSonus audio interfaces also have access to 
+advanced functions in Studio One’s exclusive Z-Mix feature for PreSonus interfaces.
+Note: Advanced Studio One integration features for the Studio 192 and 
+Studio 192 Mobile are only available in Studio One version 3.1 and later.
+Power User Tip: As a valued PreSonus customer, you are eligible for a discount 
+upgrade to Studio One Professional. For more details on the Studio One upgrade 
+program for PreSonus customers, please visit http://studioone.presonus.com/.
+5.1 Installation and Authorization
+Once you have installed the drivers for your audio interface and connected it 
+to your computer, you can use the included PreSonus Studio One Artist music-
+production software to begin recording, mixing, and producing your music. 
+To install Studio One Artist, log into your My PreSonus account and register 
+your interface. Your product key for Studio One Artist will automatically be 
+registered to your My PreSonus account with your hardware registration.
+Downloading and running the Studio One installer.
+To install Studio One Artist, download the Studio One Artist installer from 
+your My PreSonus account to the computer on which you will use it.
+
+
+32
+5 Studio One Artist Quick Start 
+5.2 Setting Up Studio One
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+ • Windows users: Launch the Studio One Artist installer 
+and follow the onscreen instructions.
+ • Mac users: Drag the Studio One Artist application into 
+the Applications folder on your Mac hard drive.
+Authorizing Studio One
+When Studio One is launched for the first time on your computer, it will 
+communicate with your My PreSonus account and verify your registration. To 
+ensure a seamless authorization process, make sure to download your installer 
+to the computer on which you will be using it and be sure that your computer is 
+connected to the Internet when you launch the application for the first time.
+Installing bundled content for Studio One Artist.
+Studio One Artist comes bundled with an array of demo and tutorial 
+materials, instruments, loops, and samples. The Studio One Artist 
+bundle includes all that you need to begin producing music.
+The first time you launch Studio One Artist, you will be prompted 
+to install its companion content. Select the content you wish to 
+add and click “Install. ” The content will automatically begin to 
+download and install from your My PreSonus user account. 
+Power User Tip: You may be prompted to enter your My PreSonus user account 
+information. Clicking “Remember Credentials” will allow you to have immediate 
+access to any content you purchase from the PreSonus Marketplace. 
+5.2 Setting Up Studio One
+Studio One Artist was designed to work with PreSonus interfaces and provides 
+unique interoperability and simplified setup. When Studio One Artist is 
+launched, by default you will be taken to the Start page. On this page, you will 
+find document-management and device-configuration controls, as well as a 
+customizable artist profile, a news feed, and links to demos and tutorials from 
+PreSonus. If you have an Internet connection on your computer, these links will 
+be updated as new tutorials become available on the PreSonus Web site.
+Complete information on all aspects of Studio One Artist is available in 
+the Reference Manual PDF located within Studio One. The information 
+in this tutorial covers only the basic aspects of Studio One Artist and is 
+intended to get you set up and recording as quickly as possible.
+
+33
+5 Studio One Artist Quick Start 
+5.2 Setting Up Studio One
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+5.2.1 Configuring Audio Devices
+1. In the middle of the Start page, you will see the Setup area. Studio One 
+Artist automatically scans your system for all available drivers and selects 
+a driver. By default, it will choose a PreSonus driver if one is available. 
+Power User Tip: If your device has zero-latency monitoring functionality from within 
+Studio One, you will see the Z-mix icon. If you do not see this icon, make sure that you have 
+launched Universal Control or Universal Control-AI. PreSonus audio interfaces require 
+their DSP mixing control panels to be running in the background for Z-mix functionality. 
+2. If you do not see your device listed on the Start page when 
+you launch Studio One, click on the Configure Audio Devices 
+link in the Setup area to open the Options window. 
+In the Options window, click on the Audio Setup tab and 
+select your device driver from the pull-down.
+
+34
+5 Studio One Artist Quick Start 
+5.2 Setting Up Studio One
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+5.2.2 Configuring MIDI Devices
+From the External Devices window in Studio One Artist, you can configure 
+your MIDI keyboard controller, sound modules, and control surfaces. This 
+section will guide you through setting up your MIDI keyboard controller 
+and sound modules. Please consult the Reference Manual located within 
+Studio One for complete setup instructions for other MIDI devices.
+If you are using a third-party MIDI interface or USB MIDI-controller 
+keyboard, you must install any required drivers for these devices before 
+beginning this section. Please consult the documentation that came 
+with your MIDI hardware for complete installation instructions.
+If you do not have any MIDI devices, please skip to Section 5.4.
+Setting up an external MIDI keyboard controller from the Start page.
+A MIDI keyboard controller is a hardware device that is generally used for playing 
+and controlling other MIDI devices, virtual instruments, and software parameters. 
+In Studio One Artist, these devices are referred to as Keyboards, and they must be 
+configured before they are available for use. In some cases, your MIDI keyboard 
+controller is also used as a tone generator. Studio One Artist views the controller 
+and tone-generation functions as two different devices; a MIDI keyboard controller 
+and a sound module. The MIDI controls (keyboard, knobs, faders, etc.) will be 
+set up as a Keyboard. The sound modules will be set up as an Instrument.
+You can set up your external MIDI devices from the Setup area 
+in the Start page. Before setting up a new Song for recording, 
+take a moment to configure external devices.
+Make sure you have connected the MIDI Out of your external MIDI controller to 
+a MIDI In on your PreSonus audio interface (if available) or other MIDI interface. If 
+you are using a USB MIDI controller, connect it to your computer and power it on.
+1. Click on the Configure External Devices link in the Setup area on 
+the Start page to launch the External Devices window.
+Click the Add button. This will launch the Add Device window.
+
+
+35
+5 Studio One Artist Quick Start 
+5.2 Setting Up Studio One
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+2. From the menu on the left, select your MIDI controller from the list of 
+manufacturers and models. If you do not see your MIDI controller listed, 
+select New Keyboard. At this point, you can customize the name of 
+your keyboard by entering the manufacturer and device names.
+3. You must specify which MIDI channels will be used to communicate with 
+this keyboard. For most purposes, you should select all MIDI channels. 
+If you are unsure of which MIDI channels to choose, select all 16.
+4. Studio One allows you to filter out specific control functions. If you would 
+like Studio One to ignore Aftertouch, Pitch Bend, Program Change, or 
+All CC messages, enable filtering for any or all of these messages.
+5. In the Receive From drop-down menu, select the MIDI interface 
+input from which Studio One Artist will receive MIDI data (that 
+is, the MIDI port to which your keyboard is connected).
+Power User Tip: In the Send To drop-down menu, select the MIDI 
+interface output from which your Studio One Artist will send MIDI data 
+to your keyboard. If your keyboard controller doesn’t need to receive 
+MIDI data from Studio One, you can leave this unselected.
+6. If this is the only keyboard that you will use to control your external 
+synthesizers and virtual instruments, you should check the box 
+next to Default Instrument Input. This will automatically assign your 
+keyboard to control all MIDI devices in Studio One Artist.
+7. Click OK.
+If you have a sound module that you’d like to connect, leave the External 
+Devices window open and proceed to the next part of this section. 
+If not, you can close the window and skip to the next section.
+Setting up an external MIDI sound module from the Start page.
+MIDI instrument controllers (keyboards, MIDI guitars, etc.) send musical information 
+in the form of MIDI data to tone modules and virtual instruments, which respond 
+by generating sound, as instructed. Tone modules can be standalone sound devices 
+or can be integrated into a MIDI instrument, such as a keyboard synthesizer. Studio 
+One Artist refers to all tone generators as Instruments. Once you have set up your 
+MIDI keyboard controller, take a moment to configure your sound module.
+Make sure you have connected the MIDI In of your external 
+sound module to the MIDI Out of your MIDI interface.
+
+36
+5 Studio One Artist Quick Start 
+5.2 Setting Up Studio One
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+1. In the External Devices window, click the Add button.
+2. Select your device in the menu on the left. If your device is not listed, 
+select New Instrument. At this point you can customize the name of 
+your keyboard by entering the manufacturer and device names.
+3. Specify which MIDI channels will be used to communicate with this sound 
+module. For most purposes, you should select all MIDI channels. If you are 
+unsure of which MIDI channels to select, we suggest you select all 16.
+4. In the Send To menu, select the MIDI interface output from which Studio One 
+Artist will send MIDI data to your sound module. Click OK and close the External 
+Devices window. You are now ready to start recording in Studio One Artist. 
+The rest of this Quick Start Guide will go over how to set 
+up a Song and will discuss some general workflow tips for 
+navigating through the Studio One Artist environment.
+
+37
+5 Studio One Artist Quick Start 
+5.3 Creating a New Song
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+5.3 Creating a New Song
+Now that you’ve configured your audio and MIDI devices, let’s create 
+a new Song. We’ll start by setting up your default audio I/O.
+1. From the Start page, select Create a New Song.
+2. In the New Song window, name your Song and choose the directory in which 
+you’d like it saved. From the Interfaces tab, you can select custom templates for the 
+Studio 192 and Studio 192 Mobile that will set all configuration and I/O settings 
+for you. The rest of section will describe creating a Song from an empty session.
+3. Select Empty Song from the Templates list. At this point, you should give 
+your Song a name and select your preferred sample rate and bit depth for 
+recording and playback. You can also set the length of your Song and the 
+type of time format you would like the timeline to follow (notation bars, 
+seconds, samples, or frames). Click the OK button when you are finished.
+Power User Tip: If you plan to import loops into your Song, make 
+sure that the Stretch Audio Files to Song Tempo option is selected. 
+This will automatically import loops at the correct BPM.
+5.3.1 Configuring Your I/O
+1. Click on Song | Song Setup to set your sample rate and 
+resolution and configure your audio I/O.
+
+
+38
+5 Studio One Artist Quick Start 
+5.3 Creating a New Song
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+2. Click on the Audio I/O Setup tab.
+3. From the Inputs tab, you can enable any or all of the inputs on your 
+PreSonus Studio 192 audio interface that you’d like to have available. 
+We recommend that you create a mono input for each of the inputs on 
+your interface. If you plan on recording in stereo, you should also create 
+a few stereo inputs. You can give each input a custom name by simply 
+clicking on the default name. Press the TAB key to edit the next name.
+Note: Studio 192-series inputs that share mono and stereo buses will 
+always link the Fat Channel controls as stereo. Because of this, it is 
+recommended to have dedicated stereo and mono inputs.
+4. Click on the Outputs tabs to enable any or all of the outputs on your Studio 
+192 audio interface. In the lower right corner, you will see the Audition select 
+menu. This allows you to choose the output from which you will audition audio 
+files prior to importing them into Studio One Artist. In general, you will want 
+this to be the main output bus. You can give each output a custom name by 
+simply clicking on the default name. Press the TAB key to edit the next name.
+Power User Tip: If you would like this I/O configuration to be the same 
+every time you open Studio One, click the Make Default button.
+
+39
+5 Studio One Artist Quick Start 
+5.3 Creating a New Song
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+Setting Up Z-Mix.
+Your PreSonus Studio 192-series interface provides zero-latency monitoring through 
+Studio One. To enable zero-latency monitoring, you must enable the outputs 
+for the mixes to be Cue Mix outputs. From the Outputs tab, click on the Cue Mix 
+box next to any output you’d like to use to send a zero-latency monitor mix. 
+For more information on Z-Mix, see Section 5.4.
+5.3.2 Creating Audio and MIDI Tracks
+1. In the upper left corner of the Arrange window, you will notice 
+several buttons. The button furthest to the right is the Add Tracks 
+button. Click on this button to open the Add Tracks window.
+2. In the Add Tracks window, you can customize the track name and 
+color, add a preset rack of effects, and set the physical source for 
+the input and output of your audio tracks. Most important, you can 
+select the number and type of tracks you’d like to create.
+ • Audio. Use this track type to record and playback audio files.
+ • Instrument. Use this track to record and playback MIDI data to 
+control external MIDI devices or Virtual Instrument plug-ins.
+ • Automation. This track type lets you create automated 
+parameter controls for your session.
+ • Folder. This track helps you to manage your session as 
+well as to quickly edit multiple tracks at once.
+Power User Tip: If you would like to add an audio track for each of the 
+available inputs, simply go to Track | Add Tracks for All Inputs.
+
+40
+5 Studio One Artist Quick Start 
+5.3 Creating a New Song
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+Mute
+CustomTrackColor
+ST/Mono
+Audio InputSource Select
+Solo
+RecArm
+Monitor
+TrackName
+Meter
+Note: MIDI tracks are nearly identical to Audio tracks. The Input 
+Source list for MIDI tracks lists available external MIDI devices as well 
+as any virtual instruments that have been added to the Song.
+5.3.3 Recording an Audio Track
+1. To begin recording, create an audio track from the Add Tracks 
+window, set its input to Input 1 on your Studio 192-series 
+interface, and connect a microphone to the same input.
+2. Select Record Enable on the track. Turn up the Input 1 level on your audio 
+interface while speaking/singing into the microphone. You should see 
+the input meter in Studio One Artist react to the input. Adjust the gain 
+so the input level is near its maximum without clipping (distorting).
+You are now ready to start recording. For complete instructions, please consult the 
+Studio One Reference manual located in Help | Studio One Reference Manual.
+
+41
+5 Studio One Artist Quick Start 
+5.3 Creating a New Song
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+5.3.4  Adding Virtual Instruments and Effects
+You can add plug-ins and instruments to your Song by dragging-and-dropping 
+them from the browser. You can also drag an effect or group of effects from one 
+channel to another, drag in customized effects chains, and instantly load your 
+favorite virtual-instrument preset without ever scrolling through a menu.
+Opening the browser.
+In the lower right corner of the Arrange window are three buttons:
+ • The Edit button opens and closes the audio and MIDI editors.
+ • The Mix button opens and closes the Mixer window.
+ • The Browse button opens the browser, which displays all of the 
+available virtual instruments, plug-in effects, audio files, and MIDI files, 
+as well as the pool of audio files loaded into the current session.
+Drag-and-drop virtual instruments.
+To add a virtual instrument to you session, open the browser and click on 
+the Instrument button. Select the instrument or one of its patches from the 
+instrument browser and drag it into the Arrange view. Studio One Artist will 
+automatically create a new track and load the instrument as the input.
+Drag-and-drop effects.
+To add a plug-in effect to a track, click the Effects button in the browser and 
+select the plug-in or one of its presets in the effects browser. Drag-and-drop 
+the selection over the track to which you would like to add the effect.
+
+
+42
+5 Studio One Artist Quick Start 
+5.4 Monitor Mixing with Z-Mix
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+Drag-and-drop audio and MIDI files.
+Audio and MIDI files can be quickly located, auditioned, and imported into 
+your Song by dragging them from the file browser into the Arrange view. 
+If you drag the file to an empty space, a new track will be created with 
+that file placed at the position to which you dragged it. If you drag the file 
+to an existing track, the file will be placed as a new part of the track.
+5.4 Monitor Mixing with Z-Mix
+You can set up zero-latency monitor mixes with your Studio 192-series interface 
+using Studio One’s unique Z-Mix feature. This feature takes over the monitor 
+mix control software for your Studio 192-series interface and provides level and 
+pan control from within Studio One. Simply designate a pair or pairs of outputs 
+as a cue mix, and you’ll find the Z-Mix controls in your Studio One mixer.
+As previously mentioned, Universal Control-AI must be operating in the background 
+for Z-Mix functions to be available for your Studio 192-series interface.
+You can create a cue mix and send it to any output on your Studio 192-series 
+interface (Mains, General Purpose, ADAT, or S/PDIF). You simply need to create an 
+output bus and enable Cue Mix. 
+Power User Tip: It is possible to designate the main output as a cue mix. This is helpful 
+if you often record yourself and require quick access to zero-latency monitoring for live 
+inputs. When the main output is designated as a Z-Mix, a Zero Latency button will appear 
+on any audio channel, with an assigned audio input in the Console, below the Mute, Solo, 
+Record, and Monitor buttons. 
+
+
+43
+5 Studio One Artist Quick Start 
+5.4 Monitor Mixing with Z-Mix
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+5.4.1 Z-Mix Functions
+Once you have created a cue mix output, you will notice a special Send object 
+in the channels of the Console. This Send object is called a Z-Mix object. 
+In the Small Console view, Z-Mix objects appear in the 
+far left column of the extended channel. 
+In the Large Console view, Z-Mix objects appear below 
+the Send device rack on each channel.
+1 2 3 4 5
+1. Activate Button. To completely remove any channel from 
+a Z-Mix, simply deactivate the Z-Mix object for that channel. 
+In most instances, you will leave this enabled.
+2. Horizontal Level Fader. This is the channel’s Z-Mix volume control. By 
+default this level will be identical to the level set on the channel’s fader. Once 
+you move the Z-Mix level fader, the volume of that channel in the Z-Mix will 
+be independent of the main mix or any other cue mix in the session.
+
+44
+5 Studio One Artist Quick Start 
+5.4 Monitor Mixing with Z-Mix
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+3. Pan Control. This sets the pan position for the channel in the Z-Mix 
+outputs. Like volume, panning is identical to the main mix by default. 
+4. Zero Latency switch. Enables zero-latency monitoring for your PreSonus 
+audio interface’s Inputs. Z-Mixes are normally used in a recording situation in 
+which one or more live inputs need to be monitored. The Studio 192-series 
+interface features an internal hardware mixer that provides zero-latency 
+monitoring on every analog input. The Zero Latency switch must be active to 
+use the onboard Fat Channel processing for your Studio 192-series interface.
+5. Lock to Channel button. By default, the Lock to Channel button is enabled, 
+and level and pan values are locked to the Channel level and pan controls for 
+the Main mix. This means that each Z-Mix will be identical to the Main mix in 
+the Console. Changing the level or panning in the Main mix will change the 
+level or panning in the Z-Mix. However, changing the level or panning in the 
+Z-Mix object will unlock both settings, allowing independent control of level 
+and panning for each channel in each Z-Mix. Thus, the level and panning 
+for channels in a Z-Mix can be completely different from the related level 
+and pan in the Main mix. At any time, you can lock the Z-Mix level and pan 
+back to the channel settings by clicking on the Lock to Channel button.
+Fat Channel plug-in (Studio 192-series only). Controls Fat 
+Chanel processing on the Studio 192 and in Studio One.
+Studio One offers an exclusive hybrid plug-in format that allows the Fat Channel 
+plug-in to run either on the DSP engine onboard your Studio 192 or on your 
+computer’s processor in Studio One. So while you’re recording, the plug-in is 
+running on the Studio 192’s DSP . While you’re playing back, it’s running on your 
+computer. This plug-in is automatically loaded into the mixer as soon as you 
+select one of the analog inputs on your Studio 192 as the source for that track.
+
+
+45
+5 Studio One Artist Quick Start 
+5.4 Monitor Mixing with Z-Mix
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+Click on the Apply DSP to Input Signal button in the upper left hand corner of 
+the Fat Channel plug-in to record the Fat Channel settings with your audio.
+To listen your recordings through the same Fat Channel processing as the 
+audio you are monitoring, simply drag the DSP Fat Channel plugin down to 
+the channel insert to load an instance of the native Fat Channel plugin.
+By default, the “link to DSP” button will be enabled. This links the parameters 
+between the native and DSP Fat Channel plugins. Editing either will change both.
+Power User Tip: You can also drag in your favorite Fat Channel plugin presets from 
+the Browser. Once inserted on your channel, clicking the “link to DSP” button will 
+copy that preset to your DSP Fat Channel. This bidirectional workflow allows you 
+to copy settings from your DSP Fat Channel to your DAW insert or vice versa.
+Preamp Control (Studio 192-series only). Controls the onboard 
+preamp controls on your Studio 192-series interface.
+As soon as you set an analog Studio 192 or Studio 192 Mobile input as the input 
+source for a track in Studio One, you’ll find its preamp controls in the Studio One 
+mixer. If a DigiMax DP88 is connected to the ADAT inputs on your Studio 192, you’ll 
+find these controls available for those inputs as well. To adjust your preamp gain 
+from Studio One, simply click on the dB read-out. This will open the slider control.
+
+
+46
+5 Studio One Artist Quick Start 
+5.4.2  Punching In
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+You can choose to hide the preamp controls for your Studio 
+192-series interface from the Console Options menu. Simply 
+uncheck the box next to “Show audio device controls. ”
+Note: Because preamp control for the DigiMax DP88 is bidirectional, 
+both the ADAT input and the ADAT output must be connected 
+in order for Studio One to display its preamp controls.
+5.4.2  Punching In
+The unique integration between the processing your Studio 192-series 
+interface and Studio One makes punching in easier than ever. This section will 
+guide you through setting up a punch in so that there is no change sonically 
+between audio you’re playing back and the audio you’re recording.
+1. Before you begin, go to Studio One>Preferences and click on the Advanced tab.
+2. On the Console preference tab, check the box next to “Audio track 
+monitoring mutes playback (Tape Style). This will allow you use 
+Z-Mix to monitor during a punch in. Click Apply and then OK.
+
+
+47
+5 Studio One Artist Quick Start 
+5.4.2  Punching In
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+3. Dial in the Fat Channel sound you would like to use while monitoring, 
+simply drag your DSP plugin down to the insert on the same channel.
+4. After you have recorded your audio, set the punch 
+in and out points in the timeline.
+5. Enable the Autopunch button the left of the Metronome settings in the transport.
+6. Record Arm your track, making sure to disable input monitoring.
+You’re now ready to punch in. Simply rewind to the point in the song at which you’d 
+like to start and click record. Studio One will playback the recorded audio through 
+the Fat Channel plugin and switch over to the DSP plugin for monitoring while you 
+punch in your new audio and switch back with a sonically seamless transition.
+
+48
+6 Technical Information 
+6.1 Specifications
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+6 Technical Information
+6.1 Specifications
+Microphone Preamp (XLR Balanced)
+Type   XLR Female (via Combo), Balanced Remote
+Maximum Input level (min. gain, 1 kHz@0.5% THD+N)  +12 dBu, ±0.5 dB
+Gain Control Range 60 dB, ±1 dB
+Frequency Response (A-D)   10 Hz to 40 kHz, ±0.2 dB
+Dynamic Range (min. gain, A-wtd)   > 110 dB 
+Dynamic Range (mid. Gain, unwtd)   > 105 dB
+THD+N (min. gain, A-wtd)   < 0.005% 
+Input Impedance  1600Ω
+EIN (+55 dB gain, 150Ω input, 20 Hz-22 kHz, A-wtd)  < 128 dBu
+Common Mode Rejection Ratio (1 kHz, +55 dB gain)  > 55 dB
+Phantom Power   +48V, ± 3V, > 8 mA per channel
+Instrument Inputs
+Type   ¼” TS Female (via Combo), Unbalanced
+Maximum Input Level (min. gain, 1 kHz@0.5% THD+N)  +16 dBu ±0.5 dB
+Gain Control Range  85 dB, ±1 dB
+Frequency Response (A-D)   20 Hz to 20 kHz, ±0.2 dB
+Dynamic Range (min. gain, A-wtd)   > 110 dB dB
+Dynamic Range (mid. Gain, unwtd)   > 105 dB
+THD+N (1 kHz, -1 dBFS, A-wtd)   < 0.005% 
+THD+N (1 kHz, -1 dBFS, unwtd)   < 0.005%
+Input Impedance   > 1 MΩ
+Crosstalk (1 kHz, channel-to-channel)   < -80 dB
+Line Inputs
+Type   ¼” TRS Female (via Combo on Studio 192), Balanced
+Maximum Input Level (min. gain, 1 kHz@0.5% THD+N)  +18 dBu, ±0.5 dB
+Frequency Response (A-D)   20 Hz to 20 kHz, ±0.2 dB
+Dynamic Range (min. gain, A-wtd)   > 114 dB
+** Dynamic Range (mid. gain, unwtd)   > 105 dB
+THD+N (1 kHz, -1 dBFS, A-wtd)   < 0.005% 
+Input Impedance   10 kΩ
+Crosstalk (1 kHz, channel-to-channel)   < -80 dB
+Main and Line Outputs
+Type (Line Outputs)  ¼” TRS Female, Impedance Balanced
+Type (Main Outputs) ¼” TRS Female, Impedance Balanced
+Maximum Output Level   +18 dBu, ±0.5 dB
+Frequency Response   20 Hz to 20 kHz, ±0.2 dB
+Dynamic Range (A-wtd)   > 112 dB
+THD+N (1 kHz, -1 dBFS, unwtd)   < 0.005%
+Output Impedance   51Ω
+Crosstalk (1 kHz, channel-to-channel)   < -80 dB
+
+49
+6 Technical Information 
+6.1 Specifications
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+Headphone Outputs
+Type   ¼” TRS Female, Stereo, Unbalanced
+Maximum Output Level   150 mW/channel @ 60Ω
+Frequency Response   20 Hz to 20 kHz, ±0.3 dB
+Dynamic Range (A-wtd)   > 103 dB
+THD+N (1 kHz, -1 dBFS, unwtd)   < 0.005%
+Crosstalk (1 kHz, channel-to-channel)   < -80 dB
+Internal Talkback Microphone (Studio 192 only)
+Type Electret Condenser
+Sensitivity -42 dB
+Signal Level LEDs
+Signal 1   -50 dBFS
+Signal 2 -30 dBFS
+Signal 3 -20 dBFS
+Signal 4 -10 dBFS
+Signal 5   -6 dBFS
+Signal 6   -4 dBFS
+Signal 7 -2 dBFS
+Clip   -0.5 dBFS
+Digital Audio
+Connection Type USB 3.0
+ADC Dynamic Range (A-wtd, 48 kHz) 118 dB
+DAC Dynamic Range (A-wtd, 48 kHz) 118 dB
+Bit Depth 24 bits
+Internally Supported Sample Rates  44.1, 48, 88.2, 96, 176.4, 192 kHz
+Clock
+Jitter <50 ps RMS (20 Hz – 20 kHz)
+Jitter Attenuation >60 dB (1 ns in => 1 ps out)
+
+50
+7 Warranty Information 
+7.1 How Consumer Law Relates To This Warranty
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+7 Warranty Information
+PreSonus’ warranty obligations for this hardware product 
+are limited to the terms set forth below: 
+7.1 How Consumer Law Relates To This Warranty
+THIS WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU MAY HAVE OTHER 
+RIGHTS THAT VARY FROM STATE TO STATE (OR BY COUNTRY OR PROVINCE). OTHER 
+THAN AS PERMITTED BY LAW, PRESONUS DOES NOT EXCLUDE, LIMIT OR SUSPEND 
+OTHER RIGHTS YOU MAY HAVE, INCLUDING THOSE THAT MAY ARISE FROM THE 
+NONCONFORMITY OF A SALES CONTRACT. FOR A FULL UNDERSTANDING OF YOUR 
+RIGHTS YOU SHOULD CONSULT THE LAWS OF YOUR COUNTRY PROVINCE OR STATE.
+PreSonus Products And EU Statutory Warranty
+When you purchase PreSonus products, European Union consumer 
+law provides statutory warranty rights in addition to the coverage 
+you receive from the PreSonus limited warranty. A summary of the EU 
+Statutory Warranty and the PreSonus Limited Warranty is below: 
+EU Consumer Law PreSonus Limited Warranty
+Repair or Replacement 
+Coverage For
+Defects present when customer 
+takes delivery Defects arising after customer takes delivery
+Warranty Period
+2 years (minimum) from 
+original date of purchase (unless 
+superseded by PreSonus)
+1 year from original date of purchase (unless superseded by PreSonus)
+Cost of Coverage Provided at no additional cost Included at no additional cost
+Who to contact to make 
+a claim The seller PreSonus technical support for your region
+What This Warranty Covers
+PreSonus Audio Electronics, Inc., (“PreSonus”) warrants defects in material and 
+workmanship in PreSonus-branded products under normal use. This Limited 
+Warranty applies only to hardware products manufactured by or for PreSonus that 
+can be identified by the PreSonus trademark, trade name, or logo affixed to them.
+Exclusions and Limitations
+This warranty does not cover the following:
+1. Damage caused by accident, abuse, improper installation, failure to 
+follow instructions in the applicable owner’s manual or improper 
+operation, rental, product modification, alteration, or neglect.
+2. Damage from improper grounding, faulty wiring (AC and signal), 
+faulty equipment, or connection to a voltage range outside 
+published specifications (see applicable owner’s manual).
+3. Damage to drivers or diaphragm assemblies found to have burnt voice 
+coils from over/under driving or signal surge from another device.
+4. Damage occurring during shipment or improper handling.
+5. Damage caused by repair or service performed by 
+persons not authorized by PreSonus.
+6. Products on which the serial number has been altered, defaced, or removed.
+7. Products purchased from an unauthorized PreSonus dealer (products 
+that have transferable warranties are excluded from this provision 
+provided the customer and the product are registered with PreSonus).
+
+51
+7 Warranty Information 
+7.1 How Consumer Law Relates To This Warranty
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+Who This Warranty Protects
+This Warranty protects only the original retail purchaser of the product 
+(products that have transferable warranties are excluded from this provision 
+provided the customer and the product are registered with PreSonus)
+How Long This Warranty Lasts
+A 1-Year Limited Warranty begins on the original date 
+of purchase from the retail purchaser.
+What PreSonus Will Do
+PreSonus will repair or replace, at our sole and absolute option, products 
+covered by this warranty at no charge for labor or materials. If the product 
+must be shipped to PreSonus for warranty service, the customer must pay the 
+initial shipping charges. PreSonus will pay the return shipping charges.
+How to Get Warranty Service (USA)
+1. You must have an active user account with PreSonus and your hardware 
+must be on file with your account. If you do not have an account, please 
+go to https://my.presonus.com and complete the registration process.
+2. Contact our Technical Support Department at (225) 216-7887 or log a 
+support ticket at: http://support.presonus.com. TO AVOID THE POSSIBILITY 
+OF SENDING IN A PRODUCT THAT DOES NOT HAVE A PROBLEM, ALL SERVICE 
+REQUESTS SHALL BE CONFIRMED BY OUR TECH SUPPORT DEPARTMENT.
+3. The return authorization number, as well as shipping instructions, shall 
+be provided after your service request is reviewed and confirmed. 
+4. The product should be returned for service in the original product 
+packaging. Products may be shipped in a manufactured “flight” or “road” 
+style cases but PreSonus will NOT cover any shipping damage to these 
+cases. Products that are not shipped in the original product package or 
+a manufactured case may not receive a warranty repair, at PreSonus’ sole 
+discretion. Depending on the product model and the condition of your 
+original packaging, your product may not be returned to you in the original 
+packaging. The return shipping box may be a generic box that has been 
+fitted for that model tested if the original gift box is not available.
+How to Get Warranty Service (outside of USA)
+1. You must have an active user account with PreSonus and your hardware 
+must be on file with your account. If you do not have an account, please 
+go to: https://my.presonus.com and complete the registration process.
+2. Contact the Technical Support/Service Department for your 
+region at www.presonus.com/buy/international_distributors and 
+follow procedures provided by your PreSonus contact.
+Limitation of Implied Warranties
+ANY IMPLIED WARRANTIES, INCLUDING WARRANTIES OF 
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ARE 
+LIMITED IN DURATION TO THE LENGTH OF THIS WARRANTY.
+Some states, countries, or provinces do not allow limitations on how long 
+an implied warranty lasts, so the above limitation may not apply to you.
+
+52
+7 Warranty Information 
+7.1 How Consumer Law Relates To This Warranty
+Studio 192 and Studio 192 Mobile  
+Owner’ s Manual
+Exclusion of Damages
+PRESONUS’S LIABILITY FOR ANY DEFECTIVE PRODUCT IS LIMITED TO THE 
+REPAIR OR REPLACEMENT OF THE PRODUCT, AT PRESONUS’S SOLE OPTION. IF 
+PRESONUS ELECTS TO REPLACE THE PRODUCT, THE REPLACEMENT MAY BE A 
+RECONDITIONED UNIT. IN NO EVENT WILL PRESONUS BE LIABLE FOR DAMAGES 
+BASED ON INCONVENIENCE, LOSS OF USE, LOST PROFITS, LOST SAVINGS, DAMAGE 
+TO ANY OTHER EQUIPMENT OR OTHER ITEMS AT THE SITE OF USE, AND, TO THE 
+EXTENT PERMITTED BY LAW, DAMAGES FOR PERSONAL INJURY, OR ANY OTHER 
+DAMAGES WHETHER INCIDENTAL, CONSEQUENTIAL OR OTHERWISE, EVEN IF 
+PRESONUS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+Some states, countries, or provinces do not allow limitations on how long 
+an implied warranty lasts, so the above limitation may not apply to you.
+If you have any questions about this warranty or service received, please 
+contact PreSonus (USA) at +1-225-216-7887 or contact one of our authorized 
+international distributors at www.presonus.com/buy/international_distributors.
+Product features, design, and specifications are subject to change without notice.
+
+© 2016 PreSonus Audio Electronics, Inc. All Rights Reserved. AudioBox, CoActual, DigiMax, Eris, FireStudio, Nimbit, PreSonus, QMix, Riff to Release, Sceptre, StudioLive, Active 
+Integration, and XMAX are trademarks or registered trademarks of PreSonus Audio Electronics, Inc. Capture, Impact, Mixverb Presence, RedLightDist, SampleOne, Studio One, and 
+Tricomp are trademarks or registered trademarks of PreSonus Software Ltd. Mac and Mac OS are registered trademarks of Apple, Inc., in the U.S. and other countries. Windows is a 
+registered trademark of Microsoft, Inc., in the U.S. and other countries. Other product names mentioned herein may be trademarks of their respective companies. All specifications 
+subject to change without notice...except the recipe, which is a classic.
+ Dinner is Served
+Added bonus: PreSonus’ previously Top Secret recipe for…
+Chicken and Andouille Gumbo
+Ingredients:
+ • 1 C All-Purpose flour
+ • ¾ C Vegetable Oil
+ • 1 large onion (diced)
+ • 1 small onion (quartered)
+ • 6 celery stalks (diced)
+ • 1 large green bell pepper (diced)
+ • 3 cloves garlic (2 minced, 1 whole)
+ • 1 lb link Andouille sausage
+ • 4 Chicken leg quarters
+ • 4 qt water
+ • 4 bay leaves
+ • 1 tsp thyme
+ • 1 tsp Old Bay seasoning
+ • 1-2 C frozen okra, sliced
+ • ¼ C fresh parsley, minced
+ •  6-8 eggs (optional)
+Cooking Instructions:
+1. In a large pot, combine whole chicken leg quarters, water, quartered onion, Old Bay, 2 bay leaves and 1 whole clove garlic. 
+Cover and bring to a low boil. Simmer stock until chicken is falling off the bone. Remove the chicken and set aside. Discard 
+the onion, bay leaves, and garlic, reserving the liquid.
+2. In a heavy saucepan, heat 1 Tbsp of the oil on medium high heat and brown the andouille until it is cooked through. Set 
+aside sausage for later.
+3. In the same saucepan, add and heat remaining oil. Slowly add flour 1-2 Tbsp at a time, stirring continuously. Continue 
+cooking and stirring the roux until it is a dark brown (it should look like melted dark chocolate). Be careful to not to get the 
+oil too hot or the flour will burn and you’ll have to start over.
+4. Once roux has reached the correct color, add diced onion, celery, green pepper, and minced garlic. Cook until vegetables 
+are very tender. Do not cover.
+5. Slowly add 1 quart of chicken broth and bring to a low boil, stirring constantly. 
+6. Transfer roux mixture to a soup pot and bring to low boil. Do not cover, the roux will settle on the bottom of the pot and burn.
+7. Add remaining chicken broth, bay leaves, and thyme. Simmer for 30 minutes. 
+8. While gumbo is simmering, debone and shred chicken and slice the andouille.
+9. Add chicken and andouille to gumbo and return to a simmer. Simmer for 30-45 minutes. 
+10. Stir in frozen okra and parsley and bring to a rolling boil.
+11. Optional: Crack one egg into a teacup and quickly pour into the boiling gumbo. Repeat with the other eggs being careful 
+not to cluster them too closely. After all the eggs have risen back to the surface, reduce heat and simmer. 
+12. Correct seasoning with salt and pepper (red, white and/or black) if necessary. 
+13. Serve over rice with potato salad.
+Serves 12
+
+18011 Grand Bay Ct. • Baton Rouge,  
+Louisiana 70809 USA• 1-225-216-7887
+www.presonus.com Part# 70-12000028-B
+®
+Studio 192 and  
+Studio 192 Mobile
+USB 3.0 Audio Interface  
+and Studio Command Center
+Owner’s Manual

@@ -35,5 +35,5 @@ Slot 1 never moves — the kick on Assign 1 is what feeds the rumble.
 
 ## Sources
 
-- Roland TR-8S Reference Manual (assign instrument to Assignable Out: p.47) · Roland Australia "Assigning Sounds to Separate Outputs" guide.
+- [Roland TR-8S Reference Manual v3](../sources/official/roland-tr-8s-reference-manual-v3.pdf) (assign instrument to Assignable Out; manual page varies by version) · Roland Australia "Assigning Sounds to Separate Outputs" guide.
 - In-repo verified: `../guides/midi-sync.md`, `../knowledge-base.md`.
