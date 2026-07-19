@@ -44,7 +44,10 @@ Static Loop A slot, and its empty playback slot is unrelated to the T1 recorder 
 5. Set **RLEN = `16`** for the first test. With the normal 16-step, 4/4 pattern this is one bar.
 6. Set **TRIG = `ONE2`**. This allows the recording to end at RLEN or be stopped early deliberately.
 7. Set **LOOP = ON** if the captured bar should repeat when T5 plays.
-8. Press `[NO]` to leave the recording setup page. **Expected:** the normal T5 track view returns.
+8. Press `[FUNC]` + `[REC2]` to open **RECORDING SETUP 2** for recorder 5. Set **QREC = `OFF`**
+   for this first test, so recording begins as soon as `[REC1]` is pressed rather than waiting for a
+   pattern boundary. Set **QPL = `OFF`** so later manual playback is immediate.
+9. Press `[NO]` to leave the recording setup page. **Expected:** the normal T5 track view returns.
 
 #### 3. Make the recording
 
@@ -59,12 +62,14 @@ Static Loop A slot, and its empty playback slot is unrelated to the T1 recorder 
 
 #### 4. Verify the captured audio before trying to play it
 
-1. Press `[FUNC]` + `[REC3]`.
-2. Select **EDIT THIS RECORDING**. **Expected:** the Audio Editor opens the T5 recorder buffer and
+1. **Do not press bare `[AED]` for this check.** `[AED]` can open the currently selected playback
+   sample slot, which is not proof of what T5's recorder contains.
+2. Press `[FUNC]` + `[REC3]` while T5 is still the active track.
+3. Select **EDIT THIS RECORDING**. **Expected:** the Audio Editor opens the T5 recorder buffer and
    shows a waveform. This is the definitive evidence that a recording exists.
-3. If the editor does not open a recording/waveform, do not continue to playback. Return to section 3
+4. If the editor does not open a recording/waveform, do not continue to playback. Return to section 3
    and confirm the A/B REC1 LEDs are active before pressing `[REC1]`.
-4. If you want the take after power-off, choose **SAVE THIS RECORDING** from the same `[FUNC]` +
+5. If you want the take after power-off, choose **SAVE THIS RECORDING** from the same `[FUNC]` +
    `[REC3]` menu and complete the save name/location prompt.
 
 #### 5. Hear the loop from T5
