@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1988" viewBox="0 0 1600 1988" font-family="Helvetica, Arial, sans-serif">
+<title>Eidetic Studio — Build Order</title>
+<rect width="1600" height="1988" fill="#0d1117"/>
+<defs>
+<marker id="ah-audio" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#f3a73d"/></marker>
+<marker id="ah-midi" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#56c8f0"/></marker>
+<marker id="ah-usb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#63da8c"/></marker>
+<marker id="ah-mut" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8f9bac"/></marker>
+<marker id="ah-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#ef6b6b"/></marker>
+<marker id="ah-master" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c792ea"/></marker>
+</defs>
+<text x="800.0" y="52" text-anchor="middle" fill="#dde4ee" font-size="30" font-weight="800" font-family="Helvetica, Arial, sans-serif" letter-spacing="1">EIDETIC STUDIO — BUILD ORDER (FROM SCRATCH)</text>
+<text x="800.0" y="80" font-size="12.5" fill="#8f9bac" font-weight="normal" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">Work top to bottom. Power OFF before wiring audio. Assumes nothing is yet connected — patchbay and Octatrack on the bench.</text>
+<rect x="60" y="120" width="1480" height="148" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="60" y="120" width="1480" height="4" rx="2" fill="#63da8c"/>
+<circle cx="98" cy="154" r="17" fill="#1b2530" stroke="#63da8c" stroke-width="2"/>
+<text x="98" y="159" font-size="15" fill="#63da8c" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">0</text>
+<text x="130" y="159" font-size="15.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SESSION 0 — GATHER — confirm you have everything</text>
+<rect x="96" y="176" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="186" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Samson S-Patch Plus + rack screws · Octatrack MKII + PSU · CompactFlash 8–16 GB (not over 32 GB)</text>
+<rect x="96" y="197" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="207" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Powered USB hub (OWC/Anker 10-port) · ~30 long balanced TRS for rear wiring · 4–6 short TRS patch (30 cm)</text>
+<rect x="96" y="218" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="228" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">3× DIN MIDI · 1× ¼″ TS (kick) · 1× 3.5 mm mini → 2× ¼″ breakout (TB-03 — Boutique output is 3.5 mm, use L)</text>
+<rect x="96" y="239" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="249" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">2× XLR(F)→TRS (Soundcraft Main Mix → PreSonus line ins) · vocal mic kit if missing · label tape</text>
+<rect x="60" y="286" width="1480" height="148" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="60" y="286" width="1480" height="4" rx="2" fill="#56c8f0"/>
+<circle cx="98" cy="320" r="17" fill="#1b2530" stroke="#56c8f0" stroke-width="2"/>
+<text x="98" y="325" font-size="15" fill="#56c8f0" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">1</text>
+<text x="130" y="325" font-size="15.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SESSION 1 — MAC AND SOFTWARE</text>
+<rect x="96" y="342" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="352" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Update macOS · install/update Ableton Live 12 Suite · install PreSonus Universal Control (UC Surface) + restart</text>
+<rect x="96" y="363" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="373" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Install Elektron Transfer · Valhalla Supermassive (free, for the rumble reverb)</text>
+<rect x="96" y="384" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="394" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Create ~/Music/Eidetic Samples/ { Vocals-Raw, Vocals-Processed, Digitakt-Pending, Digitakt-OnDevice, Octatrack-CF }</text>
+<rect x="96" y="405" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="415" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Set Ableton to 48 kHz / 24-bit · save a default template (inputs 1–2 + 3–4 enabled, buffer 128)</text>
+<rect x="60" y="452" width="1480" height="148" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="60" y="452" width="1480" height="4" rx="2" fill="#e8c25a"/>
+<circle cx="98" cy="486" r="17" fill="#1b2530" stroke="#e8c25a" stroke-width="2"/>
+<text x="98" y="491" font-size="15" fill="#e8c25a" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">2</text>
+<text x="130" y="491" font-size="15.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SESSION 2 — MOUNT AND LABEL THE PATCHBAY</text>
+<rect x="96" y="508" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="518" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">POWER OFF ALL GEAR before touching the patchbay rear.</text>
+<rect x="96" y="529" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="539" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Mount the S-Patch Plus in the Zaor rack — check rear clearance for cable bend radius.</text>
+<rect x="96" y="550" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="560" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Set all columns to HALF-NORMAL (front-panel switches). Label front + rear, columns 1–24.</text>
+<rect x="96" y="571" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="581" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">PHOTOGRAPH the labelled bay before any cables go in — you&#x27;ll thank yourself later.</text>
+<rect x="60" y="618" width="1480" height="169" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="60" y="618" width="1480" height="4" rx="2" fill="#63da8c"/>
+<circle cx="98" cy="652" r="17" fill="#1b2530" stroke="#63da8c" stroke-width="2"/>
+<text x="98" y="657" font-size="15" fill="#63da8c" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">3</text>
+<text x="130" y="657" font-size="15.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SESSION 3 — WIRE AUDIO — SOURCES TO REAR-TOP</text>
+<rect x="96" y="674" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="684" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TR-8S Assign 1 (KICK, TS) → rear-top 1 · TB-03 (3.5 mm breakout, L leg) → rear-top 2</text>
+<rect x="96" y="695" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="705" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TR-8S Main L/R → rear-top 3–4 · Digitakt Out L/R → rear-top 5–6</text>
+<rect x="96" y="716" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="726" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Octatrack Main L/R → rear-top 9–10 · Octatrack Cue L/R → rear-top 13–14</text>
+<rect x="96" y="737" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="747" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Soundcraft GRP 1/2 outs → rear-top 11–12 · Soundcraft Aux 1/2 outs → rear-top 15–16</text>
+<rect x="96" y="758" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="768" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Leave rear-top 7–8 EMPTY (future synth) · 17–18 EMPTY (front-patch flex) · 19–24 future</text>
+<rect x="60" y="805" width="1480" height="190" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="60" y="805" width="1480" height="4" rx="2" fill="#63da8c"/>
+<circle cx="98" cy="839" r="17" fill="#1b2530" stroke="#63da8c" stroke-width="2"/>
+<text x="98" y="844" font-size="15" fill="#63da8c" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">4</text>
+<text x="130" y="844" font-size="15.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SESSION 4 — WIRE AUDIO — REAR-BOTTOM TO MIXER / INTERFACE / SAMPLERS</text>
+<text x="96" y="871" font-size="11.6" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-style="italic" opacity="1">Half-normal means rear-top already feeds rear-bottom internally. Now cable the bottom row outward:</text>
+<rect x="96" y="882" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="892" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Rear-bottom 1–6 → Soundcraft Ch 1–6 · leave rear-bottom 7–8 UNWIRED — no synth = no cables</text>
+<rect x="96" y="903" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="913" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Rear-bottom 9–10 → Soundcraft ST 9/10 · rear-bottom 11–12 → Digitakt In L/R  (= RESAMPLE BUS)</text>
+<rect x="96" y="924" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="934" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Rear-bottom 13–14 → PreSonus In 3–4 · rear-bottom 15–16 → Octatrack In A/B  (= OT SEND BUS)</text>
+<rect x="96" y="945" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="955" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Leave rear-bottom 17–18 UNWIRED (reserved: OT In C/D — wire on concrete need) · 19–24 future</text>
+<text x="96" y="976" font-size="11.6" fill="#ef6b6b" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">▲ Soundcraft 11/12 is the RCA-only playback channel — nothing from the patchbay goes there.</text>
+<rect x="60" y="1013" width="1480" height="148" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="60" y="1013" width="1480" height="4" rx="2" fill="#63da8c"/>
+<circle cx="98" cy="1047" r="17" fill="#1b2530" stroke="#63da8c" stroke-width="2"/>
+<text x="98" y="1052" font-size="15" fill="#63da8c" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">5</text>
+<text x="130" y="1052" font-size="15.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SESSION 5 — WIRE THE DIRECT (NON-PATCHBAY) LINKS</text>
+<rect x="96" y="1069" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1079" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Soundcraft Main Mix L/R (XLR outs) → PreSonus In 7–8 (rear line ins) — XLR→TRS · NOT In 1–2 (front preamps)</text>
+<rect x="96" y="1090" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1100" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">PreSonus Main Out → BM9S SAT/SUB IN → SAT OUT (HP 80 Hz) → HS8s · USB-C → Mac DIRECTLY, never via hub.</text>
+<rect x="96" y="1111" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1121" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Phone / Mac line out → Soundcraft RCA 11/12 for reference tracks (INTERVAL MUTE = instant A/B)</text>
+<rect x="96" y="1132" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1142" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Soundcraft USB: leave UNPLUGGED.</text>
+<rect x="60" y="1179" width="1480" height="148" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="60" y="1179" width="1480" height="4" rx="2" fill="#e8c25a"/>
+<circle cx="98" cy="1213" r="17" fill="#1b2530" stroke="#e8c25a" stroke-width="2"/>
+<text x="98" y="1218" font-size="15" fill="#e8c25a" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">6</text>
+<text x="130" y="1218" font-size="15.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SESSION 6 — WIRE MIDI (DIN CHAIN)</text>
+<rect x="96" y="1235" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1245" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Octatrack MIDI OUT → Digitakt MIDI IN</text>
+<rect x="96" y="1256" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1266" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Digitakt MIDI THRU → TR-8S MIDI IN</text>
+<rect x="96" y="1277" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1287" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TR-8S MIDI OUT → TB-03 MIDI IN  (TR-8S has no Thru jack — enable UTILITY &gt; MIDI &gt; Soft Thru: ON)</text>
+<rect x="96" y="1298" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1308" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">MiniLab 3: USB to the hub only. Not in this chain.</text>
+<rect x="60" y="1345" width="1480" height="127" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="60" y="1345" width="1480" height="4" rx="2" fill="#56c8f0"/>
+<circle cx="98" cy="1379" r="17" fill="#1b2530" stroke="#56c8f0" stroke-width="2"/>
+<text x="98" y="1384" font-size="15" fill="#56c8f0" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">7</text>
+<text x="130" y="1384" font-size="15.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SESSION 7 — WIRE USB (via the powered hub)</text>
+<rect x="96" y="1401" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1411" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Hub → Mac (one cable). Then into the hub: Digitakt, TR-8S, Octatrack (CF transfer), MiniLab 3.</text>
+<rect x="96" y="1422" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1432" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Confirm PreSonus is still the ONLY thing on the Mac&#x27;s direct USB-C — not the hub.</text>
+<rect x="96" y="1443" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1453" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Insert the formatted CompactFlash card into the Octatrack.</text>
+<rect x="60" y="1490" width="1480" height="148" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="60" y="1490" width="1480" height="4" rx="2" fill="#e8c25a"/>
+<circle cx="98" cy="1524" r="17" fill="#1b2530" stroke="#e8c25a" stroke-width="2"/>
+<text x="98" y="1529" font-size="15" fill="#e8c25a" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">8</text>
+<text x="130" y="1529" font-size="15.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SESSION 8 — SET CLOCK AND TEST</text>
+<rect x="96" y="1546" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1556" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Octatrack: Clock Send ON, Transport Send ON. Digitakt/TR-8S/TB-03: receive/external sync ON.</text>
+<rect x="96" y="1567" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1577" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Hit play on the Octatrack — all four devices should start together. Watch for any device drifting.</text>
+<rect x="96" y="1588" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1598" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">In Ableton: select PreSonus as the audio device, arm inputs 7–8 and 3–4, record a test loop.</text>
+<rect x="96" y="1609" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1619" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">If timing is solid, you&#x27;re done. If you see real drift, only THEN look at a MIDI Thru box / Nome II.</text>
+<rect x="60" y="1656" width="1480" height="190" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="60" y="1656" width="1480" height="4" rx="2" fill="#ef6b6b"/>
+<circle cx="98" cy="1690" r="17" fill="#1b2530" stroke="#ef6b6b" stroke-width="2"/>
+<text x="98" y="1695" font-size="15" fill="#ef6b6b" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">9</text>
+<text x="130" y="1695" font-size="15.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SESSION 9 — FIRST SOUND — VALIDATE THE TWO BUSES</text>
+<rect x="96" y="1712" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1722" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TR-8S performance kit: KICK → Assign 1. It leaves the Main Mix and appears alone on Soundcraft Ch 1.</text>
+<rect x="96" y="1733" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1743" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Drive Ch 1 gain until the dbx limiter LED flickers — that&#x27;s the analogue punch. Same trick on Ch 2 (TB-03).</text>
+<rect x="96" y="1754" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1764" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SEND BUS: turn up Aux 1 on Ch 1 → OT In A · Thru machine → dark delay/reverb · low-pass ~150 Hz · resample to Flex.</text>
+<rect x="96" y="1775" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1785" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Blend dry kick (Ch 1) against the resampled rumble (OT on ST 9/10). That&#x27;s the genre&#x27;s low end.</text>
+<rect x="96" y="1796" width="11" height="11" rx="2" fill="none" stroke="#8f9bac" stroke-width="1.3" opacity="1"/>
+<text x="118" y="1806" font-size="11.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">RESAMPLE BUS: press 1-2 (GRP) on Ch 1 + 5–6, hit sample on the Digitakt — groove captured, zero cables.</text>
+<text x="96" y="1827" font-size="11.6" fill="#ef6b6b" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">▲ Keep Aux 1/2 + GRP off on channel 9/10 (the OT itself) or you build a feedback loop.</text>
+<rect x="60" y="1864" width="1480" height="70" rx="10" fill="#0d1117" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<text x="84" y="1892" font-size="14" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SHOPPING SHORTLIST</text>
+<text x="84" y="1916" font-size="12" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">~30 long balanced TRS · 6 short TRS patch (30 cm) · 3 DIN MIDI · 1 TS (kick) · 1× 3.5 mm→2×¼″ breakout (TB-03) · 2× XLR→TRS (main mix) · powered USB hub · CF 8–16 GB · vocal mic kit if missing.</text>
+<text x="1540" y="1968" font-size="10" fill="#5d6878" font-weight="normal" text-anchor="end" font-family="Helvetica, Arial, sans-serif" opacity="1">Eidetic Studio · v8 · July 2026 · sheet 4/4 — Build Order</text>
+</svg>

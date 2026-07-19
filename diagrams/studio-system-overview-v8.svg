@@ -1,0 +1,274 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1400" viewBox="0 0 1560 1400" font-family="Helvetica, Arial, sans-serif">
+<title>Eidetic Studio — System Overview v7</title>
+<rect width="1560" height="1400" fill="#0d1117"/>
+<defs>
+<marker id="ah-audio" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#f3a73d"/></marker>
+<marker id="ah-midi" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#56c8f0"/></marker>
+<marker id="ah-usb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#63da8c"/></marker>
+<marker id="ah-mut" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8f9bac"/></marker>
+<marker id="ah-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#ef6b6b"/></marker>
+<marker id="ah-master" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c792ea"/></marker>
+<marker id="ah-mon" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7fd4c1"/></marker>
+</defs>
+<rect x="0" y="0" width="1560" height="92" fill="#10161f"/>
+<rect x="0" y="90" width="1560" height="2" fill="#f3a73d" opacity="0.85"/>
+<text x="40" y="42" font-size="24" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="1.2" opacity="1">EIDETIC STUDIO — SYSTEM OVERVIEW</text>
+<text x="40" y="68" font-size="12.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.4" opacity="1">v8 · July 2026 · Octatrack clock master · Patchbay-central · Hybrid stem capture (In 5–6) · BM9S monitor chain · DJM-850 guest input (front 1–2)</text>
+<rect x="40" y="112" width="330" height="132" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="40" y="112" width="330" height="4" rx="2" fill="#8f9bac"/>
+<text x="56" y="138" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">LEGEND</text>
+<line x1="58" y1="154" x2="92" y2="154" stroke="#f3a73d" stroke-width="2.5"/>
+<text x="102" y="158" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Audio · ¼″ TRS / XLR (balanced where possible)</text>
+<line x1="58" y1="175" x2="92" y2="175" stroke="#7fd4c1" stroke-width="2.5"/>
+<text x="102" y="179" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Monitor path · PreSonus → BM9S → HS8</text>
+<line x1="58" y1="196" x2="92" y2="196" stroke="#56c8f0" stroke-width="2.5"/>
+<text x="102" y="200" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">MIDI · 5-pin DIN (clock + transport)</text>
+<line x1="58" y1="217" x2="92" y2="217" stroke="#63da8c" stroke-width="2.5"/>
+<text x="102" y="221" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">USB · interface / control (dashed = data only)</text>
+<rect x="390" y="112" width="600" height="132" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="390" y="112" width="600" height="4" rx="2" fill="#ef6b6b"/>
+<text x="406" y="138" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">NON-NEGOTIABLE RULES</text>
+<text x="406" y="160" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">• PreSonus USB-C DIRECT to Mac — never via hub  • No macOS Aggregate Device</text>
+<text x="406" y="179" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">• Soundcraft mains feed PreSonus In 7–8 — NEVER the monitors directly</text>
+<text x="406" y="198" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">• Speaker path is exclusively PreSonus Main Out → BM9S → HS8</text>
+<text x="406" y="217" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">• Soundcraft &amp; DJM-850 USB stay UNPLUGGED from the Mac (audio-wise)</text>
+<rect x="1010" y="112" width="510" height="132" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="1010" y="112" width="510" height="4" rx="2" fill="#c792ea"/>
+<text x="1026" y="138" font-size="13.5" fill="#c792ea" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">OCTATRACK MKII — KNOW THIS</text>
+<text x="1026" y="160" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">• USB = transfer/storage ONLY — no Overbridge on MKII</text>
+<text x="1026" y="179" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">• Samples must be 44.1 kHz WAV/AIFF — 48 k plays at wrong pitch</text>
+<text x="1026" y="198" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">• Realtime timestretch clean within ~±10% — pre-conform the rest</text>
+<text x="1026" y="217" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">• Cue L/R → PreSonus 3–4 = parallel stem capture</text>
+<text x="40" y="266" font-size="11" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="1.5" opacity="1">SOUND SOURCES &amp; SEQUENCERS</text>
+<text x="430" y="266" font-size="11" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="1.5" opacity="1">CENTRAL ROUTING</text>
+<text x="770" y="266" font-size="11" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="1.5" opacity="1">ANALOGUE SUMMING · GUEST GEAR</text>
+<text x="1170" y="266" font-size="11" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="1.5" opacity="1">INTERFACE · COMPUTER · MONITORING</text>
+<rect x="40" y="276" width="320" height="150" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="40" y="276" width="320" height="4" rx="2" fill="#c792ea"/>
+<text x="56" y="302" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">OCTATRACK MKII</text>
+<rect x="229.9" y="286" width="123.1" height="18" rx="9" fill="none" stroke="#c792ea" stroke-width="1.2"/>
+<text x="291.45" y="299" font-size="9" fill="#c792ea" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">MIDI CLOCK MASTER</text>
+<text x="56" y="324" font-size="10.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Performance sampler · scenes · crossfader · live FX</text>
+<text x="56" y="341" font-size="10.8" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Main L/R → PB 9–10 → SC stereo ch 9/10</text>
+<text x="56" y="358" font-size="10.8" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Cue L/R → PB 13–14 → PreSonus In 3–4</text>
+<text x="56" y="375" font-size="10.8" fill="#56c8f0" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">MIDI Out → Digitakt MIDI In (chain head)</text>
+<text x="56" y="392" font-size="10.8" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">In A/B ← Aux send bus (PB 15–16) · C/D ← PB 17–18</text>
+<text x="56" y="412" font-size="10.2" fill="#7fd4c1" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Sample layer: loops/vocals hot-switched · 44.1 k prepped</text>
+<rect x="40" y="440" width="320" height="116" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="40" y="440" width="320" height="4" rx="2" fill="#2c3848"/>
+<text x="56" y="466" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">DIGITAKT MK1</text>
+<rect x="192.1" y="450" width="160.9" height="18" rx="9" fill="none" stroke="#8f9bac" stroke-width="1.2"/>
+<text x="272.55" y="463" font-size="9" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">PROBATION · SEPT REVIEW</text>
+<text x="56" y="488" font-size="10.4" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Drum sampler · p-locks · physical MIDI THRU · no timestretch</text>
+<text x="56" y="505" font-size="10.8" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Out L/R → PB 5–6 → SC ch 5–6</text>
+<text x="56" y="522" font-size="10.8" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">In L/R ← GRP 1/2 resample bus (PB 11–12)</text>
+<text x="56" y="539" font-size="10.8" fill="#56c8f0" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">MIDI In ← OT · Thru → TR-8S</text>
+<rect x="40" y="570" width="320" height="132" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="40" y="570" width="320" height="4" rx="2" fill="#2c3848"/>
+<text x="56" y="596" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">TR-8S</text>
+<rect x="121.0" y="580" width="79.0" height="18" rx="9" fill="none" stroke="#f3a73d" stroke-width="1.2"/>
+<text x="160.5" y="593" font-size="9" fill="#f3a73d" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">KICK SPLIT</text>
+<text x="56" y="618" font-size="10.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Drum synth · internal per-track mixer + FX</text>
+<text x="56" y="635" font-size="10.8" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Main L/R → PB 3–4 → SC ch 3–4</text>
+<text x="56" y="652" font-size="10.8" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Assign 1 (KICK) → PB 1 → SC 1 dbx limiter · per-kit</text>
+<text x="56" y="669" font-size="10.8" fill="#ef6b6b" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">NO Thru port — Soft Thru: ON re-sends clock</text>
+<text x="56" y="686" font-size="10.8" fill="#56c8f0" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">MIDI In ← Digitakt Thru · Out(≡Thru) → TB-03</text>
+<rect x="40" y="716" width="320" height="96" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="40" y="716" width="320" height="4" rx="2" fill="#2c3848"/>
+<text x="56" y="742" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">TB-03</text>
+<text x="56" y="764" font-size="10.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Acid bass · end of MIDI chain</text>
+<text x="56" y="781" font-size="10.8" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Out (3.5mm mini!) → PB 2 → SC 2 dbx limiter</text>
+<text x="56" y="798" font-size="10.8" fill="#56c8f0" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">MIDI In ← TR-8S · Sync: enabled</text>
+<rect x="40" y="826" width="320" height="92" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="40" y="826" width="320" height="4" rx="2" fill="#2c3848"/>
+<text x="56" y="852" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">MINILAB 3</text>
+<text x="56" y="874" font-size="10.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Ableton controller · soft synths · macros</text>
+<text x="56" y="891" font-size="10.8" fill="#63da8c" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">USB → powered hub → Mac</text>
+<text x="56" y="908" font-size="10.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">No DIN involvement · not in clock chain</text>
+<line x1="70" y1="426" x2="70" y2="438" stroke="#56c8f0" stroke-width="2.2" marker-end="url(#ah-midi)"/>
+<text x="80" y="439" font-size="9" fill="#56c8f0" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">DIN</text>
+<line x1="70" y1="556" x2="70" y2="568" stroke="#56c8f0" stroke-width="2.2" marker-end="url(#ah-midi)"/>
+<text x="80" y="569" font-size="9" fill="#56c8f0" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">DIN</text>
+<line x1="70" y1="702" x2="70" y2="714" stroke="#56c8f0" stroke-width="2.2" marker-end="url(#ah-midi)"/>
+<text x="80" y="715" font-size="9" fill="#56c8f0" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">DIN</text>
+<rect x="430" y="276" width="270" height="642" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="430" y="276" width="270" height="4" rx="2" fill="#e8c25a"/>
+<text x="446" y="302" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">SAMSON S-PATCH PLUS</text>
+<text x="446" y="320" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">48-pt TRS · HALF-NORMAL</text>
+<text x="446" y="336" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">rear-top = source · rear-bottom = destination</text>
+<text x="446" y="362" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">COL</text>
+<text x="488" y="362" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SOURCE (rear top)</text>
+<text x="618" y="362" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">DEST (rear btm)</text>
+<text x="446" y="388" font-size="10.5" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">1</text>
+<text x="488" y="388" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TR-8S Kick (Asgn1)</text>
+<text x="618" y="388" font-size="10.5" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SC 1</text>
+<text x="446" y="412" font-size="10.5" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">2</text>
+<text x="488" y="412" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TB-03</text>
+<text x="618" y="412" font-size="10.5" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SC 2</text>
+<text x="446" y="436" font-size="10.5" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">3–4</text>
+<text x="488" y="436" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TR-8S Main L/R</text>
+<text x="618" y="436" font-size="10.5" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SC 3–4</text>
+<text x="446" y="460" font-size="10.5" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">5–6</text>
+<text x="488" y="460" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Digitakt L/R</text>
+<text x="618" y="460" font-size="10.5" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SC 5–6</text>
+<text x="446" y="484" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">7–8</text>
+<text x="488" y="484" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">— future synth —</text>
+<text x="618" y="484" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">unwired</text>
+<text x="446" y="508" font-size="10.5" fill="#c792ea" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">9–10</text>
+<text x="488" y="508" font-size="10.5" fill="#c792ea" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Octatrack Main L/R</text>
+<text x="618" y="508" font-size="10.5" fill="#c792ea" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SC 9/10</text>
+<text x="446" y="532" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">11–12</text>
+<text x="488" y="532" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SC GRP 1/2 out</text>
+<text x="618" y="532" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Digitakt In</text>
+<text x="446" y="556" font-size="10.5" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">13–14</text>
+<text x="488" y="556" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Octatrack Cue L/R</text>
+<text x="618" y="556" font-size="10.5" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">PS In 3–4</text>
+<text x="446" y="580" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">15–16</text>
+<text x="488" y="580" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SC Aux 1/2 out</text>
+<text x="618" y="580" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">OT In A/B</text>
+<text x="446" y="604" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">17–18</text>
+<text x="488" y="604" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">(rsvd: OT In C/D)</text>
+<text x="618" y="604" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">unwired</text>
+<rect x="444" y="622" width="242" height="86" rx="6" fill="#1b2530" stroke="#2c3848" stroke-width="1"/>
+<text x="456" y="642" font-size="9.8" fill="#7fd4c1" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">PERMANENT FRONT TAPS (leave in):</text>
+<text x="456" y="660" font-size="10" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">row 1 front-top → PreSonus In 5 (dry KICK)</text>
+<text x="456" y="677" font-size="10" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">row 2 front-top → PreSonus In 6 (dry TB-03)</text>
+<text x="456" y="694" font-size="9.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">half-normal mults a copy — SC 1/2 still fed</text>
+<text x="446" y="728" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Front patches: rumble-kick · acid morph ·</text>
+<text x="446" y="743" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">DT resample · OT thru-FX (see sheet 2/4)</text>
+<rect x="770" y="276" width="330" height="300" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="770" y="276" width="330" height="4" rx="2" fill="#f3a73d"/>
+<text x="786" y="302" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">SOUNDCRAFT SIGNATURE 12 MTK</text>
+<text x="786" y="322" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Analogue summing · tactile faders · USB unplugged</text>
+<text x="786" y="352" font-size="10.8" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">Mono 1</text>
+<text x="888" y="352" font-size="10.8" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TR-8S Kick · dbx LIMITER — drive it</text>
+<text x="786" y="375" font-size="10.8" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">Mono 2</text>
+<text x="888" y="375" font-size="10.8" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TB-03 acid · dbx LIMITER — drive it</text>
+<text x="786" y="398" font-size="10.8" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">Mono 3–4</text>
+<text x="888" y="398" font-size="10.8" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TR-8S Main L/R (pan hard L/R)</text>
+<text x="786" y="421" font-size="10.8" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">Mono 5–6</text>
+<text x="888" y="421" font-size="10.8" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Digitakt L/R (pan hard L/R)</text>
+<text x="786" y="444" font-size="10.8" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">ST 7/8</text>
+<text x="888" y="444" font-size="10.8" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">FREE — next synth</text>
+<text x="786" y="467" font-size="10.8" fill="#c792ea" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">ST 9/10</text>
+<text x="888" y="467" font-size="10.8" fill="#c792ea" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Octatrack Main — zero Aux/GRP here!</text>
+<text x="786" y="490" font-size="10.8" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">RCA 11/12</text>
+<text x="888" y="490" font-size="10.8" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Playback ch — reference A/B only</text>
+<text x="786" y="519" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Gain-stage WARM: peaks ~ −6 dB per channel,</text>
+<text x="786" y="536" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">trim the master — analogue colour is the point.</text>
+<text x="786" y="557" font-size="10.8" fill="#f3a73d" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Main Mix L/R (XLR) → PS In 7–8 · XLR(F)→TRS</text>
+<rect x="770" y="600" width="330" height="74" rx="8" fill="#1b2530" stroke="#2c3848" stroke-width="1"/>
+<text x="786" y="618" font-size="10" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">BUSES PUT TO WORK:</text>
+<text x="786" y="634" font-size="10" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Aux 1/2 → OT In A/B = per-channel FX send into the OT</text>
+<text x="786" y="650" font-size="10" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">GRP 1/2 → DT In = press 1-2 button, hit sample (resample)</text>
+<text x="786" y="666" font-size="10" fill="#ef6b6b" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Zero Aux + GRP sends on ch 9/10 — feedback loop risk</text>
+<rect x="770" y="700" width="330" height="176" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="770" y="700" width="330" height="4" rx="2" fill="#e07a9a"/>
+<text x="786" y="726" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">PIONEER DJM-850</text>
+<rect x="896.9" y="710" width="186.1" height="18" rx="9" fill="none" stroke="#e07a9a" stroke-width="1.2"/>
+<text x="989.9499999999999" y="723" font-size="9" fill="#e07a9a" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">GUEST · CONNECT WHEN NEEDED</text>
+<text x="786" y="748" font-size="10.4" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">DJ mixer for set practice / recording — analogue in only</text>
+<text x="786" y="767" font-size="10.8" fill="#e07a9a" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">REC OUT (RCA) → 2× RCA→XLR(M) → PS FRONT In 1–2</text>
+<text x="786" y="786" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">REC OUT ignores master knob — consistent record level</text>
+<text x="786" y="805" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Monitor via Mode 1 (UC Surface direct) · record in Live</text>
+<text x="786" y="824" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Preamp gain saved in UC Surface — recallable, set once</text>
+<text x="786" y="845" font-size="10.5" fill="#ef6b6b" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">⚠ NEVER its USB soundcard into the Mac (Aggregate rule)</text>
+<text x="786" y="862" font-size="10.2" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">⚠ Not through the Soundcraft — front inputs keep it simple</text>
+<rect x="1170" y="276" width="350" height="268" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="1170" y="276" width="350" height="4" rx="2" fill="#63da8c"/>
+<text x="1186" y="302" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">PRESONUS STUDIO 192</text>
+<text x="1186" y="322" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Sole interface · monitor controller · recallable preamps</text>
+<text x="1186" y="349" font-size="10.6" fill="#e07a9a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">IN 1–2 FRONT (mic/inst · preamp) ← DJM-850 / vocal mic</text>
+<text x="1186" y="368" font-size="10.6" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">IN 3–4 (rear line) ← Octatrack Cue (parallel stems)</text>
+<text x="1186" y="387" font-size="10.6" fill="#7fd4c1" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">IN 5 (rear line) ← dry KICK · PB row 1 front tap</text>
+<text x="1186" y="406" font-size="10.6" fill="#7fd4c1" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">IN 6 (rear line) ← dry TB-03 · PB row 2 front tap</text>
+<text x="1186" y="425" font-size="10.6" fill="#f3a73d" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">IN 7–8 (rear line) ← Soundcraft Main Mix (glued sum)</text>
+<text x="1186" y="444" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Rear line ins bypass the preamps — clean, direct-to-ADC</text>
+<text x="1186" y="466" font-size="10.6" fill="#7fd4c1" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">MAIN OUT L/R (TRS) → BM9S SAT/SUB IN (XLR)</text>
+<text x="1186" y="485" font-size="10.6" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">2× headphone outs · UC Surface zero-latency mon.</text>
+<text x="1186" y="506" font-size="10.6" fill="#63da8c" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">USB-C → Mac mini — DIRECT, no hub</text>
+<text x="1186" y="528" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Hybrid capture: SUM + dry kick + dry bass in one pass</text>
+<rect x="1170" y="570" width="350" height="176" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="1170" y="570" width="350" height="4" rx="2" fill="#63da8c"/>
+<text x="1186" y="596" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">MAC MINI M4 PRO</text>
+<text x="1186" y="616" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Ableton Live 12 Suite · 48 kHz / 24-bit · buffer 128</text>
+<text x="1186" y="641" font-size="10.8" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Template “Eidetic Techno 140” · 138–142 BPM</text>
+<text x="1186" y="660" font-size="10.8" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Inputs: 1–2 DJM · 3–4 OT cue · 5–6 stems · 7–8 SUM</text>
+<text x="1186" y="679" font-size="10.8" fill="#7fd4c1" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Stem tracks (5/6) = “Sends Only” → drive Rumble return</text>
+<text x="1186" y="698" font-size="10.8" fill="#63da8c" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Powered hub → DT · TR-8S · OT(data) · MiniLab</text>
+<text x="1186" y="717" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Audition loops/vocals warped (Complex Pro) at set tempo</text>
+<text x="1186" y="734" font-size="10.5" fill="#ef6b6b" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">OT-bound samples: resample 48 k → 44.1 k first!</text>
+<rect x="1170" y="772" width="350" height="128" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="1170" y="772" width="350" height="4" rx="2" fill="#7fd4c1"/>
+<text x="1186" y="798" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">DYNAUDIO BM9S SUB</text>
+<rect x="1379.9" y="782" width="123.1" height="18" rx="9" fill="none" stroke="#7fd4c1" stroke-width="1.2"/>
+<text x="1441.45" y="795" font-size="9" fill="#7fd4c1" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">MONITOR CHAIN HUB</text>
+<text x="1186" y="820" font-size="10.6" fill="#7fd4c1" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SAT/SUB IN ← PreSonus Main Out (TRS→XLR)</text>
+<text x="1186" y="839" font-size="10.6" fill="#7fd4c1" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SAT OUT (high-passed 80 Hz) → HS8 L/R (XLR–XLR)</text>
+<text x="1186" y="858" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SUB LP ~80 Hz · phase 0/180 by ear · ~29 Hz extension</text>
+<text x="1186" y="877" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Mono single driver = the mono-sub discipline check</text>
+<rect x="1170" y="926" width="350" height="86" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="1170" y="926" width="350" height="4" rx="2" fill="#f3a73d"/>
+<text x="1186" y="952" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">YAMAHA HS8 × 2</text>
+<text x="1186" y="974" font-size="10.8" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Fed from BM9S SAT OUT — arrives high-passed</text>
+<text x="1186" y="993" font-size="10.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Level controlled at the PreSonus</text>
+<line x1="360" y1="351" x2="424" y2="351" stroke="#f3a73d" stroke-width="2" marker-end="url(#ah-audio)"/>
+<line x1="360" y1="498" x2="424" y2="498" stroke="#f3a73d" stroke-width="2" marker-end="url(#ah-audio)"/>
+<line x1="360" y1="636" x2="424" y2="636" stroke="#f3a73d" stroke-width="2" marker-end="url(#ah-audio)"/>
+<line x1="360" y1="764" x2="424" y2="764" stroke="#f3a73d" stroke-width="2" marker-end="url(#ah-audio)"/>
+<line x1="700" y1="426" x2="764" y2="426" stroke="#f3a73d" stroke-width="2.4" marker-end="url(#ah-audio)"/>
+<text x="732" y="416" font-size="9.5" fill="#8f9bac" font-weight="normal" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">cols 1–10</text>
+<line x1="700" y1="660" x2="744" y2="660" stroke="#f3a73d" stroke-width="2" marker-end="url(#ah-audio)"/>
+<text x="752" y="664" font-size="9.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">13–14 · OT Cue → PS In 3–4</text>
+<line x1="700" y1="700" x2="744" y2="700" stroke="#7fd4c1" stroke-width="2" marker-end="url(#ah-mon)"/>
+<text x="752" y="704" font-size="9.5" fill="#7fd4c1" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">front taps rows 1–2 → PS In 5–6</text>
+<line x1="1100" y1="396" x2="1164" y2="396" stroke="#f3a73d" stroke-width="2.4" marker-end="url(#ah-audio)"/>
+<text x="1132" y="386" font-size="9.5" fill="#8f9bac" font-weight="normal" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">Main Mix</text>
+<text x="1132" y="410" font-size="9.5" fill="#f3a73d" font-weight="normal" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">→ In 7–8</text>
+<path d="M 1100 780 L 1136 780 L 1136 349 L 1164 349" fill="none" stroke="#e07a9a" stroke-width="2.2" marker-end="url(#ah-warn)"/>
+<text x="1142" y="570" font-size="9.5" fill="#e07a9a" font-weight="normal" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">REC OUT</text>
+<text x="1142" y="584" font-size="9.5" fill="#e07a9a" font-weight="normal" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">→ front 1–2</text>
+<line x1="1345" y1="544" x2="1345" y2="566" stroke="#63da8c" stroke-width="2.2" marker-end="url(#ah-usb)"/>
+<text x="1355" y="561" font-size="9.5" fill="#63da8c" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">USB-C direct</text>
+<path d="M 1520 466 L 1544 466 L 1544 812 L 1524 812" fill="none" stroke="#7fd4c1" stroke-width="2.4" marker-end="url(#ah-mon)"/>
+<text x="1536" y="640" font-size="9" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1"></text>
+<line x1="1345" y1="900" x2="1345" y2="922" stroke="#7fd4c1" stroke-width="2.4" marker-end="url(#ah-mon)"/>
+<text x="1355" y="917" font-size="9.5" fill="#7fd4c1" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">SAT OUT · HP 80 Hz</text>
+<text x="40" y="1052" font-size="11" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="1.5" opacity="1">WORKFLOW MODES</text>
+<rect x="40" y="1062" width="283" height="118" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="40" y="1062" width="283" height="4" rx="2" fill="#c792ea"/>
+<text x="56" y="1088" font-size="13" fill="#c792ea" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">A — SYNCED JAM</text>
+<text x="56" y="1110" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Tight rhythm work. OT clock</text>
+<text x="56" y="1127" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">master, hardware slaved via DIN.</text>
+<text x="56" y="1144" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Ableton records audio only.</text>
+<rect x="339.25" y="1062" width="283" height="118" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="339.25" y="1062" width="283" height="4" rx="2" fill="#63da8c"/>
+<text x="355.25" y="1088" font-size="13" fill="#63da8c" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">B — ABLETON TRACKING</text>
+<text x="355.25" y="1110" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Vocals, keys, plugin chains.</text>
+<text x="355.25" y="1127" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Buffer 128 · Mode 2 monitoring.</text>
+<text x="355.25" y="1144" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Mic → PS front combo input.</text>
+<rect x="638.5" y="1062" width="283" height="118" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="638.5" y="1062" width="283" height="4" rx="2" fill="#f3a73d"/>
+<text x="654.5" y="1088" font-size="13" fill="#f3a73d" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">C — FREE-RUNNING</text>
+<text x="654.5" y="1110" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Atmospheric, off-grid sessions.</text>
+<text x="654.5" y="1127" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">OT Clock Send OFF · by hand.</text>
+<text x="654.5" y="1144" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Record long · warp later.</text>
+<rect x="937.75" y="1062" width="283" height="118" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="937.75" y="1062" width="283" height="4" rx="2" fill="#e8c25a"/>
+<text x="953.75" y="1088" font-size="13" fill="#e8c25a" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">D — VOCAL → HARDWARE</text>
+<text x="953.75" y="1110" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Mic → PS → edit in Live →</text>
+<text x="953.75" y="1127" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">resample 44.1 k → CF card.</text>
+<text x="953.75" y="1144" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">OT sample layer feeds jams.</text>
+<rect x="1237.0" y="1062" width="283" height="118" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="1237.0" y="1062" width="283" height="4" rx="2" fill="#e07a9a"/>
+<text x="1253.0" y="1088" font-size="13" fill="#e07a9a" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">E — DJ SET CAPTURE</text>
+<text x="1253.0" y="1110" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">DJM-850 → PS front In 1–2.</text>
+<text x="1253.0" y="1127" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Mode 1 direct monitoring.</text>
+<text x="1253.0" y="1144" font-size="10.4" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Record the set in Ableton.</text>
+<rect x="40" y="1202" width="1480" height="112" rx="8" fill="#1b2530" stroke="#2c3848" stroke-width="1"/>
+<text x="56" y="1230" font-size="12" fill="#e8c25a" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.8" opacity="1">SOUND TARGET — CHLÄR · CHONTANE · ANNĒ · HEMKA · ROSATI</text>
+<text x="56" y="1254" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Rumble kicks: kick split to SC 1, dbx limiter driven, Aux 1 → OT In A thru-FX, resampled &amp; layered under the dry kick · dry stems (In 5–6) drive the in-the-box Rumble return.</text>
+<text x="56" y="1273" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Sample layer: loops · toms · percussion · rap vocals — auditioned warped in Ableton (Complex Pro), prepped to 44.1 k bar-trimmed pool for OT hot-switching (±10% realtime stretch).</text>
+<text x="56" y="1292" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Analogue colour: warm gain per channel · OT scenes/crossfader for groove · capture every jam · RCA 11/12 = reference, INTERVAL MUTE = instant A/B · mono-sub truth via BM9S.</text>
+<text x="1520" y="1382" font-size="10" fill="#5d6878" font-weight="normal" text-anchor="end" font-family="Helvetica, Arial, sans-serif" opacity="1">Eidetic Studio · v8 · July 2026 · sheet 1/4 — System Overview (full set v8)</text>
+</svg>

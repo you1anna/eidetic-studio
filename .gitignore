@@ -1,0 +1,5 @@
+# macOS / exFAT litter
+.DS_Store
+._*
+$RECYCLE.BIN/
+System Volume Information/

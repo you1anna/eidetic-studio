@@ -1,0 +1,364 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1720" viewBox="0 0 1560 1720" font-family="Helvetica, Arial, sans-serif">
+<title>Eidetic Studio — Patchbay Wiring Reference</title>
+<rect width="1560" height="1720" fill="#0d1117"/>
+<defs>
+<marker id="ah-audio" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#f3a73d"/></marker>
+<marker id="ah-midi" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#56c8f0"/></marker>
+<marker id="ah-usb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#63da8c"/></marker>
+<marker id="ah-mut" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8f9bac"/></marker>
+<marker id="ah-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#ef6b6b"/></marker>
+<marker id="ah-master" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c792ea"/></marker>
+</defs>
+<rect x="0" y="0" width="1560" height="92" fill="#10161f"/>
+<rect x="0" y="90" width="1560" height="2" fill="#e8c25a" opacity="0.85"/>
+<text x="40" y="42" font-size="24" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="1.2" opacity="1">PATCHBAY WIRING REFERENCE</text>
+<text x="40" y="68" font-size="12.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.4" opacity="1">Samson S-Patch Plus · half-normalled · POWER OFF before touching the rear · photograph after any change</text>
+<rect x="40" y="122" width="1480" height="360" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="40" y="122" width="1480" height="4" rx="2" fill="#e8c25a"/>
+<text x="56" y="148" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">REAR PANEL — looking at the BACK of the unit</text>
+<text x="56" y="168" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Top row = SOURCES (outputs from gear) · Bottom row = DESTINATIONS (inputs to mixer / interface / samplers)</text>
+<rect x="70.0" y="218" width="102.5" height="232" rx="10" fill="none" stroke="#f3a73d" stroke-width="1.1" opacity="0.8"/>
+<text x="121.25" y="210" font-size="9" fill="#f3a73d" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">→ dbx LIMITERS</text>
+<rect x="187.0" y="218" width="219.5" height="232" rx="10" fill="none" stroke="#f3a73d" stroke-width="1.1" opacity="0.8"/>
+<text x="296.75" y="210" font-size="9" fill="#f3a73d" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">WIRED → SC 3–6</text>
+<rect x="421.0" y="218" width="102.5" height="232" rx="10" fill="none" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="3,3" opacity="0.8"/>
+<text x="472.25" y="210" font-size="9" fill="#5d6878" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">SYNTH → ST 7/8</text>
+<rect x="538.0" y="218" width="102.5" height="232" rx="10" fill="none" stroke="#f3a73d" stroke-width="1.1" opacity="0.8"/>
+<text x="589.25" y="210" font-size="9" fill="#f3a73d" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">OT → ST 9/10</text>
+<rect x="655.0" y="218" width="102.5" height="232" rx="10" fill="none" stroke="#e8c25a" stroke-width="1.1" opacity="0.8"/>
+<text x="706.25" y="210" font-size="9" fill="#e8c25a" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">RESAMPLE BUS</text>
+<rect x="772.0" y="218" width="102.5" height="232" rx="10" fill="none" stroke="#c792ea" stroke-width="1.1" opacity="0.8"/>
+<text x="823.25" y="210" font-size="9" fill="#c792ea" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">OT CUE → PS</text>
+<rect x="889.0" y="218" width="102.5" height="232" rx="10" fill="none" stroke="#e8c25a" stroke-width="1.1" opacity="0.8"/>
+<text x="940.25" y="210" font-size="9" fill="#e8c25a" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">OT SEND BUS</text>
+<rect x="1006.0" y="218" width="102.5" height="232" rx="10" fill="none" stroke="#e8c25a" stroke-width="1.1" opacity="0.8"/>
+<text x="1057.25" y="210" font-size="9" fill="#5d6878" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">FLEX · UNWIRED</text>
+<rect x="1123.0" y="218" width="336.5" height="232" rx="10" fill="none" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="3,3" opacity="0.8"/>
+<text x="1291.25" y="210" font-size="9" fill="#5d6878" font-weight="bold" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" opacity="1">FUTURE</text>
+<text x="52" y="274" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="end" font-family="Helvetica, Arial, sans-serif" opacity="1">SOURCE</text>
+<text x="52" y="418" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="end" font-family="Helvetica, Arial, sans-serif" opacity="1">DEST</text>
+<text x="92.0" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">KICK</text>
+<circle cx="92.0" cy="318" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="92.0" cy="318" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="92.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">1</text>
+<line x1="92.0" y1="350" x2="92.0" y2="370" stroke="#f3a73d" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="92.0" cy="384" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="92.0" cy="384" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="92.0" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">SC 1</text>
+<text x="150.5" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">TB-03</text>
+<circle cx="150.5" cy="318" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="150.5" cy="318" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="150.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">2</text>
+<line x1="150.5" y1="350" x2="150.5" y2="370" stroke="#f3a73d" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="150.5" cy="384" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="150.5" cy="384" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="150.5" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">SC 2</text>
+<text x="209.0" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">DT L</text>
+<circle cx="209.0" cy="318" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="209.0" cy="318" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="209.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">3</text>
+<line x1="209.0" y1="350" x2="209.0" y2="370" stroke="#f3a73d" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="209.0" cy="384" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="209.0" cy="384" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="209.0" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">SC 3</text>
+<text x="267.5" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">DT R</text>
+<circle cx="267.5" cy="318" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="267.5" cy="318" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="267.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">4</text>
+<line x1="267.5" y1="350" x2="267.5" y2="370" stroke="#f3a73d" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="267.5" cy="384" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="267.5" cy="384" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="267.5" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">SC 4</text>
+<text x="326.0" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">TR8S L</text>
+<circle cx="326.0" cy="318" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="326.0" cy="318" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="326.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">5</text>
+<line x1="326.0" y1="350" x2="326.0" y2="370" stroke="#f3a73d" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="326.0" cy="384" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="326.0" cy="384" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="326.0" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">SC 5</text>
+<text x="384.5" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">TR8S R</text>
+<circle cx="384.5" cy="318" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="384.5" cy="318" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="384.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">6</text>
+<line x1="384.5" y1="350" x2="384.5" y2="370" stroke="#f3a73d" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="384.5" cy="384" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="384.5" cy="384" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="384.5" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">SC 6</text>
+<text x="443.0" y="288" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<circle cx="443.0" cy="318" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="443.0" cy="318" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="443.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">7</text>
+<line x1="443.0" y1="350" x2="443.0" y2="370" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="443.0" cy="384" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="443.0" cy="384" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="443.0" y="406" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">SC 7</text>
+<text x="501.5" y="288" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<circle cx="501.5" cy="318" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="501.5" cy="318" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="501.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">8</text>
+<line x1="501.5" y1="350" x2="501.5" y2="370" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="501.5" cy="384" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="501.5" cy="384" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="501.5" y="406" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">SC 8</text>
+<text x="560.0" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">OT L</text>
+<circle cx="560.0" cy="318" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="560.0" cy="318" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="560.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">9</text>
+<line x1="560.0" y1="350" x2="560.0" y2="370" stroke="#f3a73d" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="560.0" cy="384" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="560.0" cy="384" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="560.0" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">SC 9</text>
+<text x="618.5" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">OT R</text>
+<circle cx="618.5" cy="318" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="618.5" cy="318" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="618.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">10</text>
+<line x1="618.5" y1="350" x2="618.5" y2="370" stroke="#f3a73d" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="618.5" cy="384" r="11" fill="#1b2530" stroke="#f3a73d" stroke-width="1.6"/>
+<circle cx="618.5" cy="384" r="4" fill="#f3a73d" stroke="#f3a73d" stroke-width="1"/>
+<text x="618.5" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">SC 10</text>
+<text x="677.0" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">GRP 1</text>
+<circle cx="677.0" cy="318" r="11" fill="#1b2530" stroke="#e8c25a" stroke-width="1.6"/>
+<circle cx="677.0" cy="318" r="4" fill="#e8c25a" stroke="#e8c25a" stroke-width="1"/>
+<text x="677.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">11</text>
+<line x1="677.0" y1="350" x2="677.0" y2="370" stroke="#e8c25a" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="677.0" cy="384" r="11" fill="#1b2530" stroke="#e8c25a" stroke-width="1.6"/>
+<circle cx="677.0" cy="384" r="4" fill="#e8c25a" stroke="#e8c25a" stroke-width="1"/>
+<text x="677.0" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">DT InL</text>
+<text x="735.5" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">GRP 2</text>
+<circle cx="735.5" cy="318" r="11" fill="#1b2530" stroke="#e8c25a" stroke-width="1.6"/>
+<circle cx="735.5" cy="318" r="4" fill="#e8c25a" stroke="#e8c25a" stroke-width="1"/>
+<text x="735.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">12</text>
+<line x1="735.5" y1="350" x2="735.5" y2="370" stroke="#e8c25a" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="735.5" cy="384" r="11" fill="#1b2530" stroke="#e8c25a" stroke-width="1.6"/>
+<circle cx="735.5" cy="384" r="4" fill="#e8c25a" stroke="#e8c25a" stroke-width="1"/>
+<text x="735.5" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">DT InR</text>
+<text x="794.0" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">CUE L</text>
+<circle cx="794.0" cy="318" r="11" fill="#1b2530" stroke="#c792ea" stroke-width="1.6"/>
+<circle cx="794.0" cy="318" r="4" fill="#c792ea" stroke="#c792ea" stroke-width="1"/>
+<text x="794.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">13</text>
+<line x1="794.0" y1="350" x2="794.0" y2="370" stroke="#c792ea" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="794.0" cy="384" r="11" fill="#1b2530" stroke="#c792ea" stroke-width="1.6"/>
+<circle cx="794.0" cy="384" r="4" fill="#c792ea" stroke="#c792ea" stroke-width="1"/>
+<text x="794.0" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">PS 3</text>
+<text x="852.5" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">CUE R</text>
+<circle cx="852.5" cy="318" r="11" fill="#1b2530" stroke="#c792ea" stroke-width="1.6"/>
+<circle cx="852.5" cy="318" r="4" fill="#c792ea" stroke="#c792ea" stroke-width="1"/>
+<text x="852.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">14</text>
+<line x1="852.5" y1="350" x2="852.5" y2="370" stroke="#c792ea" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="852.5" cy="384" r="11" fill="#1b2530" stroke="#c792ea" stroke-width="1.6"/>
+<circle cx="852.5" cy="384" r="4" fill="#c792ea" stroke="#c792ea" stroke-width="1"/>
+<text x="852.5" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">PS 4</text>
+<text x="911.0" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">AUX 1</text>
+<circle cx="911.0" cy="318" r="11" fill="#1b2530" stroke="#e8c25a" stroke-width="1.6"/>
+<circle cx="911.0" cy="318" r="4" fill="#e8c25a" stroke="#e8c25a" stroke-width="1"/>
+<text x="911.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">15</text>
+<line x1="911.0" y1="350" x2="911.0" y2="370" stroke="#e8c25a" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="911.0" cy="384" r="11" fill="#1b2530" stroke="#e8c25a" stroke-width="1.6"/>
+<circle cx="911.0" cy="384" r="4" fill="#e8c25a" stroke="#e8c25a" stroke-width="1"/>
+<text x="911.0" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">OT A</text>
+<text x="969.5" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">AUX 2</text>
+<circle cx="969.5" cy="318" r="11" fill="#1b2530" stroke="#e8c25a" stroke-width="1.6"/>
+<circle cx="969.5" cy="318" r="4" fill="#e8c25a" stroke="#e8c25a" stroke-width="1"/>
+<text x="969.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">16</text>
+<line x1="969.5" y1="350" x2="969.5" y2="370" stroke="#e8c25a" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="969.5" cy="384" r="11" fill="#1b2530" stroke="#e8c25a" stroke-width="1.6"/>
+<circle cx="969.5" cy="384" r="4" fill="#e8c25a" stroke="#e8c25a" stroke-width="1"/>
+<text x="969.5" y="406" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">OT B</text>
+<text x="1028.0" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">(empty)</text>
+<circle cx="1028.0" cy="318" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1028.0" cy="318" r="4" fill="#1b2530" stroke="#5d6878" stroke-width="1"/>
+<text x="1028.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">17</text>
+<line x1="1028.0" y1="350" x2="1028.0" y2="370" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="1028.0" cy="384" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1028.0" cy="384" r="4" fill="#1b2530" stroke="#5d6878" stroke-width="1"/>
+<text x="1028.0" y="406" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">OT C</text>
+<text x="1086.5" y="288" font-size="9.2" fill="#dde4ee" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">(empty)</text>
+<circle cx="1086.5" cy="318" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1086.5" cy="318" r="4" fill="#1b2530" stroke="#5d6878" stroke-width="1"/>
+<text x="1086.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">18</text>
+<line x1="1086.5" y1="350" x2="1086.5" y2="370" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="1086.5" cy="384" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1086.5" cy="384" r="4" fill="#1b2530" stroke="#5d6878" stroke-width="1"/>
+<text x="1086.5" y="406" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">OT D</text>
+<text x="1145.0" y="288" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<circle cx="1145.0" cy="318" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1145.0" cy="318" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1145.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">19</text>
+<line x1="1145.0" y1="350" x2="1145.0" y2="370" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="1145.0" cy="384" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1145.0" cy="384" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1145.0" y="406" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<text x="1203.5" y="288" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<circle cx="1203.5" cy="318" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1203.5" cy="318" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1203.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">20</text>
+<line x1="1203.5" y1="350" x2="1203.5" y2="370" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="1203.5" cy="384" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1203.5" cy="384" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1203.5" y="406" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<text x="1262.0" y="288" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<circle cx="1262.0" cy="318" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1262.0" cy="318" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1262.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">21</text>
+<line x1="1262.0" y1="350" x2="1262.0" y2="370" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="1262.0" cy="384" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1262.0" cy="384" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1262.0" y="406" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<text x="1320.5" y="288" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<circle cx="1320.5" cy="318" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1320.5" cy="318" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1320.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">22</text>
+<line x1="1320.5" y1="350" x2="1320.5" y2="370" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="1320.5" cy="384" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1320.5" cy="384" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1320.5" y="406" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<text x="1379.0" y="288" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<circle cx="1379.0" cy="318" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1379.0" cy="318" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1379.0" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">23</text>
+<line x1="1379.0" y1="350" x2="1379.0" y2="370" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="1379.0" cy="384" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1379.0" cy="384" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1379.0" y="406" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<text x="1437.5" y="288" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<circle cx="1437.5" cy="318" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1437.5" cy="318" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1437.5" y="342" font-size="9.5" fill="#8f9bac" font-weight="bold" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">24</text>
+<line x1="1437.5" y1="350" x2="1437.5" y2="370" stroke="#5d6878" stroke-width="1.1" stroke-dasharray="2,3"/>
+<circle cx="1437.5" cy="384" r="11" fill="#1b2530" stroke="#5d6878" stroke-width="1.6"/>
+<circle cx="1437.5" cy="384" r="4" fill="none" stroke="#5d6878" stroke-width="1"/>
+<text x="1437.5" y="406" font-size="9.2" fill="#5d6878" font-weight="normal" text-anchor="middle" font-family="Menlo, Consolas, monospace" opacity="1">—</text>
+<text x="60" y="468" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Half-normal per column: rear-top is internally linked to rear-bottom — the rig works hard-wired by default, zero front cables needed.</text>
+<rect x="40" y="506" width="720" height="372" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="40" y="506" width="720" height="4" rx="2" fill="#f3a73d"/>
+<text x="56" y="532" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">REAR WIRING TABLE</text>
+<text x="56" y="558" font-size="10" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">COL</text>
+<text x="116" y="558" font-size="10" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">REAR TOP (source)</text>
+<text x="330" y="558" font-size="10" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">REAR BOTTOM (dest)</text>
+<text x="540" y="558" font-size="10" fill="#8f9bac" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">CABLES / NOTES</text>
+<text x="56" y="590" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">1</text>
+<text x="116" y="590" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TR-8S Assign 1 (Kick)</text>
+<text x="330" y="590" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Soundcraft Ch 1 · dbx LIMITER</text>
+<text x="540" y="590" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TS mono · per-kit split</text>
+<text x="56" y="616" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">2</text>
+<text x="116" y="616" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TB-03 Output</text>
+<text x="330" y="616" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Soundcraft Ch 2 · dbx LIMITER</text>
+<text x="540" y="616" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">3.5mm mini → ¼″ breakout (use L)</text>
+<text x="56" y="642" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">3–4</text>
+<text x="116" y="642" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TR-8S Main L/R</text>
+<text x="330" y="642" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Soundcraft Ch 3–4</text>
+<text x="540" y="642" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TRS ×2 each side</text>
+<text x="56" y="668" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">5–6</text>
+<text x="116" y="668" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Digitakt Out L/R</text>
+<text x="330" y="668" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Soundcraft Ch 5–6</text>
+<text x="540" y="668" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TRS ×2 each side</text>
+<text x="56" y="694" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">7–8</text>
+<text x="116" y="694" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">— future synth —</text>
+<text x="330" y="694" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">— leave unwired —</text>
+<text x="540" y="694" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">no synth = no cables</text>
+<text x="56" y="720" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">9–10</text>
+<text x="116" y="720" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Octatrack Main L/R</text>
+<text x="330" y="720" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Soundcraft ST 9/10</text>
+<text x="540" y="720" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TRS ×2 each side</text>
+<text x="56" y="746" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">11–12</text>
+<text x="116" y="746" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Soundcraft GRP 1/2 outs</text>
+<text x="330" y="746" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Digitakt In L/R</text>
+<text x="540" y="746" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TRS ×2 · RESAMPLE BUS</text>
+<text x="56" y="772" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">13–14</text>
+<text x="116" y="772" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Octatrack Cue L/R</text>
+<text x="330" y="772" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">PreSonus In 3–4</text>
+<text x="540" y="772" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TRS ×2 each side</text>
+<text x="56" y="798" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">15–16</text>
+<text x="116" y="798" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Soundcraft Aux 1/2 outs</text>
+<text x="330" y="798" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Octatrack In A/B</text>
+<text x="540" y="798" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TRS ×2 · OT SEND BUS</text>
+<text x="56" y="824" font-size="10.5" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">17–18</text>
+<text x="116" y="824" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">(empty — front-patch)</text>
+<text x="330" y="824" font-size="10.5" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">— leave unwired —</text>
+<text x="540" y="824" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">wire on concrete need</text>
+<text x="56" y="850" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Menlo, Consolas, monospace" opacity="1">19–24</text>
+<text x="116" y="850" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">future</text>
+<text x="330" y="850" font-size="10.5" fill="#5d6878" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">future</text>
+<text x="540" y="850" font-size="9.8" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">leave unwired</text>
+<text x="56" y="880" font-size="10" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-style="italic" opacity="1">No speculative runs: 7–8 and 17–18 stay unwired until a real device/need exists — cables go to committed paths only. SC 11/12 is RCA-only — off the patchbay.</text>
+<rect x="790" y="506" width="730" height="176" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="790" y="506" width="730" height="4" rx="2" fill="#63da8c"/>
+<text x="806" y="532" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">DIRECT CONNECTIONS — not through the patchbay</text>
+<text x="806" y="554" font-size="10.6" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Soundcraft MAIN MIX L/R are XLR outs → PreSonus In 7–8 (rear line ins) · XLR→TRS — NOT In 1–2 (front preamps)</text>
+<text x="806" y="574" font-size="10.6" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">PreSonus Main Out (TRS) → BM9S SAT/SUB IN (XLR) · SAT OUT (HP 80 Hz) → HS8 pair</text>
+<text x="806" y="594" font-size="10.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Vocal mic / DJM-850 REC OUT → PreSonus FRONT In 1–2 · XMAX preamp · recallable gain scenes</text>
+<text x="806" y="614" font-size="10.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Phone / Mac line out → Soundcraft RCA 11/12 · INTERVAL MUTE = instant reference-track A/B</text>
+<text x="806" y="634" font-size="10.6" fill="#63da8c" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">PreSonus USB-C → Mac mini · direct, never via hub · MIDI DIN + USB hub → see sheet 3</text>
+<rect x="790" y="702" width="730" height="200" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="790" y="702" width="730" height="4" rx="2" fill="#e8c25a"/>
+<text x="806" y="728" font-size="13.5" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">HALF-NORMAL — THE THREE MOVES</text>
+<text x="806" y="752" font-size="10.6" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TAP (mult): plug into FRONT-TOP — copies the source WITHOUT breaking the rear link.</text>
+<text x="806" y="772" font-size="10.6" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   Dry signal keeps flowing — permanent taps: rows 1/2 front-top → PreSonus In 5/6.</text>
+<text x="806" y="792" font-size="10.6" fill="#dde4ee" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">REROUTE: plug into FRONT-BOTTOM — BREAKS the rear link and feeds that destination</text>
+<text x="806" y="812" font-size="10.6" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   from your front cable instead. Use to inject any source into DT/OT inputs.</text>
+<text x="806" y="832" font-size="10.6" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">LISTEN: front-TOP of any column is also a test point for fault-finding a dead channel.</text>
+<text x="806" y="852" font-size="10.6" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Front-patching = one cable: a source’s FRONT-TOP → a destination’s FRONT-BOTTOM.</text>
+<text x="806" y="872" font-size="10.6" fill="#ef6b6b" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">⚠ FEEDBACK: keep Aux 1/2 + GRP at ZERO/off on OT channel 9/10 — its output feeds those buses.</text>
+<text x="40" y="910" font-size="12" fill="#e8c25a" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="1.2" opacity="1">PATCH RECIPES — AUX = OT SEND · GRP = DT RESAMPLE · FRONT-PATCH = OVERRIDE</text>
+<rect x="40" y="926" width="358" height="268" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="40" y="926" width="358" height="4" rx="2" fill="#c792ea"/>
+<text x="56" y="952" font-size="13.5" fill="#c792ea" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">R1 · RUMBLE KICK</text>
+<text x="56" y="972" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Chlär / Hemka foundation · zero cables</text>
+<text x="56" y="996" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">1. TR-8S kit: route KICK → ASSIGN 1</text>
+<text x="56" y="1015.5" font-size="10.3" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   (auto-removes it from the main mix)</text>
+<text x="56" y="1035.0" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">2. Kick lands dry on SC Ch 1 — drive the</text>
+<text x="56" y="1054.5" font-size="10.3" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   gain into the dbx LIMITER for punch</text>
+<text x="56" y="1074.0" font-size="10.3" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">3. Turn up AUX 1 on Ch 1 → OT In A</text>
+<text x="56" y="1093.5" font-size="10.3" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   (the wired send bus — no patching)</text>
+<text x="56" y="1113.0" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">4. OT In A: Thru machine → dark delay +</text>
+<text x="56" y="1132.5" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   reverb → resample to a Flex track</text>
+<text x="56" y="1152.0" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">5. Low-pass ~150 Hz · scene volume ducks</text>
+<text x="56" y="1171.5" font-size="10.3" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Balance dry/rumble on SC faders 1 vs 9/10</text>
+<rect x="414" y="926" width="358" height="268" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="414" y="926" width="358" height="4" rx="2" fill="#f3a73d"/>
+<text x="430" y="952" font-size="13.5" fill="#f3a73d" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">R2 · LOOP RESAMPLE</text>
+<text x="430" y="972" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Chontane-style mangling · zero cables</text>
+<text x="430" y="996" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">1. Jam a 1–2 bar groove on the rig</text>
+<text x="430" y="1015.5" font-size="10.3" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">2. Press the 1-2 (GRP) button on every</text>
+<text x="430" y="1035.0" font-size="10.3" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   SC channel you want in the capture</text>
+<text x="430" y="1054.5" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">3. GRP 1/2 outs feed Digitakt In L/R —</text>
+<text x="430" y="1074.0" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   hit sample on the DT. Done.</text>
+<text x="430" y="1093.5" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">4. Or send via Aux 1/2 → OT In A/B and</text>
+<text x="430" y="1113.0" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   record to Flex · slice · timestretch</text>
+<text x="430" y="1132.5" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">5. Mute sources, play the mangled loop —</text>
+<text x="430" y="1152.0" font-size="10.3" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   instant hypnotic groove material</text>
+<text x="430" y="1171.5" font-size="10.3" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Pan = GRP balance: hard L = GRP 1 only</text>
+<rect x="788" y="926" width="358" height="268" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="788" y="926" width="358" height="4" rx="2" fill="#63da8c"/>
+<text x="804" y="952" font-size="13.5" fill="#63da8c" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">R3 · ACID MORPH</text>
+<text x="804" y="972" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">TB-03 through OT scenes · zero cables</text>
+<text x="804" y="996" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">1. TB-03 dry on SC Ch 2 — drive the</text>
+<text x="804" y="1015.5" font-size="10.3" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   dbx LIMITER for analogue grit</text>
+<text x="804" y="1035.0" font-size="10.3" fill="#e8c25a" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">2. Turn up AUX 2 on Ch 2 → OT In B</text>
+<text x="804" y="1054.5" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">3. OT Thru machine on In B: filter + FX</text>
+<text x="804" y="1074.0" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">4. Scenes A/B on the crossfader — morph</text>
+<text x="804" y="1093.5" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   filter, delay sends, LOFI live</text>
+<text x="804" y="1113.0" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">5. Dry 303 stays on Ch 2 in parallel —</text>
+<text x="804" y="1132.5" font-size="10.3" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">   blend wet/dry on faders</text>
+<text x="804" y="1152.0" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">6. Resample the morph for one-shot stabs</text>
+<text x="804" y="1171.5" font-size="10.3" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">This is the live-performance money patch</text>
+<rect x="1162" y="926" width="358" height="268" rx="8" fill="#151c26" stroke="#2c3848" stroke-width="1" opacity="1"/>
+<rect x="1162" y="926" width="358" height="4" rx="2" fill="#e8c25a"/>
+<text x="1178" y="952" font-size="13.5" fill="#e8c25a" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.6" opacity="1">R4 · STEM CAPTURE</text>
+<text x="1178" y="972" font-size="10.5" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">every single jam — no exceptions</text>
+<text x="1178" y="996" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Ableton In 7–8: SC summed mix — always</text>
+<text x="1178" y="1015.5" font-size="10.3" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">recording while you jam</text>
+<text x="1178" y="1035.0" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Ableton In 3–4: OT Cue — cue-route the</text>
+<text x="1178" y="1054.5" font-size="10.3" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">one element you may want isolated later</text>
+<text x="1178" y="1074.0" font-size="10.3" fill="#8f9bac" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">In 5–6 = permanent dry kick / TB-03 taps</text>
+<text x="1178" y="1093.5" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Free-running mode C: record LONG takes,</text>
+<text x="1178" y="1113.0" font-size="10.3" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">comp the best 8 bars, warp only if needed</text>
+<text x="1178" y="1132.5" font-size="10.3" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Best material comes from reviewing jams,</text>
+<text x="1178" y="1152.0" font-size="10.3" fill="#f3a73d" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">not from trying to nail it live</text>
+<rect x="40" y="1218" width="1480" height="92" rx="8" fill="#1b2530" stroke="#ef6b6b" stroke-width="1.2" opacity="1"/>
+<text x="56" y="1248" font-size="12" fill="#ef6b6b" font-weight="bold" text-anchor="start" font-family="Helvetica, Arial, sans-serif" letter-spacing="0.8" opacity="1">⚠  RULES OF THE RACK</text>
+<text x="56" y="1272" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Power OFF before any REAR change · front patching is safe live (mute the destination channel first to avoid pops).</text>
+<text x="56" y="1291" font-size="11" fill="#dde4ee" font-weight="normal" text-anchor="start" font-family="Helvetica, Arial, sans-serif" opacity="1">Keep labels current · photograph the rear after every change · one cable mystery costs an evening.</text>
+<text x="1520" y="1702" font-size="10" fill="#5d6878" font-weight="normal" text-anchor="end" font-family="Helvetica, Arial, sans-serif" opacity="1">Eidetic Studio · v8 · July 2026 · sheet 2/4 — Patchbay &amp; Recipes</text>
+</svg>
