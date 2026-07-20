@@ -80,27 +80,30 @@ Static Loop A slot, and its empty playback slot is unrelated to the T1 recorder 
    photo). Press `[NO]` until the normal track screen is visible.
 2. Press the upper-right `[TRACK 5]` key once. **Expected:** T5 is the active track; its track key is
    red. If it is yellow or unlit, T5 is muted: press `[FUNC]` + `[TRACK 5]` once, then confirm it is red.
-3. Hold `[FUNC]` and press `[SRC]`. **Expected:** the Flex sample-slot list opens. If a machine list
-   opens instead, T5 is not presently a Flex machine; stop here and follow section 1 step 3 before
-   continuing.
-4. Use `[UP]` to move above Flex sample slot 1. Highlight the entry for **Recorder Buffer 5** (normally
-   displayed as `RECORDING 5`). **Do not press `[YES]` at this point.**
-5. Hold `[FUNC]` and press `[YES]`. **Expected:** `RECORDING 5` is auditioned through the OT **Main
+3. Hold `[FUNC]` and press `[SRC]`. **Expected on this T5:** the machine list is shown with **FLEX** as
+   an entry. Highlight `FLEX` if it is not already highlighted. If `FLEX` is not available, stop: T5 is
+   not a Flex machine and must be corrected in section 1 step 3.
+4. Press `[RIGHT]` once while `FLEX` is highlighted. **Expected:** the recorder-buffer list appears,
+   headed by entries such as `R1 > RECORDING` through `R8 > RECORDING`. This is the list shown on the
+   on-rig screen; it is not reached by pressing `[UP]`.
+5. Use `[DOWN]` until **`R5 > RECORDING`** is highlighted. This is Recorder Buffer 5; its Audio Editor
+   heading is `RECORDING 5`. **Do not press `[YES]` at this point.**
+6. Hold `[FUNC]` and press `[YES]`. **Expected:** `RECORDING 5` is auditioned through the OT **Main
    Out**; this is the direct preview of the captured buffer. It does not alter any assignment or pattern.
-6. **Success check:** you hear the capture in the monitors. If it is silent, leave the list with `[NO]`
+7. **Success check:** you hear the capture in the monitors. If it is silent, leave the list with `[NO]`
    and report that result; the waveform has already proved capture, so the fault is then the audition/main
    output path rather than the recording path.
 
 **Only after the preview is audible, make T5 play it from the sequencer.**
 
-7. Return to the same `RECORDING 5` entry and press `[YES]`. **Expected:** Recorder Buffer 5 is assigned
+8. Return to the same `R5 > RECORDING` entry and press `[YES]`. **Expected:** Recorder Buffer 5 is assigned
    to T5's Flex machine.
-8. Press `[NO]` to leave the list, then press `[RECORD]`. **Expected:** the `[RECORD]` key is steadily
+9. Press `[NO]` to leave the list, then press `[RECORD]`. **Expected:** the `[RECORD]` key is steadily
    lit, meaning Grid Recording mode is active.
-9. Press `[TRIG 1]` to place a normal sample trig for T5 on the first step. **Expected:** trig 1 is a
+10. Press `[TRIG 1]` to place a normal sample trig for T5 on the first step. **Expected:** trig 1 is a
    normal sample trig, not a recorder trig.
-10. Press `[RECORD]` again to leave Grid Recording mode.
-11. Stop the Soundcraft source or turn down its channel Aux send, then press `[PLAY]`. **Expected:** the
+11. Press `[RECORD]` again to leave Grid Recording mode.
+12. Stop the Soundcraft source or turn down its channel Aux send, then press `[PLAY]`. **Expected:** the
     recorded loop repeats from T5 even though the original live source is no longer feeding OT A/B.
 
 The incoming A/B signal can be heard directly when the OT mixer **DIR** level is up; that direct monitoring
