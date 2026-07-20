@@ -122,6 +122,9 @@ Machine types used: **Static** (long files off CF), **Flex** (into memory — sl
 
 ## Known gotchas
 
+- **T5 `AMP` → `VOL` tops out at `63` on this machine.** For a neutral playback test, set it to `63`,
+  not `127`. On-rig confirmed 2026-07-21; the displayed hardware range wins over generic/manual
+  assumptions.
 - **USB = CF transfer only.** Any automation assuming the Mac can reach the OT over USB is wrong (KB §10.1).
 - **Sample format: 16/24-bit, 44.1 kHz.** 48 kHz files play at the wrong pitch — resample OT-bound audio to 44.1 kHz first (KB §10.8). Realtime timestretch stays clean within ~±10 % of native tempo.
 - **Feedback risk:** OT Main returns on Soundcraft 9/10 with Aux 1/2 wired back to OT In A/B — zero Aux/Group sends on 9/10 before raising faders (KB §10.2).
