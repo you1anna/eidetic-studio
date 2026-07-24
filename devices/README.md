@@ -35,6 +35,7 @@ action. If anything is unverified, mark it ⚠ rather than infer it.
 | Roland TR-8S | [`tr8s.md`](tr8s.md) | Drum engine · kick on Assign 1 · Soft Thru |
 | Roland TB-03 | [`tb03.md`](tb03.md) | Acid bass · end of MIDI chain (ch 2) |
 | Soundcraft Signature 12 MTK | [`soundcraft-signature-12-mtk.md`](soundcraft-signature-12-mtk.md) | Analogue summing · OT Aux 1/2 send pair |
+| Dynaudio BM9S | [`bm9s.md`](bm9s.md) | Single-sub monitor bass management · feeds HS8s |
 
 ## Non-sequenced gear (covered in the knowledge base, not here)
 
@@ -44,7 +45,7 @@ These are wiring/monitoring, not per-box operation — see [`../knowledge-base.m
 |---|---|
 | PreSonus Studio 192 (input map, preamp vs line, UC Surface scenes) | KB §0.4, §3.6, §11 |
 | Pioneer DJM-850 (guest DJ capture path) | KB §3.6, §12 |
-| Dynaudio BM9S sub + Yamaha HS8 (monitor chain) | KB §3.5 |
+| Yamaha HS8 (monitor chain and rear-panel EQ) | KB §3.5 |
 | Samson S-Patch Plus patchbay (rear + front patches) | KB §5 |
 
 If a real "how do I…" need recurs for one of these, spin it its own file here following the same shape.
