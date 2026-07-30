@@ -58,3 +58,10 @@ audio or generated manifests.
 - A real session may show that this allocation is cumbersome or that another device is better for a
   role. Record that observation and revise the pilot; do not treat this decision as an architecture
   change.
+
+## Status — deferred 2026-07-30
+
+Robin paused this pilot because its current process is awkward and confusing. The decision and its
+generated audition packet are retained only as a record of what was tried; neither authorises sample
+selection, curation, conversion, CompactFlash transfer or an organisation command. A later task may
+define a simpler process independently.

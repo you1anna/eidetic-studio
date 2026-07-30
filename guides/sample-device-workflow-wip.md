@@ -1,8 +1,8 @@
 # Sample-to-device workflow — investigation and pilot
 
-**Document version:** v0.7
+**Document version:** v0.8
 **Date:** 2026-07-30
-**Status:** **WIP — investigation design, not an operating procedure**
+**Status:** **Deferred — investigation record, not an operating procedure**
 **Scope:** Selecting, preparing and transferring a small track palette from
 `/Volumes/Extreme SSD/Production/SAMPLES` to the Octatrack MKII, Digitakt MK1 and TR-8S.
 
@@ -34,7 +34,7 @@ belongs in `issues/`.
 
 | Date | Run ID | State | Evidence location | Next gate |
 |---|---|---|---|---|
-| 2026-07-30 | `octatrack-pilot-01` | A new no-move pilot starts from the current 22,952-file inventory. The source library has no backup, so old reconciliation discrepancies remain historical evidence only. A 15-file, 138–142 BPM OT audition packet is prepared and hash-verified; no candidate is approved, copied, converted or transferred. | `library-tools/manifests/octatrack-pilot-01-audition/` in `eidetic-sample-tools`: `README.md`, `audition.m3u8`, `labels.tsv`; the packet contains three candidates each for T1, T2, T3, T4 and T8. | Robin auditions the packet and records a decision for every row. Promote only favourites by copy, then make the final crate. |
+| 2026-07-30 | `octatrack-pilot-01` | A no-move pilot was prepared from the current 22,952-file inventory. Its 15-file, 138–142 BPM audition packet is hash-verified, but no candidate is approved, copied, converted or transferred. | `library-tools/manifests/octatrack-pilot-01-audition/` in `eidetic-sample-tools`: `README.md`, `audition.m3u8`, `labels.tsv`; the packet contains three candidates each for T1, T2, T3, T4 and T8. | **Deferred at Robin's request.** Do not select, promote, export or transfer from this packet; establish a simpler approach in a future task if wanted. |
 
 ### Pilot crate boundary — approved
 
@@ -294,6 +294,7 @@ The final guide will be written only after the gates above. It must include:
 
 | Version | Date | Summary |
 |---|---|---|
+| **v0.8** | **2026-07-30** | Deferred `octatrack-pilot-01` at Robin's request. Its generated audition packet is retained as non-operational evidence only; no sample action is authorised. |
 | **v0.7** | **2026-07-30** | Began the separate no-backup, no-move pilot and logged its verified 15-file 138–142 BPM audition packet; no selection or export has occurred. |
 | **v0.6** | **2026-07-30** | Applied Robin's earlier confirmation of the 15-file pilot: the historical 16-favourite instruction remains evidence, not a new-pilot requirement. |
 | **v0.5** | **2026-07-30** | Recorded the retained recovery packet and its 16-favourite instruction, which conflicts with the approved 15-file pilot; no label was changed. |
