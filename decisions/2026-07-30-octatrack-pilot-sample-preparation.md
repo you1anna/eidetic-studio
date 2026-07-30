@@ -22,6 +22,12 @@ identity discrepancies and the one missing Foundation identity. Once that gate i
 candidate must be listened to, labelled and hash-verified before it can enter `CURATED/` or an
 Octatrack crate.
 
+**Superseded for this separate no-move pilot, 2026-07-30:** the current library has no backup, so
+the historical discrepancies cannot be recovered or explained from another copy. They remain
+preserved evidence, but do not block `octatrack-pilot-01`. Its source-library operations are limited
+to read-only review and hash checking; its only writes are copies into `CURATED/`, converted copies
+under `_EXPORT/`, and a later CompactFlash copy. No `--apply` organisation command is permitted.
+
 ## Rationale
 
 The existing OT template has five sample-playing roles (T1–T4 and T8). Three alternatives per role

@@ -1,6 +1,6 @@
 # Sample-to-device workflow — investigation and pilot
 
-**Document version:** v0.6
+**Document version:** v0.7
 **Date:** 2026-07-30
 **Status:** **WIP — investigation design, not an operating procedure**
 **Scope:** Selecting, preparing and transferring a small track palette from
@@ -34,7 +34,7 @@ belongs in `issues/`.
 
 | Date | Run ID | State | Evidence location | Next gate |
 |---|---|---|---|---|
-| 2026-07-30 | `octatrack-pilot-01` | Approved scope: an Octatrack-first, 15-file maximum pilot. A fresh read-only review enumerated 22,952 audio files; no manifest, source, curated copy or export was written. The retained recovery packet holds 169 `keep` candidates and an older 16-favourite instruction; preserve that packet as evidence, but use the approved 15-file boundary for this new pilot. | `eidetic-sample-tools` `STATUS.md` (2026-07-23); `sample-review --no-probe --summary` completed 2026-07-30; `library-tools/manifests/foundation-v1-recovery-20260723/OPERATOR-GUIDE.md` identifies the recovery steps. | Robin: provide the backed-up library location for review of 130 protected `PACKS/` discrepancies and the one missing Foundation identity; then create a fresh audition packet. |
+| 2026-07-30 | `octatrack-pilot-01` | A new no-move pilot starts from the current 22,952-file inventory. The source library has no backup, so old reconciliation discrepancies remain historical evidence only. A 15-file, 138–142 BPM OT audition packet is prepared and hash-verified; no candidate is approved, copied, converted or transferred. | `library-tools/manifests/octatrack-pilot-01-audition/` in `eidetic-sample-tools`: `README.md`, `audition.m3u8`, `labels.tsv`; the packet contains three candidates each for T1, T2, T3, T4 and T8. | Robin auditions the packet and records a decision for every row. Promote only favourites by copy, then make the final crate. |
 
 ### Pilot crate boundary — approved
 
@@ -70,6 +70,14 @@ The process is: validate the crate with `--list`; preview conversion with `--dry
 after both agree; then separately copy the staged tree to the mounted CompactFlash card. Each real
 run updates the single ledger row with its crate path, item count, conversion result and CF test
 result. It does not add a session diary entry.
+
+### No-backup boundary — approved
+
+The current source library has no backup. `octatrack-pilot-01` therefore uses only read-only review,
+hash checking and copies. It must not run `sample-sort --apply`, `sample-intake --apply`,
+`sample-dedupe --apply` or catalogue-migration `--apply`. The 2026-07-23 protected-pack and
+Foundation discrepancies remain recorded historical evidence, but they do not authorise a recovery
+guess or block this separate no-move pilot.
 
 Other devices receive separate crates, even if a source sound is useful on more than one device.
 The exporter permits loop and long-form roles for the Octatrack, but rejects them for Digitakt and
@@ -286,6 +294,7 @@ The final guide will be written only after the gates above. It must include:
 
 | Version | Date | Summary |
 |---|---|---|
+| **v0.7** | **2026-07-30** | Began the separate no-backup, no-move pilot and logged its verified 15-file 138–142 BPM audition packet; no selection or export has occurred. |
 | **v0.6** | **2026-07-30** | Applied Robin's earlier confirmation of the 15-file pilot: the historical 16-favourite instruction remains evidence, not a new-pilot requirement. |
 | **v0.5** | **2026-07-30** | Recorded the retained recovery packet and its 16-favourite instruction, which conflicts with the approved 15-file pilot; no label was changed. |
 | **v0.4** | **2026-07-30** | Logged the successful fresh, read-only 22,952-file inventory; recovery remains unresolved and no audio/output was created. |
