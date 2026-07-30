@@ -1,7 +1,7 @@
 # Sample-to-device workflow — investigation and pilot
 
-**Document version:** v0.1
-**Date:** 2026-07-29
+**Document version:** v0.2
+**Date:** 2026-07-30
 **Status:** **WIP — investigation design, not an operating procedure**
 **Scope:** Selecting, preparing and transferring a small track palette from
 `/Volumes/Extreme SSD/Production/SAMPLES` to the Octatrack MKII, Digitakt MK1 and TR-8S.
@@ -24,6 +24,25 @@ workflow must support:
 
 The first deliverable is one pilot workflow for one track. A complete track-building guide comes
 later.
+
+## Progress ledger
+
+This is a deliberately bounded cross-repo ledger: add one row only when a gate changes state or a
+reproducible run is completed. Keep command output, manifests and labels in the public tooling repo;
+record only the run ID, result and next gate here. A lasting choice belongs in `decisions/`; a fault
+belongs in `issues/`.
+
+| Date | Run ID | State | Evidence location | Next gate |
+|---|---|---|---|---|
+| 2026-07-30 | `octatrack-pilot-01` | Approved scope: an Octatrack-first, 15-file maximum pilot. No sample has been selected, promoted or exported. | `eidetic-sample-tools` `STATUS.md` (2026-07-23) records the live-library reconciliation block; this repo's decision log records the pilot boundary. | Human recovery review of the 130 protected `PACKS/` discrepancies and one missing Foundation identity; then create a fresh audition packet. |
+
+### Pilot crate boundary — approved
+
+After the recovery gate and a complete listening decision, `octatrack-pilot-01` may contain at most
+15 approved files: three alternatives each for **Loop A** (T1), **Loop B** (T2), **Vocal Phrase**
+(T3), **Percussion Loop** (T4) and **Loop C** (T8). T5 and T6 remain recorder-buffer tracks; T7
+remains the Thru path. The allocation is a bounded test palette, not a claim that the current device
+roles are final.
 
 ## 2. What is settled, and what is not
 
@@ -235,4 +254,5 @@ The final guide will be written only after the gates above. It must include:
 
 | Version | Date | Summary |
 |---|---|---|
+| **v0.2** | **2026-07-30** | Added the bounded cross-repo progress ledger and approved `octatrack-pilot-01`: maximum 15 files, aligned to T1–T4/T8; recovery review remains the export gate. |
 | **v0.1** | **2026-07-29** | Initial approved WIP design: preservation boundary, evidence gates, role experiments, pilot crate and repo-wide reconciliation requirements. |
