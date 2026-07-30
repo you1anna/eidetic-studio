@@ -1,6 +1,6 @@
 # Sample-to-device workflow — investigation and pilot
 
-**Document version:** v0.4
+**Document version:** v0.5
 **Date:** 2026-07-30
 **Status:** **WIP — investigation design, not an operating procedure**
 **Scope:** Selecting, preparing and transferring a small track palette from
@@ -34,7 +34,7 @@ belongs in `issues/`.
 
 | Date | Run ID | State | Evidence location | Next gate |
 |---|---|---|---|---|
-| 2026-07-30 | `octatrack-pilot-01` | Approved scope: an Octatrack-first, 15-file maximum pilot. A fresh read-only review enumerated 22,952 audio files; no manifest, source, curated copy or export was written. | `eidetic-sample-tools` `STATUS.md` (2026-07-23) records the live-library reconciliation block; `sample-review --no-probe --summary` completed on 2026-07-30; this repo's decision log records the pilot boundary. | Human recovery review of the 130 protected `PACKS/` discrepancies and one missing Foundation identity; then create a fresh audition packet. |
+| 2026-07-30 | `octatrack-pilot-01` | Approved scope: an Octatrack-first, 15-file maximum pilot. A fresh read-only review enumerated 22,952 audio files; no manifest, source, curated copy or export was written. The retained recovery packet holds 169 `keep` candidates but instructs exactly 16 favourites, so its count must be reconciled with this pilot before labels change. | `eidetic-sample-tools` `STATUS.md` (2026-07-23); `sample-review --no-probe --summary` completed 2026-07-30; `library-tools/manifests/foundation-v1-recovery-20260723/OPERATOR-GUIDE.md` identifies the recovery steps. | Robin: confirm 15 or 16 favourites; provide the backed-up library location for review of 130 protected `PACKS/` discrepancies and the one missing Foundation identity; then create a fresh audition packet. |
 
 ### Pilot crate boundary — approved
 
@@ -286,6 +286,7 @@ The final guide will be written only after the gates above. It must include:
 
 | Version | Date | Summary |
 |---|---|---|
+| **v0.5** | **2026-07-30** | Recorded the retained recovery packet and its 16-favourite instruction, which conflicts with the approved 15-file pilot; no label was changed. |
 | **v0.4** | **2026-07-30** | Logged the successful fresh, read-only 22,952-file inventory; recovery remains unresolved and no audio/output was created. |
 | **v0.3** | **2026-07-30** | Defined the crate TSV as the authoritative export-set record, the OT staging path, copy-only lifecycle and separate device-crate rule. |
 | **v0.2** | **2026-07-30** | Added the bounded cross-repo progress ledger and approved `octatrack-pilot-01`: maximum 15 files, aligned to T1–T4/T8; recovery review remains the export gate. |
