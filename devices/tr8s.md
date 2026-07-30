@@ -16,6 +16,12 @@
 | **Make settings actually stick** | After any UTILITY change, press **`[WRITE]`** and confirm before power-off — the #1 "worked yesterday" failure on this box. | midi-sync §4 |
 | **Keep it off the TB-03's note channel** | `[UTILITY]` → **MIDI** → **Pattern Ch = 10** (or any ≠ 2). | midi-sync §4 |
 
+## Pattern finds (audition notes)
+
+| Pattern | Name | Note | Source |
+|---|---|---|---|
+| **5-11** | **ABstractDance** | Good pattern found on the rig; retain as an audition lead, not yet as a committed session template. | On-rig 2026-07-30 |
+
 ## Kit / slot layout (this rig)
 
 | Slot | Sound | | Slot | Sound |
