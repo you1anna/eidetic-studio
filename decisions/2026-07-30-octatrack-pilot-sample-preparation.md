@@ -38,6 +38,12 @@ audio or generated manifests.
 
 - `guides/sample-device-workflow-wip.md` holds a bounded current-state ledger: one row per gate
   transition or reproducible run, not a running session diary.
+- The crate TSV `library-tools/manifests/crates/octatrack-pilot-01.tsv` is the authoritative record
+  of what is set for the OT export. It pins each approved `CURATED/` copy to its role, descriptor,
+  reason and SHA-256 identity; the exporter validates those identities again.
+- The corresponding converted staging copy belongs only below
+  `_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/octatrack-pilot-01/`. It is rebuilt from the crate and
+  never substitutes for it as the selection record.
 - Lasting choices are separate dated files in `decisions/`; operational faults go in `issues/`.
 - Tool-generated evidence lives under a named `octatrack-pilot-01` run in the sample-tools working
   area and remains rebuildable. `_EXPORT/` stays derived output only.

@@ -1,6 +1,6 @@
 # Sample-to-device workflow — investigation and pilot
 
-**Document version:** v0.2
+**Document version:** v0.4
 **Date:** 2026-07-30
 **Status:** **WIP — investigation design, not an operating procedure**
 **Scope:** Selecting, preparing and transferring a small track palette from
@@ -34,7 +34,7 @@ belongs in `issues/`.
 
 | Date | Run ID | State | Evidence location | Next gate |
 |---|---|---|---|---|
-| 2026-07-30 | `octatrack-pilot-01` | Approved scope: an Octatrack-first, 15-file maximum pilot. No sample has been selected, promoted or exported. | `eidetic-sample-tools` `STATUS.md` (2026-07-23) records the live-library reconciliation block; this repo's decision log records the pilot boundary. | Human recovery review of the 130 protected `PACKS/` discrepancies and one missing Foundation identity; then create a fresh audition packet. |
+| 2026-07-30 | `octatrack-pilot-01` | Approved scope: an Octatrack-first, 15-file maximum pilot. A fresh read-only review enumerated 22,952 audio files; no manifest, source, curated copy or export was written. | `eidetic-sample-tools` `STATUS.md` (2026-07-23) records the live-library reconciliation block; `sample-review --no-probe --summary` completed on 2026-07-30; this repo's decision log records the pilot boundary. | Human recovery review of the 130 protected `PACKS/` discrepancies and one missing Foundation identity; then create a fresh audition packet. |
 
 ### Pilot crate boundary — approved
 
@@ -43,6 +43,38 @@ After the recovery gate and a complete listening decision, `octatrack-pilot-01` 
 (T3), **Percussion Loop** (T4) and **Loop C** (T8). T5 and T6 remain recorder-buffer tracks; T7
 remains the Thru path. The allocation is a bounded test palette, not a claim that the current device
 roles are final.
+
+### Export-set contract
+
+The crate TSV is the authoritative record of a set for export; the `_EXPORT/` tree is only its
+rebuildable, converted staging copy. The completed pilot will therefore be recorded as:
+
+```text
+eidetic-sample-tools/library-tools/manifests/crates/octatrack-pilot-01.tsv
+```
+
+Its required columns are `sample_id`, `source_path`, `role`, `descriptor` and `reason`. Every
+`source_path` must resolve below `CURATED/`, where it arrived by a hash-verified **copy** from the
+source library. `sample_id` is the SHA-256 identity checked again by the exporter. The TSV therefore
+answers exactly which 15 files are selected, why, and whether the source changed; it is never
+replaced by a folder listing or a hand-maintained list of output filenames.
+
+The first successful Octatrack export of that crate must stage only below:
+
+```text
+/Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/
+  EIDETIC-CURATED/AUDIO/octatrack-pilot-01/<role>/
+```
+
+The process is: validate the crate with `--list`; preview conversion with `--dry-run`; convert only
+after both agree; then separately copy the staged tree to the mounted CompactFlash card. Each real
+run updates the single ledger row with its crate path, item count, conversion result and CF test
+result. It does not add a session diary entry.
+
+Other devices receive separate crates, even if a source sound is useful on more than one device.
+The exporter permits loop and long-form roles for the Octatrack, but rejects them for Digitakt and
+TR-8S crates; their one-shot sets and their `_EXPORT/<DEVICE>/` trees stay independent. This keeps a
+device-appropriate selection from accidentally becoming a generic all-device dump.
 
 ## 2. What is settled, and what is not
 
@@ -254,5 +286,7 @@ The final guide will be written only after the gates above. It must include:
 
 | Version | Date | Summary |
 |---|---|---|
+| **v0.4** | **2026-07-30** | Logged the successful fresh, read-only 22,952-file inventory; recovery remains unresolved and no audio/output was created. |
+| **v0.3** | **2026-07-30** | Defined the crate TSV as the authoritative export-set record, the OT staging path, copy-only lifecycle and separate device-crate rule. |
 | **v0.2** | **2026-07-30** | Added the bounded cross-repo progress ledger and approved `octatrack-pilot-01`: maximum 15 files, aligned to T1–T4/T8; recovery review remains the export gate. |
 | **v0.1** | **2026-07-29** | Initial approved WIP design: preservation boundary, evidence gates, role experiments, pilot crate and repo-wide reconciliation requirements. |
