@@ -1,7 +1,7 @@
 # Sample-to-device workflow — investigation and pilot
 
-**Document version:** v0.8
-**Date:** 2026-07-30
+**Document version:** v0.9
+**Date:** 2026-08-01
 **Status:** **Deferred — investigation record, not an operating procedure**
 **Scope:** Selecting, preparing and transferring a small track palette from
 `/Volumes/Extreme SSD/Production/SAMPLES` to the Octatrack MKII, Digitakt MK1 and TR-8S.
@@ -149,6 +149,25 @@ The public tooling repo remains responsible for catalogue and export mechanics. 
 records why each machine receives a type of material and how the resulting workflow is used on the
 physical rig.
 
+### Cross-repo fix landed (2026-08-01)
+
+`eidetic-sample-tools` had a gap directly relevant to this document's Export-set contract:
+`sample-export`'s crate builder checked that a row's source file existed and its SHA-256
+matched, but never checked *where* the file lived. A crate built straight from
+`sample-find --crate` (the new retrieval layer, `library-tools/README.md` "Find samples and
+load hardware") could therefore carry a `source_path` still in `CATALOGUE/` or `PACKS/` —
+material that has never had a human ear-review pass — and `sample-export` would convert it
+onto hardware regardless. That silently bypassed the promote gate this contract requires
+(§ "Export-set contract" above: "Every `source_path` must resolve below `CURATED/`").
+
+Fixed in `eidetic-sample-tools`: `build_crate_plan` now rejects any crate row whose source
+doesn't resolve under `CURATED/`, and `sample-find` gained `--curated-only` to scope a search
+to samples already promoted, plus a write-time warning when a crate it writes contains
+unpromoted rows. See that repo's `STATUS.md` ("Gap closed 2026-08-01") for the full record.
+This does not change anything about the pilot's own deferral or the no-backup boundary below —
+it only means a future pilot crate export is validated against the same promote-then-export
+rule this document already assumed.
+
 ## 4. Investigation sequence and evidence gates
 
 ### Gate 0 — capture the starting state
@@ -288,12 +307,15 @@ The final guide will be written only after the gates above. It must include:
   preserve?
 - What artist was meant by “xtqe”, and which musical traits from that reference matter?
 - Which sample-tool reconciliation and profile issues must be fixed before a trustworthy export can
-  be generated?
+  be generated? **Partially answered 2026-08-01:** the crate builder's missing `CURATED/`-only
+  check is fixed (see "Cross-repo fix landed" above). The no-backup boundary and the 130 absent
+  protected `PACKS/` entries remain open and still block a real export.
 
 ## Revision history
 
 | Version | Date | Summary |
 |---|---|---|
+| **v0.9** | **2026-08-01** | Recorded the cross-repo fix to `sample-export`'s crate builder: it now rejects a crate row whose source isn't under `CURATED/`, closing a promote-gate bypass that `sample-find --crate` could otherwise trigger. Answered part of the open reconciliation question; the no-backup and PACKS-recovery blockers are unchanged. |
 | **v0.8** | **2026-07-30** | Deferred `octatrack-pilot-01` at Robin's request. Its generated audition packet is retained as non-operational evidence only; no sample action is authorised. |
 | **v0.7** | **2026-07-30** | Began the separate no-backup, no-move pilot and logged its verified 15-file 138–142 BPM audition packet; no selection or export has occurred. |
 | **v0.6** | **2026-07-30** | Applied Robin's earlier confirmation of the 15-file pilot: the historical 16-favourite instruction remains evidence, not a new-pilot requirement. |
