@@ -4,6 +4,10 @@ Per-device operational reference. This is the **local answer store** for "how do
 questions — so an agent (or you) can answer from disk instead of searching the web or re-deriving
 from manuals every time.
 
+For the order of a complete sample-selection, loading, persistence and Ableton session, use
+[`../guides/sample-device-masterplan.md`](../guides/sample-device-masterplan.md). This folder holds
+the literal procedures used at each point in that plan.
+
 ## Lookup protocol (for agents — do this first, it's the cheap path)
 
 1. Identify the device, then **`grep` this folder** for the device + a keyword from the question,

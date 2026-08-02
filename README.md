@@ -8,10 +8,11 @@ The **single source of truth** for the physical Eidetic Studio: how it's wired, 
 |---|---|
 | `knowledge-base.md` | Canonical wiring/architecture: channel map, patchbay, MIDI/USB routing, monitoring. Supersedes every earlier note and diagram. |
 | `diagrams/` | Current v8 diagram set (PNG + SVG): system overview, patchbay wiring, MIDI/USB routing, build order. |
-| `guides/midi-sync.md` | DIN clock chain config (OT → Digitakt → TR-8S → TB-03) + Ableton's relationship to it. Merged canonical (v1.2). |
+| `guides/midi-sync.md` | DIN clock chain config (OT → Digitakt → TR-8S → TB-03) + Ableton's relationship to it. Merged canonical (v1.3). |
 | `guides/session-method-a.md` | Full session workflow: device roles, Method-A rumble, resampling, phase-by-phase cycle. |
 | `guides/track-setup.md` | Per-machine track/slot allocation and sample-folder → track mapping. |
-| `guides/sample-device-workflow-wip.md` | **WIP investigation:** test and validate the simplest sample-selection, device-role and transfer workflow before changing the current guides. |
+| `guides/sample-device-masterplan.md` | **Forward workflow:** guided, device-specific sample selection, loading, persistence, Ableton capture and later sync comparison. |
+| `guides/sample-device-workflow-wip.md` | **Evidence log:** historical pilots, run IDs, gates and cross-repo recovery/export evidence. |
 | `devices/` | **Per-device "how do I…" quick reference** — the local answer store for hardware operation questions (e.g. "assign the kick to Assign Out 1"). Grep here first; see `devices/README.md` for the lookup + capture protocol. |
 | `sources/official/` | Vendor manuals and searchable local extracts that substantiate the documented procedures. |
 | `issues/` | Dated log of setup faults and their fixes. |

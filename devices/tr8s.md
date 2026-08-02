@@ -37,9 +37,11 @@ Slot 1 never moves — the kick on Assign 1 is what feeds the rumble.
 
 - **No hardware MIDI Thru** → Soft Thru ON is mandatory (KB §10.5). Verify on every power-up.
 - **Factory reset zeroes everything here** (Soft Thru OFF, Tempo Sync AUTO) — run the three sync rows above after any reset.
-- **Sample format:** 16-bit, mono. ⚠ **Sample rate not yet verified** — confirm against the manual before batch-converting for it (the one unverified number in the rig; see track-setup §"File formats").
+- **User-sample import support:** WAV up to 96 kHz, or AIFF at 44.1, 48 or 96 kHz; 8-, 16-, 24-,
+  32-bit or 32-bit float; mono or stereo. The practical export profile for this studio is not yet
+  chosen — make the first import a controlled comparison before batch conversion.
 
 ## Sources
 
-- [Roland TR-8S Reference Manual v3](../sources/official/roland-tr-8s-reference-manual-v3.pdf) (assign instrument to Assignable Out; manual page varies by version) · Roland Australia "Assigning Sounds to Separate Outputs" guide.
+- [Roland TR-8S Reference Manual v3](../sources/official/roland-tr-8s-reference-manual-v3.pdf) pp. 37–38 (user-sample import path, limits and accepted audio formats) · p. 47 (Assignable Out) · Roland Australia "Assigning Sounds to Separate Outputs" guide.
 - In-repo verified: `../guides/midi-sync.md`, `../knowledge-base.md`.

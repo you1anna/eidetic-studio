@@ -1,9 +1,12 @@
 # Eidetic Studio — Track Setup
 
-**Version:** v2.0 · 2026-07-19
+**Version:** v2.1 · 2026-08-03
 **Replaces:** v1.0 track allocation guide (delete it)
 
-One page per machine. No options, no variants — this is the setup.
+This is the current, proven **starting template**, not a final device-role decision. For the guided
+sample-selection, loading and Ableton workflow, start with
+[`sample-device-masterplan.md`](sample-device-masterplan.md). It tests this allocation on the rig
+before any role becomes permanent.
 
 ---
 
@@ -78,9 +81,10 @@ Slot 1 never moves. The kick on Assign 1 is what feeds the rumble.
 
 ---
 
-## Where the samples come from
+## Starting destinations for the first palette
 
-Your catalogue folders map straight onto the tracks above.
+These are first destinations to test, not a direct folder-to-device rule. Listen first, keep separate
+device crates, and move material when the on-rig trial proves a better home.
 
 | Folder | Machine | Track |
 |---|---|---|
@@ -93,7 +97,7 @@ Your catalogue folders map straight onto the tracks above.
 | `KICKS/`, `HATS-CYM/`, core drums | TR-8S | 1–6 |
 | Other percussion hits | TR-8S | 7–11 |
 
-**When you're unsure where a sample goes, ask one question:**
+**When you're unsure where a sample goes, use this first test:**
 
 - Does it need to stay in time? → **Octatrack**
 - Is it a single hit or accent? → **Digitakt**
@@ -107,11 +111,11 @@ Your catalogue folders map straight onto the tracks above.
 |---|---|
 | Octatrack | 16-bit, **44.1 kHz** |
 | Digitakt | 16-bit, **48 kHz**, mono |
-| TR-8S | 16-bit, mono — **sample rate not yet confirmed** |
+| TR-8S | WAV up to 96 kHz; AIFF at 44.1, 48 or 96 kHz; 8–32-bit; mono or stereo. The first export profile remains to be chosen on the rig. |
 
-Ableton runs at 48 kHz, so anything going to the Octatrack gets converted to 44.1 kHz first. Everything else stays at 48.
-
-⚠ Check the TR-8S manual for its accepted sample rates before you batch-convert anything for it. It's the one number in your setup that isn't verified.
+Ableton runs at 48 kHz, so anything going to the Octatrack gets converted to 44.1 kHz first.
+Digitakt Transfer converts incoming files to its native format. Do not batch-convert for the TR-8S
+until the first controlled import chooses the studio's practical export profile.
 
 ---
 
@@ -120,3 +124,10 @@ Ableton runs at 48 kHz, so anything going to the Octatrack gets converted to 44.
 1. **Tracks 5 and 6 stay empty.** They're for live capture. If you load a file onto them you lose your recording slots.
 2. **Save the Part** before you save the project, or your scenes and machine assignments vanish on reload.
 3. **Aux and Group sends on mixer channels 9/10 stay at zero.** Those channels carry the Octatrack's own output — raising them creates a feedback loop.
+
+## Revision history
+
+| Version | Date | Summary |
+|---|---|---|
+| **v2.1** | **2026-08-03** | Reclassified the allocation and source mapping as a starting template for the master-plan role trial; recorded the verified TR-8S import formats while leaving its practical export profile open for a controlled test. |
+| v2.0 | 2026-07-19 | Current track, slot and sample-folder allocation template. |

@@ -1,14 +1,15 @@
 # Sample-to-device workflow — investigation and pilot
 
-**Document version:** v1.0
-**Date:** 2026-08-02
-**Status:** **Active — investigation record, not an operating procedure**
+**Document version:** v1.1
+**Date:** 2026-08-03
+**Status:** **Active evidence log — not the forward operating sequence**
 **Scope:** Selecting, preparing and transferring a small track palette from
 `/Volumes/Extreme SSD/Production/SAMPLES` to the Octatrack MKII, Digitakt MK1 and TR-8S.
 
-> Nothing in this document settles the long-term role of a device. The existing guides remain the
-> current operating reference until the experiments below have been completed, reviewed and
-> reconciled across the repo.
+> This document preserves gates, run IDs and historical pilot evidence. The forward, guided
+> sequence is [`sample-device-masterplan.md`](sample-device-masterplan.md). Nothing here settles
+> the long-term role of a device; the existing guides remain the current operating reference until
+> observed results have been reviewed and reconciled across the repo.
 
 ## Current direction — Robin, 2026-08-02
 
@@ -19,7 +20,7 @@ writing music, not to optimise an abstract sample-management process.
 
 A precautionary machine backup is **not** a prerequisite for beginning this work. Instead, once a
 machine or Ableton state proves musically valuable, its exact save and reload procedure must be
-verified and used so that the good state persists. This supersedes Gate 0's machine-backup
+verified and used so that the good state persists. This supersedes Gate 0's former machine-backup
 requirement for the next run. It does **not** relax the separate source-library no-backup boundary:
 library operations remain read-only/copy-only until that library has an independent backup.
 
@@ -145,7 +146,7 @@ Review these together rather than editing one in isolation:
 | `guides/session-method-a.md` | Calls its vocal split “settled” and assigns fixed OT/DT templates. |
 | `devices/octatrack.md` | Must hold every verified loading, slot, slicing, timestretch and persistence procedure used by the final guide. |
 | `devices/digitakt.md` | Must distinguish direct sample locks from Sound Pool/Sound locks and capture the simplest verified method. |
-| `devices/tr8s.md` | Must preserve the kit skeleton and replace the unverified sample-format statement with verified facts. |
+| `devices/tr8s.md` | Must preserve the kit skeleton and capture the practical user-sample import, assignment, dependency and reload procedure. Accepted import formats are now verified. |
 | `guides/midi-sync.md` | Its committed clock model and channel decisions are fixed unless Robin separately approves a change. |
 | `knowledge-base.md` | Physical routing remains canonical and is changed only after a verified physical change approved by Robin. |
 
@@ -188,15 +189,17 @@ rule this document already assumed.
 
 ## 4. Investigation sequence and evidence gates
 
-### Gate 0 — capture the starting state
+### Gate 0 — enter the workflow without disturbing the rig
 
-- Photograph or write down the TR-8S kit allocation and outputs that must survive.
-- Save a minimal backup/reference snapshot of each machine before destructive work. This is
-  protection from an operational mistake, not preservation of old projects.
-- Record OS versions, installed transfer software and mounted removable media.
-- Check that the documented MIDI chain and kick routing still match the rig.
+- Confirm the TR-8S kit allocation and outputs that must survive.
+- Confirm the documented MIDI chain and kick routing still match the rig.
+- Record OS versions, installed transfer software and mounted removable media when their transfer
+  phase begins.
+- Do **not** require a precautionary machine backup before beginning. Persist only a state that has
+  earned keeping, using its verified save and reload procedure.
 
-**Pass condition:** the preserved TR-8S state and the rollback boundary are unambiguous.
+**Pass condition:** the fixed TR-8S skeleton and live clock chain are intact, and the next guided
+procedure can begin without a factory reset or an inferred menu path.
 
 ### Gate 1 — verify clean-baseline procedures
 
@@ -204,7 +207,7 @@ For each device, use its official manual and then validate on the rig:
 
 - what an empty project, new set, initialised pattern or cleared sample pool actually changes;
 - what remains on storage;
-- the exact backup, transfer, save and restore steps;
+- the exact transfer, save and reload steps;
 - the accepted audio formats and practical limits;
 - how to prove that only the pilot palette is available to the working project.
 
@@ -215,10 +218,10 @@ check are documented.
 
 - **Octatrack:** use a clean set/project and an isolated audio pool. Formatting the CF card is not
   assumed necessary.
-- **Digitakt:** establish a clean project and sample context after the verified backup and storage
-  procedure is understood.
-- **TR-8S:** preserve and back up the kit skeleton and system settings; initialise only the working
-  pattern/kit context proven safe. Do not factory-reset the machine.
+- **Digitakt:** establish a clean project and sample context after the verified storage, transfer,
+  save and reload procedure is understood.
+- **TR-8S:** retain the kit skeleton and system settings; initialise only the working pattern/kit
+  context proven safe. Do not factory-reset the machine.
 
 **Pass condition:** Robin can reach and verify the intended baseline without relying on an inferred
 button sequence.
@@ -333,6 +336,7 @@ The final guide will be written only after the gates above. It must include:
 
 | Version | Date | Summary |
 |---|---|---|
+| **v1.1** | **2026-08-03** | Designated `sample-device-masterplan.md` as the single forward sequence; retained this file for evidence and historical pilots. Replaced the superseded precautionary machine-backup Gate 0 with a rig-integrity entry gate, while leaving the source-library copy-only boundary unchanged. |
 | **v1.0** | **2026-08-02** | Recorded Robin's active end-to-end, music-first intention: device-specific sample sets through on-device configuration and Ableton capture; defer precautionary machine backups, persist states that prove valuable, and evaluate Ableton sync against the committed manual-tempo baseline without changing the live MIDI design. The source-library no-backup boundary remains unchanged. |
 | **v0.9** | **2026-08-01** | Recorded the cross-repo fix to `sample-export`'s crate builder: it now rejects a crate row whose source isn't under `CURATED/`, closing a promote-gate bypass that `sample-find --crate` could otherwise trigger. Answered part of the open reconciliation question; the no-backup and PACKS-recovery blockers are unchanged. |
 | **v0.8** | **2026-07-30** | Deferred `octatrack-pilot-01` at Robin's request. Its generated audition packet is retained as non-operational evidence only; no sample action is authorised. |

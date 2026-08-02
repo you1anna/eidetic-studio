@@ -1,9 +1,14 @@
 # Eidetic Studio — Full Session Guide (Method A + Performance Sample System)
 
-**Document version:** v1.2 — supersedes v1.1
-**Date:** 2026-07-19
-**Companion to:** Knowledge Base v2.6 · Sound & Production Workflow v1.3 · MIDI Sync Guide v1.2
+**Document version:** v1.3 — supersedes v1.2
+**Date:** 2026-08-03
+**Companion to:** Knowledge Base v2.6 · Sound & Production Workflow v1.3 · MIDI Sync Guide v1.3
 **Scope:** One complete production cycle, plus the sample organisation and resampling system that makes it sticky and reusable. Assumes samples are loaded. Rumble is generated in Ableton (Method A) from the dry kick tap on PreSonus In 5.
+
+> **Status, 2026-08-03:** Part I is the current template and starting hypothesis, not a settled
+> device-role decision. The guided selection, loading and role-test sequence lives in
+> [`sample-device-masterplan.md`](sample-device-masterplan.md). Keep this guide unchanged while
+> testing; reconcile it only after observed results support a lasting choice.
 
 > **The one-sentence philosophy:** you rehearse until the loop is undeniable, then you perform the arrangement once, capture it, and finish in the box. Recording is earned, not started.
 
@@ -13,9 +18,10 @@
 
 ## Part I — The sample system (set up once, reuse forever)
 
-### 1. Who does what — device roles
+### 1. Current starting roles — to be tested
 
-Each machine gets one clear job. Overlap is where workflow dies.
+This is a deliberate test arrangement. Overlap can slow the workflow, so retain it only when the
+on-rig comparison shows a clear musical or performance benefit.
 
 | Device | Role | Why it wins that job |
 |---|---|---|
@@ -24,9 +30,10 @@ Each machine gets one clear job. Overlap is where workflow dies.
 | **TR-8S** | The drum engine: kick (Assign 1, always), rides, hats, rolls | Per-track mixer, FX, motion — and the kick split feeds the whole rumble system |
 | **TB-03** | The acid voice | Sequenced by the OT, saturated on Ch 2 |
 
-### 2. Vocal cut-ups — the decision, settled
+### 2. Vocal cut-ups — starting allocation to test
 
-**Tempo-locked vocal phrases → Octatrack. Repitched vocal stabs → Digitakt.** Both, deliberately, as two different instruments:
+**Tempo-locked vocal phrases → Octatrack; repitched vocal stabs → Digitakt** is the starting
+allocation to trial. Both may prove useful as deliberately different instruments:
 
 - **OT (primary):** load an acapella/phrase as a **Flex machine**, slice it (16–64 slices on the grid), then play slices from the sequencer with p-locks. Timestretch keeps every chop at session tempo regardless of the vocal's native BPM. Scenes + crossfader morph filter/pitch/rate across the chops live. This is your Chontane-style hypnotic vocal loop engine.
 - **DT (secondary):** short vocal hits (a word, a breath, a shout) as one-shots. Tuning them changes their speed — that smeared, pitched-down vocal texture all over hard-minimal. Sample-lock different words per step for variation without extra tracks.
@@ -79,7 +86,9 @@ The DT's fluidity comes from the **Sound Pool**: curate up to 127 sounds per pro
 | 7 | **Resample slot A** — captures from the GRP bus (§5) |
 | 8 | Resample slot B — previous capture stays playable while you take a new one |
 
-Curate the Sound Pool *before* the session (pick the 30–50 sounds for this track's palette) — browsing the full +Drive mid-jam kills momentum.
+For an established project, curate the Sound Pool before the session (30–50 sounds is the current
+template). For the first pilot, begin smaller and expand only when sample-lock variation proves more
+useful than direct assignment; browsing the full +Drive mid-jam kills momentum.
 
 ### 5. The resampling flywheel — three loops, fastest first
 
@@ -210,6 +219,7 @@ This system gives the Digitakt two roles the current OT template doesn't cover *
 
 | Version | Date | Summary |
 |---|---|---|
+| **v1.3** | **2026-08-03** | Marked the Part I sample system as a current starting template rather than a settled device-role decision; linked the forward, guided role-test and loading sequence. No live routing, MIDI or session procedure changed. |
 | v1.0 | 2026-07-17 | Initial seven-phase guide; Method A rumble chain; Sends Only rule. |
 | **v1.1** | **2026-07-17** | **Performance sample system added (Part I):** device role split; vocal cut-up decision (tempo-locked → OT Flex slices, repitched stabs → DT sample locks); OT CF folder layout + reusable project template (T1–T8, Static/Flex/Thru/Master); DT Sound Pool + track template with dual resample slots; three-loop resampling flywheel (OT recorder buffers · GRP→DT bus · Ableton→CF via A2); Part-save gotcha documented; flywheel moments woven into Phases 3–7; DT probation datapoint added. |
 | **v1.2** | **2026-07-19** | **OT Track 8 reconciled to the current template:** Master OFF; T8 is a Static **LOOP C** hot-switch slot. Removed the conflicting master-track assignment and whole-mix-scene instruction. |
