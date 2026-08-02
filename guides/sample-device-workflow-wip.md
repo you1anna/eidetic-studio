@@ -1,14 +1,32 @@
 # Sample-to-device workflow — investigation and pilot
 
-**Document version:** v0.9
-**Date:** 2026-08-01
-**Status:** **Deferred — investigation record, not an operating procedure**
+**Document version:** v1.0
+**Date:** 2026-08-02
+**Status:** **Active — investigation record, not an operating procedure**
 **Scope:** Selecting, preparing and transferring a small track palette from
 `/Volumes/Extreme SSD/Production/SAMPLES` to the Octatrack MKII, Digitakt MK1 and TR-8S.
 
 > Nothing in this document settles the long-term role of a device. The existing guides remain the
 > current operating reference until the experiments below have been completed, reviewed and
 > reconciled across the repo.
+
+## Current direction — Robin, 2026-08-02
+
+The aim is an end-to-end, music-first workflow: find and audition material; make a deliberately
+small, device-specific set; load and configure it on the Octatrack, Digitakt and TR-8S; make the
+first musical material on the rig; then capture and develop it in Ableton. The purpose is to get to
+writing music, not to optimise an abstract sample-management process.
+
+A precautionary machine backup is **not** a prerequisite for beginning this work. Instead, once a
+machine or Ableton state proves musically valuable, its exact save and reload procedure must be
+verified and used so that the good state persists. This supersedes Gate 0's machine-backup
+requirement for the next run. It does **not** relax the separate source-library no-backup boundary:
+library operations remain read-only/copy-only until that library has an independent backup.
+
+Ableton-to-hardware sync is a worthwhile option to evaluate for musical benefit and practical
+overhead. The committed manual-tempo MIDI configuration remains the live configuration meanwhile;
+no cable, clock setting or `guides/midi-sync.md` decision changes until a bounded on-rig comparison
+has shown that synchronisation is worth its added complexity.
 
 ## 1. Aim
 
@@ -315,6 +333,7 @@ The final guide will be written only after the gates above. It must include:
 
 | Version | Date | Summary |
 |---|---|---|
+| **v1.0** | **2026-08-02** | Recorded Robin's active end-to-end, music-first intention: device-specific sample sets through on-device configuration and Ableton capture; defer precautionary machine backups, persist states that prove valuable, and evaluate Ableton sync against the committed manual-tempo baseline without changing the live MIDI design. The source-library no-backup boundary remains unchanged. |
 | **v0.9** | **2026-08-01** | Recorded the cross-repo fix to `sample-export`'s crate builder: it now rejects a crate row whose source isn't under `CURATED/`, closing a promote-gate bypass that `sample-find --crate` could otherwise trigger. Answered part of the open reconciliation question; the no-backup and PACKS-recovery blockers are unchanged. |
 | **v0.8** | **2026-07-30** | Deferred `octatrack-pilot-01` at Robin's request. Its generated audition packet is retained as non-operational evidence only; no sample action is authorised. |
 | **v0.7** | **2026-07-30** | Began the separate no-backup, no-move pilot and logged its verified 15-file 138–142 BPM audition packet; no selection or export has occurred. |
