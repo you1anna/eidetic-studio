@@ -1,6 +1,6 @@
 # Sample-to-device workflow — investigation and pilot
 
-**Document version:** v1.2
+**Document version:** v1.3
 **Date:** 2026-08-04
 **Status:** **Active evidence log — not the forward operating sequence**
 **Scope:** Selecting, preparing and transferring a small track palette from
@@ -65,6 +65,7 @@ belongs in `issues/`.
 | Date | Run ID | State | Evidence location | Next gate |
 |---|---|---|---|---|
 | 2026-07-30 | `octatrack-pilot-01` | A no-move pilot was prepared from the current 22,952-file inventory. Its 15-file, 138–142 BPM audition packet is hash-verified, but no candidate is approved, copied, converted or transferred. | `library-tools/manifests/octatrack-pilot-01-audition/` in `eidetic-sample-tools`: `README.md`, `audition.m3u8`, `labels.tsv`; the packet contains three candidates each for T1, T2, T3, T4 and T8. | **Deferred at Robin's request.** Do not select, promote, export or transfer from this packet; establish a simpler approach in a future task if wanted. |
+| 2026-08-04 | `tribal-140-01` | Phase 1 brief agreed (140 BPM; rolling tribal percussion, sparse acid, cut-up rap phrases — six roles of which only three need samples). `sample-curate prepare` emitted 216 rows; trimmed to **63** after a role trim to the brief and the removal of one unpromotable row. All 63 sources verified present on disk. **No listening decisions made, nothing promoted.** | `library-tools/manifests/tribal-140-01-audition/` in `eidetic-sample-tools`: `README.md` (brief + full trim record), `audition.m3u8`, `labels.tsv`, plus untrimmed `labels-full-216.tsv` / `audition-full-216.m3u8`. | **Robin's listening session.** Set a decision on all 63 rows, then `sample-curate validate` and `promote --run-id tribal-140-01`. This would be the first ever write to `CURATED/`. |
 
 ### Pilot crate boundary — approved
 
@@ -352,7 +353,8 @@ The final guide will be written only after the gates above. It must include:
 
 | Version | Date | Summary |
 |---|---|---|
-| **v1.2** | **2026-08-04** | Demoted the 130 `PACKS/` identities from export blocker to open integrity risk (promote already hash-checks every source per file). Added the ownership-split banner: §§1–5 are historical record, the masterplan wins on any live boundary, and only the progress ledger, export-set contract and revision history remain authoritative here. |
+| **v1.3** | **2026-08-04** | Logged the `tribal-140-01` run: Phase 1 brief agreed, 216-row packet prepared and trimmed to 63, one unpromotable row removed (the known Foundation recovery blocker, caught per-file by the promote hash check exactly as the gate demotion argued). Awaiting Robin's listening decisions. |
+| v1.2 | 2026-08-04 | Demoted the 130 `PACKS/` identities from export blocker to open integrity risk (promote already hash-checks every source per file). Added the ownership-split banner: §§1–5 are historical record, the masterplan wins on any live boundary, and only the progress ledger, export-set contract and revision history remain authoritative here. |
 | v1.1 | 2026-08-03 | Designated `sample-device-masterplan.md` as the single forward sequence; retained this file for evidence and historical pilots. Replaced the superseded precautionary machine-backup Gate 0 with a rig-integrity entry gate, while leaving the source-library copy-only boundary unchanged. |
 | **v1.0** | **2026-08-02** | Recorded Robin's active end-to-end, music-first intention: device-specific sample sets through on-device configuration and Ableton capture; defer precautionary machine backups, persist states that prove valuable, and evaluate Ableton sync against the committed manual-tempo baseline without changing the live MIDI design. The source-library no-backup boundary remains unchanged. |
 | **v0.9** | **2026-08-01** | Recorded the cross-repo fix to `sample-export`'s crate builder: it now rejects a crate row whose source isn't under `CURATED/`, closing a promote-gate bypass that `sample-find --crate` could otherwise trigger. Answered part of the open reconciliation question; the no-backup and PACKS-recovery blockers are unchanged. |
