@@ -329,8 +329,13 @@ The final guide will be written only after the gates above. It must include:
 - What artist was meant by “xtqe”, and which musical traits from that reference matter?
 - Which sample-tool reconciliation and profile issues must be fixed before a trustworthy export can
   be generated? **Partially answered 2026-08-01:** the crate builder's missing `CURATED/`-only
-  check is fixed (see "Cross-repo fix landed" above). The no-backup boundary and the 130 absent
-  protected `PACKS/` entries remain open and still block a real export.
+  check is fixed (see "Cross-repo fix landed" above). ~~The no-backup boundary and the 130 absent
+  protected `PACKS/` entries remain open and still block a real export.~~ **Superseded 2026-08-04:**
+  the 130 `PACKS/` entries are demoted from blocker to open integrity risk — `sample-curate promote`
+  hash-checks every source at promote time and refuses a stale or missing file, giving per-file the
+  guarantee the blanket gate was standing in for. See
+  [`../decisions/2026-08-04-demote-packs-recovery-gate.md`](../decisions/2026-08-04-demote-packs-recovery-gate.md).
+  The no-backup risk is unresolved and is **not** cleared by this demotion.
 
 ## Revision history
 

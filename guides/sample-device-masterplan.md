@@ -45,7 +45,7 @@ discoveries in this repo, and only then moves to the next phase.
 | Phase | Outcome | Why this comes now | Pass condition |
 |---|---|---|---|
 | 1. Track brief | One sentence, BPM and four to six required roles | Makes auditioning decisive rather than exploratory | Each candidate can be judged keep, alternate or reject |
-| 2. Library readiness | A named, eligible source run and role-based audition groups | A crate is only trustworthy when source identities are resolved | Source paths resolve under `CURATED/` and the recovery gate is resolved or explicitly quarantined |
+| 2. Library readiness | A named audition packet, listened through, promoted into `CURATED/` | Nothing downstream can run while `CURATED/` is empty | `CURATED/` contains the promoted palette and every source path resolves under it |
 | 3. Role trial | Observed device strengths, friction and save/reload cost | Tests workflow on the rig, not capability lists | Each material type has a provisional preferred destination |
 | 4. Device crates | A small approved crate per device | Separates listening from transfer and avoids an all-device dump | Every item is heard, named by role and assigned to one device |
 | 5. Load and configure | One playable, named state per machine | Turns samples into musical control | Each state plays and survives reload |
@@ -68,16 +68,37 @@ Start from the saved Octatrack template, never a blank project. Set a deliberate
 **Trade-off:** a narrow brief gets to a groove quickly but rejects attractive, unrelated samples.
 Keep those out of this run instead of widening the palette.
 
-### Phase 2 — resolve the export prerequisite, then make audition groups
+### Phase 2 — audition, promote into `CURATED/`, then make listening groups
 
-The current recorded blocker is the 130 protected `PACKS/` identity discrepancies and one Foundation
-identity. A new hardware export must wait for their recovery review or an explicit quarantine decision
-in `eidetic-sample-tools`; this is distinct from the decision not to take precautionary machine
-backups.
+**Start here, and know why:** `CURATED/` is empty. Phase 4's export contract requires every
+`source_path` to resolve below `CURATED/`, and `sample-export` has enforced that since 2026-08-01.
+Until a promotion has run, Phases 2–4 cannot complete. Promotion is a **listening session**, not a
+command — `sample-curate promote` copies only rows whose decision is `favourite`, and no label set in
+either repo currently has a single favourite row.
 
-Once eligible material is available, search only `CURATED/` and make short listening groups—not an
-export. Listen to every candidate and mark it **keep**, **alternate** or **reject**. The deferred
+The sequence, run from `~/Projects/eidetic-sample-tools` (tools at `~/.venvs/library-tools/bin/`):
+
+1. **Generate a packet** — `sample-curate prepare --output-dir library-tools/manifests/<run-id>-audition`.
+   It writes `audition.m3u8` and `labels.tsv`. It cannot be narrowed by argument, so it produces
+   roughly 112 rows from `PILOT_QUOTAS`.
+2. **Trim to the Phase 1 brief.** Every remaining row needs a decision, so cutting the packet to the
+   brief-relevant rows is the difference between a short session and a long one. Trimming is safe —
+   only the header schema is validated, never the row count. Record the trim and its reason in the
+   packet `README.md`; it is a human selection, not a silent edit.
+3. **Listen to every retained candidate** and set `decision` to `reject`, `keep` or `favourite`. A
+   favourite additionally needs a `true_role` from the trusted-role set and a non-empty `descriptor`.
+4. **Validate, then promote** — `sample-curate validate --labels <packet>/labels.tsv`, then
+   `sample-curate promote --labels <packet>/labels.tsv --run-id <run-id>`. Promote hash-checks every
+   source and refuses a stale or missing file. `sample-curate undo-promotion --run-id <run-id>` is
+   the reversal path.
+
+Only then search `CURATED/` and make short listening groups — not an export. The deferred
 `octatrack-pilot-01` packet remains historical evidence, not authority for a new run.
+
+> **Standing risk:** the source library is single-copy — `tmutil destinationinfo` reports no
+> destinations, and 28 GB across 22,952 files has no backup. Promotion writes a second copy **on the
+> same physical disk**, which is not a backup. This does not block promotion (a hash-verified copy is
+> within the copy-only boundary) but it is unresolved, and a drive failure still loses everything.
 
 Build separate selection records after listening:
 
@@ -207,7 +228,7 @@ knowledge-base changes; otherwise remove the cable and retain manual tempo.
 
 | Priority | Item | Effect | Resolution point |
 |---|---|---|---|
-| Blocking before a new export | 130 protected `PACKS/` identities and one Foundation identity | A new crate/export is not trustworthy | Recovery review resolves or explicitly quarantines them in `eidetic-sample-tools` evidence |
+| Open integrity risk — **not** a blocker | 130 protected `PACKS/` identities and one Foundation identity | Library preservation is not fully verified; it does **not** make a crate untrustworthy, because `sample-curate promote` hash-checks every source at promote time and refuses a stale or missing file | Demoted 2026-08-04 (see [`../decisions/2026-08-04-demote-packs-recovery-gate.md`](../decisions/2026-08-04-demote-packs-recovery-gate.md)); recovery review remains open in `eidetic-sample-tools` |
 | Blocking per first load | Literal load/configure/reload procedures are incomplete in device pages | An inferred hardware sequence is unacceptable | Capture each procedure from the official manual and the rig, just in time |
 | Required before TR-8S batch export | Select one practical profile despite broad accepted formats | Inconsistent conversion undermines comparison | First controlled TR-8S import; record the chosen profile in sample tools and this repo |
 | Required before role decisions | Observations from the common role trial | Current allocation remains hypothesis only | Phase 3 and the first performance |
