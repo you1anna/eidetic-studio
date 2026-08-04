@@ -1,6 +1,6 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v1.1
+**Document version:** v1.2
 **Date:** 2026-08-04
 **Status:** Active — the single forward plan for the guided pilot
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
@@ -186,17 +186,27 @@ project memory. Preserving recorder tracks limits prepared roles but protects li
 **Trade-off:** a small pool is immediate; a large Sound Pool offers rich per-step variation but can
 turn writing back into browsing. Repitch makes stabs expressive but rules out tempo-critical loops.
 
-### Literal procedures that must be captured just in time
+### Literal procedures — captured 2026-08-04, ⚠ pending on-rig verification
 
-Before the first live load, verify and add to the device page the exact procedure for:
+All three are now written up from the retained official manuals, each as a numbered
+literal-setup block on its device page:
 
-- Octatrack CF copy, sample-slot assignment, slice/timestretch setup, and Part/project reload.
-- Digitakt Transfer-to-project load, direct assignment, Sound Pool/sample-lock comparison, and
-  project reload.
-- TR-8S SD import, user-sample assignment/dependency check, kit write, and kit reload.
+- **Octatrack** — [`../devices/octatrack.md`](../devices/octatrack.md) → "Load a sample from the Mac":
+  CF copy via USB DISK MODE, sample-slot load, machine assignment, timestretch, Part → Project →
+  SYNC TO CARD.
+- **Digitakt** — [`../devices/digitakt.md`](../devices/digitakt.md) → "Load a sample from the Mac":
+  Elektron Transfer, `LOAD TO PROJ` then track assignment, direct-assignment vs Sound-pool-lock
+  comparison, save/reload.
+- **TR-8S** — [`../devices/tr8s.md`](../devices/tr8s.md) → "Import and assign a user sample": card
+  layout and limits, `SAMPLE:Import`, instrument assignment, `[WRITE]` and power-cycle check.
 
-This does not pause the whole plan: the assistant captures the next procedure from the retained
-official manual immediately before it is needed, then continues the guided session.
+**They are marked ⚠ and are manual-derived, not yet performed on the rig.** Verify each on first use
+and change its source line to `on-rig YYYY-MM-DD`. Where the machine differs from the manual, the
+machine wins — correct the page before continuing.
+
+**One open gap:** the TR-8S Reference Manual documents **no dependency check** before deleting a user
+sample, so the repo's requirement to check dependencies has no documented procedure. Do not delete
+TR-8S user samples until it is established empirically — method recorded on the device page.
 
 ## 5. Phases 6–7 — Ableton and the clock decision
 
@@ -229,7 +239,8 @@ knowledge-base changes; otherwise remove the cable and retain manual tempo.
 | Priority | Item | Effect | Resolution point |
 |---|---|---|---|
 | Open integrity risk — **not** a blocker | 130 protected `PACKS/` identities and one Foundation identity | Library preservation is not fully verified; it does **not** make a crate untrustworthy, because `sample-curate promote` hash-checks every source at promote time and refuses a stale or missing file | Demoted 2026-08-04 (see [`../decisions/2026-08-04-demote-packs-recovery-gate.md`](../decisions/2026-08-04-demote-packs-recovery-gate.md)); recovery review remains open in `eidetic-sample-tools` |
-| Blocking per first load | Literal load/configure/reload procedures are incomplete in device pages | An inferred hardware sequence is unacceptable | Capture each procedure from the official manual and the rig, just in time |
+| ⚠ Verify on first load | The three load/assign/reload procedures are captured but manual-derived, not yet seen on the rig | A manual can differ from the machine; an unverified step must not be trusted silently | Follow each on its first real use, correct any difference, then mark it `on-rig YYYY-MM-DD` |
+| Blocking before any TR-8S sample deletion | No documented dependency check exists for deleting a TR-8S user sample | A kit referencing a deleted sample may fail in an unknown way | Establish it empirically on a spare instrument (method on `devices/tr8s.md`) |
 | Required before TR-8S batch export | Select one practical profile despite broad accepted formats | Inconsistent conversion undermines comparison | First controlled TR-8S import; record the chosen profile in sample tools and this repo |
 | Required before role decisions | Observations from the common role trial | Current allocation remains hypothesis only | Phase 3 and the first performance |
 | Deferred until a groove exists | Ableton follow-clock comparison | Premature sync work delays music and risks the stable chain | Phase 7 |
@@ -251,5 +262,6 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
-| **v1.1** | **2026-08-04** | Rewrote Phase 2 around the step the plan was missing: `CURATED/` is empty, so promotion must happen before Phases 2–4 can complete — with the literal `prepare` → trim → listen → `validate` → `promote` sequence and the standing single-copy risk. Demoted the 130 `PACKS/` identities to an open integrity risk. |
+| **v1.2** | **2026-08-04** | Recorded the three load/assign/reload procedures as captured on their device pages (⚠ manual-derived, pending on-rig verification) and replaced the "blocking per first load" prerequisite with a verify-on-first-use row. Added a new blocker: no documented TR-8S dependency check before deleting a user sample. |
+| v1.1 | 2026-08-04 | Rewrote Phase 2 around the step the plan was missing: `CURATED/` is empty, so promotion must happen before Phases 2–4 can complete — with the literal `prepare` → trim → listen → `validate` → `promote` sequence and the standing single-copy risk. Demoted the 130 `PACKS/` identities to an open integrity risk. |
 | v1.0 | 2026-08-03 | First single forward plan: music-first, device-specific, evidence-gated loading and persistence; separates the deferred historical OT pilot from the active workflow and reserves Ableton sync for a measured comparison. |

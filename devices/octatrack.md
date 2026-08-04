@@ -17,6 +17,11 @@
 | **Not lose scenes / machine assignments on reload** | **Save the Part** *before* saving the project, or scene + machine assignments vanish on reload. | track-setup §"Three things that bite" |
 | **Set up the send-FX (thru) path** | Track 7 = **Thru** machine; the desk Aux 1/2 feed OT In A/B (patchbay 15–16). Raise a channel's Aux send to push it through OT effects. | KB §5.1/§12 |
 | **Record and play a live stereo Aux loop** | Follow **“Live Aux loop — literal setup”** below. It uses T5 / Recorder Buffer 5 and makes each state and success check explicit. | Octatrack MKII User Manual OS 1.40A §§9.1–9.2, 11.3, 17.1.3; on-rig OS 1.40C |
+| ⚠ **Get samples from the Mac onto the CF card** | Follow **“Load a sample from the Mac — literal setup” §1** below. USB DISK MODE mounts the CF card as mass storage; files go in the set's `AUDIO` folder. | Manual OS 1.40A §7.2.1, §8.5.1 · **to verify on-rig** |
+| ⚠ **Load a sample into a Flex or Static slot** | Follow **“Load a sample from the Mac — literal setup” §2**. Double-press the `[TRACK]` key for QUICK ASSIGN, pick an empty slot, `[YES]` to open the file browser. | Manual OS 1.40A §8.3.1, §8.3.3 · **to verify on-rig** |
+| ⚠ **Assign a loaded sample to the track's machine** | Follow **§3**. Loading into a slot does **not** assign it to the machine — that is a separate `[YES]` in QUICK ASSIGN or SRC SETUP. | Manual OS 1.40A §11.3 · **to verify on-rig** |
+| ⚠ **Set timestretch so a loop holds session tempo** | Follow **§4**. Per-sample TIMESTRETCH in the audio editor, plus `TSTR = AUTO` in SRC SETUP for it to apply. | Manual OS 1.40A §12 (audio editor), Appendix A · **to verify on-rig** |
+| ⚠ **Save and reload so the work survives** | Follow **§5**. Order is **Part → Project → SYNC TO CARD**, and never eject the card without the sync. | Manual OS 1.40A §10.2.2, §8.4.1 · **to verify on-rig** |
 
 ### Live Aux loop — literal setup
 
@@ -109,6 +114,99 @@ Static Loop A slot, and its empty playback slot is unrelated to the T1 recorder 
 
 The incoming A/B signal can be heard directly when the OT mixer **DIR** level is up; that direct monitoring
 does not prove a recorder buffer exists. The waveform in step 4 does.
+
+### Load a sample from the Mac — literal setup
+
+**Purpose:** take an approved sample from the Mac, get it onto the CompactFlash card, into a sample
+slot, assigned to a track's machine, stretched to session tempo, and saved so it survives a reload.
+
+> ⚠ **Every step in this block is derived from the Octatrack MKII User Manual OS 1.40A and has not
+> yet been performed on the rig.** The machine runs **OS 1.40C**. Confirm each expected display
+> before relying on it; correct anything that differs and change the source to `on-rig YYYY-MM-DD`.
+> Robin's on-rig observation overrides the manual.
+
+#### 1. Put the file in the set's audio pool
+
+**Starting state:** OT powered on with its set mounted; a USB cable to the Mac; the approved sample
+converted to **16- or 24-bit, 44.1 kHz WAV or AIFF, mono or stereo** (48 kHz plays at the wrong pitch).
+
+1. Connect the OT to the Mac with a USB cable.
+2. Open the PROJECT menu (`[FUNC]` + `[MIDI]`), select **SYSTEM**, then **USB DISK MODE**, and press
+   `[YES]`. **Expected:** the CF card mounts on the Mac as a mass-storage volume. This is the *only*
+   thing OT USB does — there is no MIDI or audio over it.
+3. On the Mac, open the **set folder** on that volume and find the folder named **`AUDIO`** inside it.
+   That folder *is* the audio pool; only material in it is visible to the projects of the set.
+4. Copy the approved sample into `AUDIO`. Keep a folder to **1024 files or sub-folders** maximum.
+5. Eject the volume on the Mac, then leave USB DISK MODE on the OT. **Success check:** the OT returns
+   to its normal screen and the card is no longer mounted on the Mac.
+
+**Trade-off:** the manual permits audio inside project folders, but recommends `AUDIO` only. Keep to
+`AUDIO` — it keeps one pool per set rather than copies scattered per project.
+
+#### 2. Load it into a sample slot
+
+Slots and machines are **separate things**: 128 Flex slots and 128 Static slots per project, shared by
+every track. Loading fills a slot; it does not put the sound on a track.
+
+1. Press the `[TRACK]` key of the destination track twice, quickly. **Expected:** the QUICK ASSIGN
+   menu opens — the **Flex** slot list if that track holds a Flex machine, the **Static** list if it
+   holds a Static machine.
+2. If the **machine list** appears instead, the track holds neither: move the cursor to **FLEX** or
+   **STATIC** and press `[RIGHT]` to open that slot list.
+3. Move to an **empty slot position** and press `[YES]`. **Expected:** the file browser opens, showing
+   the audio pool from §1. Folders are marked `(D)`; open one with `[RIGHT]` or `[YES]`.
+4. Highlight the sample and press `[FUNC]` + `[YES]` to **preview it from the main outputs** before
+   committing. **Success check:** you hear it in the monitors.
+5. Press `[YES]` to load it. **Expected:** the sample name appears at that slot position.
+
+At the top of the Flex list the OT shows **RAM available to the project**, and each Flex sample's BPM
+and size in MB — check this before loading long material. **Static streams from the card and costs no
+RAM; Flex loads into project memory.** That is the real reason long loops belong on Static tracks.
+
+#### 3. Assign the slot to the track's machine
+
+1. With the QUICK ASSIGN menu still open on the correct track, select the loaded sample and press
+   `[YES]`. **Expected:** the sample is now assigned to that track's machine, not merely present in
+   the slot list.
+2. Alternative route: select the track, press `[FUNC]` + `[SRC]` for SRC SETUP, select the sample and
+   press `[YES]`.
+3. **Success check:** press `[PLAY]` with a trig on the track and the sample sounds from that track.
+
+> If you want to **replace** a sample in a slot *without* assigning it to the track's machine, press
+> `[RIGHT]` at the slot instead of `[YES]` — that opens the file browser without reassigning.
+
+#### 4. Set timestretch for a tempo-dependent loop
+
+1. Select the sample in the Flex/Static slot list and press `[FUNC]` + `[BANK]`. **Expected:** the
+   audio editor opens on that sample.
+2. Find **ORIGINAL TEMPO** and confirm it matches the sample's real BPM. If it is wrong, correct it
+   with the `LEVEL` knob — a wrong value makes every stretched result wrong.
+3. Set **TIMESTRETCH**: `NORMAL` for most material, `BEAT` for rhythmic loops, `OFF` for none.
+4. Press `[NO]` to leave the audio editor.
+5. Press `[FUNC]` + `[SRC]` for SRC SETUP and set **`TSTR = AUTO`**. **This is the step that makes
+   step 3 take effect** — on `AUTO` each sample's own setting applies.
+6. **Success check:** change the project BPM and the loop stays in time.
+
+Realtime stretch stays clean within roughly **±10 %** of the sample's native tempo. Outside that,
+re-render at the target tempo instead.
+
+#### 5. Save so it survives a reload
+
+**Order matters, and getting it wrong is the documented way to lose the work.**
+
+1. Press `[FUNC]` + `[PART]`. **Expected:** the PART EDIT pop-up opens. Choose **SAVE** and confirm.
+   Machine assignments, sample assignments, effects, track parameters and all 16 scenes live in the
+   **Part** — an unsaved part shows an asterisk in the PART QUICK SELECT menu (`[PART]`).
+2. Then save the project: PROJECT menu → **PROJECT** → **SAVE**, or the shortcut `[FUNC]` + `[PROJ]`.
+   Project changes are cached to card continuously, so **save-then-reload is the only way to return to
+   a known state**.
+3. Before ejecting the card, run PROJECT → **PROJECT** → **SYNC TO CARD**. **Removing the card without
+   this can lose data.**
+4. **Success check:** power-cycle the OT, reload the project, and confirm the machines, sample
+   assignments and scenes are intact. If scenes are missing, step 1 was skipped.
+
+To revert a part to its last saved state, press `[FUNC]` + `[CUE]`. If it has never been saved the OT
+prompts **“SAVE PART FIRST”**.
 
 ## Track layout (this rig)
 
