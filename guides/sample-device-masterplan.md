@@ -1,7 +1,7 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v1.0
-**Date:** 2026-08-03
+**Document version:** v1.1
+**Date:** 2026-08-04
 **Status:** Active — the single forward plan for the guided pilot
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
 historical pilots, gates and cross-repo evidence; it is not the forward operating sequence.
@@ -251,4 +251,5 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
-| **v1.0** | **2026-08-03** | First single forward plan: music-first, device-specific, evidence-gated loading and persistence; separates the deferred historical OT pilot from the active workflow and reserves Ableton sync for a measured comparison. |
+| **v1.1** | **2026-08-04** | Rewrote Phase 2 around the step the plan was missing: `CURATED/` is empty, so promotion must happen before Phases 2–4 can complete — with the literal `prepare` → trim → listen → `validate` → `promote` sequence and the standing single-copy risk. Demoted the 130 `PACKS/` identities to an open integrity risk. |
+| v1.0 | 2026-08-03 | First single forward plan: music-first, device-specific, evidence-gated loading and persistence; separates the deferred historical OT pilot from the active workflow and reserves Ableton sync for a measured comparison. |

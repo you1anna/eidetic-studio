@@ -1,7 +1,7 @@
 # Sample-to-device workflow — investigation and pilot
 
-**Document version:** v1.1
-**Date:** 2026-08-03
+**Document version:** v1.2
+**Date:** 2026-08-04
 **Status:** **Active evidence log — not the forward operating sequence**
 **Scope:** Selecting, preparing and transferring a small track palette from
 `/Volumes/Extreme SSD/Production/SAMPLES` to the Octatrack MKII, Digitakt MK1 and TR-8S.
@@ -10,6 +10,17 @@
 > sequence is [`sample-device-masterplan.md`](sample-device-masterplan.md). Nothing here settles
 > the long-term role of a device; the existing guides remain the current operating reference until
 > observed results have been reviewed and reconciled across the repo.
+
+> **Ownership split — read this before quoting anything below (2026-08-04).**
+> Per [`sample-device-masterplan.md`](sample-device-masterplan.md) §7, this file owns **run IDs,
+> evidence locations and deferred pilot history** only. The masterplan owns order, trade-offs and
+> **all current boundaries**.
+>
+> Sections 1–5 below restate boundaries that were live when written. They are **historical record**.
+> Where this file and the masterplan disagree about what is currently permitted, **the masterplan
+> wins** — do not action a boundary from this file without checking it there first. The parts that
+> remain authoritative here are the **Progress ledger**, the **Export-set contract**, and the
+> **Revision history**.
 
 ## Current direction — Robin, 2026-08-02
 
@@ -341,7 +352,8 @@ The final guide will be written only after the gates above. It must include:
 
 | Version | Date | Summary |
 |---|---|---|
-| **v1.1** | **2026-08-03** | Designated `sample-device-masterplan.md` as the single forward sequence; retained this file for evidence and historical pilots. Replaced the superseded precautionary machine-backup Gate 0 with a rig-integrity entry gate, while leaving the source-library copy-only boundary unchanged. |
+| **v1.2** | **2026-08-04** | Demoted the 130 `PACKS/` identities from export blocker to open integrity risk (promote already hash-checks every source per file). Added the ownership-split banner: §§1–5 are historical record, the masterplan wins on any live boundary, and only the progress ledger, export-set contract and revision history remain authoritative here. |
+| v1.1 | 2026-08-03 | Designated `sample-device-masterplan.md` as the single forward sequence; retained this file for evidence and historical pilots. Replaced the superseded precautionary machine-backup Gate 0 with a rig-integrity entry gate, while leaving the source-library copy-only boundary unchanged. |
 | **v1.0** | **2026-08-02** | Recorded Robin's active end-to-end, music-first intention: device-specific sample sets through on-device configuration and Ableton capture; defer precautionary machine backups, persist states that prove valuable, and evaluate Ableton sync against the committed manual-tempo baseline without changing the live MIDI design. The source-library no-backup boundary remains unchanged. |
 | **v0.9** | **2026-08-01** | Recorded the cross-repo fix to `sample-export`'s crate builder: it now rejects a crate row whose source isn't under `CURATED/`, closing a promote-gate bypass that `sample-find --crate` could otherwise trigger. Answered part of the open reconciliation question; the no-backup and PACKS-recovery blockers are unchanged. |
 | **v0.8** | **2026-07-30** | Deferred `octatrack-pilot-01` at Robin's request. Its generated audition packet is retained as non-operational evidence only; no sample action is authorised. |

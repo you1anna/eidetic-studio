@@ -1,6 +1,6 @@
 # Eidetic Studio — Track Setup
 
-**Version:** v2.1 · 2026-08-03
+**Version:** v2.2 · 2026-08-04
 **Replaces:** v1.0 track allocation guide (delete it)
 
 This is the current, proven **starting template**, not a final device-role decision. For the guided
@@ -61,7 +61,10 @@ One-shots only. Never loops — pitching a sample on the Digitakt also changes i
 | **7** | Empty — records the mixer's Group bus |
 | **8** | Empty — second recording slot |
 
-Load 30–50 sounds into the Sound Pool before you start. Any of them can be dropped onto any step.
+Any sound in the Sound Pool can be dropped onto any step. **30–50 sounds is the established-project
+template, not the starting point for a new track** — begin with only the approved one-shots and expand
+only when sample-lock variation proves more useful than direct assignment (superseded 2026-08-04; see
+[`sample-device-masterplan.md`](sample-device-masterplan.md) §4).
 
 ---
 
@@ -129,5 +132,6 @@ until the first controlled import chooses the studio's practical export profile.
 
 | Version | Date | Summary |
 |---|---|---|
-| **v2.1** | **2026-08-03** | Reclassified the allocation and source mapping as a starting template for the master-plan role trial; recorded the verified TR-8S import formats while leaving its practical export profile open for a controlled test. |
+| **v2.2** | **2026-08-04** | Marked the 30–50 Sound Pool figure as the established-project template rather than a new-track default, resolving a contradiction with the master plan that `devices/digitakt.md` was also repeating. |
+| v2.1 | 2026-08-03 | Reclassified the allocation and source mapping as a starting template for the master-plan role trial; recorded the verified TR-8S import formats while leaving its practical export profile open for a controlled test. |
 | v2.0 | 2026-07-19 | Current track, slot and sample-folder allocation template. |

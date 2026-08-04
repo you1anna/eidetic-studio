@@ -26,7 +26,15 @@
 | 3 | Claps, rims, snare accents | | 7 | Empty — records Group bus |
 | 4 | Impacts, rumble hits | | 8 | Empty — second record slot |
 
-Load 30–50 sounds into the Sound Pool before a session.
+**Start small, not at 30–50.** Load only the approved one-shots for the track and place the first
+useful sound on each allocated track. Compare direct assignment against one Sound Pool/sample-lock
+variation before choosing a method for the project — a large pool offers rich per-step variation but
+turns writing back into browsing.
+
+> ~~"Load 30–50 sounds into the Sound Pool before a session."~~ Superseded 2026-08-04. The 30–50
+> figure is the *established-project* template in [`../guides/session-method-a.md`](../guides/session-method-a.md) §4,
+> not a default for a new track. Forward position:
+> [`../guides/sample-device-masterplan.md`](../guides/sample-device-masterplan.md) §4.
 
 ## Known gotchas
 
