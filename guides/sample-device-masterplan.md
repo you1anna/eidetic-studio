@@ -1,7 +1,7 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v1.2
-**Date:** 2026-08-04
+**Document version:** v1.3
+**Date:** 2026-08-05
 **Status:** Active — the single forward plan for the guided pilot
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
 historical pilots, gates and cross-repo evidence; it is not the forward operating sequence.
@@ -79,14 +79,20 @@ either repo currently has a single favourite row.
 The sequence, run from `~/Projects/eidetic-sample-tools` (tools at `~/.venvs/library-tools/bin/`):
 
 1. **Generate a packet** — `sample-curate prepare --output-dir library-tools/manifests/<run-id>-audition`.
-   It writes `audition.m3u8` and `labels.tsv`. It cannot be narrowed by argument, so it produces
-   roughly 112 rows from `PILOT_QUOTAS`.
+   It writes one authoritative `labels.tsv`, an optional combined `audition.m3u8`, and a
+   `playlists/` directory containing one `.m3u8` per suggested role plus `playlists/README.md` as
+   the category index. It cannot be narrowed by argument, so it produces roughly 112 rows from
+   `PILOT_QUOTAS`.
 2. **Trim to the Phase 1 brief.** Every remaining row needs a decision, so cutting the packet to the
    brief-relevant rows is the difference between a short session and a long one. Trimming is safe —
    only the header schema is validated, never the row count. Record the trim and its reason in the
-   packet `README.md`; it is a human selection, not a silent edit.
-3. **Listen to every retained candidate** and set `decision` to `reject`, `keep` or `favourite`. A
-   favourite additionally needs a `true_role` from the trusted-role set and a non-empty `descriptor`.
+   packet `README.md`; it is a human selection, not a silent edit. Immediately run
+   `sample-curate playlists --labels <packet>/labels.tsv` after any trim so removed rows cannot
+   remain in stale playlists.
+3. **Listen category by category.** Open `playlists/README.md`, audition every role playlist, then
+   set each retained row's `decision` in the single `labels.tsv` to `reject`, `keep` or `favourite`.
+   A favourite additionally needs a `true_role` from the trusted-role set and a non-empty
+   `descriptor`. The category playlists never replace or split the decision record.
 4. **Validate, then promote** — `sample-curate validate --labels <packet>/labels.tsv`, then
    `sample-curate promote --labels <packet>/labels.tsv --run-id <run-id>`. Promote hash-checks every
    source and refuses a stale or missing file. `sample-curate undo-promotion --run-id <run-id>` is
@@ -262,6 +268,7 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
+| **v1.3** | **2026-08-05** | Made Phase 2 category-first: `prepare` now produces per-role playlists and an index, `labels.tsv` remains the single decision record, and every manual trim is followed by playlist regeneration so removed candidates cannot remain audible. |
 | **v1.2** | **2026-08-04** | Recorded the three load/assign/reload procedures as captured on their device pages (⚠ manual-derived, pending on-rig verification) and replaced the "blocking per first load" prerequisite with a verify-on-first-use row. Added a new blocker: no documented TR-8S dependency check before deleting a user sample. |
 | v1.1 | 2026-08-04 | Rewrote Phase 2 around the step the plan was missing: `CURATED/` is empty, so promotion must happen before Phases 2–4 can complete — with the literal `prepare` → trim → listen → `validate` → `promote` sequence and the standing single-copy risk. Demoted the 130 `PACKS/` identities to an open integrity risk. |
 | v1.0 | 2026-08-03 | First single forward plan: music-first, device-specific, evidence-gated loading and persistence; separates the deferred historical OT pilot from the active workflow and reserves Ableton sync for a measured comparison. |
