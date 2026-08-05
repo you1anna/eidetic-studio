@@ -106,7 +106,7 @@ The sequence, run from `~/Projects/eidetic-sample-tools` (tools at `~/.venvs/lib
    `VOCAL`, `OUT_OF_BRIEF`.
 5. **Rerun the same classifier command.** It deterministically calibrates its weights against the
    24 ear labels. It publishes category playlists only at **22/24 correct form** and **20/24 correct
-   content/group**. A failed or incomplete gate leaves the old category output invalid; do not load
+   joint content-and-group matches**. A failed or incomplete gate leaves the old category output invalid; do not load
    hardware from it.
 6. **Listen category by category only after the gate passes.** `playlists/README.md` then indexes:
    `rim-one-shots`, `tom-one-shots`, `percussion-one-shots`, `percussion-loops`,
@@ -338,7 +338,7 @@ knowledge-base changes; otherwise remove the cable and retain manual tempo.
 
 | Priority | Item | Effect | Resolution point |
 |---|---|---|---|
-| **Blocking before category audition/export** | `tribal-140-01` has 24 unfilled ear-truth rows | CLAP candidate output is not yet measured against Robin's hearing; old name-derived playlists are rejected | Fill `benchmark-labels.tsv`, rerun `classify-packet`, require 22/24 form and 20/24 content/group before `playlists/` is regenerated |
+| **Blocking before category audition/export** | `tribal-140-01` has 24 unfilled ear-truth rows | CLAP candidate output is not yet measured against Robin's hearing; old name-derived playlists are rejected | Fill `benchmark-labels.tsv`, rerun `classify-packet`, require 22/24 form and 20/24 joint content-and-group matches before `playlists/` is regenerated |
 | Open integrity risk — **not** a blocker | 130 protected `PACKS/` identities and one Foundation identity | Library preservation is not fully verified; it does **not** make a crate untrustworthy, because `sample-curate promote` hash-checks every source at promote time and refuses a stale or missing file | Demoted 2026-08-04 (see [`../decisions/2026-08-04-demote-packs-recovery-gate.md`](../decisions/2026-08-04-demote-packs-recovery-gate.md)); recovery review remains open in `eidetic-sample-tools` |
 | ⚠ Verify on first load | The three load/assign/reload procedures are captured but manual-derived, not yet seen on the rig | A manual can differ from the machine; an unverified step must not be trusted silently | Follow each on its first real use, correct any difference, then mark it `on-rig YYYY-MM-DD` |
 | Blocking before any TR-8S sample deletion | No documented dependency check exists for deleting a TR-8S user sample | A kit referencing a deleted sample may fail in an unknown way | Establish it empirically on a spare instrument (method on `devices/tr8s.md`) |
