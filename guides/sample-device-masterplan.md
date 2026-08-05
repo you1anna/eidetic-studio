@@ -1,6 +1,6 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v1.3
+**Document version:** v1.4
 **Date:** 2026-08-05
 **Status:** Active — the single forward plan for the guided pilot
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
@@ -68,7 +68,7 @@ Start from the saved Octatrack template, never a blank project. Set a deliberate
 **Trade-off:** a narrow brief gets to a groove quickly but rejects attractive, unrelated samples.
 Keep those out of this run instead of widening the palette.
 
-### Phase 2 — audition, promote into `CURATED/`, then make listening groups
+### Phase 2 — audio-classify, ear-calibrate, audition, then promote into `CURATED/`
 
 **Start here, and know why:** `CURATED/` is empty. Phase 4's export contract requires every
 `source_path` to resolve below `CURATED/`, and `sample-export` has enforced that since 2026-08-01.
@@ -79,24 +79,54 @@ either repo currently has a single favourite row.
 The sequence, run from `~/Projects/eidetic-sample-tools` (tools at `~/.venvs/library-tools/bin/`):
 
 1. **Generate a packet** — `sample-curate prepare --output-dir library-tools/manifests/<run-id>-audition`.
-   It writes one authoritative `labels.tsv`, an optional combined `audition.m3u8`, and a
-   `playlists/` directory containing one `.m3u8` per suggested role plus `playlists/README.md` as
-   the category index. It cannot be narrowed by argument, so it produces roughly 112 rows from
-   `PILOT_QUOTAS`.
-2. **Trim to the Phase 1 brief.** Every remaining row needs a decision, so cutting the packet to the
-   brief-relevant rows is the difference between a short session and a long one. Trimming is safe —
-   only the header schema is validated, never the row count. Record the trim and its reason in the
-   packet `README.md`; it is a human selection, not a silent edit. Immediately run
-   `sample-curate playlists --labels <packet>/labels.tsv` after any trim so removed rows cannot
-   remain in stale playlists.
-3. **Listen category by category.** Open `playlists/README.md`, audition every role playlist, then
-   set each retained row's `decision` in the single `labels.tsv` to `reject`, `keep` or `favourite`.
-   A favourite additionally needs a `true_role` from the trusted-role set and a non-empty
-   `descriptor`. The category playlists never replace or split the decision record.
-4. **Validate, then promote** — `sample-curate validate --labels <packet>/labels.tsv`, then
-   `sample-curate promote --labels <packet>/labels.tsv --run-id <run-id>`. Promote hash-checks every
-   source and refuses a stale or missing file. `sample-curate undo-promotion --run-id <run-id>` is
-   the reversal path.
+   It writes the authoritative `labels.tsv` and a combined candidate playlist. It deliberately does
+   **not** publish name-derived categories.
+2. **Trim to the Phase 1 brief.** Every remaining row needs a decision, so cut irrelevant rows before
+   classification. Record the trim and reason in the packet `README.md`; do not silently change the
+   candidate set.
+3. **Run the local hybrid classifier:**
+
+   ```bash
+   sample-curate \
+     --root "/Volumes/Extreme SSD/Production/SAMPLES" \
+     --library-db library-tools/manifests/sample-library.sqlite \
+     classify-packet \
+     --labels <packet>/labels.tsv \
+     --benchmark <packet>/benchmark-labels.tsv
+   ```
+
+   It combines cached acoustic measurements, librosa rhythm evidence and the local
+   `laion/clap-htsat-unfused` model. Filename/folder words are whole-token, low-weight evidence only;
+   `bottom` cannot match `tom`. It writes `classification.tsv`, `benchmark.m3u8` and six separate
+   four-file playlists in `benchmark-playlists/`.
+4. **Calibrate by ear before trusting categories.** Open `benchmark-playlists/README.md`; audition
+   all four files in each stratum. For every row in `benchmark-labels.tsv`, fill `true_form`,
+   `true_content`, `true_audition_group` and optional `notes`. Allowed form values are `ONE_SHOT`,
+   `LOOP`, `PHRASE`, `LONG_FORM`; content values are `RIM`, `TOM`, `PERCUSSION`, `FULL_DRUMS`,
+   `VOCAL`, `OUT_OF_BRIEF`.
+5. **Rerun the same classifier command.** It deterministically calibrates its weights against the
+   24 ear labels. It publishes category playlists only at **22/24 correct form** and **20/24 correct
+   content/group**. A failed or incomplete gate leaves the old category output invalid; do not load
+   hardware from it.
+6. **Listen category by category only after the gate passes.** `playlists/README.md` then indexes:
+   `rim-one-shots`, `tom-one-shots`, `percussion-one-shots`, `percussion-loops`,
+   `full-drum-loops`, `vocal-stabs`, `vocal-phrases`, `long-vocal-sources` and `out-of-brief`.
+   Low-confidence best guesses are last. Set every retained `labels.tsv` row to `reject`, `keep` or
+   `favourite`; a favourite also needs a trusted `true_role` and non-empty `descriptor`.
+7. **Validate, then promote** — `sample-curate validate --labels <packet>/labels.tsv`, then
+   `sample-curate promote --labels <packet>/labels.tsv --run-id <run-id>`. Promotion hash-checks
+   every source and refuses a stale or missing file. `sample-curate undo-promotion --run-id <run-id>`
+   is the reversal path.
+
+#### Current packet — `tribal-140-01`
+
+- Candidate classification: `~/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/classification.tsv`
+- Ear sheet: `~/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/benchmark-labels.tsv`
+- Benchmark index: `~/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/benchmark-playlists/README.md`
+- Model revision: `8fa0f1c6d0433df6e97c127f64b2a1d6c0dcda8a`
+- State on 2026-08-05: all 63 files classified; 24 benchmark rows generated; ear truth columns empty;
+  strict gate not yet evaluated; the older name-derived `playlists/` directory is rejected evidence,
+  not an audition source.
 
 Only then search `CURATED/` and make short listening groups — not an export. The deferred
 `octatrack-pilot-01` packet remains historical evidence, not authority for a new run.
@@ -151,51 +181,115 @@ rig is populated.
 
 ### TR-8S — foundation first
 
-1. Confirm BD remains on Assign Out 1 and the slots retain their roles: clap/snare, closed hat, open
-   hat, ride/cymbal, shaker/roll and extra percussion.
-2. Build the core rhythm with native voices. Do not load a replacement if the native engine already
-   supplies the required character.
-3. For an approved extra, use the verified SD import procedure, assign it only to its chosen role,
-   audition it in the pattern, and check that no user-sample dependency is being removed.
-4. When the kit supports a useful groove, press `[WRITE]` and verify it remains after reopening or
-   power cycling.
+**Creation/initialisation choice:** do **not** factory-reset. Start on one named working kit/pattern
+slot Robin has chosen for this track. Preserve the slot-role skeleton and initialise nothing else;
+the repo has no verified safe dependency check for deleting existing user samples.
+
+1. Power on the TR-8S. Press `[UTILITY]` → **SYNC/TEMPO** and confirm **Tempo Sync = MIDI** and
+   **Sync Out = OFF**. Then `[UTILITY]` → **MIDI** and confirm **Soft Thru = ON** and Pattern Ch is
+   not channel 2. If any value changes, press `[WRITE]` and confirm.
+2. Confirm Assign Out 1 is audio: `[UTILITY]` → **ASSIGN OUT 1** → **Mode = BOOST**. Hold `[SHIFT]`,
+   turn `[VALUE]` to **KIT:OUTPUT** for **BD**, press `[ENTER]`, choose **ASSIGN 1**, press `[ENTER]`,
+   then `[KIT]` to exit. Press `[WRITE]` if changed.
+3. Trigger the kick and verify it appears on the dedicated kick/limiter path while the remaining kit
+   reaches the normal drum path. Stop here if BD also appears only at MIX OUT.
+4. Build the core rhythm with native voices. Keep the roles: kick; clap/snare; closed hat; open hat;
+   ride/cymbal; shaker/roll; extra percussion. Do not import a replacement when a native voice
+   already supplies the required character.
+5. ⚠ For one approved user sample, use an SD card formatted by the TR-8S. On the Mac copy the file
+   to `ROLAND/TR-8S/SAMPLE/`, eject the card and insert it. On the TR-8S press `[UTILITY]`, select
+   **SAMPLE:Import**, `[ENTER]`, choose **FILE** or **FOLDER**, `[ENTER]`, select the item, press the
+   blinking `[SAMPLE]` to preview, then `[ENTER]` → **OK**. Expected display: **Completed!**.
+6. ⚠ Press `[SAMPLE]`, press the intended `[BD]`–`[RC]` instrument button—never `[BD]` for this
+   trial—turn `[VALUE]` to the imported User sample, then press `[SAMPLE]` to leave. Trigger the
+   instrument and confirm every other slot is unchanged.
+7. Press `[WRITE]` and confirm. Power-cycle, reopen the kit and verify the imported assignment, the
+   other slot roles, Soft Thru, Tempo Sync and **BD → Assign Out 1** all survived.
 
 **Trade-off:** native voices keep the box tactile and its kick route dependable. User samples add
 character but consume finite space and introduce kit dependencies.
 
 ### Octatrack — performance layer second
 
-1. Load or duplicate the saved template; confirm CLOCK SEND and TRANSPORT SEND before changing
-   material.
-2. Use Static tracks for long swappable loops; use Flex tracks for tempo-dependent phrases, slicing,
-   stretching and recording. Retain T5/T6 recorder capacity and T7 Thru capacity unless the trial
-   proves another allocation genuinely better.
-3. For every loaded item, audition at session tempo, set its playback/slice/stretch behaviour, and
-   make one pattern that proves why it belongs there.
-4. When it works, save the **Part first**, then the Project; reload and confirm machines, scenes and
-   sample access survived.
+**Creation/initialisation choice:** never start from a blank project. Load or duplicate the saved
+template so its project-specific clock settings and track allocation come with it.
+
+1. Power on the OT and load/duplicate the saved template. Open PROJECT (`[FUNC]` + `[MIDI]`) →
+   **MIDI** → **SYNC**. Confirm **CLOCK SEND = ON**, **TRANSPORT SEND = ON**, **CLOCK RECEIVE = OFF**
+   and **TRANSPORT RECEIVE = OFF**. Save the project if corrected.
+2. Confirm the working allocation before copying: Static for long swappable loops; Flex for
+   tempo-dependent phrases/slicing; T5/T6 retained for recording; T7 retained as Thru. Stop if the
+   loaded project does not match the intended template rather than silently remapping it.
+3. ⚠ Connect USB. PROJECT → **SYSTEM** → **USB DISK MODE** → `[YES]`. Expected: the CompactFlash
+   volume mounts on the Mac. Copy approved 16- or 24-bit **44.1 kHz** WAV/AIFF files into the set's
+   `AUDIO` folder. Eject on the Mac, leave USB DISK MODE and confirm the normal OT screen returns.
+4. ⚠ Double-press the destination `[TRACK]` key. In QUICK ASSIGN choose the Flex or Static list,
+   highlight an empty slot and press `[YES]`. Browse to the file; `[FUNC]` + `[YES]` previews it from
+   Main Out. Press `[YES]` to load it. Expected: its name appears in the slot.
+5. ⚠ With that slot highlighted, press `[YES]` again to assign it to the track's machine. Put a trig
+   on the track and press `[PLAY]`; loading a slot alone is not success—the track must sound.
+6. ⚠ For tempo-dependent material, select the sample and press `[FUNC]` + `[BANK]`. In the audio
+   editor correct **ORIGINAL TEMPO**, set TIMESTRETCH to `BEAT` for rhythm or `NORMAL` otherwise,
+   exit with `[NO]`, then `[FUNC]` + `[SRC]` and set **TSTR = AUTO**. Change project BPM briefly and
+   confirm the loop remains in time, then restore the track BPM.
+7. Create one pattern/scene move that proves the sample's role. Then `[FUNC]` + `[PART]` → **SAVE**;
+   PROJECT → **PROJECT** → **SAVE**; before removing the card, PROJECT → **PROJECT** →
+   **SYNC TO CARD**.
+8. Power-cycle, reload the project and confirm the machine type, sample assignment, trigs and scenes.
+   Missing scenes mean the Part-save step was skipped.
 
 **Trade-off:** Static tracks swap long files without RAM cost; Flex tracks are expressive but share
 project memory. Preserving recorder tracks limits prepared roles but protects live resampling.
 
 ### Digitakt — detail and resampling third
 
-1. Keep its MIDI-through and USB-MIDI configuration intact; it is a clock-chain component as well
-   as a sampler.
-2. Transfer the approved one-shots, load them into the working project, and place only the first
-   useful sound on each allocated track. Do not fill the old 30–50 Sound Pool by default.
-3. Compare direct assignment with one Sound Pool/sample-lock variation before choosing the faster
-   method for this project.
-4. Retain T7/T8 when desk resampling is part of the brief. Save and reload the project, confirming
-   the sounds and any capture survive.
+**Creation/initialisation choice:** start with the named working project, not an undocumented purge
+or reset. A clean-project creation sequence has not been verified on this rig; if a separate new
+project is needed, stop and verify/capture it before using it. Keep T7/T8 empty when desk resampling
+is in the brief.
+
+1. Power on the Digitakt with the working project loaded. `[SETTINGS]` → MIDI CONFIG → PORT CONFIG:
+   confirm **THRU PORT FUNCTIONALITY = MIDI** and **RECEIVE NOTES = OFF**. `[SETTINGS]` → SYSTEM →
+   USB CONFIG: confirm **USB MIDI**. Save the project if corrected.
+2. ⚠ Connect USB and open Elektron Transfer. On CONNECTIONS select Digitakt for MIDI IN and MIDI OUT.
+   Open EXPLORE; top-right choose **Samples**, top-left choose **My Computer**. Drag only approved
+   one-shots to the device. Expected: Transfer converts to 16-bit/48 kHz/mono and the files appear
+   on the device side. They are now on +Drive, not yet in the project.
+3. ⚠ On Digitakt press `[SETTINGS]` → **SAMPLES** → `[YES]`. Highlight a transferred sample,
+   `[YES]`, `[RIGHT]` → **LOAD TO PROJ** → `[YES]`, then confirm. Press `[SETTINGS]` to leave.
+4. ⚠ Select the destination with `[TRACK]` + `[TRIG 1–8]`; press `[SRC]`, turn DATA ENTRY knob D to
+   the sample and press `[YES]`. Press that track trig and confirm it sounds. Repeat only for the
+   first useful sample on each approved track; do not populate a 30–50-sound pool by default.
+5. Start with direct assignment. Only to test per-step variation: `[FUNC]` + `[SONG MODE]` →
+   **MANAGE SOUNDS** → select the Sound(s) → `[RIGHT]` → **COPY TO …** → **SOUND POOL**. Hold the
+   destination trig and turn `LEVEL/DATA` to select the Sound; expected: the trig flashes.
+6. Make one pattern proving the direct or Sound-lock method is genuinely faster for this material.
+   Press `[FUNC]` + `[SETTINGS]`, choose the project slot and confirm save.
+7. Load another project only after saving, then reload this one. Confirm samples, assignments,
+   Sound locks and any T7/T8 capture survived. Do not use PURGE ALL as a tidy-up.
 
 **Trade-off:** a small pool is immediate; a large Sound Pool offers rich per-step variation but can
 turn writing back into browsing. Repitch makes stabs expressive but rules out tempo-critical loops.
 
-### Literal procedures — captured 2026-08-04, ⚠ pending on-rig verification
+### TB-03 — initialise the acid voice and clock endpoint
 
-All three are now written up from the retained official manuals, each as a numbered
-literal-setup block on its device page:
+The TB-03 receives no sample export. Its initialisation job is to be a known, clocked acid voice.
+
+1. Power it on. Hold `[FUNCTION]` and turn `[VALUE]` to **MIDI Clock Source (`SYnC`)**; release and
+   set **`NiDi`**. Press `[FUNCTION]` to exit. Settings persist automatically.
+2. Hold `[FUNCTION]` + `[VALUE]` to **MIDI Channel (`CH`)**; set **2**, then exit.
+3. Hold `[FUNCTION]` + `[VALUE]` to **Auto Off (`A.OFF`)**; set **OFF**, then exit.
+4. Put `[MODE]` in **PATTERN PLAY** and select the working pattern. If the OT will sequence every
+   note, use a known empty TB-03 pattern; the exact clear-pattern operation is not captured here, so
+   do not invent one during the session.
+5. On the OT select MIDI track 1, confirm CHAN = 2 and place a short test note. Press OT `[PLAY]`.
+   Success: TB-03 follows start/stop and tempo once, with no doubled/stuttering note layer.
+
+### Procedure status — captured 2026-08-04, ⚠ pending on-rig verification
+
+The Mac-transfer/load/persistence blocks above are transcribed from the retained official manuals
+and remain ⚠ until their first observed run. Their complete source procedures remain on the device
+pages:
 
 - **Octatrack** — [`../devices/octatrack.md`](../devices/octatrack.md) → "Load a sample from the Mac":
   CF copy via USB DISK MODE, sample-slot load, machine assignment, timestretch, Part → Project →
@@ -244,6 +338,7 @@ knowledge-base changes; otherwise remove the cable and retain manual tempo.
 
 | Priority | Item | Effect | Resolution point |
 |---|---|---|---|
+| **Blocking before category audition/export** | `tribal-140-01` has 24 unfilled ear-truth rows | CLAP candidate output is not yet measured against Robin's hearing; old name-derived playlists are rejected | Fill `benchmark-labels.tsv`, rerun `classify-packet`, require 22/24 form and 20/24 content/group before `playlists/` is regenerated |
 | Open integrity risk — **not** a blocker | 130 protected `PACKS/` identities and one Foundation identity | Library preservation is not fully verified; it does **not** make a crate untrustworthy, because `sample-curate promote` hash-checks every source at promote time and refuses a stale or missing file | Demoted 2026-08-04 (see [`../decisions/2026-08-04-demote-packs-recovery-gate.md`](../decisions/2026-08-04-demote-packs-recovery-gate.md)); recovery review remains open in `eidetic-sample-tools` |
 | ⚠ Verify on first load | The three load/assign/reload procedures are captured but manual-derived, not yet seen on the rig | A manual can differ from the machine; an unverified step must not be trusted silently | Follow each on its first real use, correct any difference, then mark it `on-rig YYYY-MM-DD` |
 | Blocking before any TR-8S sample deletion | No documented dependency check exists for deleting a TR-8S user sample | A kit referencing a deleted sample may fail in an unknown way | Establish it empirically on a spare instrument (method on `devices/tr8s.md`) |
@@ -268,6 +363,7 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
+| **v1.4** | **2026-08-05** | Replaced name-derived audition roles with local librosa + CLAP form/content classification and a strict 24-file ear gate; recorded the current 63-file candidate and benchmark paths. Expanded Phase 5 into literal creation/initialisation, load, expected-state, success and persistence sequences for TR-8S, Octatrack, Digitakt and TB-03, preserving every on-rig boundary and marking manual-derived operations ⚠. |
 | **v1.3** | **2026-08-05** | Made Phase 2 category-first: `prepare` now produces per-role playlists and an index, `labels.tsv` remains the single decision record, and every manual trim is followed by playlist regeneration so removed candidates cannot remain audible. |
 | **v1.2** | **2026-08-04** | Recorded the three load/assign/reload procedures as captured on their device pages (⚠ manual-derived, pending on-rig verification) and replaced the "blocking per first load" prerequisite with a verify-on-first-use row. Added a new blocker: no documented TR-8S dependency check before deleting a user sample. |
 | v1.1 | 2026-08-04 | Rewrote Phase 2 around the step the plan was missing: `CURATED/` is empty, so promotion must happen before Phases 2–4 can complete — with the literal `prepare` → trim → listen → `validate` → `promote` sequence and the standing single-copy risk. Demoted the 130 `PACKS/` identities to an open integrity risk. |
