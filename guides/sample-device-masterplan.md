@@ -1,6 +1,6 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v1.8
+**Document version:** v1.9
 **Date:** 2026-08-06
 **Status:** Active — Phase 2 classification has passed; category audition and feedback are next
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
@@ -228,12 +228,13 @@ add one TR-8S sample only after its native engine has audibly failed that role.
 | Octatrack | Percussion or full-drum loops; vocal phrases or long vocal sources | One staged file copied into the working Set's `AUDIO` folder in USB DISK MODE |
 | TR-8S — optional | One percussion/drum one-shot that beats the native voice | One staged `ROLAND/TR-8S/SAMPLE/` file on a TR-8S-formatted SD card |
 
-1. Robin listens in the linked category playlists and reports the playlist plus filename or item
-   position for each chosen sample. The assistant records the decisions, trusted role and descriptor
-   in `labels.tsv`; Robin does **not** have to edit TSV cells. Classifier membership is not approval.
-2. Complete every decision in the packet, then run `sample-curate validate`. Stop on any blank or
-   malformed decision. Run `sample-curate promote --run-id tribal-140-01-device-smoke` only after
-   validation; success means the chosen hashes were rechecked and copied below `CURATED/`.
+1. Robin listens in one linked category playlist and reports the playlist plus filename or item
+   position for the chosen sample. Robin does **not** edit TSV cells. Classifier membership is not
+   approval.
+2. The assistant creates a separate one-row smoke-test selection record containing that favourite,
+   trusted role and descriptor. The unselected audition rows remain untouched and do not need
+   artificial keep/reject decisions. Run `sample-curate validate` against the one-row record, then
+   `sample-curate promote`; success means the chosen hash was rechecked and copied below `CURATED/`.
 3. Retain minimal Digitakt and Octatrack crate TSVs beside the packet. Each must contain only the
    promoted favourite for that device and the normal fields `sample_id`, `source_path`, `role`,
    `descriptor`, `reason`. Do not pad the smoke crates to satisfy the separate Foundation quotas.
@@ -260,6 +261,14 @@ add one TR-8S sample only after its native engine has audibly failed that role.
 8. The smoke test passes only when each attempted device has: the expected single converted file,
    audible assignment, unchanged routing/clock state, and a successful save/reload. Record the
    observed steps as `on-rig YYYY-MM-DD` before adding a second file or producing a batch crate.
+
+**Current smoke-test state — 2026-08-07:** Robin selected Octatrack `percussion-loops` sound 12,
+`RK_TRIBAL_Top_Loop_02_140bpm.wav`. The separate one-row selection validated and its SHA-256 was
+promoted under run `tribal-140-01-octatrack-smoke-01`. The export gates resolved one file, previewed
+one conversion and converted one file with no unresolved rows. The staged result is
+`DL01_tribal-t_000a.wav`: PCM WAV, 44.1 kHz, 16-bit stereo, 3.429 seconds. Digitakt is deferred
+because its two-item percussion-one-shot shortlist did not justify a device trial. The next action
+is the physical Octatrack T4 load, tempo, save and reload check; no hardware state has yet changed.
 
 ## 4. Phase 5 — load and configure one machine at a time
 
@@ -451,6 +460,7 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
+| **v1.9** | **2026-08-07** | Simplified smoke selection to a separate one-row record so unselected audition rows need no artificial decisions. Recorded Robin's Octatrack sound 12 choice, successful promotion/export, verified file format and the decision to defer Digitakt. |
 | **v1.8** | **2026-08-06** | Made the smoke-test execution order consistent with the established Octatrack-first objective: Octatrack save/reload proof, then Digitakt, with TR-8S still conditional on a native-voice failure. |
 | **v1.7** | **2026-08-06** | Added the first export smoke test: one promoted sample per destination, three Mac-side preview/build gates, device-by-device transfer, save/reload checks and explicit stop conditions before any batch export. |
 | **v1.6** | **2026-08-06** | Recorded the explicit 24-row reviewed benchmark, Robin's approximately 20% accepted error boundary, the final 23/20/19 scores and 57 preserved decisions. Documented resolution-digest publication and automatic withdrawal of stale playlist links. |
