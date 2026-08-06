@@ -1,6 +1,6 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v1.6
+**Document version:** v1.7
 **Date:** 2026-08-06
 **Status:** Active — Phase 2 classification has passed; category audition and feedback are next
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
@@ -216,6 +216,51 @@ Format facts before export:
 - TR-8S accepts WAV up to 96 kHz and AIFF at 44.1, 48 or 96 kHz, with 8–32-bit depths and mono or
   stereo files. Its first studio export profile remains a controlled test choice.
 
+#### First export smoke test — one sample per destination, not a batch
+
+**Starting state:** the nine guarded playlists are current, but no row is approved for hardware yet.
+Do not export all 63 classifications. Choose at most one Digitakt sample and one Octatrack sample;
+add one TR-8S sample only after its native engine has audibly failed that role.
+
+| Trial | Eligible playlist | First transfer |
+|---|---|---|
+| Digitakt | Rim, tom or percussion one-shots; vocal stabs | Elektron Transfer from the staged Digitakt folder |
+| Octatrack | Percussion or full-drum loops; vocal phrases or long vocal sources | One staged file copied into the working Set's `AUDIO` folder in USB DISK MODE |
+| TR-8S — optional | One percussion/drum one-shot that beats the native voice | One staged `ROLAND/TR-8S/SAMPLE/` file on a TR-8S-formatted SD card |
+
+1. Robin listens in the linked category playlists and reports the playlist plus filename or item
+   position for each chosen sample. The assistant records the decisions, trusted role and descriptor
+   in `labels.tsv`; Robin does **not** have to edit TSV cells. Classifier membership is not approval.
+2. Complete every decision in the packet, then run `sample-curate validate`. Stop on any blank or
+   malformed decision. Run `sample-curate promote --run-id tribal-140-01-device-smoke` only after
+   validation; success means the chosen hashes were rechecked and copied below `CURATED/`.
+3. Retain minimal Digitakt and Octatrack crate TSVs beside the packet. Each must contain only the
+   promoted favourite for that device and the normal fields `sample_id`, `source_path`, `role`,
+   `descriptor`, `reason`. Do not pad the smoke crates to satisfy the separate Foundation quotas.
+4. From `~/Projects/eidetic-sample-tools`, run the selected crate through all three Mac-side gates:
+
+   ```bash
+   sample-export DEVICE --profile eidetic-studio --crate <device-smoke.tsv> --list
+   sample-export DEVICE --profile eidetic-studio --crate <device-smoke.tsv> --dry-run
+   sample-export DEVICE --profile eidetic-studio --crate <device-smoke.tsv>
+   ```
+
+   **Expected:** `--list` resolves exactly one promoted file with no warning or missing row;
+   `--dry-run` reports one conversion without writing; the final command reports one converted file.
+   Inspect `_EXPORT/DIGITAKT/` or `_EXPORT/OCTATRACK/` before connecting hardware. Do not use
+   `--force` or `--sync` on the first trial.
+5. Load only the Digitakt file using the literal Digitakt procedure below. Make one audible trig,
+   save the project, load another project, reload the test project and confirm the sample and
+   assignment survived. Record pass/fail before touching the Octatrack.
+6. Load only the Octatrack file using the literal Octatrack procedure below. Confirm the slot,
+   machine assignment and tempo behaviour, save **Part → Project → SYNC TO CARD**, power-cycle and
+   confirm the assignment and any scene survived.
+7. Test the optional TR-8S file last. Preserve BD → Assign Out 1, import into a spare non-BD
+   instrument, write the kit and power-cycle. Do not delete any TR-8S user sample during this test.
+8. The smoke test passes only when each attempted device has: the expected single converted file,
+   audible assignment, unchanged routing/clock state, and a successful save/reload. Record the
+   observed steps as `on-rig YYYY-MM-DD` before adding a second file or producing a batch crate.
+
 ## 4. Phase 5 — load and configure one machine at a time
 
 The order is intentional: make a playable TR-8S foundation, add the Octatrack performance layer,
@@ -406,6 +451,7 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
+| **v1.7** | **2026-08-06** | Added the first export smoke test: one promoted sample per destination, three Mac-side preview/build gates, device-by-device transfer, save/reload checks and explicit stop conditions before any batch export. |
 | **v1.6** | **2026-08-06** | Recorded the explicit 24-row reviewed benchmark, Robin's approximately 20% accepted error boundary, the final 23/20/19 scores and 57 preserved decisions. Documented resolution-digest publication and automatic withdrawal of stale playlist links. |
 | **v1.5** | **2026-08-06** | Replaced manual TSV calibration with resumable browser review, recorded the passed dual-CLAP gate, linked all nine audited playlists and made the category-to-device hand-off explicit. |
 | **v1.4** | **2026-08-05** | Replaced name-derived audition roles with local librosa + CLAP form/content classification and a strict 24-file ear gate; recorded the current 63-file candidate and benchmark paths. Expanded Phase 5 into literal creation/initialisation, load, expected-state, success and persistence sequences for TR-8S, Octatrack, Digitakt and TB-03, preserving every on-rig boundary and marking manual-derived operations ⚠. |
