@@ -1,8 +1,8 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v1.4
-**Date:** 2026-08-05
-**Status:** Active — the single forward plan for the guided pilot
+**Document version:** v1.5
+**Date:** 2026-08-06
+**Status:** Active — Phase 2 classification has passed; category audition and feedback are next
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
 historical pilots, gates and cross-repo evidence; it is not the forward operating sequence.
 
@@ -84,7 +84,7 @@ The sequence, run from `~/Projects/eidetic-sample-tools` (tools at `~/.venvs/lib
 2. **Trim to the Phase 1 brief.** Every remaining row needs a decision, so cut irrelevant rows before
    classification. Record the trim and reason in the packet `README.md`; do not silently change the
    candidate set.
-3. **Run the local hybrid classifier:**
+3. **Run the local dual-CLAP hybrid classifier:**
 
    ```bash
    sample-curate \
@@ -95,20 +95,34 @@ The sequence, run from `~/Projects/eidetic-sample-tools` (tools at `~/.venvs/lib
      --benchmark <packet>/benchmark-labels.tsv
    ```
 
-   It combines cached acoustic measurements, librosa rhythm evidence and the local
-   `laion/clap-htsat-unfused` model. Filename/folder words are whole-token, low-weight evidence only;
-   `bottom` cannot match `tom`. It writes `classification.tsv`, `benchmark.m3u8` and six separate
-   four-file playlists in `benchmark-playlists/`.
-4. **Calibrate by ear before trusting categories.** Open `benchmark-playlists/README.md`; audition
-   all four files in each stratum. For every row in `benchmark-labels.tsv`, fill `true_form`,
-   `true_content`, `true_audition_group` and optional `notes`. Allowed form values are `ONE_SHOT`,
-   `LOOP`, `PHRASE`, `LONG_FORM`; content values are `RIM`, `TOM`, `PERCUSSION`, `FULL_DRUMS`,
-   `VOCAL`, `OUT_OF_BRIEF`.
-5. **Rerun the same classifier command.** It deterministically calibrates its weights against the
-   24 ear labels. It publishes category playlists only at **22/24 correct form** and **20/24 correct
-   joint content-and-group matches**. A failed or incomplete gate leaves the old category output invalid; do not load
-   hardware from it.
-6. **Listen category by category only after the gate passes.** `playlists/README.md` then indexes:
+   It combines cached acoustic measurements and librosa rhythm evidence with two pinned local CPU
+   models, run one at a time: `laion/clap-htsat-unfused` and
+   `laion/larger_clap_music_and_speech`. Audio embeddings are cached; peak measured worker RSS on
+   this M4 Pro Mac mini was below 1.7 GB. Filenames and folders have **zero decision weight**.
+4. **Calibrate by ear in the browser, never by editing TSV rows.** Run:
+
+   ```bash
+   sample-curate review-packet --labels <packet>/labels.tsv --open
+   ```
+
+   Listen to every exception and blind sentinel, choose the heard form and content, and save. The
+   digest-bound `review-state.json` resumes safely and regenerates the fixed 24-sample benchmark.
+   A failed sentinel reopens its group. If an intentional prompt-tuning run changes the digest, add
+   `--carry-review` to the classifier command; same-sample decisions carry forward and only newly
+   affected checks reopen. `--restart-review` is the explicit archive-and-discard alternative.
+5. **Require both independent gates.** Publication remains blocked until review has zero unresolved
+   checks and the fixed benchmark reaches **22/24 correct form** plus **20/24 correct joint
+   content-and-group matches**. The ensemble weights are chosen deterministically against that fixed
+   ear-labelled cohort; filename weight remains zero. A failed or incomplete gate preserves the old
+   public output and must never feed hardware.
+6. **Publish only through the guarded command:**
+
+   ```bash
+   sample-curate playlists --labels <packet>/labels.tsv
+   ```
+
+   Publication is transactional: all new files render before the old set is replaced. The first
+   valid run archives the rejected name-derived playlists once. `playlists/README.md` then indexes:
    `rim-one-shots`, `tom-one-shots`, `percussion-one-shots`, `percussion-loops`,
    `full-drum-loops`, `vocal-stabs`, `vocal-phrases`, `long-vocal-sources` and `out-of-brief`.
    Low-confidence best guesses are last. Set every retained `labels.tsv` row to `reject`, `keep` or
@@ -118,15 +132,35 @@ The sequence, run from `~/Projects/eidetic-sample-tools` (tools at `~/.venvs/lib
    every source and refuses a stale or missing file. `sample-curate undo-promotion --run-id <run-id>`
    is the reversal path.
 
-#### Current packet — `tribal-140-01`
+#### Current packet — `tribal-140-01` — passed 2026-08-06
 
-- Candidate classification: `~/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/classification.tsv`
-- Ear sheet: `~/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/benchmark-labels.tsv`
-- Benchmark index: `~/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/benchmark-playlists/README.md`
-- Model revision: `8fa0f1c6d0433df6e97c127f64b2a1d6c0dcda8a`
-- State on 2026-08-05: all 63 files classified; 24 benchmark rows generated; ear truth columns empty;
-  strict gate not yet evaluated; the older name-derived `playlists/` directory is rejected evidence,
-  not an audition source.
+The 63-file packet has 55 stored ear decisions, zero unresolved review items and a passed fixed
+benchmark: **24/24 form, 20/24 content, 20/24 group and 20/24 joint content/group**. The selected
+dual-model weights are 0.5/0.5; filename weight is 0.0. All 63 absolute source paths exist and each
+sample appears in exactly one category playlist. The name-derived set is archived as historical
+evidence and is not valid audition material.
+
+- [Playlist index](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/playlists/README.md)
+- [Classification TSV](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/classification.tsv)
+- [Two-model classification audit](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/classification-audit.jsonl)
+- [Fixed 24-sample benchmark sheet](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/benchmark-labels.tsv)
+- [Digest-bound review state](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/review-state.json)
+
+| Audio-derived audition group | Files | Minimum / median confidence | Playlist | First device after approval |
+|---|---:|---:|---|---|
+| Rim one-shots | 12 | 0.467 / 1.000 | [listen](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/playlists/rim-one-shots.m3u8) | Digitakt |
+| Tom one-shots | 15 | 0.496 / 1.000 | [listen](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/playlists/tom-one-shots.m3u8) | Digitakt |
+| Percussion one-shots | 2 | 1.000 / 1.000 | [listen](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/playlists/percussion-one-shots.m3u8) | Digitakt |
+| Percussion loops | 13 | 1.000 / 1.000 | [listen](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/playlists/percussion-loops.m3u8) | Octatrack |
+| Full-drum loops | 4 | 1.000 / 1.000 | [listen](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/playlists/full-drum-loops.m3u8) | Octatrack |
+| Vocal stabs | 2 | 1.000 / 1.000 | [listen](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/playlists/vocal-stabs.m3u8) | Digitakt |
+| Vocal phrases | 6 | 0.510 / 1.000 | [listen](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/playlists/vocal-phrases.m3u8) | Octatrack |
+| Long vocal sources | 1 | 1.000 / 1.000 | [listen](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/playlists/long-vocal-sources.m3u8) | Octatrack |
+| Out of brief | 8 | 1.000 / 1.000 | [listen](/Users/macmini/Projects/eidetic-sample-tools/library-tools/manifests/tribal-140-01-audition/playlists/out-of-brief.m3u8) | No hardware export |
+
+The next action is Robin's category-by-category audition feedback. Core drum replacements reach the
+TR-8S only when a native voice is demonstrably insufficient; `out-of-brief` is never promoted or
+exported automatically.
 
 Only then search `CURATED/` and make short listening groups — not an export. The deferred
 `octatrack-pilot-01` packet remains historical evidence, not authority for a new run.
@@ -159,6 +193,10 @@ track/memory cost, playability, and save/reload result.
 | Short stab or percussion hit | Digitakt | Quick trigs, repitch and sample-lock variation | It needs tempo-locked duration or a less complex home |
 | Core kick, hats, ride or roll | TR-8S native engine | Tactile controls and stable kick routing | The native voice lacks the required character |
 | Extra percussion | TR-8S or Digitakt | TR-8S integrates with drums; Digitakt allows deeper variation | The alternative produces the better pattern faster |
+
+For this packet, the explicit first-device map is: rim, tom and percussion one-shots plus vocal
+stabs → Digitakt; percussion loops, full-drum loops, vocal phrases and long vocal sources →
+Octatrack; core drum replacement → TR-8S only after a native-voice failure; out-of-brief → nowhere.
 
 ### Phase 4 — approve device crates
 
@@ -338,7 +376,7 @@ knowledge-base changes; otherwise remove the cable and retain manual tempo.
 
 | Priority | Item | Effect | Resolution point |
 |---|---|---|---|
-| **Blocking before category audition/export** | `tribal-140-01` has 24 unfilled ear-truth rows | CLAP candidate output is not yet measured against Robin's hearing; old name-derived playlists are rejected | Fill `benchmark-labels.tsv`, rerun `classify-packet`, require 22/24 form and 20/24 joint content-and-group matches before `playlists/` is regenerated |
+| **Completed 2026-08-06** | `tribal-140-01` audio classification, browser review and fixed benchmark | Gate passed at 24/24 form and 20/24 joint content/group; nine guarded playlists now exist | Audition the linked category playlists and provide keep/reject/favourite feedback before any promotion or hardware export |
 | Open integrity risk — **not** a blocker | 130 protected `PACKS/` identities and one Foundation identity | Library preservation is not fully verified; it does **not** make a crate untrustworthy, because `sample-curate promote` hash-checks every source at promote time and refuses a stale or missing file | Demoted 2026-08-04 (see [`../decisions/2026-08-04-demote-packs-recovery-gate.md`](../decisions/2026-08-04-demote-packs-recovery-gate.md)); recovery review remains open in `eidetic-sample-tools` |
 | ⚠ Verify on first load | The three load/assign/reload procedures are captured but manual-derived, not yet seen on the rig | A manual can differ from the machine; an unverified step must not be trusted silently | Follow each on its first real use, correct any difference, then mark it `on-rig YYYY-MM-DD` |
 | Blocking before any TR-8S sample deletion | No documented dependency check exists for deleting a TR-8S user sample | A kit referencing a deleted sample may fail in an unknown way | Establish it empirically on a spare instrument (method on `devices/tr8s.md`) |
@@ -358,6 +396,13 @@ knowledge-base changes; otherwise remove the cable and retain manual tempo.
   MIDI design change.
 
 Run `scripts/sync.sh` after every captured knowledge change.
+
+## Revision history
+
+| Version | Date | Change |
+|---|---|---|
+| v1.5 | 2026-08-06 | Replaced manual TSV calibration with resumable browser review, recorded the passed dual-CLAP gate, linked all nine audited playlists and made the category-to-device hand-off explicit. |
+| v1.4 | 2026-08-05 | Added the first audio-classification gate and granular device creation, loading, save and reload sequences. |
 
 ## Revision history
 
