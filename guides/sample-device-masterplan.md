@@ -1,6 +1,6 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v1.7
+**Document version:** v1.8
 **Date:** 2026-08-06
 **Status:** Active — Phase 2 classification has passed; category audition and feedback are next
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
@@ -249,12 +249,12 @@ add one TR-8S sample only after its native engine has audibly failed that role.
    `--dry-run` reports one conversion without writing; the final command reports one converted file.
    Inspect `_EXPORT/DIGITAKT/` or `_EXPORT/OCTATRACK/` before connecting hardware. Do not use
    `--force` or `--sync` on the first trial.
-5. Load only the Digitakt file using the literal Digitakt procedure below. Make one audible trig,
-   save the project, load another project, reload the test project and confirm the sample and
-   assignment survived. Record pass/fail before touching the Octatrack.
-6. Load only the Octatrack file using the literal Octatrack procedure below. Confirm the slot,
+5. Load only the Octatrack file using the literal Octatrack procedure below. Confirm the slot,
    machine assignment and tempo behaviour, save **Part → Project → SYNC TO CARD**, power-cycle and
    confirm the assignment and any scene survived.
+6. Load only the Digitakt file after the Octatrack result is recorded. Make one audible trig, save
+   the project, load another project, reload the test project and confirm the sample and assignment
+   survived.
 7. Test the optional TR-8S file last. Preserve BD → Assign Out 1, import into a spare non-BD
    instrument, write the kit and power-cycle. Do not delete any TR-8S user sample during this test.
 8. The smoke test passes only when each attempted device has: the expected single converted file,
@@ -451,6 +451,7 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
+| **v1.8** | **2026-08-06** | Made the smoke-test execution order consistent with the established Octatrack-first objective: Octatrack save/reload proof, then Digitakt, with TR-8S still conditional on a native-voice failure. |
 | **v1.7** | **2026-08-06** | Added the first export smoke test: one promoted sample per destination, three Mac-side preview/build gates, device-by-device transfer, save/reload checks and explicit stop conditions before any batch export. |
 | **v1.6** | **2026-08-06** | Recorded the explicit 24-row reviewed benchmark, Robin's approximately 20% accepted error boundary, the final 23/20/19 scores and 57 preserved decisions. Documented resolution-digest publication and automatic withdrawal of stale playlist links. |
 | **v1.5** | **2026-08-06** | Replaced manual TSV calibration with resumable browser review, recorded the passed dual-CLAP gate, linked all nine audited playlists and made the category-to-device hand-off explicit. |
