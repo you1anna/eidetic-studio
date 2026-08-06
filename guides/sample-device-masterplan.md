@@ -399,15 +399,9 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 ## Revision history
 
-| Version | Date | Change |
-|---|---|---|
-| v1.5 | 2026-08-06 | Replaced manual TSV calibration with resumable browser review, recorded the passed dual-CLAP gate, linked all nine audited playlists and made the category-to-device hand-off explicit. |
-| v1.4 | 2026-08-05 | Added the first audio-classification gate and granular device creation, loading, save and reload sequences. |
-
-## Revision history
-
 | Version | Date | Summary |
 |---|---|---|
+| **v1.5** | **2026-08-06** | Replaced manual TSV calibration with resumable browser review, recorded the passed dual-CLAP gate, linked all nine audited playlists and made the category-to-device hand-off explicit. |
 | **v1.4** | **2026-08-05** | Replaced name-derived audition roles with local librosa + CLAP form/content classification and a strict 24-file ear gate; recorded the current 63-file candidate and benchmark paths. Expanded Phase 5 into literal creation/initialisation, load, expected-state, success and persistence sequences for TR-8S, Octatrack, Digitakt and TB-03, preserving every on-rig boundary and marking manual-derived operations ⚠. |
 | **v1.3** | **2026-08-05** | Made Phase 2 category-first: `prepare` now produces per-role playlists and an index, `labels.tsv` remains the single decision record, and every manual trim is followed by playlist regeneration so removed candidates cannot remain audible. |
 | **v1.2** | **2026-08-04** | Recorded the three load/assign/reload procedures as captured on their device pages (⚠ manual-derived, pending on-rig verification) and replaced the "blocking per first load" prerequisite with a verify-on-first-use row. Added a new blocker: no documented TR-8S dependency check before deleting a user sample. |
