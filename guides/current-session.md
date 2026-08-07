@@ -18,7 +18,8 @@ TB-03.
 - Octatrack is powered on with the working project in Set `SetGPT` loaded.
 - The CF card remains physically inside the Octatrack.
 - The USB cable between Mac and Octatrack is connected.
-- The Mac source library is ready here: [SETGPT-01](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01>).
+- The Mac source library is exactly:
+  `/Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01`.
 
 1. On the Octatrack, press `[PROJ]`.
 2. Select **SYSTEM**, then press `[YES]` or `[RIGHT]`.
@@ -27,7 +28,15 @@ TB-03.
 5. On the Mac, open **Finder**. Under **Locations**, click **`OCTATRACK-R`**.
 6. Open **`SetGPT`**, then open **`AUDIO`**. The destination is:
    `/Volumes/OCTATRACK-R/SetGPT/AUDIO/`.
-7. In another Finder window, open [SETGPT-01](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01>).
+7. In another Finder window, press `[⌘]` + `[⇧]` + `[G]` (**Go to Folder**). Paste this exact path,
+   then press `[Return]`:
+
+   ```text
+   /Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01
+   ```
+
+   **Expected:** Finder opens a folder named `SETGPT-01` containing four folders:
+   `PERCUSSION-LOOPS`, `FULL-DRUM-LOOPS`, `VOCAL-PHRASES` and `LONG-VOCALS`.
 8. Drag the **entire `SETGPT-01` folder** into `OCTATRACK-R/SetGPT/AUDIO/`. Do not drag individual
    WAV files and do not rename the folder.
 9. Wait for the copy to finish. Inside `OCTATRACK-R/SetGPT/AUDIO/SETGPT-01/`, confirm these four
