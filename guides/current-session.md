@@ -1,7 +1,7 @@
 # Current studio session
 
 **Version:** v1.1  
-**Status:** `READY — copy the complete SETGPT-01 library to the Octatrack`  
+**Status:** `IN PROGRESS — SETGPT-01 copied; eject OCTATRACK-R before leaving USB DISK MODE`  
 **Current device:** Octatrack MKII, OS 1.40C
 
 Keep this page open. Complete only **Now**. When it passes, refresh this page for the next short
@@ -82,6 +82,7 @@ at once.
 - ✅ Digitakt, TR-8S and TB-03 transport followed the OT before and after an OT power-cycle.
 - ✅ Audio-classified 63-sample packet passed the accepted review gate.
 - ✅ `SETGPT-01` prepared on the Mac: 24 verified 44.1 kHz, 16-bit PCM WAV files in four folders.
+- ✅ Robin reported `SETGPT-01` copied to the Octatrack CF card on-rig, 2026-08-07.
 
 ## References
 
