@@ -1,7 +1,9 @@
 # Current studio session
 
-**Status:** `READY`  
-**Current device:** Octatrack MKII, OS 1.40C  
+**Status:** `READY`
+
+**Current device:** Octatrack MKII, OS 1.40C
+
 **Keep this page open and refresh it after each completed chunk.**
 
 ## Now — Clean Octatrack baseline
