@@ -155,9 +155,12 @@ SYSTEM → CARD TOOLS → FORMAT CARD.
 
 #### 2. Create and mount the working Set
 
-1. If **NO SET IS MOUNTED! PLEASE MOUNT ONE.** is displayed, press `[YES]`; the Set selection screen
-   should open. Otherwise press `[PROJ]` → **PROJECT**, find **CHANGE** under
-   the **SET** heading and press `[YES]`.
+**On-rig observation 2026-08-07:** after FORMAT CARD completed, the former Set name remained selected
+in memory and **NO SET IS MOUNTED** did not appear. Use the explicit Set-change route; this does not
+prevent creation of the empty Set.
+
+1. Press `[PROJ]`, select **PROJECT**, then find **CHANGE** under the **SET** heading—not CHANGE
+   under the PROJECT heading—and press `[YES]`.
 2. If **NOT WITHIN A PROJECT. CHANGES MADE WILL BE DISCARDED. CONTINUE?** appears, press `[YES]`.
    Nothing remains to preserve on the formatted card.
 3. Select **`<CREATE NEW SET>`** and press `[YES]`. **Expected:** the naming screen opens.

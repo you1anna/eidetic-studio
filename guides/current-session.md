@@ -19,13 +19,17 @@ The card was formatted successfully through `[PROJ]` → **SYSTEM** → **CARD T
 
 ### B. Create the clean Set
 
-1. If **NO SET IS MOUNTED! PLEASE MOUNT ONE.** appears, press `[YES]`.
-2. If it does not appear, open PROJECT → **PROJECT** and choose **CHANGE** under the **SET** heading;
-   press `[YES]`.
-3. If **NOT WITHIN A PROJECT. CHANGES MADE WILL BE DISCARDED. CONTINUE?** appears, press `[YES]`.
-4. Select **`<CREATE NEW SET>`**; press `[YES]`.
-5. Name it **`EIDETIC-01`** using the `[ARROW]` keys; press `[YES]`.
-6. If the Set list remains open, select **`EIDETIC-01`**; press `[YES]` to mount it.
+**Observed on this rig:** after formatting, the old Set name remained selected in memory and
+**NO SET IS MOUNTED** did not appear. This does not prevent creating the new Set.
+
+1. Press `[PROJ]`.
+2. Select **PROJECT** and press `[YES]` or `[RIGHT]`.
+3. Scroll to **CHANGE** under the **SET** heading—not CHANGE under the PROJECT heading—and press
+   `[YES]`.
+4. If **NOT WITHIN A PROJECT. CHANGES MADE WILL BE DISCARDED. CONTINUE?** appears, press `[YES]`.
+5. Select **`<CREATE NEW SET>`**; press `[YES]`.
+6. Name it **`EIDETIC-01`** using the `[ARROW]` keys; press `[YES]`.
+7. If the Set list remains open, select **`EIDETIC-01`**; press `[YES]` to mount it.
 
 ### C. Create the clean project
 
@@ -37,7 +41,7 @@ The card was formatted successfully through `[PROJ]` → **SYSTEM** → **CARD T
 
 ### D. Restore the OT clock settings
 
-1. Open PROJECT → **MIDI** → **SYNC**.
+1. Press `[PROJ]` → **MIDI** → **SYNC**.
 2. Set **TRANSPORT SEND = ON**.
 3. Set **CLOCK SEND = ON**.
 4. Set **TRANSPORT RECEIVE = OFF**.
