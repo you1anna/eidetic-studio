@@ -20,7 +20,7 @@ can arrive with different sync. Save via PROJECT → PROJECT → SAVE. (On-rig 2
 | **Not lose scenes / machine assignments on reload** | **Save the Part** *before* saving the project, or scene + machine assignments vanish on reload. | track-setup §"Three things that bite" |
 | **Set up the send-FX (thru) path** | Track 7 = **Thru** machine; the desk Aux 1/2 feed OT In A/B (patchbay 15–16). Raise a channel's Aux send to push it through OT effects. | KB §5.1/§12 |
 | **Record and play a live stereo Aux loop** | Follow **“Live Aux loop — literal setup”** below. It uses T5 / Recorder Buffer 5 and makes each state and success check explicit. | Octatrack MKII User Manual OS 1.40A §§9.1–9.2, 11.3, 17.1.3; on-rig OS 1.40C |
-| ⚠ **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates `EIDETIC-01`, restores OT clock send and proves downstream transport before audio is copied. | Format, Set/project creation and SYNC save **on-rig 2026-08-07**; remaining transport/power-cycle check from Manual OS 1.40A §8.4.1 and midi-sync §2 · **to verify on-rig** |
+| **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates `EIDETIC-01`, restores OT clock send and proves downstream transport before audio is copied. | **on-rig 2026-08-07**, Octatrack MKII OS 1.40C |
 | ⚠ **Get samples from the Mac onto the CF card** | Follow **“Load a sample from the Mac — literal setup” §1** below. USB DISK MODE mounts the CF card as mass storage; files go in the set's `AUDIO` folder. | Manual OS 1.40A §7.2.1, §8.5.1 · **to verify on-rig** |
 | ⚠ **Load a sample into a Flex or Static slot** | Follow **“Load a sample from the Mac — literal setup” §2**. Double-press the `[TRACK]` key for QUICK ASSIGN, pick an empty slot, `[YES]` to open the file browser. | Manual OS 1.40A §8.3.1, §8.3.3 · **to verify on-rig** |
 | ⚠ **Assign a loaded sample to the track's machine** | Follow **§3**. Loading into a slot does **not** assign it to the machine — that is a separate `[YES]` in QUICK ASSIGN or SRC SETUP. | Manual OS 1.40A §11.3 · **to verify on-rig** |
@@ -124,9 +124,9 @@ does not prove a recorder buffer exists. The waveform in step 4 does.
 **Purpose:** permanently remove the current card-resident Sets, projects and samples; create one empty
 working Set/project; and restore the Octatrack's clock-master role before any new audio is copied.
 
-> ⚠ **This procedure is derived from the Octatrack MKII User Manual OS 1.40A and has not yet been
-> performed on this rig's OS 1.40C.** Stop at the first different screen and record exactly what the OT
-> shows. Robin confirmed on 2026-08-07 that the existing card contents have no preservation value.
+> **Verified on-rig 2026-08-07 on OS 1.40C.** Robin confirmed that the existing card contents had no
+> preservation value. The complete format, Set/project creation, SYNC save and post-power-cycle
+> downstream-transport sequence passed.
 
 #### 1. Format the inserted CF card — on-rig verified 2026-08-07
 
@@ -199,7 +199,7 @@ prevent creation of the empty Set.
 **Observed result 2026-08-07:** the clock-master settings were restored, saved and rechecked in
 project `EIDETIC-01`.
 
-#### 5. Prove transport, power-cycle and reload
+#### 5. Prove transport, power-cycle and reload — on-rig verified 2026-08-07
 
 1. With the established MIDI chain connected and the downstream devices powered on, return to the
    normal OT screen and press `[PLAY]`.
@@ -213,6 +213,9 @@ project `EIDETIC-01`.
 
 The clean baseline is complete only when the empty named Set/project, saved SYNC values and
 post-power-cycle transport test all pass. This procedure changes no TR-8S configuration.
+
+**Observed result 2026-08-07:** Digitakt, TR-8S and TB-03 followed OT play/stop before and after an
+OT power-cycle; Set/project `EIDETIC-01` and the saved SYNC values reloaded correctly.
 
 ### Load a sample from the Mac — literal setup
 

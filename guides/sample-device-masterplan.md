@@ -1,8 +1,8 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v2.1
+**Document version:** v2.2
 **Date:** 2026-08-07
-**Status:** Active — clean Octatrack baseline is the current physical checkpoint
+**Status:** Active — clean Octatrack baseline passed; copying the prepared loop is current
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
 historical pilots, gates and cross-repo evidence; it is not the forward operating sequence.
 
@@ -468,6 +468,7 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
+| **v2.2** | **2026-08-07** | Recorded the complete clean Octatrack baseline as passed on-rig: new Set/project, saved clock settings, downstream transport and power-cycle reload. Advanced the live checklist to copying the prepared loop into the empty audio pool. |
 | **v2.1** | **2026-08-07** | Corrected Project-menu access from the rejected `[FUNC]` + `[MIDI]` shortcut to the on-rig `[PROJ]` button and clarified that the CF card stays inserted while USB DISK MODE remains off. |
 | **v2.0** | **2026-08-07** | Replaced the old-template start with Robin's approved clean CF-card baseline. Added the refreshable current-session checklist, retained the TR-8S configuration boundary and made OT clock restoration the first post-format gate. |
 | **v1.9** | **2026-08-07** | Simplified smoke selection to a separate one-row record so unselected audition rows need no artificial decisions. Recorded Robin's Octatrack sound 12 choice, successful promotion/export, verified file format and the decision to defer Digitakt. |
