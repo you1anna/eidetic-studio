@@ -8,21 +8,19 @@
 
 ## Now — Copy the prepared loop to the Octatrack
 
-**Goal:** put the already converted 140 BPM percussion loop into Set `EIDETIC-01` without changing
+**Goal:** put the already converted 140 BPM percussion loop into Set `SetGPT` without changing
 any other device.
 
-**Start:** Octatrack powered on with Set/project `EIDETIC-01` loaded. Keep the CF card physically
+**Start:** Octatrack powered on with Set `SetGPT` and its working project loaded. Keep the CF card physically
 inside the OT. Connect the OT to the Mac by USB.
 
 1. Press `[PROJ]`.
 2. Select **SYSTEM** and press `[YES]` or `[RIGHT]`.
 3. Select **USB DISK MODE** and press `[YES]`.
 4. **Expected:** the Octatrack CF card appears in Finder as a new removable volume.
-5. On the Mac, open **Finder**. In the left sidebar, find **Locations** and click the new ejectable
-   drive that appeared when you entered USB DISK MODE. Its name can vary; it is the new removable
-   drive, not `Extreme SSD` or `Macintosh HD`.
-6. In that drive's top level, double-click the folder **`EIDETIC-01`**, then double-click **`AUDIO`**.
-   This is the exact destination folder.
+5. On the Mac, open **Finder**. In the left sidebar, under **Locations**, click **`OCTATRACK-R`**.
+6. Double-click **`SetGPT`**, then double-click **`AUDIO`**. This is the exact destination folder:
+   `/Volumes/OCTATRACK-R/SetGPT/AUDIO`.
 7. Copy this prepared file into that `AUDIO` folder:
 
    [DL01_tribal-t_000a.wav](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/octatrack-smoke/DRUM-LOOP/DL01_tribal-t_000a.wav>)
@@ -36,14 +34,14 @@ inside the OT. Connect the OT to the Mac by USB.
 ## What should happen
 
 - Finder shows the OT CF volume only while USB DISK MODE is active.
-- The file exists at `EIDETIC-01/AUDIO/DL01_tribal-t_000a.wav` on the CF card.
+- The file exists at `OCTATRACK-R/SetGPT/AUDIO/DL01_tribal-t_000a.wav` on the CF card.
 - The source file remains on the Extreme SSD.
 - No TR-8S, Digitakt or TB-03 setting changes.
 
 ## Stop and report if
 
 - The CF volume does not appear in Finder.
-- The new removable drive is absent from Finder, or Set folder `EIDETIC-01` or its `AUDIO` folder is missing.
+- Volume `OCTATRACK-R`, Set folder `SetGPT` or its `AUDIO` folder is missing.
 - Finder reports a copy error.
 - The OT screen differs from the documented USB DISK MODE state.
 
@@ -62,7 +60,7 @@ Load `DL01_tribal-t_000a.wav` into a Flex slot, assign it to Octatrack Track 4 a
 ## Completed
 
 - ✅ CF card formatted on-rig through `[PROJ]` → SYSTEM → CARD TOOLS → FORMAT CARD.
-- ✅ New Set and project `EIDETIC-01` created and loaded.
+- ✅ New Set `SetGPT` and its working project created and loaded.
 - ✅ OT clock-master settings restored and saved.
 - ✅ Digitakt, TR-8S and TB-03 transport followed the OT before and after an OT power-cycle.
 - ✅ Audio-classified 63-sample packet passed the accepted review gate.

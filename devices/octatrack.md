@@ -20,7 +20,7 @@ can arrive with different sync. Save via PROJECT → PROJECT → SAVE. (On-rig 2
 | **Not lose scenes / machine assignments on reload** | **Save the Part** *before* saving the project, or scene + machine assignments vanish on reload. | track-setup §"Three things that bite" |
 | **Set up the send-FX (thru) path** | Track 7 = **Thru** machine; the desk Aux 1/2 feed OT In A/B (patchbay 15–16). Raise a channel's Aux send to push it through OT effects. | KB §5.1/§12 |
 | **Record and play a live stereo Aux loop** | Follow **“Live Aux loop — literal setup”** below. It uses T5 / Recorder Buffer 5 and makes each state and success check explicit. | Octatrack MKII User Manual OS 1.40A §§9.1–9.2, 11.3, 17.1.3; on-rig OS 1.40C |
-| **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates `EIDETIC-01`, restores OT clock send and proves downstream transport before audio is copied. | **on-rig 2026-08-07**, Octatrack MKII OS 1.40C |
+| **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates the named working Set/project, restores OT clock send and proves downstream transport before audio is copied. | **on-rig 2026-08-07**, Octatrack MKII OS 1.40C |
 | ⚠ **Get samples from the Mac onto the CF card** | Follow **“Load a sample from the Mac — literal setup” §1** below. USB DISK MODE mounts the CF card as mass storage; files go in the set's `AUDIO` folder. | Manual OS 1.40A §7.2.1, §8.5.1 · **to verify on-rig** |
 | ⚠ **Load a sample into a Flex or Static slot** | Follow **“Load a sample from the Mac — literal setup” §2**. Double-press the `[TRACK]` key for QUICK ASSIGN, pick an empty slot, `[YES]` to open the file browser. | Manual OS 1.40A §8.3.1, §8.3.3 · **to verify on-rig** |
 | ⚠ **Assign a loaded sample to the track's machine** | Follow **§3**. Loading into a slot does **not** assign it to the machine — that is a separate `[YES]` in QUICK ASSIGN or SRC SETUP. | Manual OS 1.40A §11.3 · **to verify on-rig** |
@@ -164,26 +164,27 @@ prevent creation of the empty Set.
 2. If **NOT WITHIN A PROJECT. CHANGES MADE WILL BE DISCARDED. CONTINUE?** appears, press `[YES]`.
    Nothing remains to preserve on the formatted card.
 3. Select **`<CREATE NEW SET>`** and press `[YES]`. **Expected:** the naming screen opens.
-4. Name the Set **`EIDETIC-01`** using the `[ARROW]` keys, then press `[YES]`.
-5. If the Set list remains open, highlight **`EIDETIC-01`** and press `[YES]` to mount it.
+4. Name the Set with a clear working name using the `[ARROW]` keys, then press `[YES]`. The current
+   run uses **`SetGPT`**.
+5. If the Set list remains open, highlight the new Set and press `[YES]` to mount it.
    **Expected:** the project selection screen opens automatically and shows the new Set name.
 
-**Success check:** `EIDETIC-01` is the mounted Set and contains no projects or audio-pool samples.
+**Success check:** the new Set is mounted and contains no projects or audio-pool samples.
 
-**Observed result 2026-08-07:** Set `EIDETIC-01` was created and mounted successfully.
+**Observed result 2026-08-07:** Set `SetGPT` was created and mounted successfully.
 
 #### 3. Create and load the working project — on-rig verified 2026-08-07
 
 1. In the project selection screen, choose **`<CREATE EMPTY PROJECT>`** and press `[YES]`. The same
    manual later calls this entry **`<CREATE NEW PROJECT>`**; if that is the label shown on OS 1.40C,
    select it. Both labels mean create a project in the mounted Set.
-2. Name the project **`EIDETIC-01`** using the `[ARROW]` keys, then press `[YES]`.
-3. **Expected:** the normal project screen opens. Reopen PROJECT and confirm `EIDETIC-01` is shown
-   as both the Set and project at the top.
+2. Name the project with a clear working name using the `[ARROW]` keys, then press `[YES]`.
+3. **Expected:** the normal project screen opens. Reopen PROJECT and confirm the new Set and project
+   names appear at the top.
 
 **Stop here** if an old project or sample name appears. The clean baseline has not been established.
 
-**Observed result 2026-08-07:** project `EIDETIC-01` was created and loaded successfully.
+**Observed result 2026-08-07:** a working project was created and loaded successfully in Set `SetGPT`.
 
 #### 4. Restore and save the clock-master settings — on-rig verified 2026-08-07
 
@@ -197,7 +198,7 @@ prevent creation of the empty Set.
 8. Reopen MIDI → SYNC. **Success check:** the four clock/transport values still match steps 2–5.
 
 **Observed result 2026-08-07:** the clock-master settings were restored, saved and rechecked in
-project `EIDETIC-01`.
+the working project in Set `SetGPT`.
 
 #### 5. Prove transport, power-cycle and reload — on-rig verified 2026-08-07
 
@@ -207,7 +208,7 @@ project `EIDETIC-01`.
    sound is not required; old patterns may be empty.
 3. Press `[STOP]`. **Expected:** all three downstream transports stop.
 4. Power the OT off, wait for it to shut down, then power it on again.
-5. **Expected:** Set `EIDETIC-01` and project `EIDETIC-01` load. Recheck PROJECT → MIDI → SYNC and
+5. **Expected:** Set `SetGPT` and its working project load. Recheck PROJECT → MIDI → SYNC and
    confirm the four clock/transport values are unchanged.
 6. Press `[PLAY]`, then `[STOP]`, once more. **Success check:** downstream transport still follows.
 
@@ -215,7 +216,7 @@ The clean baseline is complete only when the empty named Set/project, saved SYNC
 post-power-cycle transport test all pass. This procedure changes no TR-8S configuration.
 
 **Observed result 2026-08-07:** Digitakt, TR-8S and TB-03 followed OT play/stop before and after an
-OT power-cycle; Set/project `EIDETIC-01` and the saved SYNC values reloaded correctly.
+OT power-cycle; Set `SetGPT`, its working project and the saved SYNC values reloaded correctly.
 
 ### Load a sample from the Mac — literal setup
 
