@@ -1,13 +1,19 @@
 # Current studio session
 
-**Version:** v1.2  
-**Status:** `READY — load the first percussion loop onto Track 4 and make it play`  
+**Version:** v1.3  
+**Status:** `CHECKPOINT SAVED — Track 4 percussion loop is audible and persisted`  
 **Current device:** Octatrack MKII, OS 1.40C
 
-Keep this page open. Complete only **Now**. When it passes, refresh this page for the next short
-track-building chunk.
+Keep this page open during studio work. Each session starts from the checkpoint below and advances
+through one grouped, testable chunk.
 
-## Now — make the first loop play on Track 4
+## Resume here next session
+
+The clean SetGPT baseline and first musical layer are complete. The next chunk is to add one
+full-drum loop and one vocal phrase, check that the three layers work together at the project tempo,
+then save one new checkpoint. The literal steps must be written here before Robin changes the rig.
+
+## Completed chunk — first loop on Track 4
 
 **Goal:** load the first prepared percussion loop into an empty Flex slot, assign it to Track 4,
 place one trig and hear it at the current project tempo. Do not touch Tracks 5, 6 or 7: they are
@@ -40,7 +46,7 @@ on the Mac.
 10. Press `[NO]` until the normal track screen returns. Press `[RECORD]` once, then press `[TRIG 1]`
     to place a sample trig at step 1. Press `[RECORD]` again to leave Grid Recording.
 11. Press `[PLAY]`.
-12. **Success check:** Track 4 plays the percussion loop repeatedly and in time. If it is silent,
+12. **Success check:** Track 4 plays the percussion loop repeatedly and in time. If  it is silent,
     stop and report whether the loaded slot name is visible and whether trig 1 is lit.
 
 **Save this first layer only after it is audible:**
@@ -78,6 +84,8 @@ audition; you will not load everything at once.
 - ✅ `SETGPT-01` prepared on the Mac: 24 verified 44.1 kHz, 16-bit PCM WAV files in four folders.
 - ✅ Robin reported `SETGPT-01` copied to the Octatrack CF card on-rig, 2026-08-07.
 - ✅ Robin ejected `OCTATRACK-R`; the Octatrack returned to its normal screen on-rig, 2026-08-07.
+- ✅ Track 4 was confirmed as Flex; `DL01_perc-loo_000a.wav` was previewed, loaded, assigned,
+  triggered and audible, then the Part, project and CF-card state were saved on-rig, 2026-08-07.
 
 ## References
 
@@ -90,6 +98,7 @@ audition; you will not load everything at once.
 
 | Version | Date | Summary |
 |---|---|---|
+| v1.3 | 2026-08-07 | Recorded the successful Track 4 Flex load, assignment, trig, playback and save checkpoint; defined the next-session resume point. |
 | v1.2 | 2026-08-07 | Recorded clean exit from USB DISK MODE and grouped the next creation chunk: load, assign, trig, audition and save the first Track 4 percussion loop. |
 | v1.1 | 2026-08-07 | Replaced the misleading one-file transfer with the complete 24-file SETGPT-01 card library. |
 | v1.0 | 2026-08-07 | Introduced the live clean-baseline and first-transfer checklist. |

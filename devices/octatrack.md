@@ -21,9 +21,9 @@ can arrive with different sync. Save via PROJECT → PROJECT → SAVE. (On-rig 2
 | **Set up the send-FX (thru) path** | Track 7 = **Thru** machine; the desk Aux 1/2 feed OT In A/B (patchbay 15–16). Raise a channel's Aux send to push it through OT effects. | KB §5.1/§12 |
 | **Record and play a live stereo Aux loop** | Follow **“Live Aux loop — literal setup”** below. It uses T5 / Recorder Buffer 5 and makes each state and success check explicit. | Octatrack MKII User Manual OS 1.40A §§9.1–9.2, 11.3, 17.1.3; on-rig OS 1.40C |
 | **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates the named working Set/project, restores OT clock send and proves downstream transport before audio is copied. | **on-rig 2026-08-07**, Octatrack MKII OS 1.40C |
-| ⚠ **Get samples from the Mac onto the CF card** | Follow **“Load a sample from the Mac — literal setup” §1** below. USB DISK MODE mounts the CF card as mass storage; files go in the set's `AUDIO` folder. | Manual OS 1.40A §7.2.1, §8.5.1 · **to verify on-rig** |
-| ⚠ **Load a sample into a Flex or Static slot** | Follow **“Load a sample from the Mac — literal setup” §2**. Double-press the `[TRACK]` key for QUICK ASSIGN, skip `R1`–`R8` recorder-buffer entries, pick an empty numbered slot, `[YES]` to open the file browser. | Manual OS 1.40A §8.3.1, §8.3.3 · recorder-buffer list observed on-rig 2026-08-07 |
-| ⚠ **Assign a loaded sample to the track's machine** | Follow **§3**. Loading into a slot does **not** assign it to the machine — that is a separate `[YES]` in QUICK ASSIGN or SRC SETUP. | Manual OS 1.40A §11.3 · **to verify on-rig** |
+| **Get samples from the Mac onto the CF card** | Follow **“Load a sample from the Mac — literal setup” §1** below. USB DISK MODE mounts the CF card as mass storage; files go in the set's `AUDIO` folder. Eject the CF volume in Finder; the OT then returns to its normal screen. | **on-rig 2026-08-07**, Octatrack MKII OS 1.40C |
+| **Load a sample into a Flex slot** | Follow **“Load a sample from the Mac — literal setup” §2**. Double-press the `[TRACK]` key for QUICK ASSIGN, skip `R1`–`R8` recorder-buffer entries, pick an empty numbered slot, `[YES]` to open the file browser, preview with `[FUNC]` + `[YES]`, then load with `[YES]`. | **on-rig 2026-08-07**, Track 4 Flex, Octatrack MKII OS 1.40C |
+| **Assign a loaded sample to the track's machine** | Follow **§3**. Loading into a slot does **not** assign it to the machine — press `[YES]` again on the loaded slot, then place a normal trig and press `[PLAY]` to prove the assignment. | **on-rig 2026-08-07**, Track 4 Flex, Octatrack MKII OS 1.40C |
 | ⚠ **Set timestretch so a loop holds session tempo** | Follow **§4**. Per-sample TIMESTRETCH in the audio editor, plus `TSTR = AUTO` in SRC SETUP for it to apply. | Manual OS 1.40A §12 (audio editor), Appendix A · **to verify on-rig** |
 | ⚠ **Save and reload so the work survives** | Follow **§5**. Order is **Part → Project → SYNC TO CARD**, and never eject the card without the sync. | Manual OS 1.40A §10.2.2, §8.4.1 · **to verify on-rig** |
 
@@ -223,10 +223,9 @@ OT power-cycle; Set `SetGPT`, its working project and the saved SYNC values relo
 **Purpose:** take an approved sample from the Mac, get it onto the CompactFlash card, into a sample
 slot, assigned to a track's machine, stretched to session tempo, and saved so it survives a reload.
 
-> ⚠ **Every step in this block is derived from the Octatrack MKII User Manual OS 1.40A and has not
-> yet been performed on the rig.** The machine runs **OS 1.40C**. Confirm each expected display
-> before relying on it; correct anything that differs and change the source to `on-rig YYYY-MM-DD`.
-> Robin's on-rig observation overrides the manual.
+> **Verification state:** §§1–3 were completed successfully on-rig on 2026-08-07 using Track 4 Flex
+> and `DL01_perc-loo_000a.wav`. §4 timestretch and the power-cycle/reload check in §5 remain
+> manual-derived ⚠. The machine runs **OS 1.40C**; Robin's on-rig observation overrides the manual.
 
 #### 1. Put the file in the set's audio pool
 

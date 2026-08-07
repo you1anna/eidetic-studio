@@ -1,8 +1,8 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v2.3
+**Document version:** v2.4
 **Date:** 2026-08-07
-**Status:** Active — clean Octatrack baseline passed; copying the complete SETGPT-01 collection is current
+**Status:** Active — SETGPT-01 loaded; first Track 4 Flex percussion layer is audible and saved
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
 historical pilots, gates and cross-repo evidence; it is not the forward operating sequence.
 
@@ -229,8 +229,9 @@ works; it is not the active transfer instruction. The active payload is
 [SETGPT-01](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01>):
 24 verified 44.1 kHz, 16-bit PCM WAV files arranged as 13 percussion loops, 4 full-drum loops,
 6 vocal phrases and 1 long vocal source. Its [hash manifest](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01/manifest.tsv>)
-is the transfer authority. Copy the complete folder to `OCTATRACK-R/SetGPT/AUDIO/` using
-[`current-session.md`](current-session.md); no samples are yet loaded into an Octatrack track.
+is the transfer authority. The complete folder was copied to `OCTATRACK-R/SetGPT/AUDIO/` and
+`DL01_perc-loo_000a.wav` is now loaded, assigned and triggered on Track 4 Flex. Use
+[`current-session.md`](current-session.md) for the next-session resume point.
 
 **Starting state:** the nine guarded playlists are current, but no row is approved for hardware yet.
 Do not export all 63 classifications. Choose at most one Digitakt sample and one Octatrack sample;
@@ -283,7 +284,8 @@ one conversion and converted one file with no unresolved rows. The staged result
 `DL01_tribal-t_000a.wav`: PCM WAV, 44.1 kHz, 16-bit stereo, 3.429 seconds. Digitakt is deferred
 because its two-item percussion-one-shot shortlist did not justify a device trial. That one-file
 smoke export is retained as historical evidence; it is superseded as the active payload by
-SETGPT-01. No sample is yet loaded into an Octatrack track.
+SETGPT-01. On 2026-08-07 the first SETGPT-01 percussion loop was loaded to Track 4 Flex, made
+audible from a normal trig, and the Part, project and card state were saved successfully.
 
 ## 4. Phase 5 — load and configure one machine at a time
 
@@ -479,6 +481,7 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
+| **v2.4** | **2026-08-07** | Recorded successful on-rig SETGPT-01 transfer and the first Track 4 Flex percussion-loop layer through preview, load, assignment, trig, playback and save. Set the next resume point to adding a full-drum loop and vocal phrase. |
 | **v2.3** | **2026-08-07** | Replaced the active one-file transfer with SETGPT-01: a verified, complete 24-file Octatrack collection in four visible folders, with a hash manifest and a short card-copy checklist. Preserved the one-file export as historical evidence only. |
 | **v2.2** | **2026-08-07** | Recorded the complete clean Octatrack baseline as passed on-rig: new Set/project, saved clock settings, downstream transport and power-cycle reload. Advanced the live checklist to copying the prepared loop into the empty audio pool. |
 | **v2.1** | **2026-08-07** | Corrected Project-menu access from the rejected `[FUNC]` + `[MIDI]` shortcut to the on-rig `[PROJ]` button and clarified that the CF card stays inserted while USB DISK MODE remains off. |
