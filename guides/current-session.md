@@ -1,12 +1,12 @@
 # Current studio session
 
-**Status:** `READY — Set/project created; restore OT clock settings`
+**Status:** `READY — clock saved; test transport and reload`
 
 **Current device:** Octatrack MKII, OS 1.40C
 
 **Keep this page open and refresh it after each completed chunk.**
 
-## Now — Restore and save the Octatrack clock settings
+## Now — Test transport, power-cycle and reload
 
 ⚠ **This permanently erases the entire CompactFlash card currently inserted in the Octatrack:** all
 Sets, projects, samples and partitions. Robin confirmed on 2026-08-07 that none needs preserving.
@@ -39,7 +39,7 @@ The card was formatted successfully through `[PROJ]` → **SYSTEM** → **CARD T
 4. Name the project **`EIDETIC-01`** using the `[ARROW]` keys; press `[YES]`.
 5. Reopen PROJECT. Confirm the top of the screen shows Set `EIDETIC-01` and project `EIDETIC-01`.
 
-### D. Restore the OT clock settings
+### D. Restore the OT clock settings — ✅ completed on-rig 2026-08-07
 
 1. Press `[PROJ]` → **MIDI** → **SYNC**.
 2. Set **TRANSPORT SEND = ON**.
@@ -95,6 +95,7 @@ Load the prepared 140 BPM percussion loop onto Octatrack Track 4.
 
 ## Completed
 
+- Octatrack clock-master settings restored, saved and rechecked in project `EIDETIC-01`.
 - New Octatrack Set and project `EIDETIC-01` created and loaded on-rig.
 - Octatrack CF card formatted successfully on-rig through `[PROJ]` → SYSTEM → CARD TOOLS →
   FORMAT CARD; existing card-resident Sets, projects and samples were removed.

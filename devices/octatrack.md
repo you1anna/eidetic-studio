@@ -20,7 +20,7 @@ can arrive with different sync. Save via PROJECT → PROJECT → SAVE. (On-rig 2
 | **Not lose scenes / machine assignments on reload** | **Save the Part** *before* saving the project, or scene + machine assignments vanish on reload. | track-setup §"Three things that bite" |
 | **Set up the send-FX (thru) path** | Track 7 = **Thru** machine; the desk Aux 1/2 feed OT In A/B (patchbay 15–16). Raise a channel's Aux send to push it through OT effects. | KB §5.1/§12 |
 | **Record and play a live stereo Aux loop** | Follow **“Live Aux loop — literal setup”** below. It uses T5 / Recorder Buffer 5 and makes each state and success check explicit. | Octatrack MKII User Manual OS 1.40A §§9.1–9.2, 11.3, 17.1.3; on-rig OS 1.40C |
-| ⚠ **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates `EIDETIC-01`, restores OT clock send and proves downstream transport before audio is copied. | Format and Set/project creation **on-rig 2026-08-07**; remaining SYNC/save/reload sequence from Manual OS 1.40A §8.4.1 and midi-sync §2 · **to verify on-rig** |
+| ⚠ **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates `EIDETIC-01`, restores OT clock send and proves downstream transport before audio is copied. | Format, Set/project creation and SYNC save **on-rig 2026-08-07**; remaining transport/power-cycle check from Manual OS 1.40A §8.4.1 and midi-sync §2 · **to verify on-rig** |
 | ⚠ **Get samples from the Mac onto the CF card** | Follow **“Load a sample from the Mac — literal setup” §1** below. USB DISK MODE mounts the CF card as mass storage; files go in the set's `AUDIO` folder. | Manual OS 1.40A §7.2.1, §8.5.1 · **to verify on-rig** |
 | ⚠ **Load a sample into a Flex or Static slot** | Follow **“Load a sample from the Mac — literal setup” §2**. Double-press the `[TRACK]` key for QUICK ASSIGN, pick an empty slot, `[YES]` to open the file browser. | Manual OS 1.40A §8.3.1, §8.3.3 · **to verify on-rig** |
 | ⚠ **Assign a loaded sample to the track's machine** | Follow **§3**. Loading into a slot does **not** assign it to the machine — that is a separate `[YES]` in QUICK ASSIGN or SRC SETUP. | Manual OS 1.40A §11.3 · **to verify on-rig** |
@@ -185,7 +185,7 @@ prevent creation of the empty Set.
 
 **Observed result 2026-08-07:** project `EIDETIC-01` was created and loaded successfully.
 
-#### 4. Restore and save the clock-master settings
+#### 4. Restore and save the clock-master settings — on-rig verified 2026-08-07
 
 1. Press `[PROJ]` → **MIDI** → **SYNC**.
 2. Set **TRANSPORT SEND = ON**.
@@ -195,6 +195,9 @@ prevent creation of the empty Set.
 6. Leave **PROG CH SEND** and **PROG CH RECEIVE** OFF for this baseline.
 7. Return to PROJECT → **PROJECT** → **SAVE** and press `[YES]` to save.
 8. Reopen MIDI → SYNC. **Success check:** the four clock/transport values still match steps 2–5.
+
+**Observed result 2026-08-07:** the clock-master settings were restored, saved and rechecked in
+project `EIDETIC-01`.
 
 #### 5. Prove transport, power-cycle and reload
 
