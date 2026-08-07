@@ -20,7 +20,7 @@ can arrive with different sync. Save via PROJECT → PROJECT → SAVE. (On-rig 2
 | **Not lose scenes / machine assignments on reload** | **Save the Part** *before* saving the project, or scene + machine assignments vanish on reload. | track-setup §"Three things that bite" |
 | **Set up the send-FX (thru) path** | Track 7 = **Thru** machine; the desk Aux 1/2 feed OT In A/B (patchbay 15–16). Raise a channel's Aux send to push it through OT effects. | KB §5.1/§12 |
 | **Record and play a live stereo Aux loop** | Follow **“Live Aux loop — literal setup”** below. It uses T5 / Recorder Buffer 5 and makes each state and success check explicit. | Octatrack MKII User Manual OS 1.40A §§9.1–9.2, 11.3, 17.1.3; on-rig OS 1.40C |
-| ⚠ **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates `EIDETIC-01`, restores OT clock send and proves downstream transport before audio is copied. | Manual OS 1.40A §§7.1, 8.2, 8.4.1, 8.5.5 · **to verify on-rig** |
+| ⚠ **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates `EIDETIC-01`, restores OT clock send and proves downstream transport before audio is copied. | FORMAT CARD path **on-rig 2026-08-07**; remaining Set/project/SYNC sequence from Manual OS 1.40A §§7.1, 8.2, 8.4.1 · **to verify on-rig** |
 | ⚠ **Get samples from the Mac onto the CF card** | Follow **“Load a sample from the Mac — literal setup” §1** below. USB DISK MODE mounts the CF card as mass storage; files go in the set's `AUDIO` folder. | Manual OS 1.40A §7.2.1, §8.5.1 · **to verify on-rig** |
 | ⚠ **Load a sample into a Flex or Static slot** | Follow **“Load a sample from the Mac — literal setup” §2**. Double-press the `[TRACK]` key for QUICK ASSIGN, pick an empty slot, `[YES]` to open the file browser. | Manual OS 1.40A §8.3.1, §8.3.3 · **to verify on-rig** |
 | ⚠ **Assign a loaded sample to the track's machine** | Follow **§3**. Loading into a slot does **not** assign it to the machine — that is a separate `[YES]` in QUICK ASSIGN or SRC SETUP. | Manual OS 1.40A §11.3 · **to verify on-rig** |
@@ -128,7 +128,7 @@ working Set/project; and restore the Octatrack's clock-master role before any ne
 > performed on this rig's OS 1.40C.** Stop at the first different screen and record exactly what the OT
 > shows. Robin confirmed on 2026-08-07 that the existing card contents have no preservation value.
 
-#### 1. Format the inserted CF card
+#### 1. Format the inserted CF card — on-rig verified 2026-08-07
 
 **Starting state:** OT stopped and powered on with the CF card to be erased physically inserted. The
 USB cable may remain connected, but USB DISK MODE must be off. If the CF volume is visible in Finder,
@@ -149,6 +149,9 @@ by the established DIN MIDI chain, but **do not open or change any TR-8S setting
 
 **Stop here** if FORMAT CARD is absent, the screen identifies a different card operation, an error
 appears, or the OT does not finish formatting. Do not substitute FILE MANAGER → DELETE.
+
+**Observed result 2026-08-07:** Robin completed the format successfully on OS 1.40C using `[PROJ]` →
+SYSTEM → CARD TOOLS → FORMAT CARD.
 
 #### 2. Create and mount the working Set
 

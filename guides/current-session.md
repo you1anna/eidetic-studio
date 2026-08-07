@@ -1,30 +1,21 @@
 # Current studio session
 
-**Status:** `READY`
+**Status:** `READY — card formatted; create the clean Set`
 
 **Current device:** Octatrack MKII, OS 1.40C
 
 **Keep this page open and refresh it after each completed chunk.**
 
-## Now — Clean Octatrack baseline
+## Now — Create the clean Octatrack Set and project
 
 ⚠ **This permanently erases the entire CompactFlash card currently inserted in the Octatrack:** all
 Sets, projects, samples and partitions. Robin confirmed on 2026-08-07 that none needs preserving.
 This is not a factory reset. **Do not change anything on the TR-8S.**
 
-### A. Format the card
+### A. Format the card — ✅ completed on-rig 2026-08-07
 
-**Start:** stop the OT and keep the CF card physically inserted in it. The USB cable may remain
-connected. The OT must **not** be in USB DISK MODE: if the CF volume is visible in Finder, eject that
-volume on the Mac first, then leave USB DISK MODE on the OT. The cable itself does not matter.
-
-1. Press the dedicated `[PROJ]` button once. **Do not press `[FUNC]` + `[MIDI]`; on this rig that
-   shortcut opens MIDI SYNC directly.**
-2. Select **SYSTEM**; press `[YES]` or `[RIGHT]`.
-3. Select **CARD TOOLS**; press `[YES]` or `[RIGHT]`.
-4. Select **FORMAT CARD**; press `[YES]`.
-5. The OT should display a confirmation prompt. Read it, then press `[YES]` to erase the card.
-6. Do not switch off the OT or remove the card. Wait until formatting finishes.
+The card was formatted successfully through `[PROJ]` → **SYSTEM** → **CARD TOOLS** →
+**FORMAT CARD**. Do not repeat this section.
 
 ### B. Create the clean Set
 
@@ -100,6 +91,8 @@ Load the prepared 140 BPM percussion loop onto Octatrack Track 4.
 
 ## Completed
 
+- Octatrack CF card formatted successfully on-rig through `[PROJ]` → SYSTEM → CARD TOOLS →
+  FORMAT CARD; existing card-resident Sets, projects and samples were removed.
 - Audio-classified 63-sample audition packet passed the accepted review gate.
 - Selected percussion loop 12 was promoted and exported as a 16-bit, 44.1 kHz stereo WAV.
 - Existing Octatrack material was declared disposable; TR-8S configuration remains protected.
