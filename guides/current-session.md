@@ -17,16 +17,20 @@ inside the OT. Connect the OT to the Mac by USB.
 1. Press `[PROJ]`.
 2. Select **SYSTEM** and press `[YES]` or `[RIGHT]`.
 3. Select **USB DISK MODE** and press `[YES]`.
-4. **Expected:** the Octatrack CF card appears in Finder as a removable volume.
-5. In Finder, open the Set folder **`EIDETIC-01`**, then its **`AUDIO`** folder.
-6. Copy this prepared file into that `AUDIO` folder:
+4. **Expected:** the Octatrack CF card appears in Finder as a new removable volume.
+5. On the Mac, open **Finder**. In the left sidebar, find **Locations** and click the new ejectable
+   drive that appeared when you entered USB DISK MODE. Its name can vary; it is the new removable
+   drive, not `Extreme SSD` or `Macintosh HD`.
+6. In that drive's top level, double-click the folder **`EIDETIC-01`**, then double-click **`AUDIO`**.
+   This is the exact destination folder.
+7. Copy this prepared file into that `AUDIO` folder:
 
    [DL01_tribal-t_000a.wav](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/octatrack-smoke/DRUM-LOOP/DL01_tribal-t_000a.wav>)
 
-7. Wait for the copy to finish. Confirm `DL01_tribal-t_000a.wav` appears inside the Set's `AUDIO`
+8. Wait for the copy to finish. Confirm `DL01_tribal-t_000a.wav` appears inside the Set's `AUDIO`
    folder.
-8. Eject the Octatrack CF volume in Finder. **Do this before leaving USB DISK MODE.**
-9. Look at the OT screen. If it still shows USB DISK MODE and the exit action is not explicit, stop
+9. Eject the Octatrack CF volume in Finder. **Do this before leaving USB DISK MODE.**
+10. Look at the OT screen. If it still shows USB DISK MODE and the exit action is not explicit, stop
    and report the exact screen rather than guessing a button.
 
 ## What should happen
@@ -39,7 +43,7 @@ inside the OT. Connect the OT to the Mac by USB.
 ## Stop and report if
 
 - The CF volume does not appear in Finder.
-- Set folder `EIDETIC-01` or its `AUDIO` folder is missing.
+- The new removable drive is absent from Finder, or Set folder `EIDETIC-01` or its `AUDIO` folder is missing.
 - Finder reports a copy error.
 - The OT screen differs from the documented USB DISK MODE state.
 

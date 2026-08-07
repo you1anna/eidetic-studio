@@ -236,10 +236,13 @@ converted to **16- or 24-bit, 44.1 kHz WAV or AIFF, mono or stereo** (48 kHz pla
 2. Press `[PROJ]`, select **SYSTEM**, then **USB DISK MODE**, and press
    `[YES]`. **Expected:** the CF card mounts on the Mac as a mass-storage volume. This is the *only*
    thing OT USB does — there is no MIDI or audio over it.
-3. On the Mac, open the **set folder** on that volume and find the folder named **`AUDIO`** inside it.
-   That folder *is* the audio pool; only material in it is visible to the projects of the set.
-4. Copy the approved sample into `AUDIO`. Keep a folder to **1024 files or sub-folders** maximum.
-5. Eject the volume on the Mac, then leave USB DISK MODE on the OT. **Success check:** the OT returns
+3. On the Mac, open **Finder**. Under **Locations** in the sidebar, click the new ejectable volume
+   that appeared on entering USB DISK MODE; it is the Octatrack CF card, not `Extreme SSD` or
+   `Macintosh HD`. Its volume name can vary.
+4. In the top level of that CF volume, open the **set folder** and then the folder named **`AUDIO`**
+   inside it. That folder *is* the audio pool; only material in it is visible to the projects of the set.
+5. Copy the approved sample into `AUDIO`. Keep a folder to **1024 files or sub-folders** maximum.
+6. Eject the volume on the Mac, then leave USB DISK MODE on the OT. **Success check:** the OT returns
    to its normal screen and the card is no longer mounted on the Mac.
 
 **Trade-off:** the manual permits audio inside project folders, but recommends `AUDIO` only. Keep to
