@@ -1,85 +1,56 @@
-# Living studio session board — design
+# Current-session checklist — design
 
 **Date:** 2026-08-07  
-**Status:** Approved for planning  
-**Scope:** Presentation and progress tracking only; no wiring, clock or device-role changes.
+**Status:** Approved for implementation
 
 ## Purpose
 
-Create one friendly page that tells Robin what to do now, what result to expect and exactly how to
-reply. The board replaces long chat instructions during a working session. The existing masterplan,
-device pages and knowledge base remain authoritative reference material.
+Keep one page open while working in the studio. It replaces chat history as the place to see exactly
+what to do, one self-contained chunk at a time.
 
-## Location and ownership
+## Location and role
 
-The live page will be `guides/current-session.md`.
+`guides/current-session.md` is the live checklist.
 
-- `guides/current-session.md` owns the current checkpoint, progress and open questions.
-- `guides/sample-device-masterplan.md` retains the full multi-device sequence.
-- `devices/*.md` retain literal device procedures and their source status.
-- `knowledge-base.md` remains authoritative for physical wiring and architecture.
+- It shows the current chunk in full: starting state, every action, expected result, stop condition,
+  success check and what to report when the chunk is complete.
+- It shows the next chunk only as a title, so the direction is clear without mixing instructions.
+- It records completed chunks and Robin's observed results.
+- `devices/*.md`, `guides/sample-device-masterplan.md` and `knowledge-base.md` remain the underlying
+  reference material. The checklist links to them but is the page Robin monitors.
 
-The board links to those sources instead of duplicating entire procedures.
+## First chunk: clean Octatrack baseline
 
-## Page layout
+The first checklist chunk formats the Octatrack CompactFlash card, then creates one named working
+Set/project and restores the project-specific clock settings. Formatting is chosen because old OT
+Sets, projects and samples have no preservation value.
 
-The top of the page contains the only action Robin needs to consider:
+This is deliberately **not** a factory reset. Formatting destroys everything on the CF card, so the
+checklist must state that consequence before the confirmation action. It does not authorise changes
+to the TR-8S.
 
-1. **Current status** — device, phase, state and last update.
-2. **Do this now** — starting state plus one short numbered action block.
-3. **What you should see** — the expected screen or audible result and the mismatch condition.
-4. **Reply with** — one exact response such as `copied`, `I see <message>` or a short observation.
+The TR-8S keeps its existing kit skeleton, kick routing, MIDI and sync configuration. Its later
+sample-loading chunk may add an approved user sample only where the native voice is insufficient;
+it must never delete existing TR-8S user samples until the dependency behaviour is verified.
 
-Lower sections retain context without competing with the active step:
+## Checklist flow
 
-- **Completed** — checked milestones with evidence links.
-- **Questions and observations** — Robin's questions, answers and unresolved discrepancies.
-- **Coming later** — a collapsed roadmap of later chunks, not instructions to perform now.
-- **Reference links** — the current export, device page and masterplan.
+1. **Clean Octatrack baseline** — format CF; create working Set/project; set and save OT clock
+   settings; prove the downstream transport works.
+2. **Load one prepared loop** — copy the selected 140 BPM percussion loop to the new Set; load it to
+   OT Track 4; set tempo handling; prove it plays; save and power-cycle.
+3. **Build the useful palette** — add only selected approved groups to the appropriate device.
+4. **TR-8S addition only if needed** — import and assign one approved sample without altering the
+   protected kick or configuration.
 
-## Status model
-
-Use only these labels:
-
-- `READY` — Robin can perform the displayed action.
-- `WAITING FOR ROBIN` — the action has been given and the board awaits the stated reply.
-- `BLOCKED` — a mismatch or missing prerequisite prevents safe progress.
-- `DONE` — the checkpoint has been observed and recorded.
-
-Only one current action may be `READY` or `WAITING FOR ROBIN`. Later steps never appear as active
-instructions.
-
-## Update flow
-
-1. Codex reads the current board and the authoritative device procedure.
-2. Codex presents one action block in chat and on the board.
-3. Robin replies with the requested result or asks a question.
-4. Codex records the observation, answers the question and either advances one checkpoint or marks
-   the current checkpoint `BLOCKED`.
-5. Any newly verified hardware fact is also captured in the correct device or issue page.
-6. Every repository edit ends with `scripts/sync.sh`.
-
-The initial board starts at the Octatrack CompactFlash copy checkpoint for
-`DL01_tribal-t_000a.wav`. The next checkpoint—Track 4 loading—must not appear as the active action
-until Robin confirms that the file copy is complete.
-
-## Safety and discrepancy handling
-
-- A board summary never overrides a device page or the knowledge base.
-- Manual-derived hardware steps retain the `⚠` marker until observed on the rig.
-- If the device differs from the documented expectation, stop at that exact screen, mark the board
-  `BLOCKED`, capture what Robin sees and correct the authoritative procedure before continuing.
-- Questions do not reset progress. They remain logged below the current action, and the active
-  checkpoint stays unchanged until its success condition is met.
-- No sample is transferred, assigned or deleted merely because it appears on the later roadmap.
+Each chunk is marked `READY`, `WAITING FOR RESULT`, `BLOCKED` or `DONE`. A mismatch stops that
+chunk; the checklist records the observed screen before any workaround is attempted. Manual-derived
+hardware instructions retain `⚠` until verified on this rig.
 
 ## Acceptance checks
 
-The first version is acceptable when:
-
-- opening the page immediately reveals one action and one requested reply;
-- the current Octatrack export is a clickable local link;
-- completed and future work cannot be mistaken for current instructions;
-- all hardware steps link back to their authoritative procedure and preserve `⚠` status;
-- the board can be advanced by editing one checkpoint without restructuring the page;
-- the studio repository is clean after the mandatory sync.
+- Opening `guides/current-session.md` immediately answers: “What do I do now?”
+- Robin can complete a chunk without reading chat history.
+- The Octatrack clean baseline contains no historical samples or projects.
+- The TR-8S configuration remains unchanged.
+- Each completed chunk has a recorded result and its saved/reload state is known.
