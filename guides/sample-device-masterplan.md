@@ -56,8 +56,9 @@ discoveries in this repo, and only then moves to the next phase.
 
 ### Phase 1 — define the track
 
-Start from the saved Octatrack template, never a blank project. Set a deliberate tempo in the
-138–142 BPM range and agree only these facts:
+For this run, start from the approved clean Octatrack CF-card baseline and create one new working
+Set/project. Restore and save the established OT clock settings before continuing. Set a deliberate
+tempo in the 138–142 BPM range and agree only these facts:
 
 1. One sentence describing the movement, for example: “rolling tribal percussion, sparse acid and
    one cut-up vocal phrase that builds pressure”.
@@ -308,31 +309,35 @@ character but consume finite space and introduce kit dependencies.
 
 ### Octatrack — performance layer second
 
-**Creation/initialisation choice:** never start from a blank project. Load or duplicate the saved
-template so its project-specific clock settings and track allocation come with it.
+**Creation/initialisation choice:** format the Octatrack CF card, then create one new Set/project.
+Existing OT Sets, projects and samples have no preservation value for this run. This is not a factory
+reset. The literal, manual-derived card procedure must be followed before sample transfer.
 
-1. Power on the OT and load/duplicate the saved template. Open PROJECT (`[FUNC]` + `[MIDI]`) →
-   **MIDI** → **SYNC**. Confirm **CLOCK SEND = ON**, **TRANSPORT SEND = ON**, **CLOCK RECEIVE = OFF**
-   and **TRANSPORT RECEIVE = OFF**. Save the project if corrected.
-2. Confirm the working allocation before copying: Static for long swappable loops; Flex for
-   tempo-dependent phrases/slicing; T5/T6 retained for recording; T7 retained as Thru. Stop if the
-   loaded project does not match the intended template rather than silently remapping it.
-3. ⚠ Connect USB. PROJECT → **SYSTEM** → **USB DISK MODE** → `[YES]`. Expected: the CompactFlash
+1. ⚠ Format the inserted CF card, create and mount the new Set, then create and load the empty
+   working project. The current operating checklist gives the literal button sequence and permanent-
+   loss warning.
+2. Open PROJECT (`[FUNC]` + `[MIDI]`) → **MIDI** → **SYNC**. Set **CLOCK SEND = ON**,
+   **TRANSPORT SEND = ON**, **CLOCK RECEIVE = OFF** and **TRANSPORT RECEIVE = OFF**. Save the
+   project, then confirm OT play/stop reaches Digitakt, TR-8S and TB-03 before copying audio.
+3. Build the allocation deliberately: Static for long swappable loops; Flex for tempo-dependent
+   phrases/slicing; T5/T6 retained for recording; T7 retained as Thru. Do not assume a new project
+   contains the former template's machines or assignments.
+4. ⚠ Connect USB. PROJECT → **SYSTEM** → **USB DISK MODE** → `[YES]`. Expected: the CompactFlash
    volume mounts on the Mac. Copy approved 16- or 24-bit **44.1 kHz** WAV/AIFF files into the set's
    `AUDIO` folder. Eject on the Mac, leave USB DISK MODE and confirm the normal OT screen returns.
-4. ⚠ Double-press the destination `[TRACK]` key. In QUICK ASSIGN choose the Flex or Static list,
+5. ⚠ Double-press the destination `[TRACK]` key. In QUICK ASSIGN choose the Flex or Static list,
    highlight an empty slot and press `[YES]`. Browse to the file; `[FUNC]` + `[YES]` previews it from
    Main Out. Press `[YES]` to load it. Expected: its name appears in the slot.
-5. ⚠ With that slot highlighted, press `[YES]` again to assign it to the track's machine. Put a trig
+6. ⚠ With that slot highlighted, press `[YES]` again to assign it to the track's machine. Put a trig
    on the track and press `[PLAY]`; loading a slot alone is not success—the track must sound.
-6. ⚠ For tempo-dependent material, select the sample and press `[FUNC]` + `[BANK]`. In the audio
+7. ⚠ For tempo-dependent material, select the sample and press `[FUNC]` + `[BANK]`. In the audio
    editor correct **ORIGINAL TEMPO**, set TIMESTRETCH to `BEAT` for rhythm or `NORMAL` otherwise,
    exit with `[NO]`, then `[FUNC]` + `[SRC]` and set **TSTR = AUTO**. Change project BPM briefly and
    confirm the loop remains in time, then restore the track BPM.
-7. Create one pattern/scene move that proves the sample's role. Then `[FUNC]` + `[PART]` → **SAVE**;
+8. Create one pattern/scene move that proves the sample's role. Then `[FUNC]` + `[PART]` → **SAVE**;
    PROJECT → **PROJECT** → **SAVE**; before removing the card, PROJECT → **PROJECT** →
    **SYNC TO CARD**.
-8. Power-cycle, reload the project and confirm the machine type, sample assignment, trigs and scenes.
+9. Power-cycle, reload the project and confirm the machine type, sample assignment, trigs and scenes.
    Missing scenes mean the Part-save step was skipped.
 
 **Trade-off:** Static tracks swap long files without RAM cost; Flex tracks are expressive but share
