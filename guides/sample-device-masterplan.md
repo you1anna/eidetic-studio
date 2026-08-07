@@ -1,10 +1,13 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v1.9
-**Date:** 2026-08-06
-**Status:** Active — Phase 2 classification has passed; category audition and feedback are next
+**Document version:** v2.0
+**Date:** 2026-08-07
+**Status:** Active — clean Octatrack baseline is the current physical checkpoint
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
 historical pilots, gates and cross-repo evidence; it is not the forward operating sequence.
+
+**Current operating page:** keep [`current-session.md`](current-session.md) open and refresh it. It
+contains the complete active hardware chunk. This masterplan retains the wider sequence.
 
 > **For a future assistant:** lead one numbered phase at a time. Before an action, give Robin the
 > literal starting state, each button/menu action, expected result, impact, trade-off, success
@@ -465,6 +468,7 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
+| **v2.0** | **2026-08-07** | Replaced the old-template start with Robin's approved clean CF-card baseline. Added the refreshable current-session checklist, retained the TR-8S configuration boundary and made OT clock restoration the first post-format gate. |
 | **v1.9** | **2026-08-07** | Simplified smoke selection to a separate one-row record so unselected audition rows need no artificial decisions. Recorded Robin's Octatrack sound 12 choice, successful promotion/export, verified file format and the decision to defer Digitakt. |
 | **v1.8** | **2026-08-06** | Made the smoke-test execution order consistent with the established Octatrack-first objective: Octatrack save/reload proof, then Digitakt, with TR-8S still conditional on a native-voice failure. |
 | **v1.7** | **2026-08-06** | Added the first export smoke test: one promoted sample per destination, three Mac-side preview/build gates, device-by-device transfer, save/reload checks and explicit stop conditions before any batch export. |

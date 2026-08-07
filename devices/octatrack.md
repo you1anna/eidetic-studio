@@ -9,7 +9,7 @@
 
 | Task | Steps | Source |
 |---|---|---|
-| **Fix "nothing downstream makes a sound" after starting a new project** (TR-8S silent on PLAY) | A blank project boots on Elektron factory defaults (CLOCK/TRANSPORT SEND **OFF**). PROJECT → MIDI → SYNC → set **CLOCK SEND = ON** and **TRANSPORT SEND = ON** → SAVE. Better: **never start from a blank project — load/duplicate the saved template.** | midi-sync §1 Fault 3, §2 |
+| **Fix "nothing downstream makes a sound" after starting a new project** (TR-8S silent on PLAY) | A blank project boots on Elektron factory defaults (CLOCK/TRANSPORT SEND **OFF**). PROJECT → MIDI → SYNC → set **CLOCK SEND = ON** and **TRANSPORT SEND = ON** → SAVE. For the approved clean-card workflow, follow **“Start with a clean CF card”** below and set the full SYNC block before loading samples. | midi-sync §1 Fault 3, §2 |
 | **Confirm the OT is the clock master** | PROJECT → MIDI → SYNC → **TRANSPORT SEND = ON**, **CLOCK SEND = ON**, **TRANSPORT RECEIVE = OFF**, **CLOCK RECEIVE = OFF**. | midi-sync §2 |
 | **Sequence the TB-03** | `[MIDI]` mode → select the MIDI track → SRC/NOTE page → **CHAN = 2** (must match the TB-03). Keep DT/TR-8S off channel 2. | midi-sync §2, track-setup |
 | **Silence tracks without deleting their trigs** | From the normal track view, press `[STOP]` for immediate silence if the transport is running. For each sounding audio or MIDI track, hold `[FUNC]` and press its `[TRACK 1–8]` key once. **Expected:** the track key becomes yellow or unlit (muted); red means it is still active. Repeat across all eight tracks as needed. To restore a track, repeat `[FUNC]` + `[TRACK]`. | Existing in-repo mute procedure in “Live Aux loop — literal setup” §5; on-rig 2026-07-20 |
@@ -17,6 +17,7 @@
 | **Not lose scenes / machine assignments on reload** | **Save the Part** *before* saving the project, or scene + machine assignments vanish on reload. | track-setup §"Three things that bite" |
 | **Set up the send-FX (thru) path** | Track 7 = **Thru** machine; the desk Aux 1/2 feed OT In A/B (patchbay 15–16). Raise a channel's Aux send to push it through OT effects. | KB §5.1/§12 |
 | **Record and play a live stereo Aux loop** | Follow **“Live Aux loop — literal setup”** below. It uses T5 / Recorder Buffer 5 and makes each state and success check explicit. | Octatrack MKII User Manual OS 1.40A §§9.1–9.2, 11.3, 17.1.3; on-rig OS 1.40C |
+| ⚠ **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates `EIDETIC-01`, restores OT clock send and proves downstream transport before audio is copied. | Manual OS 1.40A §§7.1, 8.2, 8.4.1, 8.5.5 · **to verify on-rig** |
 | ⚠ **Get samples from the Mac onto the CF card** | Follow **“Load a sample from the Mac — literal setup” §1** below. USB DISK MODE mounts the CF card as mass storage; files go in the set's `AUDIO` folder. | Manual OS 1.40A §7.2.1, §8.5.1 · **to verify on-rig** |
 | ⚠ **Load a sample into a Flex or Static slot** | Follow **“Load a sample from the Mac — literal setup” §2**. Double-press the `[TRACK]` key for QUICK ASSIGN, pick an empty slot, `[YES]` to open the file browser. | Manual OS 1.40A §8.3.1, §8.3.3 · **to verify on-rig** |
 | ⚠ **Assign a loaded sample to the track's machine** | Follow **§3**. Loading into a slot does **not** assign it to the machine — that is a separate `[YES]` in QUICK ASSIGN or SRC SETUP. | Manual OS 1.40A §11.3 · **to verify on-rig** |
@@ -114,6 +115,87 @@ Static Loop A slot, and its empty playback slot is unrelated to the T1 recorder 
 
 The incoming A/B signal can be heard directly when the OT mixer **DIR** level is up; that direct monitoring
 does not prove a recorder buffer exists. The waveform in step 4 does.
+
+### Start with a clean CF card — literal setup
+
+**Purpose:** permanently remove the current card-resident Sets, projects and samples; create one empty
+working Set/project; and restore the Octatrack's clock-master role before any new audio is copied.
+
+> ⚠ **This procedure is derived from the Octatrack MKII User Manual OS 1.40A and has not yet been
+> performed on this rig's OS 1.40C.** Stop at the first different screen and record exactly what the OT
+> shows. Robin confirmed on 2026-08-07 that the existing card contents have no preservation value.
+
+#### 1. Format the inserted CF card
+
+**Starting state:** OT stopped and powered on with the CF card to be erased inserted. The Mac is not
+mounting the card over USB. Digitakt, TR-8S and TB-03 may remain connected by the established DIN
+MIDI chain, but **do not open or change any TR-8S setting**.
+
+1. Check the physical card one final time. **Everything on this inserted CF card will be permanently
+   removed:** every Set, project, sample and partition. This is not recoverable from the OT.
+2. Open the PROJECT menu with `[FUNC]` + `[MIDI]`. **Expected:** the current Set and project names
+   appear at the top of the PROJECT menu.
+3. Select **SYSTEM** and press `[YES]` or `[RIGHT]`.
+4. Select **CARD TOOLS** and press `[YES]` or `[RIGHT]`.
+5. Select **FORMAT CARD** and press `[YES]`. **Expected:** the OT displays a confirmation prompt.
+6. Read the prompt, then press `[YES]` to proceed. **Do not switch off the OT or remove the card while
+   formatting.**
+7. Wait for formatting to finish. **Expected:** there is no usable Set/project on the freshly formatted
+   card. A **NO SET IS MOUNTED! PLEASE MOUNT ONE.** prompt may appear.
+
+**Stop here** if FORMAT CARD is absent, the screen identifies a different card operation, an error
+appears, or the OT does not finish formatting. Do not substitute FILE MANAGER → DELETE.
+
+#### 2. Create and mount the working Set
+
+1. If **NO SET IS MOUNTED! PLEASE MOUNT ONE.** is displayed, press `[YES]`; the Set selection screen
+   should open. Otherwise open PROJECT (`[FUNC]` + `[MIDI]`) → **PROJECT**, find **CHANGE** under
+   the **SET** heading and press `[YES]`.
+2. If **NOT WITHIN A PROJECT. CHANGES MADE WILL BE DISCARDED. CONTINUE?** appears, press `[YES]`.
+   Nothing remains to preserve on the formatted card.
+3. Select **`<CREATE NEW SET>`** and press `[YES]`. **Expected:** the naming screen opens.
+4. Name the Set **`EIDETIC-01`** using the `[ARROW]` keys, then press `[YES]`.
+5. If the Set list remains open, highlight **`EIDETIC-01`** and press `[YES]` to mount it.
+   **Expected:** the project selection screen opens automatically and shows the new Set name.
+
+**Success check:** `EIDETIC-01` is the mounted Set and contains no projects or audio-pool samples.
+
+#### 3. Create and load the working project
+
+1. In the project selection screen, choose **`<CREATE EMPTY PROJECT>`** and press `[YES]`. The same
+   manual later calls this entry **`<CREATE NEW PROJECT>`**; if that is the label shown on OS 1.40C,
+   select it. Both labels mean create a project in the mounted Set.
+2. Name the project **`EIDETIC-01`** using the `[ARROW]` keys, then press `[YES]`.
+3. **Expected:** the normal project screen opens. Reopen PROJECT and confirm `EIDETIC-01` is shown
+   as both the Set and project at the top.
+
+**Stop here** if an old project or sample name appears. The clean baseline has not been established.
+
+#### 4. Restore and save the clock-master settings
+
+1. Open PROJECT (`[FUNC]` + `[MIDI]`) → **MIDI** → **SYNC**.
+2. Set **TRANSPORT SEND = ON**.
+3. Set **CLOCK SEND = ON**.
+4. Set **TRANSPORT RECEIVE = OFF**.
+5. Set **CLOCK RECEIVE = OFF**.
+6. Leave **PROG CH SEND** and **PROG CH RECEIVE** OFF for this baseline.
+7. Return to PROJECT → **PROJECT** → **SAVE** and press `[YES]` to save.
+8. Reopen MIDI → SYNC. **Success check:** the four clock/transport values still match steps 2–5.
+
+#### 5. Prove transport, power-cycle and reload
+
+1. With the established MIDI chain connected and the downstream devices powered on, return to the
+   normal OT screen and press `[PLAY]`.
+2. **Expected:** the Digitakt, TR-8S and TB-03 transport or step-position indicators start. Audible
+   sound is not required; old patterns may be empty.
+3. Press `[STOP]`. **Expected:** all three downstream transports stop.
+4. Power the OT off, wait for it to shut down, then power it on again.
+5. **Expected:** Set `EIDETIC-01` and project `EIDETIC-01` load. Recheck PROJECT → MIDI → SYNC and
+   confirm the four clock/transport values are unchanged.
+6. Press `[PLAY]`, then `[STOP]`, once more. **Success check:** downstream transport still follows.
+
+The clean baseline is complete only when the empty named Set/project, saved SYNC values and
+post-power-cycle transport test all pass. This procedure changes no TR-8S configuration.
 
 ### Load a sample from the Mac — literal setup
 
