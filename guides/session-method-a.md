@@ -1,8 +1,8 @@
 # Eidetic Studio — Full Session Guide (Method A + Performance Sample System)
 
-**Document version:** v1.3 — supersedes v1.2
-**Date:** 2026-08-03
-**Companion to:** Knowledge Base v2.6 · Sound & Production Workflow v1.3 · MIDI Sync Guide v1.3
+**Document version:** v1.4 — supersedes v1.3
+**Date:** 2026-08-07
+**Companion to:** Knowledge Base v2.6 · Sound & Production Workflow v1.3 · MIDI Sync Guide v1.4
 **Scope:** One complete production cycle, plus the sample organisation and resampling system that makes it sticky and reusable. Assumes samples are loaded. Rumble is generated in Ableton (Method A) from the dry kick tap on PreSonus In 5.
 
 > **Status, 2026-08-03:** Part I is the current template and starting hypothesis, not a settled
@@ -113,7 +113,7 @@ This is the stickiness. Learn all three; reach for the fastest that does the job
 | 1 | Power | PreSonus → BM9S → HS8s last. Hardware in any order. |
 | 2 | **TR-8S** | [UTILITY] → MIDI: **Soft Thru = ON**. Same visit, SYNC/TEMPO: **Tempo Sync = MIDI**. Fix + **[WRITE]** if wrong. |
 | 3 | **TB-03** | Powers and stays on. [MODE] → **PATTERN PLAY**. |
-| 4 | **Octatrack** | Load the **template project**. [FUNC]+[MIDI] → SYNC: **CLOCK SEND ✓ / TRANSPORT SEND ✓**. Set tempo (138–142). |
+| 4 | **Octatrack** | Load the intended project. `[PROJ]` → MIDI → SYNC: **CLOCK SEND ✓ / TRANSPORT SEND ✓**. Set tempo (138–142). For the current clean-card run, follow `current-session.md` instead of loading the old template. |
 | 5 | Chain test | PLAY on OT → DT, TR-8S, TB-03 all start at the same BPM. If not: Sync Guide §7. |
 | 6 | **Soundcraft** | Faders down. Ch 9/10: **all Aux and Group sends at zero** (feedback check). All Group routing buttons out. |
 
@@ -219,6 +219,7 @@ This system gives the Digitakt two roles the current OT template doesn't cover *
 
 | Version | Date | Summary |
 |---|---|---|
+| **v1.4** | **2026-08-07** | Corrected OT Project-menu access to `[PROJ]` from Robin's on-rig observation and pointed the current clean-card run to the live session checklist. |
 | **v1.3** | **2026-08-03** | Marked the Part I sample system as a current starting template rather than a settled device-role decision; linked the forward, guided role-test and loading sequence. No live routing, MIDI or session procedure changed. |
 | v1.0 | 2026-07-17 | Initial seven-phase guide; Method A rumble chain; Sends Only rule. |
 | **v1.1** | **2026-07-17** | **Performance sample system added (Part I):** device role split; vocal cut-up decision (tempo-locked → OT Flex slices, repitched stabs → DT sample locks); OT CF folder layout + reusable project template (T1–T8, Static/Flex/Thru/Master); DT Sound Pool + track template with dual resample slots; three-loop resampling flywheel (OT recorder buffers · GRP→DT bus · Ableton→CF via A2); Part-save gotcha documented; flywheel moments woven into Phases 3–7; DT probation datapoint added. |

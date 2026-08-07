@@ -1,6 +1,6 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v2.0
+**Document version:** v2.1
 **Date:** 2026-08-07
 **Status:** Active — clean Octatrack baseline is the current physical checkpoint
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
@@ -319,7 +319,7 @@ reset. The literal, manual-derived card procedure must be followed before sample
 1. ⚠ Format the inserted CF card, create and mount the new Set, then create and load the empty
    working project. The current operating checklist gives the literal button sequence and permanent-
    loss warning.
-2. Open PROJECT (`[FUNC]` + `[MIDI]`) → **MIDI** → **SYNC**. Set **CLOCK SEND = ON**,
+2. Press `[PROJ]` → **MIDI** → **SYNC**. Set **CLOCK SEND = ON**,
    **TRANSPORT SEND = ON**, **CLOCK RECEIVE = OFF** and **TRANSPORT RECEIVE = OFF**. Save the
    project, then confirm OT play/stop reaches Digitakt, TR-8S and TB-03 before copying audio.
 3. Build the allocation deliberately: Static for long swappable loops; Flex for tempo-dependent
@@ -468,6 +468,7 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
+| **v2.1** | **2026-08-07** | Corrected Project-menu access from the rejected `[FUNC]` + `[MIDI]` shortcut to the on-rig `[PROJ]` button and clarified that the CF card stays inserted while USB DISK MODE remains off. |
 | **v2.0** | **2026-08-07** | Replaced the old-template start with Robin's approved clean CF-card baseline. Added the refreshable current-session checklist, retained the TR-8S configuration boundary and made OT clock restoration the first post-format gate. |
 | **v1.9** | **2026-08-07** | Simplified smoke selection to a separate one-row record so unselected audition rows need no artificial decisions. Recorded Robin's Octatrack sound 12 choice, successful promotion/export, verified file format and the decision to defer Digitakt. |
 | **v1.8** | **2026-08-06** | Made the smoke-test execution order consistent with the established Octatrack-first objective: Octatrack save/reload proof, then Digitakt, with TR-8S still conditional on a native-voice failure. |

@@ -1,7 +1,10 @@
 # Elektron Octatrack MKII — quick reference
 
 **Role in the rig:** centrepiece sampler/sequencer and **MIDI clock master**. Sequences the TB-03 on MIDI track 1 / channel 2. **USB is CompactFlash transfer only** — no MIDI, no audio, no Overbridge. **Installed OS: 1.40C** (on-rig confirmed 2026-07-19).
-**Menu access:** PROJECT menu = `[FUNC]`+`[MIDI]`; navigate `[ARROW]`s, toggle checkboxes with `[YES]`. **Sync settings are stored per-project** — a new/other project can arrive with different sync. Save via PROJECT → PROJECT → SAVE.
+**Menu access:** press the dedicated `[PROJ]` button to open the PROJECT menu. `[FUNC]` + `[MIDI]`
+opens MIDI SYNC directly on this rig; it is not the Project-menu shortcut. Navigate with `[ARROW]`s
+and toggle checkboxes with `[YES]`. **Sync settings are stored per-project** — a new/other project
+can arrive with different sync. Save via PROJECT → PROJECT → SAVE. (On-rig 2026-08-07.)
 
 > Cross-refs: clock/sync → [`../guides/midi-sync.md`](../guides/midi-sync.md) §2 · track allocation → [`../guides/track-setup.md`](../guides/track-setup.md) · wiring → [`../knowledge-base.md`](../knowledge-base.md) §6.
 
@@ -127,14 +130,15 @@ working Set/project; and restore the Octatrack's clock-master role before any ne
 
 #### 1. Format the inserted CF card
 
-**Starting state:** OT stopped and powered on with the CF card to be erased inserted. The Mac is not
-mounting the card over USB. Digitakt, TR-8S and TB-03 may remain connected by the established DIN
-MIDI chain, but **do not open or change any TR-8S setting**.
+**Starting state:** OT stopped and powered on with the CF card to be erased physically inserted. The
+USB cable may remain connected, but USB DISK MODE must be off. If the CF volume is visible in Finder,
+eject it on the Mac, then leave USB DISK MODE on the OT. Digitakt, TR-8S and TB-03 may remain connected
+by the established DIN MIDI chain, but **do not open or change any TR-8S setting**.
 
 1. Check the physical card one final time. **Everything on this inserted CF card will be permanently
    removed:** every Set, project, sample and partition. This is not recoverable from the OT.
-2. Open the PROJECT menu with `[FUNC]` + `[MIDI]`. **Expected:** the current Set and project names
-   appear at the top of the PROJECT menu.
+2. Press `[PROJ]` once. Do not press `[FUNC]` + `[MIDI]`; that opens MIDI SYNC directly on this rig.
+   **Expected:** the current Set and project names appear at the top of the PROJECT menu.
 3. Select **SYSTEM** and press `[YES]` or `[RIGHT]`.
 4. Select **CARD TOOLS** and press `[YES]` or `[RIGHT]`.
 5. Select **FORMAT CARD** and press `[YES]`. **Expected:** the OT displays a confirmation prompt.
@@ -149,7 +153,7 @@ appears, or the OT does not finish formatting. Do not substitute FILE MANAGER �
 #### 2. Create and mount the working Set
 
 1. If **NO SET IS MOUNTED! PLEASE MOUNT ONE.** is displayed, press `[YES]`; the Set selection screen
-   should open. Otherwise open PROJECT (`[FUNC]` + `[MIDI]`) → **PROJECT**, find **CHANGE** under
+   should open. Otherwise press `[PROJ]` → **PROJECT**, find **CHANGE** under
    the **SET** heading and press `[YES]`.
 2. If **NOT WITHIN A PROJECT. CHANGES MADE WILL BE DISCARDED. CONTINUE?** appears, press `[YES]`.
    Nothing remains to preserve on the formatted card.
@@ -173,7 +177,7 @@ appears, or the OT does not finish formatting. Do not substitute FILE MANAGER �
 
 #### 4. Restore and save the clock-master settings
 
-1. Open PROJECT (`[FUNC]` + `[MIDI]`) → **MIDI** → **SYNC**.
+1. Press `[PROJ]` → **MIDI** → **SYNC**.
 2. Set **TRANSPORT SEND = ON**.
 3. Set **CLOCK SEND = ON**.
 4. Set **TRANSPORT RECEIVE = OFF**.
@@ -213,7 +217,7 @@ slot, assigned to a track's machine, stretched to session tempo, and saved so it
 converted to **16- or 24-bit, 44.1 kHz WAV or AIFF, mono or stereo** (48 kHz plays at the wrong pitch).
 
 1. Connect the OT to the Mac with a USB cable.
-2. Open the PROJECT menu (`[FUNC]` + `[MIDI]`), select **SYSTEM**, then **USB DISK MODE**, and press
+2. Press `[PROJ]`, select **SYSTEM**, then **USB DISK MODE**, and press
    `[YES]`. **Expected:** the CF card mounts on the Mac as a mass-storage volume. This is the *only*
    thing OT USB does — there is no MIDI or audio over it.
 3. On the Mac, open the **set folder** on that volume and find the folder named **`AUDIO`** inside it.

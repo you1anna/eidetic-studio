@@ -14,9 +14,12 @@ This is not a factory reset. **Do not change anything on the TR-8S.**
 
 ### A. Format the card
 
-**Start:** stop the OT. Leave its CF card inserted. Make sure it is not mounted on the Mac by USB.
+**Start:** stop the OT and keep the CF card physically inserted in it. The USB cable may remain
+connected. The OT must **not** be in USB DISK MODE: if the CF volume is visible in Finder, eject that
+volume on the Mac first, then leave USB DISK MODE on the OT. The cable itself does not matter.
 
-1. Open PROJECT with `[FUNC]` + `[MIDI]`.
+1. Press the dedicated `[PROJ]` button once. **Do not press `[FUNC]` + `[MIDI]`; on this rig that
+   shortcut opens MIDI SYNC directly.**
 2. Select **SYSTEM**; press `[YES]` or `[RIGHT]`.
 3. Select **CARD TOOLS**; press `[YES]` or `[RIGHT]`.
 4. Select **FORMAT CARD**; press `[YES]`.

@@ -1,7 +1,7 @@
 # Eidetic Studio — MIDI Clock & Transport Configuration Guide
 
-**Document version:** v1.3
-**Date:** 2026-07-19
+**Document version:** v1.4
+**Date:** 2026-08-07
 **Companion to:** Knowledge Base (canonical, `../knowledge-base.md`) · diagram sheet 3/4 "MIDI & USB Routing" v8 (`../diagrams/midi-usb-routing-v8.png`)
 **Scope:** Complete, verified per-device configuration for the DIN clock chain (Octatrack MKII → Digitakt MK1 → TR-8S → TB-03) and Ableton's relationship to it. All menu paths and parameter names sourced from the primary manuals (OT MKII manual, Digitakt manual, TR-8S Reference Manual, TB-03 Owner's Manual).
 
@@ -34,7 +34,9 @@ Cabling sanity check before touching any menu:
 
 ## 2. Octatrack MKII — clock master
 
-All sync settings live in the **PROJECT menu → MIDI → SYNC**. Open the PROJECT menu with **[FUNC] + [MIDI]**. Navigate with the [ARROW] keys; toggle checkboxes with [YES].
+All sync settings live in the **PROJECT menu → MIDI → SYNC**. Press the dedicated **[PROJ]** button
+to open the PROJECT menu. On this rig, **[FUNC] + [MIDI] opens MIDI SYNC directly**; it does not open
+the Project menu. Navigate with the [ARROW] keys; toggle checkboxes with [YES]. (On-rig 2026-08-07.)
 
 ⚠ **These settings are stored per project.** A new or different project can arrive with different sync settings — if the chain dies after switching projects, check here first. Save the project (PROJECT menu → PROJECT → SAVE) after configuring.
 
@@ -215,6 +217,7 @@ Run in order after any configuration change. Each stage isolates one link.
 
 | Version | Date | Summary |
 |---|---|---|
+| **v1.4** | **2026-08-07** | Corrected OT Project-menu access from `[FUNC]` + `[MIDI]` to the dedicated `[PROJ]` button after on-rig observation; recorded that the former combination opens MIDI SYNC directly. |
 | v1.0 | 2026-07-16 | Initial guide, post TR-8S factory reset. All hardware menu paths verified against primary manuals. TB-03 channel committed as 2. |
 | v1.1 | 2026-07-16 | §6 fully rewritten against the actual Live 12.4 settings state (screenshots: only the PreSonus Studio 192 DIN MIDI port exists; no Elektron/Roland USB MIDI ports; Link off). **Manual session tempo committed** — automatic tempo-follow rejected (stable master clock; follower adds jitter and failure modes for no benefit). Digitakt CLOCK SEND revised ON→OFF (no consumers); Overbridge references removed (not in use). Tempo Follower + Resync transport toggles set to hidden. Zero-USB tempo-follow fallback (TB-03 OUT → PreSonus DIN IN) documented but deliberately not cabled. |
 | **v1.2** | **2026-07-19** | **New-project clock gotcha added** (§1 Fault 3, strengthened §2 warning, §7 symptom-shortcut row, §8 decision #10), root-caused from a real TR-8S "no sound on PLAY" incident: a freshly created OT project defaults to CLOCK SEND/TRANSPORT SEND OFF, and with Tempo Sync committed to MIDI (no AUTO/USB fallback) this leaves the TR-8S with no clock source at all. **Manual-tempo model retained** — the tempo-follow / Digitakt CLOCK SEND=ON variant floated in a parallel 2026-07-19 draft was rejected in favour of the screenshot-verified v1.1 decision. Merged into the studio SOT repo (`eidetic-studio`) as the single canonical MIDI guide. |
