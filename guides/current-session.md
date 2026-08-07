@@ -1,78 +1,69 @@
 # Current studio session
 
-**Version:** v1.1  
-**Status:** `IN PROGRESS — SETGPT-01 copied; eject OCTATRACK-R before leaving USB DISK MODE`  
+**Version:** v1.2  
+**Status:** `READY — load the first percussion loop onto Track 4 and make it play`  
 **Current device:** Octatrack MKII, OS 1.40C
 
 Keep this page open. Complete only **Now**. When it passes, refresh this page for the next short
 track-building chunk.
 
-## Now — copy the full 24-sample collection
+## Now — make the first loop play on Track 4
 
-**Goal:** copy the complete prepared library into the existing working Set `SetGPT`. This is only a
-file transfer: it does not load samples onto tracks, change the clock, or touch Digitakt, TR-8S or
-TB-03.
+**Goal:** load the first prepared percussion loop into an empty Flex slot, assign it to Track 4,
+place one trig and hear it at the current project tempo. Do not touch Tracks 5, 6 or 7: they are
+reserved for recording and the desk input path.
 
-**Starting state:**
+**Starting state:** the Octatrack is on its normal screen. Set `SetGPT` and its working project are
+loaded. `SETGPT-01` has been copied to the Set's `AUDIO` folder and the CF card is no longer mounted
+on the Mac.
 
-- Octatrack is powered on with the working project in Set `SetGPT` loaded.
-- The CF card remains physically inside the Octatrack.
-- The USB cable between Mac and Octatrack is connected.
-- The Mac source library is exactly:
-  `/Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01`.
+> ⚠ The following loading screens are manual-derived and have not yet been confirmed on this new
+> project. If a named screen or list does not appear, stop and report what it does show.
 
-1. On the Octatrack, press `[PROJ]`.
-2. Select **SYSTEM**, then press `[YES]` or `[RIGHT]`.
-3. Select **USB DISK MODE**, then press `[YES]`.
-4. **Expected:** Finder displays the CF card as a removable volume named **`OCTATRACK-R`**.
-5. On the Mac, open **Finder**. Under **Locations**, click **`OCTATRACK-R`**.
-6. Open **`SetGPT`**, then open **`AUDIO`**. The destination is:
-   `/Volumes/OCTATRACK-R/SetGPT/AUDIO/`.
-7. In another Finder window, press `[⌘]` + `[⇧]` + `[G]` (**Go to Folder**). Paste this exact path,
-   then press `[Return]`:
+1. Press `[TRACK 4]` twice quickly.
+2. **Expected:** **QUICK ASSIGN** opens. Because Track 4 is intended as a Flex percussion-loop
+   track, its **Flex** sample-slot list should appear.
+3. If a **machine list** appears instead, highlight **FLEX**, press `[YES]`, then press `[RIGHT]`.
+   **Expected:** the Flex sample-slot list opens.
+4. Move to the first empty Flex slot. Press `[YES]`.
+5. **Expected:** the file browser opens. Open the folder **`SETGPT-01`**, then
+   **`PERCUSSION-LOOPS`**.
+6. Highlight **`DL01_perc-loo_000a.wav`**.
+7. Hold `[FUNC]` and press `[YES]` to preview it. **Expected:** you hear the loop through the main
+   outputs. If you do not hear it, stop here; do not load it yet.
+8. Press `[YES]` once. **Expected:** the file name appears in the selected Flex slot.
+9. With that same loaded slot highlighted, press `[YES]` again. **Expected:** it is assigned to
+   Track 4, rather than merely stored in the shared Flex list.
+10. Press `[NO]` until the normal track screen returns. Press `[RECORD]` once, then press `[TRIG 1]`
+    to place a sample trig at step 1. Press `[RECORD]` again to leave Grid Recording.
+11. Press `[PLAY]`.
+12. **Success check:** Track 4 plays the percussion loop repeatedly and in time. If it is silent,
+    stop and report whether the loaded slot name is visible and whether trig 1 is lit.
 
-   ```text
-   /Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01
-   ```
+**Save this first layer only after it is audible:**
 
-   **Expected:** Finder opens a folder named `SETGPT-01` containing four folders:
-   `PERCUSSION-LOOPS`, `FULL-DRUM-LOOPS`, `VOCAL-PHRASES` and `LONG-VOCALS`.
-8. Drag the **entire `SETGPT-01` folder** into `OCTATRACK-R/SetGPT/AUDIO/`. Do not drag individual
-   WAV files and do not rename the folder.
-9. Wait for the copy to finish. Inside `OCTATRACK-R/SetGPT/AUDIO/SETGPT-01/`, confirm these four
-   folders exist:
-
-   - `PERCUSSION-LOOPS` — 13 WAV files
-   - `FULL-DRUM-LOOPS` — 4 WAV files
-   - `VOCAL-PHRASES` — 6 WAV files
-   - `LONG-VOCALS` — 1 WAV file
-
-   **Success check:** 24 WAV files in total. `README.md` and `manifest.tsv` should also be present
-   at the top of `SETGPT-01`.
-10. In Finder, eject **`OCTATRACK-R`** using its eject icon. Wait until it disappears from Finder.
-    **Do this before leaving USB DISK MODE.**
-11. Look at the Octatrack screen. If it still shows USB DISK MODE and the exit action is not
-    explicit, stop and report the exact screen rather than guessing.
+13. Press `[FUNC]` + `[PART]`, select **SAVE**, then press `[YES]`.
+14. Press `[FUNC]` + `[PROJ]`, select **SAVE**, then press `[YES]`.
+15. Press `[PROJ]` → **PROJECT** → **SYNC TO CARD**. **Expected:** the project data is written to
+    the CF card.
 
 ## Stop and report if
 
-- `OCTATRACK-R`, `SetGPT`, or `AUDIO` is missing.
-- Finder reports any copy error.
-- The four folder counts do not total 24 WAV files.
-- The Octatrack screen differs from the documented USB DISK MODE state after Finder eject.
+- QUICK ASSIGN, the Flex list, or the file browser differs from the expected screen.
+- `SETGPT-01` or `PERCUSSION-LOOPS` is absent from the file browser.
+- The preview is silent, the slot name never appears, or Track 4 is silent after placing trig 1.
 
 ## When complete, send this
 
 ```text
-SETGPT-01 copied — 24 WAV files confirmed
-USB DISK MODE screen after Finder eject: <what it shows>
+Track 4 loop audible: yes/no
+First screen that differed, if any: <exact text or photo>
 ```
 
 ## Next, not yet
 
-We will load just the first working four-role palette from this library and make the opening
-pattern. The remaining 20 files stay available for audition; you will not need to load everything
-at once.
+Add the first full-drum loop and vocal phrase to the track. The remaining files stay available for
+audition; you will not load everything at once.
 
 ## Completed
 
@@ -83,6 +74,7 @@ at once.
 - ✅ Audio-classified 63-sample packet passed the accepted review gate.
 - ✅ `SETGPT-01` prepared on the Mac: 24 verified 44.1 kHz, 16-bit PCM WAV files in four folders.
 - ✅ Robin reported `SETGPT-01` copied to the Octatrack CF card on-rig, 2026-08-07.
+- ✅ Robin ejected `OCTATRACK-R`; the Octatrack returned to its normal screen on-rig, 2026-08-07.
 
 ## References
 
@@ -95,5 +87,6 @@ at once.
 
 | Version | Date | Summary |
 |---|---|---|
+| v1.2 | 2026-08-07 | Recorded clean exit from USB DISK MODE and grouped the next creation chunk: load, assign, trig, audition and save the first Track 4 percussion loop. |
 | v1.1 | 2026-08-07 | Replaced the misleading one-file transfer with the complete 24-file SETGPT-01 card library. |
 | v1.0 | 2026-08-07 | Introduced the live clean-baseline and first-transfer checklist. |
