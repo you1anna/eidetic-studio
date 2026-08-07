@@ -22,7 +22,7 @@ can arrive with different sync. Save via PROJECT → PROJECT → SAVE. (On-rig 2
 | **Record and play a live stereo Aux loop** | Follow **“Live Aux loop — literal setup”** below. It uses T5 / Recorder Buffer 5 and makes each state and success check explicit. | Octatrack MKII User Manual OS 1.40A §§9.1–9.2, 11.3, 17.1.3; on-rig OS 1.40C |
 | **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates the named working Set/project, restores OT clock send and proves downstream transport before audio is copied. | **on-rig 2026-08-07**, Octatrack MKII OS 1.40C |
 | ⚠ **Get samples from the Mac onto the CF card** | Follow **“Load a sample from the Mac — literal setup” §1** below. USB DISK MODE mounts the CF card as mass storage; files go in the set's `AUDIO` folder. | Manual OS 1.40A §7.2.1, §8.5.1 · **to verify on-rig** |
-| ⚠ **Load a sample into a Flex or Static slot** | Follow **“Load a sample from the Mac — literal setup” §2**. Double-press the `[TRACK]` key for QUICK ASSIGN, pick an empty slot, `[YES]` to open the file browser. | Manual OS 1.40A §8.3.1, §8.3.3 · **to verify on-rig** |
+| ⚠ **Load a sample into a Flex or Static slot** | Follow **“Load a sample from the Mac — literal setup” §2**. Double-press the `[TRACK]` key for QUICK ASSIGN, skip `R1`–`R8` recorder-buffer entries, pick an empty numbered slot, `[YES]` to open the file browser. | Manual OS 1.40A §8.3.1, §8.3.3 · recorder-buffer list observed on-rig 2026-08-07 |
 | ⚠ **Assign a loaded sample to the track's machine** | Follow **§3**. Loading into a slot does **not** assign it to the machine — that is a separate `[YES]` in QUICK ASSIGN or SRC SETUP. | Manual OS 1.40A §11.3 · **to verify on-rig** |
 | ⚠ **Set timestretch so a loop holds session tempo** | Follow **§4**. Per-sample TIMESTRETCH in the audio editor, plus `TSTR = AUTO` in SRC SETUP for it to apply. | Manual OS 1.40A §12 (audio editor), Appendix A · **to verify on-rig** |
 | ⚠ **Save and reload so the work survives** | Follow **§5**. Order is **Part → Project → SYNC TO CARD**, and never eject the card without the sync. | Manual OS 1.40A §10.2.2, §8.4.1 · **to verify on-rig** |
@@ -259,8 +259,10 @@ every track. Loading fills a slot; it does not put the sound on a track.
    holds a Static machine.
 2. If the **machine list** appears instead, the track holds neither: move the cursor to **FLEX** or
    **STATIC** and press `[RIGHT]` to open that slot list.
-3. Move to an **empty slot position** and press `[YES]`. **Expected:** the file browser opens, showing
-   the audio pool from §1. Folders are marked `(D)`; open one with `[RIGHT]` or `[YES]`.
+3. At the top of a Flex list, entries such as **`R1 > RECORDING1`** through **`R8 > RECORDING8`** are
+   built-in recorder buffers. They are not removable old samples. Press `[DOWN]` to pass them, then
+   move to an **empty numbered slot position** and press `[YES]`. **Expected:** the file browser
+   opens, showing the audio pool from §1. Folders are marked `(D)`; open one with `[RIGHT]` or `[YES]`.
 4. Highlight the sample and press `[FUNC]` + `[YES]` to **preview it from the main outputs** before
    committing. **Success check:** you hear it in the monitors.
 5. Press `[YES]` to load it. **Expected:** the sample name appears at that slot position.

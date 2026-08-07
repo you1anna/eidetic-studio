@@ -25,7 +25,10 @@ on the Mac.
    track, its **Flex** sample-slot list should appear.
 3. If a **machine list** appears instead, highlight **FLEX**, press `[YES]`, then press `[RIGHT]`.
    **Expected:** the Flex sample-slot list opens.
-4. Move to the first empty Flex slot. Press `[YES]`.
+4. At the top of the list you may see entries such as **`R1 > RECORDING1`**. These are the
+   Octatrack's built-in recorder buffers, not old samples. **Do not delete or select them.** Use
+   `[DOWN]` to move past the `R1`–`R8` entries to the first empty **numbered Flex slot**, then press
+   `[YES]`.
 5. **Expected:** the file browser opens. Open the folder **`SETGPT-01`**, then
    **`PERCUSSION-LOOPS`**.
 6. Highlight **`DL01_perc-loo_000a.wav`**.
