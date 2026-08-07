@@ -20,7 +20,7 @@ can arrive with different sync. Save via PROJECT → PROJECT → SAVE. (On-rig 2
 | **Not lose scenes / machine assignments on reload** | **Save the Part** *before* saving the project, or scene + machine assignments vanish on reload. | track-setup §"Three things that bite" |
 | **Set up the send-FX (thru) path** | Track 7 = **Thru** machine; the desk Aux 1/2 feed OT In A/B (patchbay 15–16). Raise a channel's Aux send to push it through OT effects. | KB §5.1/§12 |
 | **Record and play a live stereo Aux loop** | Follow **“Live Aux loop — literal setup”** below. It uses T5 / Recorder Buffer 5 and makes each state and success check explicit. | Octatrack MKII User Manual OS 1.40A §§9.1–9.2, 11.3, 17.1.3; on-rig OS 1.40C |
-| ⚠ **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates `EIDETIC-01`, restores OT clock send and proves downstream transport before audio is copied. | FORMAT CARD path **on-rig 2026-08-07**; remaining Set/project/SYNC sequence from Manual OS 1.40A §§7.1, 8.2, 8.4.1 · **to verify on-rig** |
+| ⚠ **Erase the existing CF card and create the clean working Set/project** | Follow **“Start with a clean CF card — literal setup”** below. It formats the entire inserted card, creates `EIDETIC-01`, restores OT clock send and proves downstream transport before audio is copied. | Format and Set/project creation **on-rig 2026-08-07**; remaining SYNC/save/reload sequence from Manual OS 1.40A §8.4.1 and midi-sync §2 · **to verify on-rig** |
 | ⚠ **Get samples from the Mac onto the CF card** | Follow **“Load a sample from the Mac — literal setup” §1** below. USB DISK MODE mounts the CF card as mass storage; files go in the set's `AUDIO` folder. | Manual OS 1.40A §7.2.1, §8.5.1 · **to verify on-rig** |
 | ⚠ **Load a sample into a Flex or Static slot** | Follow **“Load a sample from the Mac — literal setup” §2**. Double-press the `[TRACK]` key for QUICK ASSIGN, pick an empty slot, `[YES]` to open the file browser. | Manual OS 1.40A §8.3.1, §8.3.3 · **to verify on-rig** |
 | ⚠ **Assign a loaded sample to the track's machine** | Follow **§3**. Loading into a slot does **not** assign it to the machine — that is a separate `[YES]` in QUICK ASSIGN or SRC SETUP. | Manual OS 1.40A §11.3 · **to verify on-rig** |
@@ -153,7 +153,7 @@ appears, or the OT does not finish formatting. Do not substitute FILE MANAGER �
 **Observed result 2026-08-07:** Robin completed the format successfully on OS 1.40C using `[PROJ]` →
 SYSTEM → CARD TOOLS → FORMAT CARD.
 
-#### 2. Create and mount the working Set
+#### 2. Create and mount the working Set — on-rig verified 2026-08-07
 
 **On-rig observation 2026-08-07:** after FORMAT CARD completed, the former Set name remained selected
 in memory and **NO SET IS MOUNTED** did not appear. Use the explicit Set-change route; this does not
@@ -170,7 +170,9 @@ prevent creation of the empty Set.
 
 **Success check:** `EIDETIC-01` is the mounted Set and contains no projects or audio-pool samples.
 
-#### 3. Create and load the working project
+**Observed result 2026-08-07:** Set `EIDETIC-01` was created and mounted successfully.
+
+#### 3. Create and load the working project — on-rig verified 2026-08-07
 
 1. In the project selection screen, choose **`<CREATE EMPTY PROJECT>`** and press `[YES]`. The same
    manual later calls this entry **`<CREATE NEW PROJECT>`**; if that is the label shown on OS 1.40C,
@@ -180,6 +182,8 @@ prevent creation of the empty Set.
    as both the Set and project at the top.
 
 **Stop here** if an old project or sample name appears. The clean baseline has not been established.
+
+**Observed result 2026-08-07:** project `EIDETIC-01` was created and loaded successfully.
 
 #### 4. Restore and save the clock-master settings
 

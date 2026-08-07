@@ -1,12 +1,12 @@
 # Current studio session
 
-**Status:** `READY — card formatted; create the clean Set`
+**Status:** `READY — Set/project created; restore OT clock settings`
 
 **Current device:** Octatrack MKII, OS 1.40C
 
 **Keep this page open and refresh it after each completed chunk.**
 
-## Now — Create the clean Octatrack Set and project
+## Now — Restore and save the Octatrack clock settings
 
 ⚠ **This permanently erases the entire CompactFlash card currently inserted in the Octatrack:** all
 Sets, projects, samples and partitions. Robin confirmed on 2026-08-07 that none needs preserving.
@@ -17,7 +17,7 @@ This is not a factory reset. **Do not change anything on the TR-8S.**
 The card was formatted successfully through `[PROJ]` → **SYSTEM** → **CARD TOOLS** →
 **FORMAT CARD**. Do not repeat this section.
 
-### B. Create the clean Set
+### B. Create the clean Set — ✅ completed on-rig 2026-08-07
 
 **Observed on this rig:** after formatting, the old Set name remained selected in memory and
 **NO SET IS MOUNTED** did not appear. This does not prevent creating the new Set.
@@ -31,7 +31,7 @@ The card was formatted successfully through `[PROJ]` → **SYSTEM** → **CARD T
 6. Name it **`EIDETIC-01`** using the `[ARROW]` keys; press `[YES]`.
 7. If the Set list remains open, select **`EIDETIC-01`**; press `[YES]` to mount it.
 
-### C. Create the clean project
+### C. Create the clean project — ✅ completed on-rig 2026-08-07
 
 1. The project selection screen should open automatically.
 2. Select **`<CREATE EMPTY PROJECT>`**; press `[YES]`.
@@ -95,6 +95,7 @@ Load the prepared 140 BPM percussion loop onto Octatrack Track 4.
 
 ## Completed
 
+- New Octatrack Set and project `EIDETIC-01` created and loaded on-rig.
 - Octatrack CF card formatted successfully on-rig through `[PROJ]` → SYSTEM → CARD TOOLS →
   FORMAT CARD; existing card-resident Sets, projects and samples were removed.
 - Audio-classified 63-sample audition packet passed the accepted review gate.
