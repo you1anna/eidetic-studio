@@ -1,8 +1,8 @@
 # Eidetic Studio — sample-to-device master plan
 
-**Document version:** v2.2
+**Document version:** v2.3
 **Date:** 2026-08-07
-**Status:** Active — clean Octatrack baseline passed; copying the prepared loop is current
+**Status:** Active — clean Octatrack baseline passed; copying the complete SETGPT-01 collection is current
 **Evidence log:** [`sample-device-workflow-wip.md`](sample-device-workflow-wip.md) preserves
 historical pilots, gates and cross-repo evidence; it is not the forward operating sequence.
 
@@ -220,7 +220,17 @@ Format facts before export:
 - TR-8S accepts WAV up to 96 kHz and AIFF at 44.1, 48 or 96 kHz, with 8–32-bit depths and mono or
   stereo files. Its first studio export profile remains a controlled test choice.
 
-#### First export smoke test — one sample per destination, not a batch
+#### First export smoke test — historical evidence, not the current transfer
+
+**Current approved change — 2026-08-07:** Robin explicitly approved preparing the complete
+audio-classified Octatrack collection and accepted the classifier's stated error tolerance so that
+track-making can begin now. The Mac-side smoke export below remains evidence that the export chain
+works; it is not the active transfer instruction. The active payload is
+[SETGPT-01](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01>):
+24 verified 44.1 kHz, 16-bit PCM WAV files arranged as 13 percussion loops, 4 full-drum loops,
+6 vocal phrases and 1 long vocal source. Its [hash manifest](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01/manifest.tsv>)
+is the transfer authority. Copy the complete folder to `OCTATRACK-R/SetGPT/AUDIO/` using
+[`current-session.md`](current-session.md); no samples are yet loaded into an Octatrack track.
 
 **Starting state:** the nine guarded playlists are current, but no row is approved for hardware yet.
 Do not export all 63 classifications. Choose at most one Digitakt sample and one Octatrack sample;
@@ -271,8 +281,9 @@ add one TR-8S sample only after its native engine has audibly failed that role.
 promoted under run `tribal-140-01-octatrack-smoke-01`. The export gates resolved one file, previewed
 one conversion and converted one file with no unresolved rows. The staged result is
 `DL01_tribal-t_000a.wav`: PCM WAV, 44.1 kHz, 16-bit stereo, 3.429 seconds. Digitakt is deferred
-because its two-item percussion-one-shot shortlist did not justify a device trial. The next action
-is the physical Octatrack T4 load, tempo, save and reload check; no hardware state has yet changed.
+because its two-item percussion-one-shot shortlist did not justify a device trial. That one-file
+smoke export is retained as historical evidence; it is superseded as the active payload by
+SETGPT-01. No sample is yet loaded into an Octatrack track.
 
 ## 4. Phase 5 — load and configure one machine at a time
 
@@ -468,6 +479,7 @@ Run `scripts/sync.sh` after every captured knowledge change.
 
 | Version | Date | Summary |
 |---|---|---|
+| **v2.3** | **2026-08-07** | Replaced the active one-file transfer with SETGPT-01: a verified, complete 24-file Octatrack collection in four visible folders, with a hash manifest and a short card-copy checklist. Preserved the one-file export as historical evidence only. |
 | **v2.2** | **2026-08-07** | Recorded the complete clean Octatrack baseline as passed on-rig: new Set/project, saved clock settings, downstream transport and power-cycle reload. Advanced the live checklist to copying the prepared loop into the empty audio pool. |
 | **v2.1** | **2026-08-07** | Corrected Project-menu access from the rejected `[FUNC]` + `[MIDI]` shortcut to the on-rig `[PROJ]` button and clarified that the CF card stays inserted while USB DISK MODE remains off. |
 | **v2.0** | **2026-08-07** | Replaced the old-template start with Robin's approved clean CF-card baseline. Added the refreshable current-session checklist, retained the TR-8S configuration boundary and made OT clock restoration the first post-format gate. |

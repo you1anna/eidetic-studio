@@ -1,61 +1,69 @@
 # Current studio session
 
-**Status:** `READY — clean baseline passed; copy the prepared loop`
-
+**Version:** v1.1  
+**Status:** `READY — copy the complete SETGPT-01 library to the Octatrack`  
 **Current device:** Octatrack MKII, OS 1.40C
 
-**Keep this page open and refresh it after each completed chunk.**
+Keep this page open. Complete only **Now**. When it passes, refresh this page for the next short
+track-building chunk.
 
-## Now — Copy the prepared loop to the Octatrack
+## Now — copy the full 24-sample collection
 
-**Goal:** put the already converted 140 BPM percussion loop into Set `SetGPT` without changing
-any other device.
+**Goal:** copy the complete prepared library into the existing working Set `SetGPT`. This is only a
+file transfer: it does not load samples onto tracks, change the clock, or touch Digitakt, TR-8S or
+TB-03.
 
-**Start:** Octatrack powered on with Set `SetGPT` and its working project loaded. Keep the CF card physically
-inside the OT. Connect the OT to the Mac by USB.
+**Starting state:**
 
-1. Press `[PROJ]`.
-2. Select **SYSTEM** and press `[YES]` or `[RIGHT]`.
-3. Select **USB DISK MODE** and press `[YES]`.
-4. **Expected:** the Octatrack CF card appears in Finder as a new removable volume.
-5. On the Mac, open **Finder**. In the left sidebar, under **Locations**, click **`OCTATRACK-R`**.
-6. Double-click **`SetGPT`**, then double-click **`AUDIO`**. This is the exact destination folder:
-   `/Volumes/OCTATRACK-R/SetGPT/AUDIO`.
-7. Copy this prepared file into that `AUDIO` folder:
+- Octatrack is powered on with the working project in Set `SetGPT` loaded.
+- The CF card remains physically inside the Octatrack.
+- The USB cable between Mac and Octatrack is connected.
+- The Mac source library is ready here: [SETGPT-01](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01>).
 
-   [DL01_tribal-t_000a.wav](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/octatrack-smoke/DRUM-LOOP/DL01_tribal-t_000a.wav>)
+1. On the Octatrack, press `[PROJ]`.
+2. Select **SYSTEM**, then press `[YES]` or `[RIGHT]`.
+3. Select **USB DISK MODE**, then press `[YES]`.
+4. **Expected:** Finder displays the CF card as a removable volume named **`OCTATRACK-R`**.
+5. On the Mac, open **Finder**. Under **Locations**, click **`OCTATRACK-R`**.
+6. Open **`SetGPT`**, then open **`AUDIO`**. The destination is:
+   `/Volumes/OCTATRACK-R/SetGPT/AUDIO/`.
+7. In another Finder window, open [SETGPT-01](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01>).
+8. Drag the **entire `SETGPT-01` folder** into `OCTATRACK-R/SetGPT/AUDIO/`. Do not drag individual
+   WAV files and do not rename the folder.
+9. Wait for the copy to finish. Inside `OCTATRACK-R/SetGPT/AUDIO/SETGPT-01/`, confirm these four
+   folders exist:
 
-8. Wait for the copy to finish. Confirm `DL01_tribal-t_000a.wav` appears inside the Set's `AUDIO`
-   folder.
-9. Eject the Octatrack CF volume in Finder. **Do this before leaving USB DISK MODE.**
-10. Look at the OT screen. If it still shows USB DISK MODE and the exit action is not explicit, stop
-   and report the exact screen rather than guessing a button.
+   - `PERCUSSION-LOOPS` — 13 WAV files
+   - `FULL-DRUM-LOOPS` — 4 WAV files
+   - `VOCAL-PHRASES` — 6 WAV files
+   - `LONG-VOCALS` — 1 WAV file
 
-## What should happen
-
-- Finder shows the OT CF volume only while USB DISK MODE is active.
-- The file exists at `OCTATRACK-R/SetGPT/AUDIO/DL01_tribal-t_000a.wav` on the CF card.
-- The source file remains on the Extreme SSD.
-- No TR-8S, Digitakt or TB-03 setting changes.
+   **Success check:** 24 WAV files in total. `README.md` and `manifest.tsv` should also be present
+   at the top of `SETGPT-01`.
+10. In Finder, eject **`OCTATRACK-R`** using its eject icon. Wait until it disappears from Finder.
+    **Do this before leaving USB DISK MODE.**
+11. Look at the Octatrack screen. If it still shows USB DISK MODE and the exit action is not
+    explicit, stop and report the exact screen rather than guessing.
 
 ## Stop and report if
 
-- The CF volume does not appear in Finder.
-- Volume `OCTATRACK-R`, Set folder `SetGPT` or its `AUDIO` folder is missing.
-- Finder reports a copy error.
-- The OT screen differs from the documented USB DISK MODE state.
+- `OCTATRACK-R`, `SetGPT`, or `AUDIO` is missing.
+- Finder reports any copy error.
+- The four folder counts do not total 24 WAV files.
+- The Octatrack screen differs from the documented USB DISK MODE state after Finder eject.
 
 ## When complete, send this
 
 ```text
-loop copied
+SETGPT-01 copied — 24 WAV files confirmed
 USB DISK MODE screen after Finder eject: <what it shows>
 ```
 
 ## Next, not yet
 
-Load `DL01_tribal-t_000a.wav` into a Flex slot, assign it to Octatrack Track 4 and configure its
-140 BPM timestretch behaviour.
+We will load just the first working four-role palette from this library and make the opening
+pattern. The remaining 20 files stay available for audition; you will not need to load everything
+at once.
 
 ## Completed
 
@@ -64,10 +72,18 @@ Load `DL01_tribal-t_000a.wav` into a Flex slot, assign it to Octatrack Track 4 a
 - ✅ OT clock-master settings restored and saved.
 - ✅ Digitakt, TR-8S and TB-03 transport followed the OT before and after an OT power-cycle.
 - ✅ Audio-classified 63-sample packet passed the accepted review gate.
-- ✅ Selected percussion loop 12 was promoted and exported as a 16-bit, 44.1 kHz stereo WAV.
+- ✅ `SETGPT-01` prepared on the Mac: 24 verified 44.1 kHz, 16-bit PCM WAV files in four folders.
 
 ## References
 
+- [SETGPT-01 source-to-output manifest](</Volumes/Extreme SSD/Production/SAMPLES/_EXPORT/OCTATRACK/EIDETIC-CURATED/AUDIO/SETGPT-01/manifest.tsv>)
 - [Full Octatrack reference](../devices/octatrack.md)
 - [Sample-to-device masterplan](sample-device-masterplan.md)
 - [Clean-card decision](../decisions/2026-08-07-clean-octatrack-card-baseline.md)
+
+## Revision history
+
+| Version | Date | Summary |
+|---|---|---|
+| v1.1 | 2026-08-07 | Replaced the misleading one-file transfer with the complete 24-file SETGPT-01 card library. |
+| v1.0 | 2026-08-07 | Introduced the live clean-baseline and first-transfer checklist. |
